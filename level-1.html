@@ -1,0 +1,2412 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 | Business English Foundation | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 - Business English Foundation trong 30 ngày: giao tiếp công việc, họp, email, trình bày dự án, progress report, nền tảng cho Real Estate & Investment English."
+  />
+
+  <!--
+    level-1.html
+    Bản viết lại theo typography mới:
+    - Font mềm hơn
+    - Tổng thể dễ nhìn hơn
+    - Card mềm, màu dịu
+    - Không icon
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+      --page: #f7f8ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfdff;
+
+      --text-strong: #202a52;
+      --text-body: #42507a;
+      --text-muted: #6b76a1;
+      --text-soft: #8b96b9;
+
+      --line: rgba(37, 50, 99, 0.10);
+      --line-soft: rgba(37, 50, 99, 0.07);
+
+      --shadow-lg: 0 24px 70px rgba(30, 42, 92, 0.09);
+      --shadow-md: 0 14px 36px rgba(30, 42, 92, 0.07);
+      --shadow-sm: 0 8px 20px rgba(30, 42, 92, 0.05);
+
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+
+      --blue: #2563eb;
+      --blue-soft: #eff6ff;
+      --blue-line: #bfdbfe;
+      --blue-text: #1d4ed8;
+
+      --violet: #7c3aed;
+      --violet-soft: #f5f3ff;
+      --violet-line: #ddd6fe;
+      --violet-text: #6d28d9;
+
+      --indigo: #4f46e5;
+      --indigo-soft: #eef2ff;
+      --indigo-line: #c7d2fe;
+      --indigo-text: #4338ca;
+
+      --teal: #0d9488;
+      --teal-soft: #f0fdfa;
+      --teal-line: #99f6e4;
+      --teal-text: #0f766e;
+
+      --orange: #ea580c;
+      --orange-soft: #fff7ed;
+      --orange-line: #fed7aa;
+      --orange-text: #c2410c;
+
+      --emerald: #059669;
+      --emerald-soft: #ecfdf5;
+      --emerald-line: #a7f3d0;
+      --emerald-text: #047857;
+
+      --rose: #e11d48;
+      --rose-soft: #fff1f2;
+      --rose-line: #fecdd3;
+      --rose-text: #be123c;
+
+      --amber: #d97706;
+      --amber-soft: #fffbeb;
+      --amber-line: #fde68a;
+      --amber-text: #92400e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(37, 99, 235, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(124, 58, 237, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(13, 148, 136, 0.08), transparent 24%),
+        linear-gradient(180deg, #fbfcff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      max-width: 75ch;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      color: var(--indigo-text);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    .container {
+      width: min(1310px, calc(100% - 32px));
+      margin-inline: auto;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(30, 42, 92, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-strong);
+      min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-soft);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #515d88;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #24305a;
+      background: #eef2ff;
+      border-color: #c7d2fe;
+    }
+
+    .progress-chip {
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      border: 1px solid var(--blue-line);
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 22px 0 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--indigo-text);
+      font-weight: 700;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 26px 0 30px;
+    }
+
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.18), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.12), transparent 18%),
+        linear-gradient(135deg, #22397f 0%, #2f63d0 34%, #5a58d3 64%, #10897d 100%);
+      color: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      right: -56px;
+      bottom: -56px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.10);
+      pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px;
+      font-size: clamp(36px, 5vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      max-width: 980px;
+      font-weight: 800;
+    }
+
+    .hero-subtitle {
+      margin: 0;
+      max-width: 950px;
+      font-size: 18px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .hero-quote {
+      margin: 22px 0 0;
+      max-width: 900px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .hero-stat {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 22px;
+      padding: 16px 14px;
+      text-align: center;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin-bottom: 6px;
+    }
+
+    .hero-stat span {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 12px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #1d3b8a;
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .btn-blue {
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      border-color: var(--blue-line);
+    }
+
+    .btn-soft {
+      background: #ffffff;
+      color: #312e81;
+      border-color: #c7d2fe;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Sections */
+    .section {
+      padding: 56px 0;
+      scroll-margin-top: 88px;
+    }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(238, 242, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head {
+      max-width: 920px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .section-head.left {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(79, 70, 229, 0.12);
+      color: var(--indigo-text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      color: var(--text-strong);
+      font-weight: 800;
+    }
+
+    .section-head p {
+      margin: 0 auto;
+      color: var(--text-muted);
+      font-size: 17px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .soft-card {
+      height: 100%;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 22px;
+      transition: 0.18s ease;
+    }
+
+    .soft-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .soft-card h3 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      line-height: 1.28;
+      letter-spacing: -0.025em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .soft-card p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    .accent-blue {
+      border-top: 6px solid var(--blue);
+    }
+
+    .accent-violet {
+      border-top: 6px solid var(--violet);
+    }
+
+    .accent-indigo {
+      border-top: 6px solid var(--indigo);
+    }
+
+    .accent-teal {
+      border-top: 6px solid var(--teal);
+    }
+
+    .accent-orange {
+      border-top: 6px solid var(--orange);
+    }
+
+    .accent-emerald {
+      border-top: 6px solid var(--emerald);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .principle-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .principle-number.blue {
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      border: 1px solid var(--blue-line);
+    }
+
+    .principle-number.violet {
+      background: var(--violet-soft);
+      color: var(--violet-text);
+      border: 1px solid var(--violet-line);
+    }
+
+    .principle-number.teal {
+      background: var(--teal-soft);
+      color: var(--teal-text);
+      border: 1px solid var(--teal-line);
+    }
+
+    .principle-number.orange {
+      background: var(--orange-soft);
+      color: var(--orange-text);
+      border: 1px solid var(--orange-line);
+    }
+
+    /* Before / After */
+    .upgrade-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .compare-card {
+      border-radius: 28px;
+      padding: 24px;
+      height: 100%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .compare-card.before {
+      background: linear-gradient(180deg, #fff8f9, #fff1f2);
+      border: 1px solid var(--rose-line);
+    }
+
+    .compare-card.after {
+      background: linear-gradient(180deg, #f8fff9, #ecfdf5);
+      border: 1px solid var(--emerald-line);
+    }
+
+    .compare-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 11px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      border: 1px solid;
+      background: #ffffff;
+    }
+
+    .compare-label.rose {
+      color: var(--rose-text);
+      border-color: var(--rose-line);
+    }
+
+    .compare-label.emerald {
+      color: var(--emerald-text);
+      border-color: var(--emerald-line);
+    }
+
+    .phrase {
+      margin: 12px 0;
+      font-size: 22px;
+      line-height: 1.55;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-strong);
+    }
+
+    .compare-note {
+      margin: 12px 0 0;
+      color: #54618a;
+      font-weight: 500;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--indigo-line);
+      background: var(--indigo-soft);
+      color: var(--indigo-text);
+      font: inherit;
+      font-weight: 700;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    .audio-btn:hover {
+      background: #e0e7ff;
+    }
+
+    .audio-btn.playing {
+      background: #312e81;
+      color: #ffffff;
+      border-color: #312e81;
+    }
+
+    /* Progress */
+    .progress-panel {
+      padding: 28px;
+    }
+
+    .progress-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .progress-head h2 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.025em;
+      color: var(--text-strong);
+      font-weight: 800;
+    }
+
+    .progress-track {
+      height: 18px;
+      border-radius: var(--radius-pill);
+      background: #e7ebf8;
+      overflow: hidden;
+      margin: 12px 0 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: var(--radius-pill);
+      transition: width 0.35s ease;
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+    }
+
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Week plan */
+    .week-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .week-nav a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid #d9e0f5;
+      background: rgba(255, 255, 255, 0.84);
+      color: #3f4c7a;
+      transition: 0.18s ease;
+    }
+
+    .week-nav a:hover {
+      background: #eef2ff;
+      border-color: #c7d2fe;
+      color: #312e81;
+      transform: translateY(-1px);
+    }
+
+    .week-section {
+      margin-bottom: 34px;
+      scroll-margin-top: 92px;
+    }
+
+    .week-header {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow-md);
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .week-header-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .week-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 1px solid;
+    }
+
+    .week-pill.blue {
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      border-color: var(--blue-line);
+    }
+
+    .week-pill.teal {
+      background: var(--teal-soft);
+      color: var(--teal-text);
+      border-color: var(--teal-line);
+    }
+
+    .week-pill.violet {
+      background: var(--violet-soft);
+      color: var(--violet-text);
+      border-color: var(--violet-line);
+    }
+
+    .week-pill.orange {
+      background: var(--orange-soft);
+      color: var(--orange-text);
+      border-color: var(--orange-line);
+    }
+
+    .week-duration {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .week-header h3 {
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3vw, 38px);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      color: var(--text-strong);
+      font-weight: 800;
+    }
+
+    .week-header p {
+      margin: 0;
+      color: var(--text-muted);
+      max-width: 1050px;
+    }
+
+    .day-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .day-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-decoration: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-top: 6px solid #dbe1f5;
+      border-radius: 26px;
+      box-shadow: var(--shadow-md);
+      padding: 20px;
+      min-height: 280px;
+      transition: 0.18s ease;
+    }
+
+    .day-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .day-card.blue {
+      border-top-color: var(--blue);
+    }
+
+    .day-card.teal {
+      border-top-color: var(--teal);
+    }
+
+    .day-card.violet {
+      border-top-color: var(--violet);
+    }
+
+    .day-card.orange {
+      border-top-color: var(--orange);
+    }
+
+    .day-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .day-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 11px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      background: #f8faff;
+      color: #4a5784;
+      border: 1px solid #dbe2f5;
+    }
+
+    .day-time {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 11px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      background: #fffbeb;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+
+    .day-card h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.32;
+      letter-spacing: -0.02em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .day-card p {
+      margin: 0;
+      color: var(--text-muted);
+      flex: 1;
+    }
+
+    .day-focus {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .day-focus li {
+      padding: 10px 11px;
+      border-radius: 14px;
+      background: #f8faff;
+      border: 1px solid #e6ebfa;
+      color: #3d4a74;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* Milestone */
+    .milestone-panel {
+      padding: 28px;
+    }
+
+    .milestone-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .milestone-list li {
+      padding: 14px;
+      border-radius: 16px;
+      background: #f8faff;
+      border: 1px solid #e6ebfa;
+      border-left: 5px solid var(--emerald);
+      font-weight: 600;
+      color: #2d3a61;
+    }
+
+    /* Quiz */
+    .quiz-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .quiz-item {
+      padding: 24px;
+    }
+
+    .quiz-item h3 {
+      margin: 0 0 15px;
+      font-size: 22px;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+    }
+
+    .option {
+      text-align: left;
+      padding: 14px 15px;
+      border-radius: 16px;
+      border: 1px solid #d8def4;
+      background: #fbfcff;
+      color: #33406a;
+      font: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.16s ease;
+    }
+
+    .option:hover {
+      background: #f3f6ff;
+      border-color: #b8c5f5;
+    }
+
+    .option.selected {
+      border-color: #4f46e5;
+      background: #eef2ff;
+      font-weight: 700;
+    }
+
+    .option.correct {
+      border-color: #059669;
+      background: #ecfdf5;
+    }
+
+    .option.incorrect {
+      border-color: #e11d48;
+      background: #fff1f2;
+    }
+
+    .quiz-feedback {
+      display: none;
+      margin-top: 14px;
+      padding: 13px 15px;
+      border-radius: 16px;
+      background: var(--amber-soft);
+      border: 1px solid var(--amber-line);
+      color: var(--amber-text);
+      font-weight: 600;
+    }
+
+    .quiz-item.answered .quiz-feedback {
+      display: block;
+    }
+
+    .quiz-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+      justify-content: center;
+    }
+
+    /* Prev next */
+    .prev-next {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .prev-next a {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-decoration: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow-md);
+      padding: 18px;
+      transition: 0.18s ease;
+    }
+
+    .prev-next a:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-soft);
+    }
+
+    .prev-next strong {
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    /* CTA */
+    .cta-panel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 36px;
+      padding: 42px;
+      text-align: center;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.16), transparent 22%),
+        radial-gradient(circle at 84% 24%, rgba(255, 255, 255, 0.10), transparent 18%),
+        linear-gradient(135deg, #1f3a8d, #2563eb 44%, #0d9488);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-panel h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+    }
+
+    .cta-panel p {
+      margin: 0 auto 24px;
+      max-width: 900px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 17px;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 58px;
+      color: #7783a8;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--line-soft);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      color: #4d5986;
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: #eef2ff;
+      border-color: #c7d2fe;
+      color: #312e81;
+    }
+
+    @media (max-width: 1180px) {
+      .hero-stats,
+      .grid-5,
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-3,
+      .day-grid,
+      .upgrade-grid,
+      .milestone-list {
+        grid-template-columns: 1fr;
+      }
+
+      .prev-next {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero-stats,
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .grid-5,
+      .day-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .milestone-panel,
+      .progress-panel,
+      .quiz-item,
+      .soft-card,
+      .compare-card,
+      .week-header {
+        padding: 18px;
+      }
+
+      .phrase {
+        font-size: 19px;
+      }
+
+      .cta-panel {
+        padding: 28px;
+      }
+
+      .progress-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Real Estate & Investment Path</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="topbarProgress" class="progress-chip">Level 1: 0/30 ngày</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <span>Level 1</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Phase 1</span>
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">30 ngày</span>
+            <span class="hero-tag">90 phút / ngày</span>
+            <span class="hero-tag">Business English Foundation</span>
+            <span class="hero-tag">Output-first</span>
+          </div>
+
+          <h1 class="hero-title">Business English Foundation</h1>
+
+          <p class="hero-subtitle">
+            Level 1 xây nền giao tiếp công việc trong 30 ngày: giới thiệu bản thân chuyên nghiệp, mô tả công ty và dự án,
+            tham gia họp, báo cáo tiến độ, viết email và trình bày ngắn. Đây là nền tảng bắt buộc trước khi bước vào
+            Level 2 với ngôn ngữ tài chính, đầu tư và đàm phán.
+          </p>
+
+          <div class="hero-quote">
+            Mục tiêu của Level 1 không phải là nói hoàn hảo. Mục tiêu là nói có cấu trúc, có phản xạ, đúng bối cảnh
+            công việc và không dịch trong đầu.
+          </div>
+
+          <div class="hero-stats" aria-label="Số liệu Level 1">
+            <div class="hero-stat">
+              <strong>4</strong>
+              <span>tuần học</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>30</strong>
+              <span>daily lessons</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>90</strong>
+              <span>phút mỗi ngày</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>30</strong>
+              <span>speaking topics</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>10</strong>
+              <span>reflex structure groups</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>1</strong>
+              <span>final assessment</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="level-1-day-01.html">Bắt đầu Day 1</a>
+            <a class="btn btn-secondary" href="#week-1">Xem 4 tuần học</a>
+            <a class="btn btn-secondary" href="#self-check">Quick Self-Check</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESS -->
+    <section class="section" id="progress">
+      <div class="container">
+        <div class="panel progress-panel">
+          <div class="progress-head">
+            <h2>Tiến độ Level 1</h2>
+            <span id="levelProgressText">0/30 ngày hoàn thành</span>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <div id="levelProgressFill" class="progress-fill"></div>
+          </div>
+
+          <div class="progress-meta">
+            <span>Mỗi ngày hoàn thành sẽ được tính vào thanh tiến độ này.</span>
+            <span id="levelProgressPercent">0%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY THIS LEVEL MATTERS -->
+    <section class="section alt" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why This Level Matters</span>
+          <h2>Vì sao Level 1 quan trọng?</h2>
+          <p>
+            Level 1 không dạy tiếng Anh chung chung. Level 1 huấn luyện bạn dùng tiếng Anh trong các tình huống công việc thật:
+            họp, email, báo cáo tiến độ, mô tả dự án và trình bày ngắn.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <article class="soft-card accent-blue">
+            <span class="principle-number blue">01</span>
+            <h3>Output before perfection</h3>
+            <p>
+              Mỗi ngày phải tạo ra output: một đoạn nói, một email, một progress update hoặc một phần trình bày ngắn.
+              Không học thụ động.
+            </p>
+          </article>
+
+          <article class="soft-card accent-violet">
+            <span class="principle-number violet">02</span>
+            <h3>Patterns, not isolated grammar</h3>
+            <p>
+              Học mẫu câu theo chức năng: mở họp, nêu ý kiến, làm rõ, báo cáo tiến độ, viết email, trình bày dự án.
+            </p>
+          </article>
+
+          <article class="soft-card accent-teal">
+            <span class="principle-number teal">03</span>
+            <h3>Domain-aware foundation</h3>
+            <p>
+              Ngôn ngữ gắn với bối cảnh Real Estate, Project Finance và Investment ngay từ đầu: dự án, tiến độ, pháp lý,
+              bán hàng, tài chính.
+            </p>
+          </article>
+
+          <article class="soft-card accent-orange">
+            <span class="principle-number orange">04</span>
+            <h3>Register awareness</h3>
+            <p>
+              Biết cách điều chỉnh ngôn ngữ theo người nghe: nội bộ, JV partner, ngân hàng, nhà đầu tư, Ban lãnh đạo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE AFTER -->
+    <section class="section" id="before-after">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before vs After</span>
+          <h2>Sau Level 1, cách nói của bạn sẽ thay đổi</h2>
+          <p>
+            Từ câu ngắn, mơ hồ, dịch từ tiếng Việt sang câu có cấu trúc, có bối cảnh và có âm hưởng chuyên nghiệp hơn.
+          </p>
+        </div>
+
+        <div class="upgrade-grid">
+          <article class="compare-card before">
+            <span class="compare-label rose">Before · phổ thông</span>
+            <p class="phrase">I manage projects. The project is good.</p>
+            <p class="compare-note">
+              Câu đúng nhưng quá chung chung. Thiếu vai trò, thiếu phạm vi trách nhiệm, thiếu thông tin để người nghe đánh giá năng lực.
+            </p>
+          </article>
+
+          <article class="compare-card after">
+            <span class="compare-label emerald">After · executive</span>
+            <p class="phrase">
+              I oversee project development, mainly focusing on investment evaluation, progress tracking and coordination with partners.
+            </p>
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="I oversee project development, mainly focusing on investment evaluation, progress tracking and coordination with partners."
+            >
+              Nghe
+            </button>
+            <p class="compare-note">
+              Câu này có vai trò, phạm vi công việc và ngôn ngữ chuyên môn. Phù hợp để giới thiệu bản thân trong cuộc họp
+              hoặc buổi làm việc với đối tác.
+            </p>
+          </article>
+
+          <article class="compare-card before">
+            <span class="compare-label rose">Before · phổ thông</span>
+            <p class="phrase">The project is on time. Sales are okay.</p>
+            <p class="compare-note">
+              Báo cáo thiếu milestone, thiếu số liệu, thiếu cấu trúc. Người nghe không biết trạng thái thật của dự án.
+            </p>
+          </article>
+
+          <article class="compare-card after">
+            <span class="compare-label emerald">After · executive</span>
+            <p class="phrase">
+              We are currently on track. Construction has reached the third floor, and sales have achieved 60 percent of the target.
+            </p>
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="We are currently on track. Construction has reached the third floor, and sales have achieved 60 percent of the target."
+            >
+              Nghe
+            </button>
+            <p class="compare-note">
+              Câu này có status, milestone và số liệu. Đây là cách báo cáo tiến độ rõ ràng, chuyên nghiệp hơn.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGE COVERAGE -->
+    <section class="section alt" id="language-coverage">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Language Coverage</span>
+          <h2>Phạm vi ngôn ngữ của Level 1</h2>
+          <p>
+            Level 1 bao phủ 5 lớp ngôn ngữ: grammar chức năng, vocabulary theo chủ đề, discourse trong công việc,
+            pronunciation cho số liệu và register theo người nghe.
+          </p>
+        </div>
+
+        <div class="grid-5">
+          <article class="soft-card accent-blue">
+            <h3>Grammar</h3>
+            <p>
+              Comparing, emphasizing, giving opinions, explaining logic, reporting progress, handling questions.
+            </p>
+          </article>
+
+          <article class="soft-card accent-violet">
+            <h3>Vocabulary</h3>
+            <p>
+              oversee, responsible for, project execution, master plan, GFA, ASP, absorption, legal, funding, IRR, NPV.
+            </p>
+          </article>
+
+          <article class="soft-card accent-teal">
+            <h3>Discourse</h3>
+            <p>
+              Meetings, progress reports, emails, project presentations, Q&A, follow-up, role play.
+            </p>
+          </article>
+
+          <article class="soft-card accent-orange">
+            <h3>Pronunciation</h3>
+            <p>
+              Stress trên số liệu, intonation khi trình bày, pacing khi giải thích logic, nhịp ngắt ý khi nói.
+            </p>
+          </article>
+
+          <article class="soft-card accent-emerald">
+            <h3>Register</h3>
+            <p>
+              Internal team vs JV partner vs bank vs investor vs Board. Biết lúc nào nói ngắn, lúc nào cần formal.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30 DAY PLAN -->
+    <section class="section" id="plan">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">30-Day Plan</span>
+          <h2>Lộ trình 30 ngày của Level 1</h2>
+          <p>
+            Mỗi ngày 90 phút. Mỗi tuần có một mục tiêu riêng. Hãy bắt đầu từ Day 1 và đi theo đúng thứ tự để xây phản xạ vững.
+          </p>
+        </div>
+
+        <div class="week-nav" aria-label="Điều hướng nhanh theo tuần">
+          <a href="#week-1">Week 1 · Daily Business Communication</a>
+          <a href="#week-2">Week 2 · Real Estate English</a>
+          <a href="#week-3">Week 3 · Finance & Investment</a>
+          <a href="#week-4">Week 4 · Executive Communication</a>
+        </div>
+
+        <!-- WEEK 1 -->
+        <div class="week-section" id="week-1">
+          <div class="week-header">
+            <div class="week-header-top">
+              <span class="week-pill blue">Week 1</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+
+            <h3>Daily Business Communication</h3>
+            <p>
+              Mục tiêu của Week 1 là nói tự nhiên trong công việc hằng ngày: giới thiệu bản thân, công ty, dự án,
+              họp, báo cáo tiến độ, email và role play tổng hợp.
+            </p>
+          </div>
+
+          <div class="day-grid">
+            <a class="day-card blue" href="level-1-day-01.html">
+              <div class="day-top">
+                <span class="day-tag">Day 1</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Introducing Yourself Professionally</h3>
+              <p>
+                Giới thiệu bản thân 3 phút theo phong cách executive: vai trò, lĩnh vực, dự án và giá trị bạn mang lại.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: oversee, responsible for, specialize in, cross-functional</li>
+                <li>Output: script + ghi âm phần tự giới thiệu 60–90 giây</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-02.html">
+              <div class="day-top">
+                <span class="day-tag">Day 2</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Talking about Company & Organization</h3>
+              <p>
+                Mô tả công ty, business units, holding structure, subsidiaries và core business.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: Our company mainly focuses on..., We operate through...</li>
+                <li>Output: viết phần giới thiệu công ty 120–150 từ</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-03.html">
+              <div class="day-top">
+                <span class="day-tag">Day 3</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Project Overview</h3>
+              <p>
+                Mô tả một dự án: location, scale, total investment, product mix và progress.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: The project covers..., It consists of..., The total investment is...</li>
+                <li>Output: tạo project fact sheet bằng bullet</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-04.html">
+              <div class="day-top">
+                <span class="day-tag">Day 4</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Meetings</h3>
+              <p>
+                Ngôn ngữ họp: interrupt, agree, disagree, clarify và add a point một cách lịch sự.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: May I add something?, Could you elaborate?, Just to clarify...</li>
+                <li>Output: mock meeting 5 phút + 5 câu dùng được ngay</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-05.html">
+              <div class="day-top">
+                <span class="day-tag">Day 5</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Reporting Progress</h3>
+              <p>
+                Báo cáo tiến độ theo cấu trúc: status, milestone, issue, next step.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: We're currently on track..., The key milestone is...</li>
+                <li>Output: progress update email hoặc slide bullets</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-06.html">
+              <div class="day-top">
+                <span class="day-tag">Day 6</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Email Communication</h3>
+              <p>
+                Viết email chuyên nghiệp: opening, main message, request, closing và follow-up.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: Please find attached..., Kindly note..., Let me know if...</li>
+                <li>Output: 3 email snippets: gửi tài liệu, follow-up, xác nhận họp</li>
+              </ul>
+            </a>
+
+            <a class="day-card blue" href="level-1-day-07.html">
+              <div class="day-top">
+                <span class="day-tag">Day 7</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Role Play</h3>
+              <p>
+                Tổng hợp Week 1: họp ngắn, xử lý câu hỏi, gửi email follow-up và trình bày 3 phút.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: opening, progress, issue, next step, closing</li>
+                <li>Output: ghi âm 7–10 phút + viết follow-up email</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <!-- WEEK 2 -->
+        <div class="week-section" id="week-2">
+          <div class="week-header">
+            <div class="week-header-top">
+              <span class="week-pill teal">Week 2</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+
+            <h3>Real Estate English</h3>
+            <p>
+              Week 2 giúp bạn mô tả dự án bất động sản bằng ngôn ngữ chuyên ngành: master plan, timeline, sales,
+              construction, legal, operation và case study.
+            </p>
+          </div>
+
+          <div class="day-grid">
+            <a class="day-card teal" href="level-1-day-08.html">
+              <div class="day-top">
+                <span class="day-tag">Day 8</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Project Master Planning</h3>
+              <p>
+                Mô tả master plan: land use, plot ratio, GFA, NSA, infrastructure, mixed-use.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: land use, plot ratio, GFA, NSA, mixed-use</li>
+                <li>Output: tóm tắt master plan bằng 6 bullet</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-09.html">
+              <div class="day-top">
+                <span class="day-tag">Day 9</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Development Timeline</h3>
+              <p>
+                Trình bày development timeline: land acquisition, legal approval, construction, pre-sales, handover.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: land acquisition, legal approval, construction, handover</li>
+                <li>Output: timeline explanation 3 phút</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-10.html">
+              <div class="day-top">
+                <span class="day-tag">Day 10</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Sales & Marketing</h3>
+              <p>
+                Báo cáo sales: ASP, absorption, inventory, booking, launch, pipeline.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: ASP, absorption, inventory, booking, launch</li>
+                <li>Output: sales update email ngắn</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-11.html">
+              <div class="day-top">
+                <span class="day-tag">Day 11</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Construction</h3>
+              <p>
+                Nói về construction progress: foundation, superstructure, fit-out, delay, variation order.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: foundation, superstructure, fit-out, delay</li>
+                <li>Output: giải thích delay + mitigation plan</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-12.html">
+              <div class="day-top">
+                <span class="day-tag">Day 12</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Legal</h3>
+              <p>
+                Trình bày legal status: IRC, LURC, Construction Permit, Planning Approval, land allocation.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: IRC, LURC, Construction Permit, Planning Approval</li>
+                <li>Output: legal checklist bằng tiếng Anh</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-13.html">
+              <div class="day-top">
+                <span class="day-tag">Day 13</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Operation</h3>
+              <p>
+                Mô tả operation: property management, maintenance, rental, commercial, facilities.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: property management, rental, facilities</li>
+                <li>Output: 1 slide operation overview</li>
+              </ul>
+            </a>
+
+            <a class="day-card teal" href="level-1-day-14.html">
+              <div class="day-top">
+                <span class="day-tag">Day 14</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Case Study</h3>
+              <p>
+                Mô tả một dự án hoàn chỉnh theo cấu trúc case study: overview, location, product, sales, finance, risk.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: overview, location, product, sales, finance, risk</li>
+                <li>Output: case presentation 5 phút</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <!-- WEEK 3 -->
+        <div class="week-section" id="week-3">
+          <div class="week-header">
+            <div class="week-header-top">
+              <span class="week-pill violet">Week 3</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+
+            <h3>Finance & Investment</h3>
+            <p>
+              Week 3 chuyển sang ngôn ngữ tài chính và đầu tư: financial statements, financial model, funding,
+              investment evaluation, JV, risk và presentation của financial model.
+            </p>
+          </div>
+
+          <div class="day-grid">
+            <a class="day-card violet" href="level-1-day-15.html">
+              <div class="day-top">
+                <span class="day-tag">Day 15</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Financial Statements</h3>
+              <p>
+                Giải thích các chỉ tiêu tài chính cơ bản: revenue, gross profit, EBITDA, operating cash flow, net profit.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: revenue, gross profit, EBITDA, operating cash flow</li>
+                <li>Output: financial summary slide</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-16.html">
+              <div class="day-top">
+                <span class="day-tag">Day 16</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Financial Modeling</h3>
+              <p>
+                Nói về financial model: assumptions, scenario, sensitivity, discount rate, NPV, IRR.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: assumptions, scenario, sensitivity, NPV, IRR</li>
+                <li>Output: 3 key messages từ model</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-17.html">
+              <div class="day-top">
+                <span class="day-tag">Day 17</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Funding</h3>
+              <p>
+                Trình bày funding plan: equity, loan, bridge loan, bond, working capital, capital injection.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: equity, loan, bridge loan, bond, capital injection</li>
+                <li>Output: capital structure bullets</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-18.html">
+              <div class="day-top">
+                <span class="day-tag">Day 18</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Investment Evaluation</h3>
+              <p>
+                Đánh giá đầu tư: ROI, payback, risk, upside, downside, investment thesis.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: ROI, payback, upside, downside, thesis</li>
+                <li>Output: investment memo summary 150–200 từ</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-19.html">
+              <div class="day-top">
+                <span class="day-tag">Day 19</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>JV & Partnership</h3>
+              <p>
+                Thảo luận JV: shareholding, governance, SPA, SHA, JV structure, exit strategy.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: shareholding, governance, SPA, SHA, exit</li>
+                <li>Output: tóm tắt JV term sheet bằng bullets</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-20.html">
+              <div class="day-top">
+                <span class="day-tag">Day 20</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Risk Analysis</h3>
+              <p>
+                Phân tích risk: construction, legal, sales, funding, market, execution risk.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: construction, legal, sales, funding, market risk</li>
+                <li>Output: risk matrix gồm 5 rủi ro + mitigation</li>
+              </ul>
+            </a>
+
+            <a class="day-card violet" href="level-1-day-21.html">
+              <div class="day-top">
+                <span class="day-tag">Day 21</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Presentation: Explain Financial Model</h3>
+              <p>
+                Trình bày financial model: assumptions, outputs, sensitivity, recommendation.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: assumptions, outputs, sensitivity, recommendation</li>
+                <li>Output: 5–7 slide + 3 key takeaways</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <!-- WEEK 4 -->
+        <div class="week-section" id="week-4">
+          <div class="week-header">
+            <div class="week-header-top">
+              <span class="week-pill orange">Week 4</span>
+              <span class="week-duration">9 ngày · 90 phút / ngày</span>
+            </div>
+
+            <h3>Executive Communication</h3>
+            <p>
+              Week 4 nâng cấp cách nói: rõ, chắc, có trọng tâm, có sức thuyết phục. Bạn sẽ luyện comparing, emphasizing,
+              giving opinions, explaining logic, negotiation, Q&A, executive presentation, mock IC và final assessment.
+            </p>
+          </div>
+
+          <div class="day-grid">
+            <a class="day-card orange" href="level-1-day-22.html">
+              <div class="day-top">
+                <span class="day-tag">Day 22</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Comparing</h3>
+              <p>
+                So sánh hai phương án, hai dự án hoặc hai kịch bản đầu tư một cách rõ ràng.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: higher than, lower than, compared with, whereas</li>
+                <li>Output: 1 comparison slide</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-23.html">
+              <div class="day-top">
+                <span class="day-tag">Day 23</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Emphasizing</h3>
+              <p>
+                Nhấn mạnh key message để người nghe nhớ điểm quan trọng nhất.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: The key point is..., It's worth noting...</li>
+                <li>Output: executive summary 5 câu</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-24.html">
+              <div class="day-top">
+                <span class="day-tag">Day 24</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Giving Opinions</h3>
+              <p>
+                Đưa ra ý kiến và recommendation dựa trên phân tích, không chỉ nói theo cảm tính.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: From my perspective..., Based on our analysis...</li>
+                <li>Output: recommendation memo ngắn</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-25.html">
+              <div class="day-top">
+                <span class="day-tag">Day 25</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Explaining Logic</h3>
+              <p>
+                Giải thích logic tài chính và logic dự án theo chuỗi nguyên nhân – kết quả.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: The reason is..., Therefore..., Consequently...</li>
+                <li>Output: chuỗi assumption → impact → result → decision</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-26.html">
+              <div class="day-top">
+                <span class="day-tag">Day 26</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Negotiation</h3>
+              <p>
+                Luyện ngôn ngữ đàm phán cơ bản: flexible, counter-proposal, middle ground.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: We're flexible on..., Would you consider...?</li>
+                <li>Output: negotiation script: opening, concession, counter-proposal</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-27.html">
+              <div class="day-top">
+                <span class="day-tag">Day 27</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Handling Questions</h3>
+              <p>
+                Xử lý câu hỏi trong họp và Q&A: acknowledge, structure, answer, close.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: That's a good question..., Let me explain...</li>
+                <li>Output: ghi âm Q&A + tự chấm clarity, structure, confidence</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-28.html">
+              <div class="day-top">
+                <span class="day-tag">Day 28</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Executive Presentation</h3>
+              <p>
+                Trình bày 10 slides không đọc. Mỗi slide giữ 1 key message rõ ràng.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: opening, key message, numbers, transitions</li>
+                <li>Output: ghi âm phần trình bày 10 phút</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-29.html">
+              <div class="day-top">
+                <span class="day-tag">Day 29</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Mock Investment Committee</h3>
+              <p>
+                Mô phỏng Investment Committee: pitch, questions, defense, closing recommendation.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: pitch, questions, defense, closing</li>
+                <li>Output: 1-page investment memo</li>
+              </ul>
+            </a>
+
+            <a class="day-card orange" href="level-1-day-30.html">
+              <div class="day-top">
+                <span class="day-tag">Day 30</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Final Assessment</h3>
+              <p>
+                Bài đánh giá cuối Level 1: 20-minute presentation và 15-minute Q&A.
+              </p>
+              <ul class="day-focus">
+                <li>Focus: structure, clarity, financial logic, language, Q&A</li>
+                <li>Output: ghi hình / ghi âm và tự chấm theo rubric</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MILESTONE -->
+    <section class="section alt" id="milestone">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Level 1 Milestone</span>
+          <h2>Sau Level 1, bạn có thể làm gì?</h2>
+          <p>
+            Đây là các năng lực tối thiểu bạn cần đạt trước khi bước vào Level 2.
+          </p>
+        </div>
+
+        <div class="panel milestone-panel">
+          <ul class="milestone-list">
+            <li>Tự tin họp bằng tiếng Anh 30–60 phút.</li>
+            <li>Giới thiệu bản thân, công ty và dự án chuyên nghiệp.</li>
+            <li>Báo cáo tiến độ có milestone, status và next step.</li>
+            <li>Viết email mở đầu, nội dung, follow-up và closing.</li>
+            <li>Mô tả dự án bất động sản bằng ngôn ngữ chuyên ngành cơ bản.</li>
+            <li>Giải thích financial statements và financial model ở mức nền tảng.</li>
+            <li>Trình bày project overview và progress update không đọc slide.</li>
+            <li>Xử lý câu hỏi đơn giản trong họp và Q&A.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SELF-CHECK -->
+    <section class="section" id="self-check">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Quick Self-Check</span>
+          <h2>Kiểm tra trực giác trước khi bắt đầu</h2>
+          <p>
+            Ba câu hỏi dưới đây giúp bạn cảm nhận sự khác nhau giữa tiếng Anh phổ thông và tiếng Anh công việc chuyên nghiệp.
+          </p>
+        </div>
+
+        <div class="quiz-grid">
+          <article class="quiz-item panel" data-correct="b">
+            <h3>1. Bạn mở đầu một cuộc họp với đối tác. Câu nào phù hợp nhất?</h3>
+
+            <div class="options">
+              <button class="option" type="button" data-value="a">
+                Today we talk about project.
+              </button>
+
+              <button class="option" type="button" data-value="b">
+                The purpose of today's meeting is to review the project status, key issues, and next steps.
+              </button>
+
+              <button class="option" type="button" data-value="c">
+                Let's start.
+              </button>
+            </div>
+
+            <div class="quiz-feedback">
+              Đáp án đúng: B. Mở họp chuyên nghiệp cần nêu rõ purpose, agenda và kỳ vọng của cuộc họp.
+            </div>
+          </article>
+
+          <article class="quiz-item panel" data-correct="c">
+            <h3>2. Bạn cần báo cáo tiến độ. Câu nào tốt nhất?</h3>
+
+            <div class="options">
+              <button class="option" type="button" data-value="a">
+                The project is okay.
+              </button>
+
+              <button class="option" type="button" data-value="b">
+                We are doing the project.
+              </button>
+
+              <button class="option" type="button" data-value="c">
+                We're currently on track. Construction has reached the third floor, and sales have achieved 60 percent of the target.
+              </button>
+            </div>
+
+            <div class="quiz-feedback">
+              Đáp án đúng: C. Báo cáo tiến độ cần có status, milestone và số liệu cụ thể.
+            </div>
+          </article>
+
+          <article class="quiz-item panel" data-correct="b">
+            <h3>3. Trong cuộc họp, bạn chưa hiểu rõ một câu hỏi. Cách xử lý nào phù hợp nhất?</h3>
+
+            <div class="options">
+              <button class="option" type="button" data-value="a">
+                Ignore the question and continue.
+              </button>
+
+              <button class="option" type="button" data-value="b">
+                Could you elaborate on that? Just to clarify, are you asking about the funding plan or the construction timeline?
+              </button>
+
+              <button class="option" type="button" data-value="c">
+                I don't understand.
+              </button>
+            </div>
+
+            <div class="quiz-feedback">
+              Đáp án đúng: B. Clarify lịch sự giúp bạn kiểm soát cuộc hội thoại và tránh trả lời sai trọng tâm.
+            </div>
+          </article>
+        </div>
+
+        <div class="quiz-actions">
+          <button id="checkQuizAnswers" class="btn btn-soft" type="button">Kiểm tra đáp án</button>
+          <button id="resetQuiz" class="btn btn-blue" type="button">Làm lại</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREV NEXT -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head left">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="index.html">
+            <small>Previous</small>
+            <strong>Trang chủ · Executive English 90</strong>
+          </a>
+
+          <a href="level-1-day-01.html">
+            <small>Start</small>
+            <strong>Level 1 · Day 1 · Introducing Yourself Professionally</strong>
+          </a>
+
+          <a href="level-2.html">
+            <small>Next Level</small>
+            <strong>Level 2 · Real Estate & Investment English</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="start">
+      <div class="container">
+        <div class="cta-panel">
+          <h2>Ready to Start Level 1?</h2>
+          <p>
+            Bắt đầu với Day 1: Introducing Yourself Professionally. Mỗi ngày 90 phút, đi từ vựng, mẫu câu, nghe, nói
+            đến output thực tế. Sau 30 ngày, bạn sẽ có nền tảng để bước vào Level 2.
+          </p>
+
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="level-1-day-01.html">Start Level 1 · Day 1</a>
+            <a class="btn btn-secondary" href="#week-1">Xem lại 4 tuần học</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Business English Foundation</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /*
+        Audio player đơn giản.
+        Nút .audio-btn dùng Web Speech API.
+        Nhãn chữ: Nghe / Dừng. Không dùng icon.
+      */
+      var currentAudioBtn = null;
+      var synth = window.speechSynthesis || null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (!synth) {
+            btn.disabled = true;
+            btn.textContent = "Không hỗ trợ audio";
+            return;
+          }
+
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var text = btn.getAttribute("data-speak") || "";
+          var utterance = new SpeechSynthesisUtterance(text);
+
+          utterance.lang = btn.getAttribute("data-lang") || "en-US";
+          utterance.rate = 0.95;
+
+          utterance.onend = function () {
+            if (currentAudioBtn === btn) {
+              btn.textContent = "Nghe";
+              btn.classList.remove("playing");
+              currentAudioBtn = null;
+            }
+          };
+
+          utterance.onerror = function () {
+            if (currentAudioBtn === btn) {
+              btn.textContent = "Nghe";
+              btn.classList.remove("playing");
+              currentAudioBtn = null;
+            }
+          };
+
+          currentAudioBtn = btn;
+          btn.textContent = "Dừng";
+          btn.classList.add("playing");
+          synth.speak(utterance);
+        });
+      });
+
+      /*
+        Progress Level 1.
+        Day pages sau này sẽ lưu progress vào localStorage theo key:
+        executive-english-progress-level-1
+      */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function countCompleted(key) {
+        var progress = loadProgress(key);
+        var count = 0;
+
+        Object.keys(progress).forEach(function (dayKey) {
+          if (progress[dayKey]) {
+            count += 1;
+          }
+        });
+
+        return count;
+      }
+
+      var level1Completed = countCompleted("executive-english-progress-level-1");
+      var level1Total = 30;
+      var level1Percent = Math.round((level1Completed / level1Total) * 100);
+
+      var topbarProgress = $("#topbarProgress");
+      var levelProgressText = $("#levelProgressText");
+      var levelProgressPercent = $("#levelProgressPercent");
+      var levelProgressFill = $("#levelProgressFill");
+
+      if (topbarProgress) {
+        topbarProgress.textContent = "Level 1: " + level1Completed + "/30 ngày";
+      }
+
+      if (levelProgressText) {
+        levelProgressText.textContent = level1Completed + "/30 ngày hoàn thành";
+      }
+
+      if (levelProgressPercent) {
+        levelProgressPercent.textContent = level1Percent + "%";
+      }
+
+      if (levelProgressFill) {
+        levelProgressFill.style.width = level1Percent + "%";
+      }
+
+      /*
+        Quiz tương tác đơn giản.
+        Mỗi .quiz-item có data-correct="a|b|c".
+      */
+      $$(".quiz-item").forEach(function (item) {
+        $$(".option", item).forEach(function (option) {
+          option.addEventListener("click", function () {
+            $$(".option", item).forEach(function (opt) {
+              opt.classList.remove("selected");
+            });
+
+            option.classList.add("selected");
+          });
+        });
+      });
+
+      var checkBtn = $("#checkQuizAnswers");
+      var resetBtn = $("#resetQuiz");
+
+      if (checkBtn) {
+        checkBtn.addEventListener("click", function () {
+          $$(".quiz-item").forEach(function (item) {
+            var correct = item.getAttribute("data-correct");
+            var selected = $(".option.selected", item);
+
+            item.classList.add("answered");
+
+            $$(".option", item).forEach(function (option) {
+              option.classList.remove("correct", "incorrect");
+
+              if (option.getAttribute("data-value") === correct) {
+                option.classList.add("correct");
+              }
+            });
+
+            if (selected && selected.getAttribute("data-value") !== correct) {
+              selected.classList.add("incorrect");
+            }
+          });
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener("click", function () {
+          $$(".quiz-item").forEach(function (item) {
+            item.classList.remove("answered");
+
+            $$(".option", item).forEach(function (option) {
+              option.classList.remove("selected", "correct", "incorrect");
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
