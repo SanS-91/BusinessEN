@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 06 | Email Communication | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 6 - Email Communication: cấu trúc email chuyên nghiệp với opening, main message, request, closing, follow-up; Speaking topic Professional Email Language; Output viết 3 email ngắn."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f7f8ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfdff;
+      --text-strong: #202a52;
+      --text-body: #42507a;
+      --text-muted: #6b76a1;
+      --text-soft: #8b96b9;
+      --line: rgba(37, 50, 99, 0.10);
+      --line-soft: rgba(37, 50, 99, 0.07);
+      --shadow-lg: 0 24px 70px rgba(30, 42, 92, 0.09);
+      --shadow-md: 0 14px 36px rgba(30, 42, 92, 0.07);
+      --shadow-sm: 0 8px 20px rgba(30, 42, 92, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --indigo: #4f46e5; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4338ca;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(37, 99, 235, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(124, 58, 237, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(13, 148, 136, 0.08), transparent 24%),
+        linear-gradient(180deg, #fbfcff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--indigo-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(30, 42, 92, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #515d88; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #24305a; background: #eef2ff; border-color: #c7d2fe; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--blue-soft);
+      color: var(--blue-text); border: 1px solid var(--blue-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(30, 42, 92, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.teal { background: var(--teal-soft); color: var(--teal-text); border-color: var(--teal-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--indigo-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.18), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.12), transparent 18%),
+        linear-gradient(135deg, #22397f 0%, #2f63d0 34%, #5a58d3 64%, #10897d 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.88); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.18);
+      font-weight: 600; color: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #1d3b8a; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.28); }
+    .btn-blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .btn-soft { background: #ffffff; color: #312e81; border-color: #c7d2fe; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(238, 242, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(79, 70, 229, 0.12); color: var(--indigo-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.teal { color: var(--teal-text); border-color: var(--teal-line); background: var(--teal-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-teal, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-indigo, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfdff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #fbfaff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #d8def4;
+      background: #fbfcff; color: #26304f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #4f46e5; box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.08); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(37, 50, 99, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8faff; border: 1px solid #dbe2f5; color: #33406a; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8faff; border: 1px solid #dbe2f5;
+      color: #42527b; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #e6ebfa; color: #3d4a74; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--indigo-line); background: var(--indigo-soft);
+      color: var(--indigo-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: #312e81; color: #ffffff; border-color: #312e81; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8faff; color: #4a5784;
+      border: 1px solid #dbe2f5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #e6ebfa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #33406a; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #42507a; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfdff; border: 1px solid #dbeafe; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #2d3a61; }
+    .transcript p:last-child { margin-bottom: 0; }
+
+    .hl-blue, .hl-violet, .hl-teal, .hl-orange, .hl-emerald { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-teal { background: linear-gradient(180deg, rgba(13, 148, 136, 0), rgba(13, 148, 136, 0.14)); color: var(--teal-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8faff;
+      border: 1px solid #e6ebfa; border-left: 5px solid var(--emerald); color: #2d3a61; font-weight: 600;
+    }
+
+    .output-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+
+    .output-list li {
+      padding: 12px 14px; border-radius: 16px; background: #f8faff;
+      border: 1px solid #e6ebfa; color: #33406a; font-weight: 600; line-height: 1.8;
+    }
+
+    .email-box {
+      padding: 20px; border-radius: 20px; background: #ffffff;
+      border: 1px solid #dbeafe; margin-top: 14px; font-size: 16px; line-height: 2; color: #2d3a61;
+    }
+
+    .email-box .subject { font-weight: 800; color: var(--text-strong); margin-bottom: 12px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f4c76; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #4d5986;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #eef2ff; border-color: #c7d2fe; color: #312e81; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 6</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 6/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill blue" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill violet" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill teal" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 6</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 1</span>
+            <span class="hero-tag">Day 6 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Professional Email Language</span>
+          </div>
+
+          <h1 class="hero-title">Email Communication</h1>
+
+          <p class="hero-subtitle">
+            Day 6 giúp bạn viết email chuyên nghiệp theo cấu trúc 5 phần:
+            <strong>Opening</strong>, <strong>Main message</strong>, <strong>Request / Next step</strong>,
+            <strong>Closing</strong> và <strong>Follow-up</strong>.
+            Bạn sẽ luyện các cụm email cốt lõi và viết 3 email ngắn dùng được ngay trong công việc.
+          </p>
+
+          <div class="hero-quote">
+            Một email chuyên nghiệp không cần dài. Nó cần rõ mục đích, rõ yêu cầu, rõ bước tiếp theo
+            và có giọng văn lịch sự, phù hợp với người nhận.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được 3 email hoàn chỉnh cho Day 6.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Email Terms · 15 phút</strong>
+              <span>
+                Học 8 thuật ngữ email: attachment, subject line, recipient, follow up, confirm, reference,
+                action item, deadline. Nghe từng item và đặt 1 câu với ngữ cảnh email thật của bạn.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu email: gửi tài liệu, lưu ý, tham khảo, yêu cầu phản hồi, mở đầu, kết thúc.
+                Làm substitution drill với tài liệu và cuộc họp thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening Business · 20 phút</strong>
+              <span>
+                Nghe 3 email mẫu được đọc to: gửi tài liệu, follow-up, xác nhận họp. Nghe 3 lần: ý chính,
+                patterns, cấu trúc. Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking Practice · 20 phút</strong>
+              <span>
+                Luyện 3 vòng đọc to email chuyên nghiệp để nắm nhịp và giọng văn formal:
+                vòng 1 opening + main message, vòng 2 request + closing, vòng 3 đọc trọn 1 email.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Presentation / Email / Case · 15 phút</strong>
+              <span>
+                Viết 3 email ngắn: gửi tài liệu, follow-up, xác nhận họp. Ghi âm 1 email bất kỳ.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Email Terms</h2>
+          <p>
+            8 thuật ngữ giúp bạn đọc, viết và phản hồi email chuyên nghiệp. Mỗi mục có IPA, nghĩa, collocation,
+            ví dụ, ghi chú và native alternative.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>attachment</h3>
+              <button class="audio-btn" type="button" data-speak="attachment. Please find the project report attached to this email.">Nghe</button>
+            </div>
+
+            <span class="ipa">/əˈtætʃmənt/</span>
+            <p class="vn">Tệp đính kèm</p>
+
+            <div class="note">
+              Ghi chú: dùng khi bạn gửi kèm file. Cụm phổ biến nhất là
+              <span class="hl-blue">Please find attached...</span> hoặc <span class="hl-blue">I have attached...</span>.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> send an attachment, open the attachment, file attachment</li>
+              <li><strong>Example:</strong> Please find the project report attached to this email.</li>
+              <li><strong>Native alternative:</strong> attached file, enclosure</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>subject line</h3>
+              <button class="audio-btn" type="button" data-speak="subject line. A clear subject line helps the recipient understand the purpose of your email.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈsʌbdʒekt laɪn/</span>
+            <p class="vn">Dòng tiêu đề email</p>
+
+            <div class="note">
+              Ghi chú: subject line tốt cần ngắn, rõ mục đích và dễ tìm lại. Ví dụ:
+              <span class="hl-violet">Project Update – Riverside Heights – 5 Aug</span>.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> clear subject line, write a subject line, subject line for the email</li>
+              <li><strong>Example:</strong> A clear subject line helps the recipient understand the purpose of your email.</li>
+              <li><strong>Native alternative:</strong> subject, email title</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>recipient</h3>
+              <button class="audio-btn" type="button" data-speak="recipient. Make sure the tone matches the recipient, whether it is a colleague or an investor.">Nghe</button>
+            </div>
+
+            <span class="ipa">/rɪˈsɪpiənt/</span>
+            <p class="vn">Người nhận</p>
+
+            <div class="note">
+              Ghi chú: trước khi gửi, hãy xác định recipient là ai để chọn giọng văn phù hợp:
+              nội bộ, đối tác, ngân hàng hay nhà đầu tư.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> intended recipient, the recipient of the email, address the recipient</li>
+              <li><strong>Example:</strong> Make sure the tone matches the recipient, whether it is a colleague or an investor.</li>
+              <li><strong>Native alternative:</strong> addressee, reader</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>follow up</h3>
+              <button class="audio-btn" type="button" data-speak="follow up. I am writing to follow up on my previous email regarding the project timeline.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈfɒloʊ ʌp/</span>
+            <p class="vn">Theo dõi, nhắc lại</p>
+
+            <div class="note">
+              Ghi chú: follow-up email dùng khi bạn chưa nhận được phản hồi. Giữ giọng lịch sự,
+              không tạo cảm giác thúc ép.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> follow up on, follow-up email, follow up with someone</li>
+              <li><strong>Example:</strong> I am writing to follow up on my previous email regarding the project timeline.</li>
+              <li><strong>Native alternative:</strong> check in, touch base</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>confirm</h3>
+              <button class="audio-btn" type="button" data-speak="confirm. I would like to confirm our meeting on Thursday at 10 a.m.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kənˈfɜːrm/</span>
+            <p class="vn">Xác nhận</p>
+
+            <div class="note">
+              Ghi chú: dùng khi xác nhận lịch họp, thông tin hoặc thỏa thuận.
+              Cấu trúc phổ biến: <span class="hl-emerald">I would like to confirm...</span>.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> confirm the meeting, confirm the details, confirm attendance</li>
+              <li><strong>Example:</strong> I would like to confirm our meeting on Thursday at 10 a.m.</li>
+              <li><strong>Native alternative:</strong> verify, reconfirm</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>reference</h3>
+              <button class="audio-btn" type="button" data-speak="reference. For your reference, I have included the latest project summary below.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈrefrəns/</span>
+            <p class="vn">Tham chiếu, để tham khảo</p>
+
+            <div class="note">
+              Ghi chú: cụm <span class="hl-blue">For your reference...</span> dùng khi bạn gửi kèm thông tin
+              để người đọc tiện theo dõi, không bắt buộc phải hành động.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> for your reference, with reference to, reference document</li>
+              <li><strong>Example:</strong> For your reference, I have included the latest project summary below.</li>
+              <li><strong>Native alternative:</strong> for your information, for your records</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>action item</h3>
+              <button class="audio-btn" type="button" data-speak="action item. Please let me know if there are any action items required from our side.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈækʃn ˈaɪtəm/</span>
+            <p class="vn">Hạng mục công việc cần làm</p>
+
+            <div class="note">
+              Ghi chú: email tốt thường nêu rõ action item: ai cần làm gì, trước khi nào.
+              Tránh để người đọc phải tự suy luận bước tiếp theo.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> action item, action required, list of action items</li>
+              <li><strong>Example:</strong> Please let me know if there are any action items required from our side.</li>
+              <li><strong>Native alternative:</strong> next step, to-do</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>deadline</h3>
+              <button class="audio-btn" type="button" data-speak="deadline. Could you please send the feedback by Friday so we can meet the deadline?">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈdedlaɪn/</span>
+            <p class="vn">Hạn chót</p>
+
+            <div class="note">
+              Ghi chú: khi nêu deadline, nên kèm lý do hoặc lợi ích để giảm cảm giác ra lệnh.
+              Ví dụ: <span class="hl-orange">so we can meet the deadline</span>.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> meet the deadline, before the deadline, tight deadline</li>
+              <li><strong>Example:</strong> Could you please send the feedback by Friday so we can meet the deadline?</li>
+              <li><strong>Native alternative:</strong> due date, cut-off</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>
+            6 mẫu câu cốt lõi cho email chuyên nghiệp, phủ đủ cấu trúc 5 phần: opening, main message,
+            request, closing và follow-up.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Please find attached...</h3>
+              <button class="audio-btn" type="button" data-speak="Please find attached the feasibility study for your review.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">Please find attached + tài liệu</span>.
+              Dùng khi gửi kèm file cho người nhận.
+            </div>
+
+            <div class="example">
+              <span class="label">Sending documents</span>
+              <p>Please find attached the feasibility study for your review.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Progress update</span>
+              <p>Please find attached the progress report for July.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay tài liệu bằng: the financial model / the meeting minutes / the contract draft / the updated timeline.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>Kindly note...</h3>
+              <button class="audio-btn" type="button" data-speak="Kindly note that the deadline has been moved to next Monday.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">Kindly note that + thông tin quan trọng</span>.
+              Dùng để lưu ý người đọc một điểm cần chú ý.
+            </div>
+
+            <div class="example">
+              <span class="label">Change notice</span>
+              <p>Kindly note that the deadline has been moved to next Monday.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Important detail</span>
+              <p>Kindly note that the meeting will be held online instead of in person.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                “Kindly note” khá trang trọng. Với đồng nghiệp thân thiết, có thể dùng
+                <span class="hl-violet">Just a quick note that...</span>.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>For your reference...</h3>
+              <button class="audio-btn" type="button" data-speak="For your reference, I have attached the latest version of the project timeline.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-teal">For your reference, + thông tin/tài liệu kèm theo</span>.
+              Dùng khi gửi thông tin để người đọc tiện theo dõi.
+            </div>
+
+            <div class="example">
+              <span class="label">Supporting document</span>
+              <p>For your reference, I have attached the latest version of the project timeline.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Context</span>
+              <p>For your reference, the figures below are based on the July sales report.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay phần sau bằng: the contact list / the previous email / the approved budget.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Let me know if...</h3>
+              <button class="audio-btn" type="button" data-speak="Let me know if you have any questions or need further clarification.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">Let me know if + mệnh đề</span>.
+              Dùng để mời phản hồi hoặc đề nghị hỗ trợ, thường đặt gần cuối email.
+            </div>
+
+            <div class="example">
+              <span class="label">Offering help</span>
+              <p>Let me know if you have any questions or need further clarification.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Requesting confirmation</span>
+              <p>Let me know if the proposed time works for you.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Softer version</span>
+              <p>
+                Trang trọng hơn: <span class="hl-orange">Please let me know if...</span>
+                hoặc <span class="hl-orange">Do not hesitate to contact me if...</span>.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>I'm writing to...</h3>
+              <button class="audio-btn" type="button" data-speak="I'm writing to confirm our meeting on Thursday at 10 a.m.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức mở đầu: <span class="hl-emerald">I'm writing to + lý do email</span>.
+              Dùng ngay đầu email để nêu mục đích rõ ràng.
+            </div>
+
+            <div class="example">
+              <span class="label">Opening</span>
+              <p>I'm writing to confirm our meeting on Thursday at 10 a.m.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Follow-up opening</span>
+              <p>I'm writing to follow up on the proposal I sent last week.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh mở đầu lan man không nêu mục đích.
+                Nên dùng <span class="hl-emerald">I'm writing to...</span> để người đọc biết ngay lý do email.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>Looking forward to hearing from you.</h3>
+              <button class="audio-btn" type="button" data-speak="Looking forward to hearing from you. Best regards.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức kết thúc: <span class="hl-blue">Looking forward to hearing from you.</span>
+              Dùng trước chữ ký để kết thúc email lịch sự và mời phản hồi.
+            </div>
+
+            <div class="example">
+              <span class="label">Closing</span>
+              <p>Looking forward to hearing from you.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Alternative closings</span>
+              <p>Best regards, / Kind regards, / Thank you for your support.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh kết thúc đột ngột không có chữ ký.
+                Luôn có <span class="hl-blue">closing line + tên của bạn</span>.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow teal">Block 3 · 20 phút</span>
+          <h2>Listening Business</h2>
+          <p>
+            Nghe 3 email mẫu được đọc to: gửi tài liệu, follow-up và xác nhận họp.
+            Mục tiêu là nhận diện cấu trúc 5 phần và các cụm email cốt lõi.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm mục đích của từng email.</li>
+            <li>Nghe lần hai để nhận diện các patterns: please find attached, kindly note, for your reference, let me know if.</li>
+            <li>Nghe lần ba để phân tích cấu trúc 5 phần: opening, main message, request, closing, follow-up.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Here are three short professional emails. Email one. Sending a document. Subject: Feasibility Study, Riverside Heights. Dear Mr. Lee, I am writing to share the feasibility study for the Riverside Heights project. Please find the full report attached for your review. For your reference, I have also included a one-page summary of the key findings. Kindly note that the figures are based on the latest sales forecast. Let me know if you have any questions. Best regards, Lan. Email two. Following up. Subject: Follow-up, Project Timeline. Dear Mr. Lee, I am writing to follow up on the project timeline I sent last week. Could you please confirm whether the proposed schedule works for your team? We would like to finalize the plan by Friday so we can meet the next milestone. Please let me know if you need any further information. Kind regards, Lan. Email three. Confirming a meeting. Subject: Meeting Confirmation, Thursday 10 a.m. Dear Mr. Lee, I am writing to confirm our meeting on Thursday at 10 a.m. to discuss the project progress. The meeting will be held online, and I will send the link before we start. Looking forward to hearing from you. Best regards, Lan."
+            >
+              Nghe toàn bộ
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              Here are three short professional emails.
+            </p>
+
+            <p>
+              <strong>Email one. Sending a document.</strong><br />
+              Subject: Feasibility Study, Riverside Heights.<br />
+              Dear Mr. Lee, <span class="hl-emerald">I am writing to share</span> the feasibility study for the Riverside Heights project.
+              <span class="hl-blue">Please find the full report attached</span> for your review.
+              <span class="hl-teal">For your reference</span>, I have also included a one-page summary of the key findings.
+              <span class="hl-violet">Kindly note</span> that the figures are based on the latest sales forecast.
+              <span class="hl-orange">Let me know if you have any questions.</span> Best regards, Lan.
+            </p>
+
+            <p>
+              <strong>Email two. Following up.</strong><br />
+              Subject: Follow-up, Project Timeline.<br />
+              Dear Mr. Lee, <span class="hl-emerald">I am writing to follow up on</span> the project timeline I sent last week.
+              Could you please confirm whether the proposed schedule works for your team?
+              We would like to finalize the plan by Friday so we can meet the next milestone.
+              <span class="hl-orange">Please let me know if you need any further information.</span> Kind regards, Lan.
+            </p>
+
+            <p>
+              <strong>Email three. Confirming a meeting.</strong><br />
+              Subject: Meeting Confirmation, Thursday 10 a.m.<br />
+              Dear Mr. Lee, <span class="hl-emerald">I am writing to confirm</span> our meeting on Thursday at 10 a.m.
+              to discuss the project progress. The meeting will be held online, and I will send the link before we start.
+              <span class="hl-blue">Looking forward to hearing from you.</span> Best regards, Lan.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> What is the purpose of the first email?</li>
+            <li><strong>Question 2:</strong> What phrase introduces the attached document?</li>
+            <li><strong>Question 3:</strong> Why does Lan send the second email?</li>
+            <li><strong>Question 4:</strong> What details are confirmed in the third email?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The first email is to share the feasibility study for the Riverside Heights project.
+              2. The phrase is “Please find the full report attached for your review.”
+              3. Lan sends the second email to follow up on the project timeline she sent last week.
+              4. The third email confirms the meeting time, Thursday at 10 a.m., and that it will be held online.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1</span>
+            <p>
+              Please find the full report attached for your review.
+            </p>
+            <button class="audio-btn" type="button" data-speak="Please find the full report attached for your review.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2</span>
+            <p>
+              I am writing to follow up on the project timeline I sent last week.
+            </p>
+            <button class="audio-btn" type="button" data-speak="I am writing to follow up on the project timeline I sent last week.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3</span>
+            <p>
+              I am writing to confirm our meeting on Thursday at 10 a.m.
+            </p>
+            <button class="audio-btn" type="button" data-speak="I am writing to confirm our meeting on Thursday at 10 a.m.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào động từ mục đích: share, follow up, confirm.</li>
+            <li>Đọc cụm “please find attached” liền mạch, không tách từng từ.</li>
+            <li>Giọng kết thúc “looking forward to hearing from you” ấm và lịch sự.</li>
+            <li>Đọc rõ thời gian và ngày: Thursday at 10 a.m., by Friday.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking Practice · Professional Email Language</h2>
+          <p>
+            Luyện đọc to email chuyên nghiệp để nắm nhịp, ngữ điệu và giọng văn formal.
+            Bạn sẽ luyện 3 vòng: opening + main message, request + closing, và đọc trọn một email.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Khi đọc to email, hãy đi theo cấu trúc 5 phần:
+            </p>
+
+            <ol>
+              <li><strong>Opening:</strong> I'm writing to...</li>
+              <li><strong>Main message:</strong> please find attached / kindly note...</li>
+              <li><strong>Request / Next step:</strong> could you please... / let me know if...</li>
+              <li><strong>Closing:</strong> looking forward to hearing from you.</li>
+              <li><strong>Follow-up:</strong> nhắc lại bước tiếp theo hoặc thời hạn.</li>
+            </ol>
+
+            <h4>Checklist khi đọc</h4>
+
+            <ul class="checklist">
+              <li>Nêu rõ mục đích email ngay đầu.</li>
+              <li>Đọc cụm đính kèm tự nhiên, không tách từ.</li>
+              <li>Nhấn vào yêu cầu hoặc bước tiếp theo.</li>
+              <li>Kết thúc bằng giọng lịch sự, ấm.</li>
+              <li>Giữ tốc độ vừa phải, rõ thời gian và ngày.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · 60 giây</h3>
+
+            <p>
+              Đọc opening + main message của email gửi tài liệu.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Dear Mr. Lee, <span class="hl-emerald">I am writing to share</span> the feasibility study
+                for the Riverside Heights project.
+                <span class="hl-blue">Please find the full report attached</span> for your review.
+                <span class="hl-teal">For your reference</span>, I have also included a one-page summary
+                of the key findings.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Dear Mr. Lee, I am writing to share the feasibility study for the Riverside Heights project. Please find the full report attached for your review. For your reference, I have also included a one-page summary of the key findings."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 90 giây</h3>
+
+            <p>
+              Đọc request + closing của email follow-up.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Could you please confirm whether the proposed schedule works for your team?
+                We would like to finalize the plan by Friday so we can meet the next milestone.
+                <span class="hl-orange">Please let me know if you need any further information.</span>
+                Kind regards, Lan.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Could you please confirm whether the proposed schedule works for your team? We would like to finalize the plan by Friday so we can meet the next milestone. Please let me know if you need any further information. Kind regards, Lan."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Mô phỏng đọc trọn một email</h3>
+
+            <p>
+              Đọc trọn email xác nhận họp từ opening đến closing. Nếu muốn dài hơn, hãy thêm một câu về agenda.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Dear Mr. Lee, I am writing to confirm our meeting on Thursday at 10 a.m.
+                to discuss the project progress.
+              </p>
+
+              <p>
+                The meeting will be held online, and I will send the link before we start.
+                We plan to review the construction status, the sales update, and the next steps.
+              </p>
+
+              <p>
+                Please let me know if this time still works for you.
+                Looking forward to hearing from you. Best regards, Lan.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Dear Mr. Lee, I am writing to confirm our meeting on Thursday at 10 a.m. to discuss the project progress. The meeting will be held online, and I will send the link before we start. We plan to review the construction status, the sales update, and the next steps. Please let me know if this time still works for you. Looking forward to hearing from you. Best regards, Lan."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm ít nhất Round 1 và Round 3. Hãy đọc như thể bạn đang nói chuyện trực tiếp với người nhận,
+              lịch sự và rõ ràng.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có nêu rõ mục đích email không?</li>
+              <li>Bạn có đọc cụm đính kèm tự nhiên không?</li>
+              <li>Bạn có nhấn vào yêu cầu hoặc bước tiếp theo không?</li>
+              <li>Bạn có kết thúc bằng giọng lịch sự không?</li>
+              <li>Bạn có đọc rõ thời gian và ngày không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Đọc đều đều, không nhấn nhá.</li>
+              <li>Tách từng từ trong cụm “please find attached”.</li>
+              <li>Đọc quá nhanh phần thời gian và ngày.</li>
+              <li>Kết thúc cộc lốc, không có giọng lịch sự.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: viết 3 email ngắn — gửi tài liệu, follow-up, xác nhận họp.
+            Mỗi email có model answer và audio để bạn đối chiếu.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Email gửi tài liệu</h3>
+
+            <p>
+              Viết email gửi kèm một tài liệu cho đối tác hoặc nhà đầu tư.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có subject line rõ ràng.</li>
+              <li>Dùng “Please find attached...”.</li>
+              <li>Dùng “For your reference...”.</li>
+              <li>Có closing và chữ ký.</li>
+            </ul>
+
+            <h4>Model Answer</h4>
+
+            <div class="email-box">
+              <p class="subject">Subject: Feasibility Study – Riverside Heights</p>
+
+              <p>Dear Mr. Lee,</p>
+
+              <p>
+                I am writing to share the feasibility study for the Riverside Heights project.
+                <span class="hl-blue">Please find the full report attached</span> for your review.
+              </p>
+
+              <p>
+                <span class="hl-teal">For your reference</span>, I have also included a one-page summary
+                of the key findings. <span class="hl-violet">Kindly note</span> that the figures are based
+                on the latest sales forecast.
+              </p>
+
+              <p>
+                <span class="hl-orange">Let me know if you have any questions.</span>
+              </p>
+
+              <p>Best regards,<br />Lan</p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Subject: Feasibility Study, Riverside Heights. Dear Mr. Lee, I am writing to share the feasibility study for the Riverside Heights project. Please find the full report attached for your review. For your reference, I have also included a one-page summary of the key findings. Kindly note that the figures are based on the latest sales forecast. Let me know if you have any questions. Best regards, Lan."
+            >
+              Nghe email 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Email follow-up</h3>
+
+            <p>
+              Viết email nhắc lại một nội dung bạn đã gửi trước đó nhưng chưa nhận được phản hồi.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có subject line rõ ràng.</li>
+              <li>Dùng “I'm writing to follow up on...”.</li>
+              <li>Có thời hạn hoặc bước tiếp theo cụ thể.</li>
+              <li>Giữ giọng lịch sự, không thúc ép.</li>
+            </ul>
+
+            <h4>Model Answer</h4>
+
+            <div class="email-box">
+              <p class="subject">Subject: Follow-up – Project Timeline</p>
+
+              <p>Dear Mr. Lee,</p>
+
+              <p>
+                <span class="hl-emerald">I am writing to follow up on</span> the project timeline I sent last week.
+                Could you please confirm whether the proposed schedule works for your team?
+              </p>
+
+              <p>
+                We would like to finalize the plan by Friday so we can meet the next milestone.
+                <span class="hl-orange">Please let me know if you need any further information.</span>
+              </p>
+
+              <p>Kind regards,<br />Lan</p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Subject: Follow-up, Project Timeline. Dear Mr. Lee, I am writing to follow up on the project timeline I sent last week. Could you please confirm whether the proposed schedule works for your team? We would like to finalize the plan by Friday so we can meet the next milestone. Please let me know if you need any further information. Kind regards, Lan."
+            >
+              Nghe email 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 3: Email xác nhận họp</h3>
+
+            <p>
+              Viết email xác nhận một cuộc họp sắp tới, gồm thời gian, hình thức và nội dung dự kiến.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có subject line rõ ràng.</li>
+              <li>Dùng “I'm writing to confirm...”.</li>
+              <li>Nêu thời gian, hình thức họp và agenda ngắn.</li>
+              <li>Kết thúc bằng “Looking forward to hearing from you.”</li>
+            </ul>
+
+            <h4>Model Answer</h4>
+
+            <div class="email-box">
+              <p class="subject">Subject: Meeting Confirmation – Thursday 10 a.m.</p>
+
+              <p>Dear Mr. Lee,</p>
+
+              <p>
+                <span class="hl-emerald">I am writing to confirm</span> our meeting on Thursday at 10 a.m.
+                to discuss the project progress.
+              </p>
+
+              <p>
+                The meeting will be held online, and I will send the link before we start.
+                We plan to review the construction status, the sales update, and the next steps.
+              </p>
+
+              <p>
+                Please let me know if this time still works for you.
+                <span class="hl-blue">Looking forward to hearing from you.</span>
+              </p>
+
+              <p>Best regards,<br />Lan</p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Subject: Meeting Confirmation, Thursday 10 a.m. Dear Mr. Lee, I am writing to confirm our meeting on Thursday at 10 a.m. to discuss the project progress. The meeting will be held online, and I will send the link before we start. We plan to review the construction status, the sales update, and the next steps. Please let me know if this time still works for you. Looking forward to hearing from you. Best regards, Lan."
+            >
+              Nghe email 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Reflection 3 dòng</h3>
+
+            <p>Sau khi viết xong 3 email, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cụm từ bạn sẽ tiếp tục dùng trong email thật.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã viết subject line rõ ràng cho cả 3 email.
+                Improve: Tôi cần thêm bước tiếp theo cụ thể trong email follow-up.
+                Keep: Please find attached...
+              </p>
+            </div>
+
+            <h4>Recording tùy chọn</h4>
+
+            <ul class="checklist">
+              <li>Chọn 1 trong 3 email bạn vừa viết.</li>
+              <li>Ghi âm như thể đang đọc cho người nhận nghe.</li>
+              <li>Nhấn vào mục đích, yêu cầu và bước tiếp theo.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi viết email</h2>
+          <p>
+            Tránh các lỗi này để email của bạn rõ ràng, lịch sự và tạo được phản hồi mong muốn.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Hey, send me the file.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Could you please send me the latest version of the file? Thank you.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Subject: (trống) hoặc “Question” chung chung.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Subject: Meeting Confirmation – Thursday 10 a.m.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Email dài nhưng không nêu rõ người đọc cần làm gì.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Please let me know if the proposed time works for you by Wednesday.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc đột ngột, không có chữ ký.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Looking forward to hearing from you. Best regards, Lan.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 6 khi có thể</h2>
+          <p>
+            Trước khi sang Day 7, hãy đảm bảo bạn đã đạt các năng lực tối thiểu dưới đây.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng attachment, subject line, recipient, follow up.</li>
+            <li>Tôi có thể dùng confirm, reference, action item, deadline.</li>
+            <li>Tôi có thể viết opening với “I'm writing to...”.</li>
+            <li>Tôi có thể gửi tài liệu với “Please find attached...”.</li>
+            <li>Tôi có thể lưu ý với “Kindly note...” và tham khảo với “For your reference...”.</li>
+            <li>Tôi có thể mời phản hồi với “Let me know if...”.</li>
+            <li>Tôi có thể viết closing với “Looking forward to hearing from you.”.</li>
+            <li>Tôi có thể viết 3 email: gửi tài liệu, follow-up, xác nhận họp.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-05.html">
+            <small>Previous Day</small>
+            <strong>Day 5 · Reporting Progress</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 6 Complete</strong>
+          </button>
+
+          <a href="level-1-day-07.html">
+            <small>Next Day</small>
+            <strong>Day 7 · Role Play</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 6 · Email Communication</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 6 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["6"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 6 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 6/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 6 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 6/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["6"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "Please find the report attached for your review. Kindly note that the figures are based on the latest forecast. Let me know if you have any questions.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
