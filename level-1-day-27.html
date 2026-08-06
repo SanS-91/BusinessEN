@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 27 | Handling Questions | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 27 - Handling Questions: xử lý Q&A với That's a good question, Let me explain, There are three reasons, In short; Speaking topic Q&A Session; Output ghi âm Q&A và tự chấm clarity, structure, confidence."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #fffaf5;
+      --surface: #ffffff;
+      --surface-soft: #fffcfa;
+      --text-strong: #3d2814;
+      --text-body: #5a4a3a;
+      --text-muted: #8a7a6a;
+      --text-soft: #a89888;
+      --line: rgba(120, 80, 40, 0.10);
+      --line-soft: rgba(120, 80, 40, 0.07);
+      --shadow-lg: 0 24px 70px rgba(120, 80, 40, 0.10);
+      --shadow-md: 0 14px 36px rgba(120, 80, 40, 0.08);
+      --shadow-sm: 0 8px 20px rgba(120, 80, 40, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --purple: #8b5cf6; --purple-soft: #faf5ff; --purple-line: #e9d5ff; --purple-text: #7e22ce;
+      --indigo: #6366f1; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4f46e5;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --cyan: #06b6d4; --cyan-soft: #ecfeff; --cyan-line: #a5f3fc; --cyan-text: #0e7490;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(234, 88, 12, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(245, 158, 11, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(217, 119, 6, 0.08), transparent 24%),
+        linear-gradient(180deg, #fffcfa 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #ffffff; color: var(--orange-text); padding: 10px 14px; border-radius: 12px; font-weight: 700; }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(120, 80, 40, 0.04);
+    }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #6a5a4a; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #3d2814; background: #fff7ed; border-color: #fed7aa; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--orange-soft);
+      color: var(--orange-text); border: 1px solid var(--orange-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(120, 80, 40, 0.03);
+    }
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.purple { background: var(--purple-soft); color: var(--purple-text); border-color: var(--purple-line); }
+    .plan-pill.indigo { background: var(--indigo-soft); color: var(--indigo-text); border-color: var(--indigo-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--orange-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.20), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.14), transparent 18%),
+        linear-gradient(135deg, #c2410c 0%, #ea580c 48%, #f59e0b 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #c2410c; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn-blue { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .btn-soft { background: #ffffff; color: #7c2d12; border-color: #fed7aa; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(255, 247, 237, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(234, 88, 12, 0.18); color: var(--orange-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.purple { color: var(--purple-text); border-color: var(--purple-line); background: var(--purple-soft); }
+    .eyebrow.indigo { color: var(--indigo-text); border-color: var(--indigo-line); background: var(--indigo-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-purple, .tint-indigo, .tint-teal, .tint-cyan, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-amber { background: linear-gradient(180deg, #ffffff, #fffcfa); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #faf7ff); }
+    .tint-purple { border-top: 6px solid var(--purple); background: linear-gradient(180deg, #ffffff, #fbf8ff); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-cyan { border-top: 6px solid var(--cyan); background: linear-gradient(180deg, #ffffff, #f5feff); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #f4e4d4;
+      background: #fffcfa; color: #5a4a3a; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+    .field select:focus { border-color: #ea580c; box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(120, 80, 40, 0.12);
+    }
+    .timeline-item:last-child { border-bottom: 0; }
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #fffaf5; border: 1px solid #f5e3d5; color: #6a5a4a; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #fffaf5; border: 1px solid #f5e3d5;
+      color: #8a7a6a; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #f5e7d7; color: #5a4a3a; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--orange-line); background: var(--orange-soft);
+      color: var(--orange-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+    .audio-btn:hover { background: #ffedd5; }
+    .audio-btn.playing { background: #c2410c; color: #ffffff; border-color: #c2410c; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #fffaf5; color: #6a5a4a;
+      border: 1px solid #f5e3d5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #f5e7d7; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #4a3a2a; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #5a4a3a; }
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fffcfa; border: 1px solid #fde68a; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #4a3a2a; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--orange-text); }
+
+    .hl-blue, .hl-violet, .hl-purple, .hl-indigo, .hl-orange, .hl-emerald, .hl-rose, .hl-amber { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-purple { background: linear-gradient(180deg, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.13)); color: var(--purple-text); }
+    .hl-indigo { background: linear-gradient(180deg, rgba(99, 102, 241, 0), rgba(99, 102, 241, 0.13)); color: var(--indigo-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+    .hl-rose { background: linear-gradient(180deg, rgba(225, 29, 72, 0), rgba(225, 29, 72, 0.12)); color: var(--rose-text); }
+    .hl-amber { background: linear-gradient(180deg, rgba(217, 119, 6, 0), rgba(217, 119, 6, 0.13)); color: var(--amber-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #fffaf5;
+      border: 1px solid #f5e7d7; border-left: 5px solid var(--emerald); color: #4a3a2a; font-weight: 600;
+    }
+
+    /* Q&A script component */
+    .qascript-box {
+      margin-top: 16px; background: linear-gradient(180deg, #ffffff, #fffcfa);
+      border: 1px solid #fde68a; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .qascript-header { padding: 18px 22px; background: linear-gradient(135deg, #c2410c, #f59e0b); color: #fff; }
+    .qascript-header .kicker { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+    .qascript-header .title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
+    .qascript-body { padding: 22px; display: grid; gap: 16px; }
+    .qa-pair {
+      padding: 18px; background: #fff; border: 1px solid #f5e7d7; border-radius: 14px;
+      display: grid; gap: 12px;
+    }
+    .qa-question {
+      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start;
+      padding: 12px 14px; background: var(--rose-soft); border: 1px solid var(--rose-line); border-radius: 12px;
+    }
+    .qa-q-icon {
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%; background: var(--rose);
+      color: #fff; font-weight: 800; font-size: 14px;
+    }
+    .qa-question .qa-text { color: var(--rose-text); font-weight: 700; font-size: 15px; line-height: 1.6; }
+    .qa-answer {
+      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start;
+      padding: 12px 14px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); border-radius: 12px;
+    }
+    .qa-a-icon {
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%; background: var(--emerald);
+      color: #fff; font-weight: 800; font-size: 14px;
+    }
+    .qa-answer .qa-text { color: var(--emerald-text); font-weight: 600; font-size: 15px; line-height: 1.7; }
+
+    /* Self-assessment rubric */
+    .rubric-box {
+      margin-top: 16px; background: linear-gradient(180deg, #ffffff, #fffcfa);
+      border: 1px solid #fde68a; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .rubric-header { padding: 18px 22px; background: linear-gradient(135deg, #059669, #0d9488); color: #fff; }
+    .rubric-header .kicker { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+    .rubric-header .title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
+    .rubric-body { padding: 22px; display: grid; gap: 16px; }
+    .rubric-criteria {
+      padding: 16px 18px; background: #fff; border: 1px solid #f5e7d7; border-radius: 14px;
+    }
+    .rubric-criteria .criteria-name {
+      font-weight: 800; color: var(--text-strong); font-size: 16px; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .rubric-criteria .criteria-name .icon {
+      width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center;
+      justify-content: center; background: var(--orange-soft); color: var(--orange-text); font-size: 14px;
+    }
+    .rubric-scale {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px;
+    }
+    .rubric-scale .scale-item {
+      padding: 10px 12px; background: #fffaf5; border: 1px solid #f5e7d7; border-radius: 10px;
+      font-size: 13px; line-height: 1.5;
+    }
+    .rubric-scale .scale-item .scale-level {
+      font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px;
+      margin-bottom: 4px; display: block;
+    }
+    .rubric-scale .scale-item.low .scale-level { color: var(--rose-text); }
+    .rubric-scale .scale-item.mid .scale-level { color: var(--amber-text); }
+    .rubric-scale .scale-item.high .scale-level { color: var(--emerald-text); }
+    .rubric-scale .scale-item.low { border-color: var(--rose-line); background: var(--rose-soft); }
+    .rubric-scale .scale-item.mid { border-color: var(--amber-line); background: var(--amber-soft); }
+    .rubric-scale .scale-item.high { border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f3a66; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #a89888; }
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #6a5a4a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+    .footer-links a:hover { background: #fff7ed; border-color: #fed7aa; color: #7c2d12; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+      .rubric-scale { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+      .qa-question, .qa-answer { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 27</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 27/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill orange" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill violet" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill teal" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 27</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 4 · Executive Communication</span>
+            <span class="hero-tag">Day 27 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Q&amp;A Session</span>
+          </div>
+
+          <h1 class="hero-title">Handling Questions</h1>
+
+          <p class="hero-subtitle">
+            Day 27 đưa bạn vào phần khó nhất của mọi bài trình bày: <strong>Q&amp;A session</strong>.
+            Bạn sẽ học cách dùng <strong>That's a good question</strong>, <strong>Let me explain</strong>,
+            <strong>There are three reasons</strong> và <strong>In short...</strong> để xử lý những câu hỏi
+            khó một cách tự tin, có cấu trúc và chuyên nghiệp.
+          </p>
+
+          <div class="hero-quote">
+            Q&amp;A không phải là phòng thủ — đó là cơ hội để bạn thể hiện chiều sâu hiểu biết và sự tự tin.
+            Người nói giỏi không tránh câu hỏi khó. Họ đón nhận chúng, trả lời có cấu trúc,
+            và biến Q&amp;A thành phần ấn tượng nhất của bài trình bày.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được Q&amp;A script hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary &amp; Q&amp;A Terms · 15 phút</strong>
+              <span>
+                Học 8 cấu trúc xử lý Q&amp;A: That's a good question, Let me explain, There are three reasons,
+                In short, To be honest, I don't have that data but, Let me come back to you on that, Does that answer your question.
+                Nghe từng item, lặp lại và đặt 1 câu với tình huống thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases &amp; Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu Q&amp;A: acknowledge, structure, numbered points, summarize, handle tough question,
+                check understanding. Làm substitution drill.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe một bài Q&amp;A mẫu giữa hội đồng đầu tư và presenter. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần, xây từng phần của Q&amp;A cho đến khi bạn tự đặt 3 câu hỏi khó
+                và trả lời trọn vẹn trong 5–7 phút.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Ghi âm Q&amp;A với 3 câu hỏi khó. Tự chấm clarity, structure, confidence.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary &amp; Q&amp;A Structures</h2>
+          <p>
+            8 cấu trúc xử lý Q&amp;A cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.
+            Đây là bộ công cụ bạn sẽ dùng để trả lời câu hỏi khó một cách tự tin và chuyên nghiệp.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>That's a good question.</h3>
+              <button class="audio-btn" type="button" data-speak="That's a good question. Let me walk you through our thinking.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ðæts ə ɡʊd ˈkwestʃən/</span>
+            <p class="vn">Đó là một câu hỏi hay.</p>
+
+            <div class="note">
+              Ghi chú: Dùng để acknowledge câu hỏi, mua thời gian suy nghĩ và cho người hỏi biết bạn trân trọng câu hỏi của họ.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> that's a good question, great question, excellent question</li>
+              <li><strong>Example:</strong> That's a good question. Let me walk you through our thinking.</li>
+              <li><strong>Native alternative:</strong> great question, I'm glad you asked that</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>Let me explain.</h3>
+              <button class="audio-btn" type="button" data-speak="Let me explain the logic behind this decision.">Nghe</button>
+            </div>
+
+            <span class="ipa">/let miː ɪkˈspleɪn/</span>
+            <p class="vn">Để tôi giải thích.</p>
+
+            <div class="note">
+              Ghi chú: Dùng để báo hiệu bạn sẽ đi vào phần giải thích chi tiết. Nghe chuyên nghiệp và có cấu trúc.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> let me explain, let me walk you through, let me clarify</li>
+              <li><strong>Example:</strong> Let me explain the logic behind this decision.</li>
+              <li><strong>Native alternative:</strong> let me walk you through, let me clarify</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>There are three reasons.</h3>
+              <button class="audio-btn" type="button" data-speak="There are three reasons we made this decision. First, the location is excellent.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ðer ɑːr θriː ˈriːznz/</span>
+            <p class="vn">Có ba lý do.</p>
+
+            <div class="note">
+              Ghi chú: Dùng để cấu trúc câu trả lời thành các ý rõ ràng. Số "ba" là con số vàng cho câu trả lời executive.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> there are three reasons, there are two key factors, there are several considerations</li>
+              <li><strong>Example:</strong> There are three reasons we made this decision. First, the location is excellent.</li>
+              <li><strong>Native alternative:</strong> there are three key factors, there are three main considerations</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>In short...</h3>
+              <button class="audio-btn" type="button" data-speak="In short, we believe this is the right decision given the current market conditions.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɪn ʃɔːrt/</span>
+            <p class="vn">Tóm lại...</p>
+
+            <div class="note">
+              Ghi chú: Dùng để tóm tắt câu trả lời sau khi đã giải thích chi tiết. Giúp người hỏi ghi nhớ điểm chính.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> in short, to summarize, the bottom line is</li>
+              <li><strong>Example:</strong> In short, we believe this is the right decision given the current market conditions.</li>
+              <li><strong>Native alternative:</strong> to summarize, the bottom line is</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>To be honest...</h3>
+              <button class="audio-btn" type="button" data-speak="To be honest, we're still working on that part. We expect to have the answer by next week.">Nghe</button>
+            </div>
+
+            <span class="ipa">/tuː bi ˈɒnɪst/</span>
+            <p class="vn">Thành thật mà nói...</p>
+
+            <div class="note">
+              Ghi chú: Dùng khi thừa nhận một điểm yếu hoặc điều chưa hoàn thiện. Nghe trung thực và xây dựng niềm tin.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> to be honest, frankly speaking, to be transparent</li>
+              <li><strong>Example:</strong> To be honest, we're still working on that part. We expect to have the answer by next week.</li>
+              <li><strong>Native alternative:</strong> frankly speaking, to be transparent</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>I don't have that data, but...</h3>
+              <button class="audio-btn" type="button" data-speak="I don't have that exact data with me right now, but I can share the overall trend.">Nghe</button>
+            </div>
+
+            <span class="ipa">/aɪ doʊnt hæv ðæt ˈdeɪtə bʌt/</span>
+            <p class="vn">Tôi không có dữ liệu đó, nhưng...</p>
+
+            <div class="note">
+              Ghi chú: Dùng khi không có dữ liệu cụ thể. Thừa nhận nhưng vẫn cung cấp thông tin liên quan.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> I don't have that data, I don't have that number, I don't have the exact figure</li>
+              <li><strong>Example:</strong> I don't have that exact data with me right now, but I can share the overall trend.</li>
+              <li><strong>Native alternative:</strong> I don't have the exact number, I don't have that figure off the top of my head</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Let me come back to you on that.</h3>
+              <button class="audio-btn" type="button" data-speak="Let me come back to you on that with the exact figures. I'll send you an email by end of day.">Nghe</button>
+            </div>
+
+            <span class="ipa">/let miː kʌm bæk tuː juː ɒn ðæt/</span>
+            <p class="vn">Để tôi quay lại với bạn về điều đó.</p>
+
+            <div class="note">
+              Ghi chú: Dùng khi cần thời gian để tìm câu trả lời chính xác. Luôn kèm cam kết thời gian cụ thể.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> let me come back to you, let me get back to you, let me follow up</li>
+              <li><strong>Example:</strong> Let me come back to you on that with the exact figures. I'll send you an email by end of day.</li>
+              <li><strong>Native alternative:</strong> let me get back to you, let me follow up with you</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>Does that answer your question?</h3>
+              <button class="audio-btn" type="button" data-speak="Does that answer your question, or would you like me to elaborate further?">Nghe</button>
+            </div>
+
+            <span class="ipa">/dʌz ðæt ˈænsər jʊr ˈkwestʃən/</span>
+            <p class="vn">Điều đó có trả lời câu hỏi của bạn không?</p>
+
+            <div class="note">
+              Ghi chú: Dùng để kết thúc câu trả lời, kiểm tra người hỏi đã hài lòng chưa. Nghe tôn trọng và mở ra đối thoại.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> does that answer your question, does that help, is that clear</li>
+              <li><strong>Example:</strong> Does that answer your question, or would you like me to elaborate further?</li>
+              <li><strong>Native alternative:</strong> does that help, does that make sense</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Block 2 · 20 phút</span>
+          <h2>Phrases &amp; Sentence Patterns</h2>
+          <p>
+            6 mẫu câu giúp bạn xử lý Q&amp;A theo từng bước: acknowledge, structure, numbered points,
+            summarize, handle tough question, và check understanding.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>That's a good question. Let me...</h3>
+              <button class="audio-btn" type="button" data-speak="That's a good question. Let me walk you through the logic behind our decision.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">That's a good question. Let me + hành động</span>.
+              Dùng để acknowledge câu hỏi và bắt đầu câu trả lời một cách chuyên nghiệp.
+            </div>
+
+            <div class="example">
+              <span class="label">Acknowledge statement</span>
+              <p>
+                That's a good question. Let me walk you through the logic behind our decision.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay hành động: explain our thinking / share the data / clarify that point.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh trả lời ngay mà không acknowledge. "That's a good question" mua thời gian và tạo thiện cảm.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>Let me explain. There are three reasons...</h3>
+              <button class="audio-btn" type="button" data-speak="Let me explain. There are three reasons we chose this location. First, connectivity is excellent.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">Let me explain. There are [số] reasons/factors... First...</span>.
+              Dùng để cấu trúc câu trả lời thành các ý rõ ràng.
+            </div>
+
+            <div class="example">
+              <span class="label">Structured response</span>
+              <p>
+                Let me explain. There are three reasons we chose this location. First, connectivity is excellent.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay số và nội dung: two key factors / several considerations / three main reasons.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                "Three" là con số vàng cho câu trả lời executive. Không quá ít (1-2), không quá nhiều (5+).
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>In short, + mệnh đề</h3>
+              <button class="audio-btn" type="button" data-speak="In short, we believe this is the right decision given the current market conditions.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">In short, + mệnh đề tóm tắt</span>.
+              Dùng để tóm tắt câu trả lời sau khi đã giải thích chi tiết.
+            </div>
+
+            <div class="example">
+              <span class="label">Summary statement</span>
+              <p>
+                In short, we believe this is the right decision given the current market conditions.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay tóm tắt: the project is viable / the risk is manageable / we should proceed.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh kết thúc câu trả lời mà không tóm tắt. "In short" giúp người hỏi ghi nhớ điểm chính.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>To be honest, + thừa nhận + hành động</h3>
+              <button class="audio-btn" type="button" data-speak="To be honest, we're still working on that part. We expect to have the answer by next week.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-amber">To be honest, + thừa nhận + hành động tiếp theo</span>.
+              Dùng để thừa nhận điểm yếu một cách trung thực, kèm kế hoạch khắc phục.
+            </div>
+
+            <div class="example">
+              <span class="label">Honest admission</span>
+              <p>
+                To be honest, we're still working on that part. We expect to have the answer by next week.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay thừa nhận: we haven't finalized that yet / that's still an open question.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Luôn kèm kế hoạch sau "to be honest". Thừa nhận mà không có kế hoạch = yếu đuối.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>I don't have that data, but...</h3>
+              <button class="audio-btn" type="button" data-speak="I don't have that exact data with me right now, but I can share the overall trend, and I'll come back to you with the exact figures.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-cyan">I don't have that data, but + thông tin liên quan + cam kết</span>.
+              Dùng khi không có dữ liệu cụ thể nhưng vẫn cung cấp giá trị.
+            </div>
+
+            <div class="example">
+              <span class="label">Data gap response</span>
+              <p>
+                I don't have that exact data with me right now, but I can share the overall trend, and I'll come back to you with the exact figures.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay thông tin: the broader picture / the general direction / the high-level trend.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nói "I don't know" rồi dừng. Luôn cung cấp thông tin liên quan và cam kết follow-up.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>Does that answer your question?</h3>
+              <button class="audio-btn" type="button" data-speak="Does that answer your question, or would you like me to elaborate further?">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-teal">Does that answer your question? (+ mở rộng nếu cần)</span>.
+              Dùng để kết thúc câu trả lời và kiểm tra người hỏi đã hài lòng chưa.
+            </div>
+
+            <div class="example">
+              <span class="label">Closing check</span>
+              <p>
+                Does that answer your question, or would you like me to elaborate further?
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay cách hỏi: Does that help? / Is that clear? / Would you like more detail on any point?
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Luôn kết thúc bằng check-in. Nghe tôn trọng và mở ra đối thoại thay vì đóng lại.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow indigo">Block 3 · 20 phút</span>
+          <h2>Listening · Investment Committee Q&amp;A</h2>
+          <p>
+            Nghe một bài Q&amp;A mẫu giữa hội đồng đầu tư và presenter. Đây là mô hình để bạn tái hiện
+            với tình huống thật của mình.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm cách presenter xử lý các câu hỏi khó.</li>
+            <li>Nghe lần hai để nhận diện các patterns: That's a good question, Let me explain, There are three reasons, In short.</li>
+            <li>Nghe lần ba để phân tích cấu trúc câu trả lời: acknowledge → structure → points → summarize → check.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Committee Member: Thanks for the presentation. I have a few questions. First, you mentioned an IRR of 18 percent, but what happens if construction costs increase by 20 percent? Presenter: That's a good question. Let me explain. We've stress-tested the model with various scenarios. If construction costs increase by 20 percent, the IRR drops to about 14 percent, which is still above our hurdle rate of 12 percent. There are three reasons we're comfortable with this. First, we've locked in fixed-price contracts for 70 percent of the work. Second, we have a 10 percent contingency buffer built into the budget. Third, we can phase the project to manage cash flow. In short, even in the worst case, the project remains viable. Does that answer your question? Committee Member: Good. Second question: why should we invest in this project rather than the Harbor View project you also looked at? Presenter: Great question. Let me walk you through the comparison. There are three key differences. First, Riverside has a higher IRR, 18 percent versus 14 percent for Harbor View. Second, Riverside has a lower payback period, four years versus five years. Third, and most importantly, Riverside has lower risk because it already has all legal approvals. In short, Riverside offers better risk-adjusted returns. Does that answer your question? Committee Member: Third question: you mentioned pre-sales of 65 percent. To be honest, I'm skeptical about that number. Can you break it down? Presenter: To be honest, I appreciate your skepticism — it's a critical number. Let me break it down. We have 65 percent of Phase 1 pre-sold, which includes 40 percent with signed contracts and 25 percent with deposits. I don't have the exact breakdown by unit type with me right now, but I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units. Let me come back to you on that with the detailed breakdown by end of day. Does that answer your question for now? Committee Member: That works. Thank you."
+            >
+              Nghe toàn bộ bài Q&amp;A
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Question 1: Construction cost escalation]</span><br />
+              <span class="speaker">Committee Member:</span> Thanks for the presentation. I have a few questions.
+              First, you mentioned an IRR of 18 percent, but what happens if construction costs increase by 20 percent?<br />
+              <span class="speaker">Presenter:</span> <span class="hl-blue">That's a good question</span>.
+              <span class="hl-violet">Let me explain</span>. We've stress-tested the model with various scenarios.
+              If construction costs increase by 20 percent, the IRR drops to about 14 percent, which is still above our
+              hurdle rate of 12 percent. <span class="hl-purple">There are three reasons</span> we're comfortable with this.
+              First, we've locked in fixed-price contracts for 70 percent of the work. Second, we have a 10 percent
+              contingency buffer built into the budget. Third, we can phase the project to manage cash flow.
+              <span class="hl-emerald">In short</span>, even in the worst case, the project remains viable.
+              <span class="hl-teal">Does that answer your question?</span>
+            </p>
+
+            <p>
+              <span class="speaker">[Question 2: Project comparison]</span><br />
+              <span class="speaker">Committee Member:</span> Good. Second question: why should we invest in this project
+              rather than the Harbor View project you also looked at?<br />
+              <span class="speaker">Presenter:</span> Great question. Let me walk you through the comparison.
+              <span class="hl-purple">There are three key differences</span>. First, Riverside has a higher IRR,
+              18 percent versus 14 percent for Harbor View. Second, Riverside has a lower payback period, four years
+              versus five years. Third, and most importantly, Riverside has lower risk because it already has all legal
+              approvals. <span class="hl-emerald">In short</span>, Riverside offers better risk-adjusted returns.
+              <span class="hl-teal">Does that answer your question?</span>
+            </p>
+
+            <p>
+              <span class="speaker">[Question 3: Pre-sales skepticism]</span><br />
+              <span class="speaker">Committee Member:</span> Third question: you mentioned pre-sales of 65 percent.
+              To be honest, I'm skeptical about that number. Can you break it down?<br />
+              <span class="speaker">Presenter:</span> <span class="hl-amber">To be honest</span>, I appreciate your
+              skepticism — it's a critical number. Let me break it down. We have 65 percent of Phase 1 pre-sold,
+              which includes 40 percent with signed contracts and 25 percent with deposits.
+              <span class="hl-cyan">I don't have the exact breakdown by unit type with me right now, but</span>
+              I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units.
+              <span class="hl-rose">Let me come back to you on that</span> with the detailed breakdown by end of day.
+              <span class="hl-teal">Does that answer your question for now?</span><br />
+              <span class="speaker">Committee Member:</span> That works. Thank you.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> How does the presenter handle the construction cost question?</li>
+            <li><strong>Question 2:</strong> What structure does the presenter use to explain the three reasons?</li>
+            <li><strong>Question 3:</strong> How does the presenter compare Riverside and Harbor View?</li>
+            <li><strong>Question 4:</strong> How does the presenter handle the skepticism about pre-sales?</li>
+            <li><strong>Question 5:</strong> What does the presenter do when they don't have the exact data?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The presenter acknowledges ("That's a good question"), explains the stress test result (IRR drops to 14%), gives three reasons for comfort, summarizes, and checks understanding.
+              2. The structure is: First... Second... Third... — three clear points with specific evidence for each.
+              3. The presenter uses three key differences: higher IRR, lower payback period, and lower risk due to legal approvals.
+              4. The presenter acknowledges the skepticism honestly ("To be honest, I appreciate your skepticism"), breaks down the number (40% contracts + 25% deposits), and admits what they don't have.
+              5. The presenter admits they don't have the exact breakdown, provides related information (balanced mix), and commits to follow up by end of day.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Acknowledge + structure</span>
+            <p>
+              That's a good question. Let me explain. There are three reasons we're comfortable with this.
+            </p>
+            <button class="audio-btn" type="button" data-speak="That's a good question. Let me explain. There are three reasons we're comfortable with this.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Honest admission</span>
+            <p>
+              To be honest, I appreciate your skepticism — it's a critical number.
+            </p>
+            <button class="audio-btn" type="button" data-speak="To be honest, I appreciate your skepticism — it's a critical number.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Data gap + commitment</span>
+            <p>
+              I don't have the exact breakdown with me right now, but I can share the overall trend. Let me come back to you on that by end of day.
+            </p>
+            <button class="audio-btn" type="button" data-speak="I don't have the exact breakdown with me right now, but I can share the overall trend. Let me come back to you on that by end of day.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các từ cấu trúc: THREE reasons, FIRST, SECOND, THIRD, IN SHORT.</li>
+            <li>Giọng tự tin, chắc chắn khi đưa ra số liệu: "IRR drops to 14 percent, which is still above..."</li>
+            <li>Giọng trung thực, humble khi thừa nhận: "To be honest, I appreciate your skepticism..."</li>
+            <li>Giọng ấm áp, tôn trọng khi check: "Does that answer your question?"</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Q&amp;A Session với 3 câu hỏi khó</h2>
+          <p>
+            Luyện 3 vòng tăng dần. Mục tiêu cuối cùng là tự đặt 3 câu hỏi khó và trả lời trọn vẹn trong 5–7 phút.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Mỗi câu trả lời Q&amp;A nên đi theo 5 bước:
+            </p>
+
+            <ol>
+              <li><strong>Acknowledge:</strong> That's a good question / Great question.</li>
+              <li><strong>Structure:</strong> Let me explain / Let me walk you through.</li>
+              <li><strong>Points:</strong> There are three reasons / First, Second, Third.</li>
+              <li><strong>Summarize:</strong> In short / The bottom line is.</li>
+              <li><strong>Check:</strong> Does that answer your question?</li>
+            </ol>
+
+            <h4>Checklist khi trả lời Q&amp;A</h4>
+
+            <ul class="checklist">
+              <li>Có acknowledge trước khi trả lời.</li>
+              <li>Có structure rõ ràng (thường 3 ý).</li>
+              <li>Có bằng chứng cụ thể cho mỗi ý.</li>
+              <li>Có tóm tắt ở cuối.</li>
+              <li>Có check-in với người hỏi.</li>
+            </ul>
+
+            <h4>Khi không biết câu trả lời</h4>
+            <ul class="checklist">
+              <li>Thừa nhận trung thực: "To be honest..." hoặc "I don't have that data..."</li>
+              <li>Cung cấp thông tin liên quan.</li>
+              <li>Cam kết thời gian follow-up cụ thể.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Question 1: Construction cost escalation</h3>
+
+            <p>
+              Tự đặt câu hỏi khó đầu tiên: "What happens if construction costs increase by 20 percent?"
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <strong>Question:</strong> What happens if construction costs increase by 20 percent?
+              </p>
+              <p>
+                <span class="hl-blue">That's a good question</span>. <span class="hl-violet">Let me explain</span>.
+                We've stress-tested the model with various scenarios. If construction costs increase by 20 percent,
+                the IRR drops to about 14 percent, which is still above our hurdle rate of 12 percent.
+              </p>
+              <p>
+                <span class="hl-purple">There are three reasons</span> we're comfortable with this. First, we've locked
+                in fixed-price contracts for 70 percent of the work. Second, we have a 10 percent contingency buffer
+                built into the budget. Third, we can phase the project to manage cash flow.
+              </p>
+              <p>
+                <span class="hl-emerald">In short</span>, even in the worst case, the project remains viable.
+                <span class="hl-teal">Does that answer your question?</span>
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Question: What happens if construction costs increase by 20 percent? That's a good question. Let me explain. We've stress-tested the model with various scenarios. If construction costs increase by 20 percent, the IRR drops to about 14 percent, which is still above our hurdle rate of 12 percent. There are three reasons we're comfortable with this. First, we've locked in fixed-price contracts for 70 percent of the work. Second, we have a 10 percent contingency buffer built into the budget. Third, we can phase the project to manage cash flow. In short, even in the worst case, the project remains viable. Does that answer your question?"
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Question 2: Project comparison</h3>
+
+            <p>
+              Thêm câu hỏi thứ hai: "Why should we invest in this project rather than the Harbor View project?"
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <strong>Question:</strong> Why should we invest in this project rather than the Harbor View project?
+              </p>
+              <p>
+                Great question. Let me walk you through the comparison.
+                <span class="hl-purple">There are three key differences</span>. First, Riverside has a higher IRR,
+                18 percent versus 14 percent for Harbor View. Second, Riverside has a lower payback period,
+                four years versus five years. Third, and most importantly, Riverside has lower risk because it
+                already has all legal approvals.
+              </p>
+              <p>
+                <span class="hl-emerald">In short</span>, Riverside offers better risk-adjusted returns.
+                <span class="hl-teal">Does that answer your question?</span>
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Question: Why should we invest in this project rather than the Harbor View project? Great question. Let me walk you through the comparison. There are three key differences. First, Riverside has a higher IRR, 18 percent versus 14 percent for Harbor View. Second, Riverside has a lower payback period, four years versus five years. Third, and most importantly, Riverside has lower risk because it already has all legal approvals. In short, Riverside offers better risk-adjusted returns. Does that answer your question?"
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Question 3: Skepticism about pre-sales</h3>
+
+            <p>
+              Thêm câu hỏi khó thứ ba: "You mentioned pre-sales of 65 percent. I'm skeptical. Can you break it down?"
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <strong>Question:</strong> You mentioned pre-sales of 65 percent. I'm skeptical. Can you break it down?
+              </p>
+              <p>
+                <span class="hl-amber">To be honest</span>, I appreciate your skepticism — it's a critical number.
+                Let me break it down. We have 65 percent of Phase 1 pre-sold, which includes 40 percent with signed
+                contracts and 25 percent with deposits.
+              </p>
+              <p>
+                <span class="hl-cyan">I don't have the exact breakdown by unit type with me right now, but</span>
+                I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units.
+                <span class="hl-rose">Let me come back to you on that</span> with the detailed breakdown by end of day.
+                <span class="hl-teal">Does that answer your question for now?</span>
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Question: You mentioned pre-sales of 65 percent. I'm skeptical. Can you break it down? To be honest, I appreciate your skepticism — it's a critical number. Let me break it down. We have 65 percent of Phase 1 pre-sold, which includes 40 percent with signed contracts and 25 percent with deposits. I don't have the exact breakdown by unit type with me right now, but I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units. Let me come back to you on that with the detailed breakdown by end of day. Does that answer your question for now?"
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 1 + Round 2 + Round 3 — một phiên Q&amp;A hoàn chỉnh với 3 câu hỏi khó.
+              Mục tiêu 5–7 phút, trả lời tự tin, có cấu trúc.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Mỗi câu trả lời có acknowledge không?</li>
+              <li>Mỗi câu trả lời có structure rõ ràng (3 ý) không?</li>
+              <li>Mỗi câu trả lời có bằng chứng cụ thể không?</li>
+              <li>Mỗi câu trả lời có tóm tắt ở cuối không?</li>
+              <li>Mỗi câu trả lời có check-in với người hỏi không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Trả lời ngay mà không acknowledge.</li>
+              <li>Câu trả lời dài dòng, không có structure.</li>
+              <li>Nói "I don't know" rồi dừng.</li>
+              <li>Kết thúc mà không check understanding.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: ghi âm Q&amp;A với 3 câu hỏi khó và tự chấm clarity, structure, confidence.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Viết Q&amp;A script với 3 câu hỏi khó</h3>
+
+            <p>
+              Tự đặt 3 câu hỏi khó cho dự án hoặc quyết định của bạn. Viết câu trả lời theo structure
+              acknowledge → structure → points → summarize → check.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có 3 câu hỏi khó khác nhau.</li>
+              <li>Mỗi câu trả lời có đủ 5 bước.</li>
+              <li>Có ít nhất 1 câu hỏi mà bạn không có dữ liệu đầy đủ.</li>
+              <li>Dùng các cấu trúc: That's a good question, There are three reasons, In short, Does that answer.</li>
+            </ul>
+
+            <h4>Model Answer · Q&amp;A Script</h4>
+
+            <div class="qascript-box">
+              <div class="qascript-header">
+                <div class="kicker">Q&amp;A Script</div>
+                <div class="title">Riverside Township — 3 Tough Questions</div>
+              </div>
+              <div class="qascript-body">
+                <div class="qa-pair">
+                  <div class="qa-question">
+                    <div class="qa-q-icon">Q1</div>
+                    <div class="qa-text">What happens if construction costs increase by 20 percent?</div>
+                  </div>
+                  <div class="qa-answer">
+                    <div class="qa-a-icon">A1</div>
+                    <div class="qa-text">
+                      That's a good question. Let me explain. We've stress-tested the model with various scenarios.
+                      If construction costs increase by 20 percent, the IRR drops to about 14 percent, which is still
+                      above our hurdle rate of 12 percent. There are three reasons we're comfortable with this.
+                      First, we've locked in fixed-price contracts for 70 percent of the work. Second, we have a
+                      10 percent contingency buffer built into the budget. Third, we can phase the project to manage
+                      cash flow. In short, even in the worst case, the project remains viable. Does that answer your question?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="qa-pair">
+                  <div class="qa-question">
+                    <div class="qa-q-icon">Q2</div>
+                    <div class="qa-text">Why should we invest in this project rather than the Harbor View project you also looked at?</div>
+                  </div>
+                  <div class="qa-answer">
+                    <div class="qa-a-icon">A2</div>
+                    <div class="qa-text">
+                      Great question. Let me walk you through the comparison. There are three key differences.
+                      First, Riverside has a higher IRR — 18 percent versus 14 percent for Harbor View.
+                      Second, Riverside has a lower payback period — four years versus five years.
+                      Third, and most importantly, Riverside has lower risk because it already has all legal approvals.
+                      In short, Riverside offers better risk-adjusted returns. Does that answer your question?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="qa-pair">
+                  <div class="qa-question">
+                    <div class="qa-q-icon">Q3</div>
+                    <div class="qa-text">You mentioned pre-sales of 65 percent. I'm skeptical. Can you break it down by unit type?</div>
+                  </div>
+                  <div class="qa-answer">
+                    <div class="qa-a-icon">A3</div>
+                    <div class="qa-text">
+                      To be honest, I appreciate your skepticism — it's a critical number. Let me break it down.
+                      We have 65 percent of Phase 1 pre-sold, which includes 40 percent with signed contracts
+                      and 25 percent with deposits. I don't have the exact breakdown by unit type with me right now,
+                      but I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units.
+                      Let me come back to you on that with the detailed breakdown by end of day.
+                      Does that answer your question for now?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Q&A Script for Riverside Township. Question one: What happens if construction costs increase by 20 percent? That's a good question. Let me explain. We've stress-tested the model with various scenarios. If construction costs increase by 20 percent, the IRR drops to about 14 percent, which is still above our hurdle rate of 12 percent. There are three reasons we're comfortable with this. First, we've locked in fixed-price contracts for 70 percent of the work. Second, we have a 10 percent contingency buffer built into the budget. Third, we can phase the project to manage cash flow. In short, even in the worst case, the project remains viable. Does that answer your question? Question two: Why should we invest in this project rather than the Harbor View project you also looked at? Great question. Let me walk you through the comparison. There are three key differences. First, Riverside has a higher IRR — 18 percent versus 14 percent for Harbor View. Second, Riverside has a lower payback period — four years versus five years. Third, and most importantly, Riverside has lower risk because it already has all legal approvals. In short, Riverside offers better risk-adjusted returns. Does that answer your question? Question three: You mentioned pre-sales of 65 percent. I'm skeptical. Can you break it down by unit type? To be honest, I appreciate your skepticism — it's a critical number. Let me break it down. We have 65 percent of Phase 1 pre-sold, which includes 40 percent with signed contracts and 25 percent with deposits. I don't have the exact breakdown by unit type with me right now, but I can share that the mix is well-balanced across 1-bedroom, 2-bedroom, and 3-bedroom units. Let me come back to you on that with the detailed breakdown by end of day. Does that answer your question for now?"
+            >
+              Nghe Q&amp;A script
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Q&amp;A + Self-Assessment</h3>
+
+            <p>
+              Ghi âm phần trả lời Q&amp;A với 3 câu hỏi khó (5–7 phút). Sau đó tự chấm theo 3 tiêu chí:
+              clarity, structure, confidence.
+            </p>
+
+            <h4>Self-Assessment Rubric</h4>
+
+            <div class="rubric-box">
+              <div class="rubric-header">
+                <div class="kicker">Self-Assessment</div>
+                <div class="title">3 Criteria for Q&amp;A Excellence</div>
+              </div>
+              <div class="rubric-body">
+                <div class="rubric-criteria">
+                  <div class="criteria-name">
+                    <span class="icon">1</span>
+                    Clarity — Người hỏi có hiểu câu trả lời không?
+                  </div>
+                  <div class="rubric-scale">
+                    <div class="scale-item low">
+                      <span class="scale-level">Needs work</span>
+                      Câu trả lời mơ hồ, thiếu số liệu cụ thể, người hỏi vẫn bối rối.
+                    </div>
+                    <div class="scale-item mid">
+                      <span class="scale-level">Good</span>
+                      Câu trả lời có số liệu, có ví dụ, nhưng đôi chỗ chưa rõ.
+                    </div>
+                    <div class="scale-item high">
+                      <span class="scale-level">Excellent</span>
+                      Câu trả lời rõ ràng, có bằng chứng cụ thể, kết thúc bằng "Does that answer your question?"
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rubric-criteria">
+                  <div class="criteria-name">
+                    <span class="icon">2</span>
+                    Structure — Câu trả lời có tổ chức tốt không?
+                  </div>
+                  <div class="rubric-scale">
+                    <div class="scale-item low">
+                      <span class="scale-level">Needs work</span>
+                      Câu trả lời dài dòng, không có structure, nhảy lung tung giữa các ý.
+                    </div>
+                    <div class="scale-item mid">
+                      <span class="scale-level">Good</span>
+                      Có structure (First, Second, Third) nhưng không có tóm tắt ở cuối.
+                    </div>
+                    <div class="scale-item high">
+                      <span class="scale-level">Excellent</span>
+                      Đủ 5 bước: acknowledge → structure → 3 points → in short → check.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rubric-criteria">
+                  <div class="criteria-name">
+                    <span class="icon">3</span>
+                    Confidence — Bạn có vẻ tự tin và kiểm soát không?
+                  </div>
+                  <div class="rubric-scale">
+                    <div class="scale-item low">
+                      <span class="scale-level">Needs work</span>
+                      Có vẻ lo lắng, ngập ngừng nhiều, nói "um", "uh", tránh câu hỏi.
+                    </div>
+                    <div class="scale-item mid">
+                      <span class="scale-level">Good</span>
+                      Tự tin với câu hỏi dễ, nhưng lo lắng khi gặp câu hỏi khó.
+                    </div>
+                    <div class="scale-item high">
+                      <span class="scale-level">Excellent</span>
+                      Tự tin ngay cả với câu hỏi khó. Thừa nhận trung thực "To be honest" mà không mất bình tĩnh.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4>Task 3: Reflection 3 dòng</h4>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cấu trúc Q&amp;A bạn sẽ tiếp tục dùng.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã structure câu trả lời với 3 ý rõ ràng và có bằng chứng cụ thể.
+                Improve: Tôi cần acknowledge trước khi trả lời thay vì nhảy vào ngay.
+                Keep: "That's a good question. Let me explain. There are three reasons... In short... Does that answer your question?"
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow rose">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi xử lý Q&amp;A</h2>
+          <p>
+            Tránh các lỗi này để Q&amp;A của bạn tự tin, có cấu trúc và chuyên nghiệp.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Trả lời ngay mà không acknowledge: "The IRR is 14 percent in the worst case."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>That's a good question. Let me explain. We've stress-tested the model... In the worst case, the IRR is 14 percent.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Câu trả lời dài dòng, không có structure, nhảy lung tung giữa các ý.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>There are three reasons. First... Second... Third... In short...</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nói "I don't know" rồi dừng, không cung cấp thông tin liên quan.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>I don't have that exact data, but I can share the overall trend. Let me come back to you by end of day.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc câu trả lời mà không check understanding với người hỏi.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>In short, the project remains viable. Does that answer your question, or would you like me to elaborate?</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 27 khi có thể</h2>
+          <p>
+            Trước khi sang Day 28, hãy đảm bảo bạn đã nắm được kỹ năng xử lý Q&amp;A.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng That's a good question, Let me explain, There are three reasons.</li>
+            <li>Tôi có thể dùng In short, To be honest, I don't have that data but.</li>
+            <li>Tôi có thể dùng Let me come back to you on that, Does that answer your question.</li>
+            <li>Tôi có thể acknowledge câu hỏi trước khi trả lời.</li>
+            <li>Tôi có thể structure câu trả lời với 3 ý rõ ràng.</li>
+            <li>Tôi có thể tóm tắt và check understanding ở cuối.</li>
+            <li>Tôi có thể thừa nhận trung thực khi không có dữ liệu.</li>
+            <li>Tôi có thể trả lời 3 câu hỏi khó trong 5–7 phút.</li>
+            <li>Tôi đã tự chấm clarity, structure, confidence.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-26.html">
+            <small>Previous Day · Week 4</small>
+            <strong>Day 26 · Negotiation</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 27 Complete</strong>
+          </button>
+
+          <a href="level-1-day-28.html">
+            <small>Next Day · Week 4</small>
+            <strong>Day 28 · Summarizing</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 27 · Handling Questions</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 27 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["27"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 27 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 27/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 27 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 27/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["27"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "That's a good question. Let me explain. There are three reasons we're comfortable with this. In short, the project remains viable. Does that answer your question?";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
