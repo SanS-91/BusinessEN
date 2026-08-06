@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 21 | Presentation: Explain Financial Model | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 21 - Presentation: Explain Financial Model; trình bày financial model với purpose, key assumptions, outputs (NPV/IRR/payback), sensitivity, recommendation; Speaking topic Financial Model Presentation; Output chuẩn bị 5-7 slide và viết 3 key takeaways."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f8f7ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfcff;
+      --text-strong: #241f4e;
+      --text-body: #45406e;
+      --text-muted: #6e6896;
+      --text-soft: #908ab2;
+      --line: rgba(60, 45, 120, 0.10);
+      --line-soft: rgba(60, 45, 120, 0.07);
+      --shadow-lg: 0 24px 70px rgba(58, 42, 120, 0.10);
+      --shadow-md: 0 14px 36px rgba(58, 42, 120, 0.08);
+      --shadow-sm: 0 8px 20px rgba(58, 42, 120, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --purple: #8b5cf6; --purple-soft: #faf5ff; --purple-line: #e9d5ff; --purple-text: #7e22ce;
+      --indigo: #6366f1; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4f46e5;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --cyan: #06b6d4; --cyan-soft: #ecfeff; --cyan-line: #a5f3fc; --cyan-text: #0e7490;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(124, 58, 237, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(139, 92, 246, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(99, 102, 241, 0.08), transparent 24%),
+        linear-gradient(180deg, #fcfbff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--violet-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(58, 42, 120, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #312a63; background: #f1edff; border-color: #ddd0ff; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--violet-soft);
+      color: var(--violet-text); border: 1px solid var(--violet-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(58, 42, 120, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.purple { background: var(--purple-soft); color: var(--purple-text); border-color: var(--purple-line); }
+    .plan-pill.indigo { background: var(--indigo-soft); color: var(--indigo-text); border-color: var(--indigo-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--violet-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    /* WEEK 3 COLOR — finance violet: violet → purple → indigo (same for Day 15–21) */
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.20), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.14), transparent 18%),
+        linear-gradient(135deg, #7c3aed 0%, #8b5cf6 48%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #6d28d9; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn-blue { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .btn-soft { background: #ffffff; color: #4c1d95; border-color: #ddd0ff; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(245, 240, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(124, 58, 237, 0.18); color: var(--violet-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.purple { color: var(--purple-text); border-color: var(--purple-line); background: var(--purple-soft); }
+    .eyebrow.indigo { color: var(--indigo-text); border-color: var(--indigo-line); background: var(--indigo-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-purple, .tint-indigo, .tint-teal, .tint-cyan, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfcff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #faf7ff); }
+    .tint-purple { border-top: 6px solid var(--purple); background: linear-gradient(180deg, #ffffff, #fbf8ff); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-cyan { border-top: 6px solid var(--cyan); background: linear-gradient(180deg, #ffffff, #f5feff); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #ddd4f4;
+      background: #fbfaff; color: #3a2f5f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #7c3aed; box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(60, 45, 120, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8f6ff; border: 1px solid #e3daf5; color: #453a6e; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8f6ff; border: 1px solid #e3daf5;
+      color: #5a4f85; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .abbr {
+      display: inline-flex; align-items: center; min-height: 28px; padding: 3px 9px;
+      border-radius: 8px; background: var(--violet-soft); border: 1px solid var(--violet-line);
+      color: var(--violet-text); font-size: 13px; font-weight: 800; letter-spacing: 0.04em; margin: 0 6px 8px 0;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #ece7fa; color: #46406e; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--violet-line); background: var(--violet-soft);
+      color: var(--violet-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #ece2ff; }
+    .audio-btn.playing { background: #6d28d9; color: #ffffff; border-color: #6d28d9; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8f6ff; color: #5a5480;
+      border: 1px solid #e3daf5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #ece7fa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #3a3462; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #45406e; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfaff; border: 1px solid #e9d5ff; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #342e5e; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--violet-text); }
+
+    .hl-blue, .hl-violet, .hl-purple, .hl-indigo, .hl-orange, .hl-emerald, .hl-rose { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-purple { background: linear-gradient(180deg, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.13)); color: var(--purple-text); }
+    .hl-indigo { background: linear-gradient(180deg, rgba(99, 102, 241, 0), rgba(99, 102, 241, 0.13)); color: var(--indigo-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+    .hl-rose { background: linear-gradient(180deg, rgba(225, 29, 72, 0), rgba(225, 29, 72, 0.12)); color: var(--rose-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8f6ff;
+      border: 1px solid #ece7fa; border-left: 5px solid var(--emerald); color: #342e5e; font-weight: 600;
+    }
+
+    /* Slide deck component */
+    .slidedeck-box {
+      margin-top: 16px; background: linear-gradient(180deg, #ffffff, #faf7ff);
+      border: 1px solid #e9d5ff; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .slidedeck-header { padding: 18px 22px; background: linear-gradient(135deg, #7c3aed, #6366f1); color: #fff; }
+    .slidedeck-header .kicker { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+    .slidedeck-header .title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
+    .slidedeck-body { padding: 22px; display: grid; gap: 14px; }
+    .slide-card {
+      padding: 16px 18px; background: #fff; border: 1px solid #ede4ff; border-radius: 16px;
+      display: grid; grid-template-columns: 60px 1fr; gap: 14px; align-items: start;
+    }
+    .slide-num {
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: 14px; background: var(--violet-soft);
+      border: 1px solid var(--violet-line); color: var(--violet-text); font-weight: 800; font-size: 18px;
+    }
+    .slide-card .slide-title { font-weight: 800; color: var(--text-strong); font-size: 16px; margin-bottom: 6px; }
+    .slide-card .slide-content { color: var(--text-body); font-size: 14px; line-height: 1.7; }
+    .slide-card .slide-content ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f3a66; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #8a84a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #55507a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #f1edff; border-color: #ddd0ff; color: #4c1d95; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+      .slide-card { grid-template-columns: 1fr; }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 21</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 21/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill violet" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill purple" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill indigo" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 21</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 3 · Finance &amp; Investment</span>
+            <span class="hero-tag">Day 21 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Financial Model Presentation</span>
+          </div>
+
+          <h1 class="hero-title">Presentation – Explain Financial Model</h1>
+
+          <p class="hero-subtitle">
+            Day 21 là ngày tổng kết Week 3. Bạn sẽ tích hợp toàn bộ kiến thức tài chính đã học thành một
+            <strong>bài trình bày financial model hoàn chỉnh</strong> — từ purpose, key assumptions, outputs,
+            sensitivity đến recommendation. Đây là kỹ năng quan trọng nhất để thuyết phục hội đồng đầu tư.
+          </p>
+
+          <div class="hero-quote">
+            Một bài trình bày financial model tốt không phải là đọc mọi con số trên slide.
+            Đó là kể một câu chuyện: vì sao chúng ta xây model này, giả định là gì, kết quả nói lên điều gì,
+            và chúng ta nên làm gì. Người nói tốt biến những con số khô khan thành một lập luận đầu tư thuyết phục.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài trình bày financial model hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary &amp; Presentation Terms · 15 phút</strong>
+              <span>
+                Học 8 thuật ngữ presentation: purpose, key assumptions, outputs, sensitivity, recommendation,
+                slide deck, key takeaway, base case. Nghe từng item, lặp lại và đặt 1 câu với model thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases &amp; Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu trình bày financial model: purpose, assumptions, outputs, sensitivity,
+                recommendation, key takeaway. Làm substitution drill.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe một bài trình bày financial model mẫu. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần, xây từng phần của bài trình bày financial model cho đến khi bạn trình bày
+                trọn vẹn trong 7–10 phút với số liệu thật của mình.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Chuẩn bị 5–7 slide cho bài trình bày financial model. Viết 3 key takeaways.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary &amp; Presentation Terms</h2>
+          <p>
+            8 thuật ngữ presentation cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.
+            Đây là bộ từ vựng bạn sẽ dùng để trình bày financial model.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>Purpose of the model</h3>
+              <button class="audio-btn" type="button" data-speak="Purpose of the model. The purpose of this model is to evaluate the financial viability of the project and support our investment decision.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈpɜːrpəs əv ðə ˈmɒdl/</span>
+            <p class="vn">Mục đích của mô hình</p>
+
+            <div class="note">
+              Ghi chú: Luôn bắt đầu bài trình bày bằng purpose. Người nghe cần biết vì sao chúng ta xây model này trước khi đi vào con số.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> purpose of the model, model objective, model scope</li>
+              <li><strong>Example:</strong> The purpose of this model is to evaluate the financial viability of the project and support our investment decision.</li>
+              <li><strong>Native alternative:</strong> model objective, model purpose</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Key assumptions</h3>
+              <button class="audio-btn" type="button" data-speak="Key assumptions. The model is built on five key assumptions, including selling price, construction cost, and absorption rate.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kiː əˈsʌmpʃnz/</span>
+            <p class="vn">Giả định chính</p>
+
+            <div class="note">
+              Ghi chú: Key assumptions là nền tảng của model. Luôn nêu rõ giả định và cơ sở của chúng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key assumptions, model assumptions, underlying assumptions</li>
+              <li><strong>Example:</strong> The model is built on five key assumptions, including selling price, construction cost, and absorption rate.</li>
+              <li><strong>Native alternative:</strong> model inputs, model drivers</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Outputs (NPV, IRR, payback)</h3>
+              <button class="audio-btn" type="button" data-speak="Outputs. The model outputs show a positive N P V of 42 million dollars, an I R R of 18 percent, and a payback period of four years.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈaʊtpʊts/</span>
+            <p class="vn">Đầu ra (NPV, IRR, payback)</p>
+
+            <div class="note">
+              Ghi chú: Outputs là kết quả của model — NPV, IRR, payback period. Luôn nêu ý nghĩa của từng chỉ số.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> model outputs, key outputs, output metrics</li>
+              <li><strong>Example:</strong> The model outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of four years.</li>
+              <li><strong>Native alternative:</strong> model results, model outputs</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>Sensitivity</h3>
+              <button class="audio-btn" type="button" data-speak="Sensitivity. The model is most sensitive to the average selling price — a 5 percent change leads to a 20 percent change in N P V.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌsensəˈtɪvəti/</span>
+            <p class="vn">Phân tích độ nhạy</p>
+
+            <div class="note">
+              Ghi chú: Sensitivity analysis cho biết kết quả thay đổi thế nào khi một giả định thay đổi. Luôn nêu yếu tố nhạy cảm nhất.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> sensitivity analysis, sensitive to, sensitivity test</li>
+              <li><strong>Example:</strong> The model is most sensitive to the average selling price — a 5 percent change leads to a 20 percent change in NPV.</li>
+              <li><strong>Native alternative:</strong> what-if analysis, scenario analysis</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Recommendation</h3>
+              <button class="audio-btn" type="button" data-speak="Recommendation. Based on these results, we recommend proceeding with the project.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌrekəmenˈdeɪʃn/</span>
+            <p class="vn">Khuyến nghị</p>
+
+            <div class="note">
+              Ghi chú: Luôn kết thúc bài trình bày bằng recommendation rõ ràng. Người nghe cần biết chúng ta nên làm gì.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> recommendation, recommend proceeding, recommendation is to</li>
+              <li><strong>Example:</strong> Based on these results, we recommend proceeding with the project.</li>
+              <li><strong>Native alternative:</strong> recommendation, proposal, suggestion</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Slide deck</h3>
+              <button class="audio-btn" type="button" data-speak="Slide deck. I've prepared a 7-slide deck to walk you through the financial model.">Nghe</button>
+            </div>
+
+            <span class="ipa">/slaɪd dek/</span>
+            <p class="vn">Bộ slide</p>
+
+            <div class="note">
+              Ghi chú: Slide deck là bộ slide trình bày. Mỗi slide nên có một thông điệp chính, không nhồi nhét quá nhiều chữ.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> slide deck, presentation deck, slide deck outline</li>
+              <li><strong>Example:</strong> I've prepared a 7-slide deck to walk you through the financial model.</li>
+              <li><strong>Native alternative:</strong> presentation deck, slide deck</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>Key takeaway</h3>
+              <button class="audio-btn" type="button" data-speak="Key takeaway. The key takeaway is that the project creates strong value in the base case, with an I R R well above our hurdle rate.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kiː ˈteɪkəweɪ/</span>
+            <p class="vn">Điểm chính rút ra</p>
+
+            <div class="note">
+              Ghi chú: Key takeaway là thông điệp chính mà người nghe nên nhớ. Luôn có 2–3 key takeaways rõ ràng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key takeaway, main takeaway, key message</li>
+              <li><strong>Example:</strong> The key takeaway is that the project creates strong value in the base case, with an IRR well above our hurdle rate.</li>
+              <li><strong>Native alternative:</strong> key message, main point</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Base case</h3>
+              <button class="audio-btn" type="button" data-speak="Base case. In the base case, the model outputs show a positive N P V and an I R R of 18 percent.">Nghe</button>
+            </div>
+
+            <span class="ipa">/beɪs keɪs/</span>
+            <p class="vn">Kịch bản cơ sở</p>
+
+            <div class="note">
+              Ghi chú: Base case là kịch bản "kỳ vọng hợp lý nhất". Luôn so sánh base case với upside và downside.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> base case, base case scenario, in the base case</li>
+              <li><strong>Example:</strong> In the base case, the model outputs show a positive NPV and an IRR of 18 percent.</li>
+              <li><strong>Native alternative:</strong> base scenario, central case</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Block 2 · 20 phút</span>
+          <h2>Phrases &amp; Sentence Patterns</h2>
+          <p>
+            6 mẫu câu giúp bạn trình bày financial model theo từng phần: purpose, assumptions, outputs,
+            sensitivity, recommendation và key takeaway.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>The purpose of this model is to...</h3>
+              <button class="audio-btn" type="button" data-speak="The purpose of this model is to evaluate the financial viability of the project and support our investment decision.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">The purpose of this model is to + mục đích</span>.
+              Dùng để mở đầu bài trình bày.
+            </div>
+
+            <div class="example">
+              <span class="label">Purpose statement</span>
+              <p>
+                The purpose of this model is to evaluate the financial viability of the project and support our investment decision.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay mục đích: to assess the return profile / to compare investment options / to support the funding decision.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh đi thẳng vào con số mà không nêu purpose. Người nghe cần biết vì sao chúng ta xây model này.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>The model is built on... key assumptions</h3>
+              <button class="audio-btn" type="button" data-speak="The model is built on five key assumptions, including selling price, construction cost, and absorption rate.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">The model is built on + số + key assumptions (+ liệt kê)</span>.
+              Dùng để nêu các giả định chính.
+            </div>
+
+            <div class="example">
+              <span class="label">Assumptions statement</span>
+              <p>
+                The model is built on five key assumptions, including selling price, construction cost, and absorption rate.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay giả định: discount rate, development period, operating costs.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Luôn nêu cơ sở của giả định: "based on recent transactions" hoặc "based on market benchmarks".
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The model outputs show...</h3>
+              <button class="audio-btn" type="button" data-speak="The model outputs show a positive N P V of 42 million dollars, an I R R of 18 percent, and a payback period of four years.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-purple">The model outputs show + kết quả</span>.
+              Dùng để nêu kết quả của model.
+            </div>
+
+            <div class="example">
+              <span class="label">Outputs statement</span>
+              <p>
+                The model outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of four years.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay kết quả: a positive NPV of 30 million / an IRR of 22 percent / a payback period of three years.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh chỉ đọc số mà không nêu ý nghĩa. Nên nói "IRR is well above our hurdle rate, which confirms the project creates value."
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>The model is most sensitive to...</h3>
+              <button class="audio-btn" type="button" data-speak="The model is most sensitive to the average selling price — a 5 percent change leads to a 20 percent change in N P V.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">The model is most sensitive to + yếu tố (+ mức độ ảnh hưởng)</span>.
+              Dùng để nêu yếu tố nhạy cảm nhất.
+            </div>
+
+            <div class="example">
+              <span class="label">Sensitivity statement</span>
+              <p>
+                The model is most sensitive to the average selling price — a 5 percent change leads to a 20 percent change in NPV.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay yếu tố: construction cost / absorption rate / discount rate.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Nên nêu mức độ ảnh hưởng cụ thể: "a 5% change leads to a 20% change in NPV" — cho thấy bạn hiểu model.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Based on these results, we recommend...</h3>
+              <button class="audio-btn" type="button" data-speak="Based on these results, we recommend proceeding with the project, subject to final legal due diligence.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">Based on these results, we recommend + khuyến nghị</span>.
+              Dùng để kết thúc bài trình bày.
+            </div>
+
+            <div class="example">
+              <span class="label">Recommendation statement</span>
+              <p>
+                Based on these results, we recommend proceeding with the project, subject to final legal due diligence.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay khuyến nghị: proceeding to the next phase / conducting further due diligence / revisiting the assumptions.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh kết thúc mà không có recommendation. Người nghe cần biết chúng ta nên làm gì.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>The key takeaway is...</h3>
+              <button class="audio-btn" type="button" data-speak="The key takeaway is that the project creates strong value in the base case, with an I R R well above our hurdle rate.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-indigo">The key takeaway is + thông điệp chính</span>.
+              Dùng để nêu thông điệp chính mà người nghe nên nhớ.
+            </div>
+
+            <div class="example">
+              <span class="label">Key takeaway statement</span>
+              <p>
+                The key takeaway is that the project creates strong value in the base case, with an IRR well above our hurdle rate.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay thông điệp: the project is resilient in the downside case / selling price is the critical success factor.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh có quá nhiều key takeaways. Nên có 2–3 thông điệp chính, rõ ràng và dễ nhớ.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow indigo">Block 3 · 20 phút</span>
+          <h2>Listening · Financial Model Presentation</h2>
+          <p>
+            Nghe một bài trình bày financial model mẫu. Đây là mô hình để bạn tái hiện với số liệu thật của mình.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm cấu trúc bài trình bày financial model.</li>
+            <li>Nghe lần hai để nhận diện các patterns: purpose, assumptions, outputs, sensitivity, recommendation.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: purpose → assumptions → outputs → sensitivity → recommendation → key takeaways.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning everyone. I'd like to walk you through the financial model for the Riverside Township project, and share our recommendation. Let me start with the purpose of this model. The purpose of this model is to evaluate the financial viability of the Riverside Township project and to support our investment decision. The model projects cash flows over a five-year development period and helps us understand the return profile under different scenarios. Now let me walk you through the key assumptions. The model is built on five key assumptions. First, an average selling price of 2,300 dollars per square meter, based on recent transactions in the area. Second, a construction cost of 900 dollars per square meter. Third, a sales absorption rate of 60 percent in year one, rising to 85 percent by year three. Fourth, a discount rate of 12 percent, reflecting our cost of capital. Fifth, a five-year development period. Now let me walk you through the outputs. In the base case, the model outputs show a positive N P V of 42 million dollars, an I R R of 18 percent, and a payback period of about four years. The I R R is well above our hurdle rate of 15 percent, which confirms the project creates value. Now let me walk you through the sensitivity analysis. The model is most sensitive to the average selling price. A 5 percent change in selling price leads to roughly a 20 percent change in N P V. The second most sensitive input is the sales absorption rate. Construction cost has a moderate impact, while the discount rate has the smallest effect within our tested range. Even in the downside case, the N P V remains positive at 12 million dollars. So what is our recommendation? Based on these results, we recommend proceeding with the project. The project delivers strong returns in the base case, remains viable in the downside case, and our key risks are well-understood and mitigated. So what are the key takeaways from this model? There are three. First, the project creates strong value in the base case, with an I R R well above our hurdle rate. Second, the project is resilient — even in the downside case, returns remain positive. Third, the model is most sensitive to selling price, so our pricing strategy and sales execution are the most critical factors for success. To summarize, the financial model supports moving forward with the Riverside Township project. The key risks are identified and mitigated, and the returns are attractive on a risk-adjusted basis. I'm happy to take any questions."
+            >
+              Nghe toàn bộ bài trình bày financial model
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Opening &amp; Purpose]</span><br />
+              Good morning everyone. I'd like to walk you through the financial model for the Riverside Township project,
+              and share our recommendation. Let me start with the <span class="hl-violet">purpose of this model</span>.
+              The purpose of this model is to evaluate the financial viability of the Riverside Township project
+              and to support our investment decision. The model projects cash flows over a five-year development period
+              and helps us understand the return profile under different scenarios.
+            </p>
+
+            <p>
+              <span class="speaker">[Key Assumptions]</span><br />
+              Now let me walk you through the <span class="hl-blue">key assumptions</span>. The model is built on five key assumptions.
+              First, an average selling price of 2,300 dollars per square meter, based on recent transactions in the area.
+              Second, a construction cost of 900 dollars per square meter. Third, a sales absorption rate of 60 percent
+              in year one, rising to 85 percent by year three. Fourth, a discount rate of 12 percent, reflecting our cost of capital.
+              Fifth, a five-year development period.
+            </p>
+
+            <p>
+              <span class="speaker">[Outputs]</span><br />
+              Now let me walk you through the <span class="hl-purple">outputs</span>. In the base case, the model outputs show
+              a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of about four years.
+              The IRR is well above our hurdle rate of 15 percent, which confirms the project creates value.
+            </p>
+
+            <p>
+              <span class="speaker">[Sensitivity]</span><br />
+              Now let me walk you through the <span class="hl-orange">sensitivity analysis</span>. The model is most sensitive
+              to the average selling price. A 5 percent change in selling price leads to roughly a 20 percent change in NPV.
+              The second most sensitive input is the sales absorption rate. Construction cost has a moderate impact,
+              while the discount rate has the smallest effect within our tested range. Even in the downside case,
+              the NPV remains positive at 12 million dollars.
+            </p>
+
+            <p>
+              <span class="speaker">[Recommendation &amp; Key Takeaways]</span><br />
+              So what is our <span class="hl-emerald">recommendation</span>? Based on these results, we recommend proceeding
+              with the project. The project delivers strong returns in the base case, remains viable in the downside case,
+              and our key risks are well-understood and mitigated. So what are the <span class="hl-indigo">key takeaways</span>
+              from this model? There are three. First, the project creates strong value in the base case, with an IRR well above
+              our hurdle rate. Second, the project is resilient — even in the downside case, returns remain positive.
+              Third, the model is most sensitive to selling price, so our pricing strategy and sales execution are the most
+              critical factors for success. To summarize, the financial model supports moving forward with the Riverside Township project.
+              The key risks are identified and mitigated, and the returns are attractive on a risk-adjusted basis.
+              I'm happy to take any questions.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> What is the purpose of the model?</li>
+            <li><strong>Question 2:</strong> What are the five key assumptions?</li>
+            <li><strong>Question 3:</strong> What are the outputs in the base case?</li>
+            <li><strong>Question 4:</strong> What is the model most sensitive to, and by how much?</li>
+            <li><strong>Question 5:</strong> What is the recommendation, and what are the three key takeaways?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The purpose is to evaluate the financial viability of the project and support the investment decision.
+              2. The five assumptions are: ASP of 2,300/sqm, construction cost of 900/sqm, absorption of 60% rising to 85%, discount rate of 12%, and a 5-year development period.
+              3. In the base case: NPV of 42 million, IRR of 18%, payback of about 4 years.
+              4. The model is most sensitive to selling price — a 5% change leads to roughly a 20% change in NPV.
+              5. Recommendation: proceed with the project. Key takeaways: strong value in base case, resilient in downside, and selling price is the critical success factor.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Purpose</span>
+            <p>
+              The purpose of this model is to evaluate the financial viability of the project and support our investment decision.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The purpose of this model is to evaluate the financial viability of the project and support our investment decision.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Outputs</span>
+            <p>
+              In the base case, the model outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of four years.
+            </p>
+            <button class="audio-btn" type="button" data-speak="In the base case, the model outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of four years.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Recommendation</span>
+            <p>
+              Based on these results, we recommend proceeding with the project, subject to final legal due diligence.
+            </p>
+            <button class="audio-btn" type="button" data-speak="Based on these results, we recommend proceeding with the project, subject to final legal due diligence.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Đọc NPV là từng chữ cái: /ˌen piː ˈviː/. Đọc IRR là /ˌaɪ ɑːr ˈɑːr/.</li>
+            <li>Đọc rõ các con số: 2,300 dollars, 42 million, 18 percent, four years.</li>
+            <li>Nhấn vào các từ khóa: purpose, assumptions, outputs, sensitive, recommend.</li>
+            <li>Ngắt rõ giữa các phần: purpose → assumptions → outputs → sensitivity → recommendation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Financial Model Presentation trong 7–10 phút</h2>
+          <p>
+            Luyện 3 vòng tăng dần. Mục tiêu cuối cùng là trình bày financial model trong 7–10 phút
+            theo cấu trúc: purpose → assumptions → outputs → sensitivity → recommendation → key takeaways.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Bài trình bày financial model 7–10 phút nên đi theo 6 phần:
+            </p>
+
+            <ol>
+              <li><strong>Opening:</strong> giới thiệu purpose của model.</li>
+              <li><strong>Key assumptions:</strong> các giả định chính và cơ sở.</li>
+              <li><strong>Outputs:</strong> NPV, IRR, payback trong base case.</li>
+              <li><strong>Sensitivity:</strong> yếu tố nhạy cảm nhất và mức độ ảnh hưởng.</li>
+              <li><strong>Recommendation:</strong> khuyến nghị dựa trên kết quả.</li>
+              <li><strong>Key takeaways &amp; summary:</strong> 2–3 thông điệp chính + kết luận.</li>
+            </ol>
+
+            <h4>Checklist khi trình bày financial model</h4>
+
+            <ul class="checklist">
+              <li>Có purpose của model trước khi đi vào con số.</li>
+              <li>Có key assumptions với cơ sở rõ ràng.</li>
+              <li>Có outputs với ý nghĩa của từng chỉ số.</li>
+              <li>Có sensitivity với yếu tố nhạy cảm nhất.</li>
+              <li>Có recommendation rõ ràng.</li>
+              <li>Có 2–3 key takeaways dễ nhớ.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Opening + Purpose + Key Assumptions</h3>
+
+            <p>
+              Xây phần mở đầu, purpose và key assumptions. Mục tiêu khoảng 2–3 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning everyone. I'd like to walk you through the financial model for the Riverside Township project.
+                Let me start with the <span class="hl-violet">purpose of this model</span>.
+              </p>
+
+              <p>
+                The purpose of this model is to evaluate the financial viability of the project and support our
+                investment decision. The model projects cash flows over a five-year development period.
+              </p>
+
+              <p>
+                The model is built on <span class="hl-blue">five key assumptions</span>: an average selling price of
+                2,300 dollars per square meter, a construction cost of 900 dollars per square meter, an absorption rate
+                of 60 percent in year one rising to 85 percent by year three, a discount rate of 12 percent,
+                and a five-year development period.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning everyone. I'd like to walk you through the financial model for the Riverside Township project. Let me start with the purpose of this model. The purpose of this model is to evaluate the financial viability of the project and support our investment decision. The model projects cash flows over a five-year development period. The model is built on five key assumptions: an average selling price of 2,300 dollars per square meter, a construction cost of 900 dollars per square meter, an absorption rate of 60 percent in year one rising to 85 percent by year three, a discount rate of 12 percent, and a five-year development period."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Thêm Outputs + Sensitivity</h3>
+
+            <p>
+              Thêm outputs và sensitivity. Mục tiêu khoảng 5–6 phút khi nối với Round 1.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Now let me walk you through the <span class="hl-purple">outputs</span>. In the base case, the model
+                outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of
+                about four years. The IRR is well above our hurdle rate of 15 percent, which confirms the project
+                creates value.
+              </p>
+
+              <p>
+                Now let me walk you through the <span class="hl-orange">sensitivity analysis</span>. The model is most
+                sensitive to the average selling price — a 5 percent change leads to roughly a 20 percent change in NPV.
+                Even in the downside case, the NPV remains positive at 12 million dollars.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Now let me walk you through the outputs. In the base case, the model outputs show a positive NPV of 42 million dollars, an IRR of 18 percent, and a payback period of about four years. The IRR is well above our hurdle rate of 15 percent, which confirms the project creates value. Now let me walk you through the sensitivity analysis. The model is most sensitive to the average selling price — a 5 percent change leads to roughly a 20 percent change in NPV. Even in the downside case, the NPV remains positive at 12 million dollars."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Financial Model Presentation 7–10 phút</h3>
+
+            <p>
+              Nối Round 1 + Round 2, thêm recommendation và key takeaways. Mục tiêu trọn vẹn 7–10 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                So what is our <span class="hl-emerald">recommendation</span>? Based on these results, we recommend
+                proceeding with the project. The project delivers strong returns in the base case, remains viable
+                in the downside case, and our key risks are well-understood and mitigated.
+              </p>
+
+              <p>
+                So what are the <span class="hl-indigo">key takeaways</span> from this model? There are three.
+                First, the project creates strong value in the base case, with an IRR well above our hurdle rate.
+                Second, the project is resilient — even in the downside case, returns remain positive.
+                Third, the model is most sensitive to selling price, so our pricing strategy and sales execution
+                are the most critical factors for success.
+              </p>
+
+              <p>
+                To summarize, the financial model supports moving forward with the Riverside Township project.
+                The key risks are identified and mitigated, and the returns are attractive on a risk-adjusted basis.
+                I'm happy to take any questions.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="So what is our recommendation? Based on these results, we recommend proceeding with the project. The project delivers strong returns in the base case, remains viable in the downside case, and our key risks are well-understood and mitigated. So what are the key takeaways from this model? There are three. First, the project creates strong value in the base case, with an IRR well above our hurdle rate. Second, the project is resilient — even in the downside case, returns remain positive. Third, the model is most sensitive to selling price, so our pricing strategy and sales execution are the most critical factors for success. To summarize, the financial model supports moving forward with the Riverside Township project. The key risks are identified and mitigated, and the returns are attractive on a risk-adjusted basis. I'm happy to take any questions."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 3 — bài trình bày financial model 7–10 phút với số liệu thật của bạn.
+              Nếu chưa đủ thời lượng, hãy mở rộng bằng cách giải thích kỹ hơn từng giả định hoặc thêm ví dụ.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có purpose của model không?</li>
+              <li>Bạn có key assumptions với cơ sở không?</li>
+              <li>Bạn có outputs với ý nghĩa không?</li>
+              <li>Bạn có sensitivity với yếu tố nhạy cảm nhất không?</li>
+              <li>Bạn có recommendation rõ ràng không?</li>
+              <li>Bạn có 2–3 key takeaways không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Đọc mọi con số trên slide thay vì highlight key messages.</li>
+              <li>Không nêu purpose trước khi đi vào con số.</li>
+              <li>Không nêu sensitivity hoặc downside.</li>
+              <li>Kết thúc mà không có recommendation.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: chuẩn bị 5–7 slide cho bài trình bày financial model và viết 3 key takeaways.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Chuẩn bị 5–7 slide cho bài trình bày</h3>
+
+            <p>
+              Tạo slide deck outline cho bài trình bày financial model. Mỗi slide nên có một thông điệp chính,
+              không nhồi nhét quá nhiều chữ.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có 5–7 slide.</li>
+              <li>Mỗi slide có một thông điệp chính.</li>
+              <li>Có purpose, assumptions, outputs, sensitivity, recommendation.</li>
+              <li>Có 2–3 key takeaways ở slide cuối.</li>
+            </ul>
+
+            <h4>Model Answer · Slide Deck Outline</h4>
+
+            <div class="slidedeck-box">
+              <div class="slidedeck-header">
+                <div class="kicker">Slide Deck Outline</div>
+                <div class="title">Riverside Township — Financial Model Presentation</div>
+              </div>
+              <div class="slidedeck-body">
+                <div class="slide-card">
+                  <div class="slide-num">1</div>
+                  <div>
+                    <div class="slide-title">Title + Purpose of the Model</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>Project name and presentation title</li>
+                        <li>Purpose: evaluate financial viability and support investment decision</li>
+                        <li>Model scope: 5-year development period</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">2</div>
+                  <div>
+                    <div class="slide-title">Key Assumptions</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>ASP: 2,300 USD/sqm (based on recent transactions)</li>
+                        <li>Construction cost: 900 USD/sqm</li>
+                        <li>Absorption: 60% year 1, rising to 85% by year 3</li>
+                        <li>Discount rate: 12% (cost of capital)</li>
+                        <li>Development period: 5 years</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">3</div>
+                  <div>
+                    <div class="slide-title">Outputs (Base Case)</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>NPV: +42 million USD</li>
+                        <li>IRR: 18% (vs hurdle rate 15%)</li>
+                        <li>Payback period: ~4 years</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">4</div>
+                  <div>
+                    <div class="slide-title">Sensitivity Analysis</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>Most sensitive to: average selling price (5% change → 20% NPV change)</li>
+                        <li>Second most sensitive: absorption rate</li>
+                        <li>Downside case: NPV still positive at 12 million USD</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">5</div>
+                  <div>
+                    <div class="slide-title">Key Risks &amp; Mitigation</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>Construction cost escalation → fixed-price contracts</li>
+                        <li>Legal delays → early legal milestones</li>
+                        <li>Slower absorption → phasing to match sales</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">6</div>
+                  <div>
+                    <div class="slide-title">Recommendation</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>Recommend proceeding with the project</li>
+                        <li>Strong returns in base case, resilient in downside</li>
+                        <li>Key risks identified and mitigated</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide-card">
+                  <div class="slide-num">7</div>
+                  <div>
+                    <div class="slide-title">Key Takeaways &amp; Next Steps</div>
+                    <div class="slide-content">
+                      <ul>
+                        <li>Takeaway 1: Strong value creation in base case (IRR 18% vs 15% hurdle)</li>
+                        <li>Takeaway 2: Resilient in downside case (NPV still positive)</li>
+                        <li>Takeaway 3: Selling price is critical success factor</li>
+                        <li>Next steps: proceed to legal due diligence, finalize funding</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Slide deck outline for Riverside Township financial model presentation. Slide one: title and purpose — evaluate financial viability and support investment decision. Slide two: key assumptions — ASP of 2,300 dollars per square meter, construction cost of 900, absorption of 60 percent rising to 85 percent, discount rate of 12 percent, five-year development period. Slide three: outputs in the base case — NPV of positive 42 million, IRR of 18 percent, payback of about four years. Slide four: sensitivity analysis — most sensitive to selling price, downside case still positive. Slide five: key risks and mitigation. Slide six: recommendation — proceed with the project. Slide seven: key takeaways — strong value creation, resilient in downside, selling price is critical success factor."
+            >
+              Nghe slide deck outline
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Viết 3 key takeaways</h3>
+
+            <p>
+              Viết 3 key takeaways từ financial model. Mỗi takeaway nên có một con số hỗ trợ và dễ nhớ.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có đúng 3 key takeaways.</li>
+              <li>Mỗi takeaway có một con số hỗ trợ.</li>
+              <li>Mỗi takeaway dễ nhớ và có ý nghĩa kinh doanh rõ ràng.</li>
+            </ul>
+
+            <h4>Model Answer · 3 Key Takeaways</h4>
+
+            <div class="answer-box">
+              <p>
+                <strong>Key Takeaway 1: Strong value creation in the base case.</strong><br />
+                The project generates an IRR of 18%, well above our 15% hurdle rate, with a positive NPV of 42 million dollars. This confirms the project creates meaningful value.
+              </p>
+
+              <p>
+                <strong>Key Takeaway 2: Resilient in the downside case.</strong><br />
+                Even with prices down 10% and absorption down 20%, the NPV remains positive at 12 million dollars. The project can withstand a meaningful market slowdown.
+              </p>
+
+              <p>
+                <strong>Key Takeaway 3: Selling price is the critical success factor.</strong><br />
+                The model is most sensitive to selling price — a 5% change leads to a 20% change in NPV. Our pricing strategy and sales execution are the most critical factors for success.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Three key takeaways from the financial model. Key takeaway one: strong value creation in the base case. The project generates an I R R of 18 percent, well above our 15 percent hurdle rate, with a positive N P V of 42 million dollars. Key takeaway two: resilient in the downside case. Even with prices down 10 percent and absorption down 20 percent, the N P V remains positive at 12 million dollars. Key takeaway three: selling price is the critical success factor. The model is most sensitive to selling price — a 5 percent change leads to a 20 percent change in N P V."
+            >
+              Nghe 3 key takeaways
+            </button>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cấu trúc bạn sẽ tiếp tục dùng khi trình bày model.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã trình bày đủ purpose, assumptions, outputs, sensitivity và recommendation.
+                Improve: Tôi cần giải thích ý nghĩa của từng chỉ số thay vì chỉ đọc số.
+                Keep: The purpose of this model is to... Based on these results, we recommend...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow rose">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi trình bày financial model</h2>
+          <p>
+            Tránh các lỗi này để phần trình bày financial model của bạn rõ ràng, có cấu trúc và thuyết phục.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đọc mọi con số trên slide thay vì highlight key messages.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The key takeaway is that the project creates strong value in the base case, with an IRR well above our hurdle rate.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đi thẳng vào con số mà không nêu purpose của model.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The purpose of this model is to evaluate the financial viability of the project and support our investment decision.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không nêu sensitivity hoặc downside case.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The model is most sensitive to selling price. Even in the downside case, the NPV remains positive.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc mà không có recommendation rõ ràng.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Based on these results, we recommend proceeding with the project, subject to final legal due diligence.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 21 khi có thể</h2>
+          <p>
+            Đây là ngày cuối của Week 3. Trước khi sang Week 4, hãy đảm bảo bạn đã nắm được kỹ năng trình bày financial model.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng purpose, key assumptions, outputs.</li>
+            <li>Tôi có thể dùng sensitivity, recommendation, key takeaway.</li>
+            <li>Tôi có thể dùng slide deck, base case.</li>
+            <li>Tôi có thể nói The purpose of this model is to...</li>
+            <li>Tôi có thể nói Based on these results, we recommend...</li>
+            <li>Tôi có thể trình bày financial model trong 7–10 phút.</li>
+            <li>Tôi có thể chuẩn bị 5–7 slide cho bài trình bày.</li>
+            <li>Tôi có thể viết 3 key takeaways rõ ràng.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-20.html">
+            <small>Previous Day · Week 3</small>
+            <strong>Day 20 · Risk Analysis</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 21 Complete</strong>
+          </button>
+
+          <a href="level-1-day-22.html">
+            <small>Next Day · Week 4</small>
+            <strong>Day 22 · Comparing</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 21 · Presentation: Explain Financial Model</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 21 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["21"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 21 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 21/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 21 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 21/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["21"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "The purpose of this model is to evaluate the financial viability of the project. Based on these results, we recommend proceeding with the project.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

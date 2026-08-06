@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 18 | Investment Evaluation | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 18 - Investment Evaluation: trình bày investment return với ROI, Payback, Risk, Upside, Downside, Investment thesis; Speaking topic Investment Return; Output viết investment memo summary."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f8f7ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfcff;
+      --text-strong: #241f4e;
+      --text-body: #45406e;
+      --text-muted: #6e6896;
+      --text-soft: #908ab2;
+      --line: rgba(60, 45, 120, 0.10);
+      --line-soft: rgba(60, 45, 120, 0.07);
+      --shadow-lg: 0 24px 70px rgba(58, 42, 120, 0.10);
+      --shadow-md: 0 14px 36px rgba(58, 42, 120, 0.08);
+      --shadow-sm: 0 8px 20px rgba(58, 42, 120, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --purple: #8b5cf6; --purple-soft: #faf5ff; --purple-line: #e9d5ff; --purple-text: #7e22ce;
+      --indigo: #6366f1; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4f46e5;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --cyan: #06b6d4; --cyan-soft: #ecfeff; --cyan-line: #a5f3fc; --cyan-text: #0e7490;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(124, 58, 237, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(139, 92, 246, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(99, 102, 241, 0.08), transparent 24%),
+        linear-gradient(180deg, #fcfbff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--violet-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(58, 42, 120, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #312a63; background: #f1edff; border-color: #ddd0ff; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--violet-soft);
+      color: var(--violet-text); border: 1px solid var(--violet-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(58, 42, 120, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.purple { background: var(--purple-soft); color: var(--purple-text); border-color: var(--purple-line); }
+    .plan-pill.indigo { background: var(--indigo-soft); color: var(--indigo-text); border-color: var(--indigo-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--violet-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    /* WEEK 3 COLOR — finance violet: violet → purple → indigo (same for Day 15–21) */
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.20), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.14), transparent 18%),
+        linear-gradient(135deg, #7c3aed 0%, #8b5cf6 48%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #6d28d9; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn-blue { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .btn-soft { background: #ffffff; color: #4c1d95; border-color: #ddd0ff; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(245, 240, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(124, 58, 237, 0.18); color: var(--violet-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.purple { color: var(--purple-text); border-color: var(--purple-line); background: var(--purple-soft); }
+    .eyebrow.indigo { color: var(--indigo-text); border-color: var(--indigo-line); background: var(--indigo-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-purple, .tint-indigo, .tint-teal, .tint-cyan, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfcff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #faf7ff); }
+    .tint-purple { border-top: 6px solid var(--purple); background: linear-gradient(180deg, #ffffff, #fbf8ff); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-cyan { border-top: 6px solid var(--cyan); background: linear-gradient(180deg, #ffffff, #f5feff); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #ddd4f4;
+      background: #fbfaff; color: #3a2f5f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #7c3aed; box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(60, 45, 120, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8f6ff; border: 1px solid #e3daf5; color: #453a6e; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8f6ff; border: 1px solid #e3daf5;
+      color: #5a4f85; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .abbr {
+      display: inline-flex; align-items: center; min-height: 28px; padding: 3px 9px;
+      border-radius: 8px; background: var(--violet-soft); border: 1px solid var(--violet-line);
+      color: var(--violet-text); font-size: 13px; font-weight: 800; letter-spacing: 0.04em; margin: 0 6px 8px 0;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #ece7fa; color: #46406e; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--violet-line); background: var(--violet-soft);
+      color: var(--violet-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #ece2ff; }
+    .audio-btn.playing { background: #6d28d9; color: #ffffff; border-color: #6d28d9; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8f6ff; color: #5a5480;
+      border: 1px solid #e3daf5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #ece7fa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #3a3462; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #45406e; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfaff; border: 1px solid #e9d5ff; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #342e5e; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--violet-text); }
+
+    .hl-blue, .hl-violet, .hl-purple, .hl-indigo, .hl-orange, .hl-emerald, .hl-rose { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-purple { background: linear-gradient(180deg, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.13)); color: var(--purple-text); }
+    .hl-indigo { background: linear-gradient(180deg, rgba(99, 102, 241, 0), rgba(99, 102, 241, 0.13)); color: var(--indigo-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+    .hl-rose { background: linear-gradient(180deg, rgba(225, 29, 72, 0), rgba(225, 29, 72, 0.12)); color: var(--rose-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8f6ff;
+      border: 1px solid #ece7fa; border-left: 5px solid var(--emerald); color: #342e5e; font-weight: 600;
+    }
+
+    /* Investment memo component */
+    .memo-box {
+      margin-top: 16px; background: linear-gradient(180deg, #ffffff, #faf7ff);
+      border: 1px solid #e9d5ff; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .memo-header { padding: 18px 22px; background: linear-gradient(135deg, #7c3aed, #6366f1); color: #fff; }
+    .memo-header .kicker { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+    .memo-header .title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
+    .memo-body { padding: 22px; display: grid; gap: 16px; }
+    .memo-section {
+      padding: 14px 16px; background: #fff; border: 1px solid #ede4ff; border-radius: 14px;
+    }
+    .memo-section .memo-label {
+      font-weight: 800; color: var(--violet-text); font-size: 14px; letter-spacing: 0.02em;
+      display: flex; align-items: center; gap: 8px; margin-bottom: 8px;
+    }
+    .memo-section .memo-content { color: var(--text-body); font-size: 15px; line-height: 1.75; }
+    .memo-section .memo-content ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 5px; }
+    .memo-pill {
+      display: inline-flex; align-items: center; padding: 2px 9px; border-radius: var(--radius-pill);
+      font-size: 12px; font-weight: 800; margin-left: 6px;
+    }
+    .memo-pill.positive { background: var(--emerald-soft); color: var(--emerald-text); border: 1px solid var(--emerald-line); }
+    .memo-pill.caution { background: var(--amber-soft); color: var(--amber-text); border: 1px solid var(--amber-line); }
+    .memo-reco {
+      padding: 14px 16px; border-radius: 14px; background: var(--emerald-soft); border: 1px solid var(--emerald-line);
+      color: var(--emerald-text); font-weight: 800; display: flex; align-items: center; gap: 10px;
+    }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f3a66; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #8a84a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #55507a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #f1edff; border-color: #ddd0ff; color: #4c1d95; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 18</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 18/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill violet" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill purple" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill indigo" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 18</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 3 · Finance &amp; Investment</span>
+            <span class="hero-tag">Day 18 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Investment Return</span>
+          </div>
+
+          <h1 class="hero-title">Investment Evaluation</h1>
+
+          <p class="hero-subtitle">
+            Day 18 đưa bạn vào câu hỏi trung tâm của mọi quyết định đầu tư: "Khoản đầu tư này có đáng không?".
+            Bạn sẽ học ngôn ngữ của <strong>ROI</strong>, <strong>Payback</strong>, <strong>Risk</strong>,
+            <strong>Upside</strong>, <strong>Downside</strong> và <strong>Investment thesis</strong> — bộ công cụ
+            để trình bày một lập luận đầu tư thuyết phục với hội đồng đầu tư.
+          </p>
+
+          <div class="hero-quote">
+            Một investment evaluation tốt không chỉ là những con số lợi nhuận. Đó là một lập luận logic:
+            vì sao khoản đầu tư này hấp dẫn, rủi ro được kiểm soát thế nào, và điều gì xảy ra nếu mọi thứ xấu đi.
+            Người nói tốt biến các chỉ số tài chính thành một câu chuyện về cơ hội và sự an toàn.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được investment memo summary hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary &amp; Investment Terms · 15 phút</strong>
+              <span>
+                Học 8 thuật ngữ investment: ROI, Payback, Risk, Upside, Downside, Investment thesis,
+                risk-adjusted return, hurdle rate. Nghe từng item, lặp lại và đặt 1 câu với khoản đầu tư thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases &amp; Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu trình bày investment return: ROI, payback period, risks, upside/downside,
+                investment thesis, risk-adjusted basis. Làm substitution drill.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe một bài trình bày investment return mẫu. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần, xây từng phần của bài trình bày investment return cho đến khi bạn trình bày
+                trọn vẹn trong 3–5 phút với số liệu thật của mình.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Viết investment memo summary. Ghi âm phần trình bày investment memo.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary &amp; Investment Terms</h2>
+          <p>
+            8 thuật ngữ investment cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.
+            Đây là bộ từ vựng bạn sẽ dùng để trình bày investment return và investment thesis.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>ROI (Return on Investment)</h3>
+              <button class="audio-btn" type="button" data-speak="R O I, or Return on Investment. The project delivers an R O I of 32 percent over the five-year development period.">Nghe</button>
+            </div>
+
+            <span class="abbr">ROI</span>
+            <span class="ipa">/ˌɑːr oʊ ˈaɪ/</span>
+            <p class="vn">Tỷ suất hoàn vốn đầu tư</p>
+
+            <div class="note">
+              Ghi chú: ROI đo tổng lợi nhuận trên vốn đầu tư, tính bằng %. Khác với IRR (tỷ suất nội bộ), ROI là tổng lợi nhuận đơn giản.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> ROI of X percent, deliver an ROI, ROI over X years</li>
+              <li><strong>Example:</strong> The project delivers an ROI of 32 percent over the five-year development period.</li>
+              <li><strong>Native alternative:</strong> return on investment, investment return</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Payback</h3>
+              <button class="audio-btn" type="button" data-speak="Payback. The payback period is about four years, meaning we recover our initial investment by year four.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈpeɪbæk/</span>
+            <p class="vn">Thời gian hoàn vốn</p>
+
+            <div class="note">
+              Ghi chú: Payback period là thời gian để thu hồi vốn đầu tư ban đầu. Thời gian hoàn vốn ngắn nghĩa là rủi ro thấp hơn.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> payback period, payback of X years, recover the investment</li>
+              <li><strong>Example:</strong> The payback period is about four years, meaning we recover our initial investment by year four.</li>
+              <li><strong>Native alternative:</strong> payback period, capital recovery period</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Risk. The main risks are legal delays, construction cost escalation, and slower absorption.">Nghe</button>
+            </div>
+
+            <span class="ipa">/rɪsk/</span>
+            <p class="vn">Rủi ro</p>
+
+            <div class="note">
+              Ghi chú: Risk là khả năng xảy ra kết quả không mong muốn. Khi trình bày, luôn nêu risk kèm mitigation (cách giảm thiểu).
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key risks, mitigate risk, risk-adjusted, risk exposure</li>
+              <li><strong>Example:</strong> The main risks are legal delays, construction cost escalation, and slower absorption.</li>
+              <li><strong>Native alternative:</strong> downside risk, exposure</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Upside</h3>
+              <button class="audio-btn" type="button" data-speak="Upside. The upside case assumes prices increase by 10 percent, pushing the I R R to 24 percent.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈʌpsaɪd/</span>
+            <p class="vn">Tiềm năng tăng / mặt tích cực</p>
+
+            <div class="note">
+              Ghi chú: Upside là kịch bản tốt — khi mọi thứ thuận lợi hơn kỳ vọng. Thường đi kèm "upside case" hoặc "upside potential".
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> upside case, upside potential, capture the upside</li>
+              <li><strong>Example:</strong> The upside case assumes prices increase by 10 percent, pushing the IRR to 24 percent.</li>
+              <li><strong>Native alternative:</strong> upside scenario, upside potential</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Downside</h3>
+              <button class="audio-btn" type="button" data-speak="Downside. Even in the downside case, the project still generates a positive return, though reduced.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈdaʊnsaɪd/</span>
+            <p class="vn">Mặt trái / rủi ro giảm</p>
+
+            <div class="note">
+              Ghi chú: Downside là kịch bản xấu — khi mọi thứ tệ hơn kỳ vọng. Nhà đầu tư luôn muốn biết downside được kiểm soát thế nào.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> downside case, downside risk, protect the downside, limit the downside</li>
+              <li><strong>Example:</strong> Even in the downside case, the project still generates a positive return, though reduced.</li>
+              <li><strong>Native alternative:</strong> downside scenario, worst case</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Investment thesis</h3>
+              <button class="audio-btn" type="button" data-speak="Investment thesis. Our investment thesis is built on three pillars: real demand, strong connectivity, and disciplined phasing.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɪnˈvestmənt ˈθiːsɪs/</span>
+            <p class="vn">Luận điểm đầu tư</p>
+
+            <div class="note">
+              Ghi chú: Investment thesis là lập luận cốt lõi vì sao khoản đầu tư hấp dẫn. Nên trình bày thesis trước khi đi vào con số.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> investment thesis, thesis is built on, validate the thesis</li>
+              <li><strong>Example:</strong> Our investment thesis is built on three pillars: real demand, strong connectivity, and disciplined phasing.</li>
+              <li><strong>Native alternative:</strong> investment case, investment rationale</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>risk-adjusted return</h3>
+              <button class="audio-btn" type="button" data-speak="risk-adjusted return. On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.">Nghe</button>
+            </div>
+
+            <span class="ipa">/rɪsk əˈdʒʌstɪd rɪˈtɜːrn/</span>
+            <p class="vn">Lợi nhuận điều chỉnh theo rủi ro</p>
+
+            <div class="note">
+              Ghi chú: Risk-adjusted return đo lợi nhuận sau khi đã tính đến mức rủi ro. Cho biết lợi nhuận có xứng đáng với rủi ro không.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> risk-adjusted return, risk-adjusted basis, attractive on a risk-adjusted basis</li>
+              <li><strong>Example:</strong> On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.</li>
+              <li><strong>Native alternative:</strong> risk-adjusted performance</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>hurdle rate</h3>
+              <button class="audio-btn" type="button" data-speak="hurdle rate. The project I R R of 18 percent is well above our hurdle rate of 15 percent.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈhɜːrdl reɪt/</span>
+            <p class="vn">Tỷ suất tối thiểu chấp nhận</p>
+
+            <div class="note">
+              Ghi chú: Hurdle rate là tỷ suất lợi nhuận tối thiểu để chấp nhận đầu tư. IRR cao hơn hurdle rate nghĩa là đáng đầu tư.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> above the hurdle rate, below the hurdle rate, meet the hurdle rate</li>
+              <li><strong>Example:</strong> The project IRR of 18 percent is well above our hurdle rate of 15 percent.</li>
+              <li><strong>Native alternative:</strong> required rate of return, minimum acceptable return</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Block 2 · 20 phút</span>
+          <h2>Phrases &amp; Sentence Patterns</h2>
+          <p>
+            6 mẫu câu giúp bạn trình bày investment return theo từng phần: ROI, payback, risks, upside/downside,
+            investment thesis và risk-adjusted basis.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>The ROI is...%, which represents...</h3>
+              <button class="audio-btn" type="button" data-speak="The R O I is 32 percent, which represents a strong return over the five-year development period.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">The ROI is + % + which represents + ý nghĩa</span>.
+              Dùng để nêu ROI và giải thích ý nghĩa.
+            </div>
+
+            <div class="example">
+              <span class="label">ROI statement</span>
+              <p>
+                The ROI is 32 percent, which represents a strong return over the five-year development period.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay % và ý nghĩa: an ROI of 25%, which represents a solid return / an ROI of 15%, in line with our target.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nhầm ROI với IRR. ROI là tổng lợi nhuận trên vốn; IRR là tỷ suất nội bộ. Nên giải thích rõ khi trình bày.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>The payback period is... years</h3>
+              <button class="audio-btn" type="button" data-speak="The payback period is about four years, which means we recover our initial investment by year four.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">The payback period is + số năm (+ ý nghĩa)</span>.
+              Dùng để nêu thời gian hoàn vốn.
+            </div>
+
+            <div class="example">
+              <span class="label">Payback statement</span>
+              <p>
+                The payback period is about four years, which means we recover our initial investment by year four.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay số năm: about three years / roughly five years / within four years.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Nên giải thích ý nghĩa của payback: thời gian hoàn vốn ngắn nghĩa là rủi ro thấp hơn.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>The main risks are..., mitigated by...</h3>
+              <button class="audio-btn" type="button" data-speak="The main risks are legal delays, construction cost escalation, and slower absorption, mitigated by early legal milestones, fixed-price contracts, and disciplined phasing.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">The main risks are + risks + mitigated by + biện pháp</span>.
+              Dùng để nêu rủi ro kèm cách giảm thiểu.
+            </div>
+
+            <div class="example">
+              <span class="label">Risk statement</span>
+              <p>
+                The main risks are legal delays, construction cost escalation, and slower absorption,
+                mitigated by early legal milestones, fixed-price contracts, and disciplined phasing.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay risks và mitigation: interest rate risk, mitigated by fixed-rate financing / market risk, mitigated by phased launches.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nêu risk mà không có mitigation. Nhà đầu tư muốn biết bạn kiểm soát rủi ro thế nào.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>The upside is..., while the downside is limited to...</h3>
+              <button class="audio-btn" type="button" data-speak="The upside is an I R R of 24 percent, while the downside is limited to an I R R of 12 percent, which is still positive.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">The upside is + X, while the downside is limited to + Y</span>.
+              Dùng để trình bày cả upside và downside, nhấn mạnh rủi ro được giới hạn.
+            </div>
+
+            <div class="example">
+              <span class="label">Upside/downside statement</span>
+              <p>
+                The upside is an IRR of 24 percent, while the downside is limited to an IRR of 12 percent, which is still positive.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay số: an upside of 30% ROI, while the downside is limited to 15% / an upside of 2.5x multiple, while the downside is limited to 1.2x.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Cấu trúc "upside... while downside is limited to..." cho thấy rủi ro được kiểm soát — điểm nhà đầu tư rất thích nghe.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Our investment thesis is based on...</h3>
+              <button class="audio-btn" type="button" data-speak="Our investment thesis is based on three pillars: real demand, strong connectivity, and disciplined phasing.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-purple">Our investment thesis is based on + các trụ cột</span>.
+              Dùng để nêu luận điểm đầu tư trước khi đi vào con số.
+            </div>
+
+            <div class="example">
+              <span class="label">Thesis statement</span>
+              <p>
+                Our investment thesis is based on three pillars: real demand, strong connectivity, and disciplined phasing.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay trụ cột: based on favorable demographics and infrastructure / based on supply scarcity and strong fundamentals.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh đi thẳng vào con số mà không nêu thesis trước. Người nghe cần biết "vì sao" trước khi nghe "bao nhiêu".
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>On a risk-adjusted basis, this investment...</h3>
+              <button class="audio-btn" type="button" data-speak="On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-indigo">On a risk-adjusted basis, this investment + nhận định</span>.
+              Dùng để kết luận về sức hấp dẫn của khoản đầu tư sau khi tính rủi ro.
+            </div>
+
+            <div class="example">
+              <span class="label">Risk-adjusted statement</span>
+              <p>
+                On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay nhận định: offers compelling risk-adjusted returns / compares favorably to alternatives / meets our return threshold.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh kết luận "this is a good investment" mà không giải thích trên cơ sở nào. Nên dùng "on a risk-adjusted basis".
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow indigo">Block 3 · 20 phút</span>
+          <h2>Listening · Investment Return Presentation</h2>
+          <p>
+            Nghe một bài trình bày investment return mẫu. Đây là mô hình để bạn tái hiện với số liệu thật của mình.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm cấu trúc bài trình bày investment return.</li>
+            <li>Nghe lần hai để nhận diện các patterns: investment thesis, ROI, payback, upside/downside, risks.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: thesis → returns → upside/downside → risks → key messages.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning everyone. I'd like to walk you through the investment evaluation for the Riverside Township project, and explain the investment return. Let me start with our investment thesis. Our thesis is built on three pillars. First, there is strong real demand for housing in the eastern corridor of the city, driven by population growth and infrastructure development. Second, the project benefits from excellent connectivity, which supports both owner-occupiers and rental demand. Third, our disciplined phasing approach allows us to match supply with demand and minimize risk. Now let me walk you through the returns. On a base case basis, the project generates an I R R of 18 percent and an R O I of 32 percent over the five-year development period. The payback period is about four years, which means we recover our initial investment by year four. Let me explain the upside and downside. The upside case assumes selling prices increase by 10 percent and absorption accelerates. In this case, the I R R reaches 24 percent. The downside case assumes prices drop by 10 percent and absorption slows by 20 percent. Even in this case, the I R R remains positive at 12 percent, meaning the project still generates a return, though reduced. Now, the key risks. There are three main risks: legal approval delays, construction cost escalation, and slower-than-expected absorption. We mitigate these by completing legal milestones early, using fixed-price contracts where possible, and phasing the project to match sales. So what are the key messages from this investment evaluation? There are three. First, the project delivers strong returns in the base case, with an I R R well above our 15 percent hurdle rate. Second, the project is resilient — even in the downside case, returns remain positive. Third, our disciplined approach to phasing and risk mitigation protects the downside while preserving the upside. To summarize, this investment offers attractive risk-adjusted returns, supported by real demand, strong connectivity, and disciplined execution. I'm happy to take any questions."
+            >
+              Nghe toàn bộ bài trình bày investment return
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Opening &amp; Investment Thesis]</span><br />
+              Good morning everyone. I'd like to walk you through the investment evaluation for the Riverside Township project,
+              and explain the investment return. Let me start with our investment thesis. Our thesis is built on three pillars.
+              First, there is <span class="hl-violet">strong real demand</span> for housing in the eastern corridor of the city,
+              driven by population growth and infrastructure development. Second, the project benefits from
+              <span class="hl-violet">excellent connectivity</span>, which supports both owner-occupiers and rental demand.
+              Third, our <span class="hl-violet">disciplined phasing approach</span> allows us to match supply with demand
+              and minimize risk.
+            </p>
+
+            <p>
+              <span class="speaker">[Returns]</span><br />
+              Now let me walk you through the returns. On a base case basis, the project generates an
+              <span class="hl-violet">IRR of 18 percent</span> and an <span class="hl-violet">ROI of 32 percent</span>
+              over the five-year development period. The payback period is about four years, which means we recover our
+              initial investment by year four.
+            </p>
+
+            <p>
+              <span class="speaker">[Upside &amp; Downside]</span><br />
+              Let me explain the upside and downside. The <span class="hl-emerald">upside case</span> assumes selling prices
+              increase by 10 percent and absorption accelerates. In this case, the IRR reaches 24 percent.
+              The <span class="hl-orange">downside case</span> assumes prices drop by 10 percent and absorption slows by 20 percent.
+              Even in this case, the IRR remains positive at 12 percent, meaning the project still generates a return, though reduced.
+            </p>
+
+            <p>
+              <span class="speaker">[Key Risks]</span><br />
+              Now, the key risks. There are three main risks: legal approval delays, construction cost escalation,
+              and slower-than-expected absorption. We mitigate these by completing legal milestones early,
+              using fixed-price contracts where possible, and phasing the project to match sales.
+            </p>
+
+            <p>
+              <span class="speaker">[Key Messages &amp; Summary]</span><br />
+              So what are the key messages from this investment evaluation? There are three. First, the project delivers
+              strong returns in the base case, with an IRR well above our 15 percent hurdle rate. Second, the project is resilient —
+              even in the downside case, returns remain positive. Third, our disciplined approach to phasing and risk mitigation
+              protects the downside while preserving the upside. To summarize, this investment offers attractive risk-adjusted returns,
+              supported by real demand, strong connectivity, and disciplined execution. I'm happy to take any questions.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> What are the three pillars of the investment thesis?</li>
+            <li><strong>Question 2:</strong> What are the IRR and ROI in the base case?</li>
+            <li><strong>Question 3:</strong> What is the payback period, and what does it mean?</li>
+            <li><strong>Question 4:</strong> What happens to the IRR in the upside and downside cases?</li>
+            <li><strong>Question 5:</strong> What are the three key messages from the investment evaluation?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The three pillars are: real demand, strong connectivity, and disciplined phasing.
+              2. In the base case, IRR is 18% and ROI is 32% over five years.
+              3. The payback period is about four years, meaning the initial investment is recovered by year four.
+              4. In the upside case, IRR reaches 24%. In the downside case, IRR remains positive at 12%.
+              5. The three key messages are: strong base case returns, resilient downside, and disciplined risk mitigation.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Investment thesis</span>
+            <p>
+              Our investment thesis is built on three pillars: real demand, strong connectivity, and disciplined phasing.
+            </p>
+            <button class="audio-btn" type="button" data-speak="Our investment thesis is built on three pillars: real demand, strong connectivity, and disciplined phasing.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Upside/downside</span>
+            <p>
+              The upside case assumes prices increase by 10 percent, while the downside case still generates a positive return.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The upside case assumes prices increase by 10 percent, while the downside case still generates a positive return.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Risk-adjusted conclusion</span>
+            <p>
+              On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.
+            </p>
+            <button class="audio-btn" type="button" data-speak="On a risk-adjusted basis, this investment offers attractive returns relative to the risk taken.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Đọc ROI là từng chữ cái: /ˌɑːr oʊ ˈaɪ/. Đọc IRR là /ˌaɪ ɑːr ˈɑːr/.</li>
+            <li>Đọc rõ các con số: 18 percent, 32 percent, 24 percent, 12 percent, four years.</li>
+            <li>Nhấn vào so sánh: above, below, well above, still positive.</li>
+            <li>Ngắt rõ giữa các phần: thesis → returns → upside/downside → risks → key messages.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Investment Return trong 3–5 phút</h2>
+          <p>
+            Luyện 3 vòng tăng dần. Mục tiêu cuối cùng là trình bày investment return trong 3–5 phút
+            theo cấu trúc: thesis → returns → upside/downside → risks → key messages.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Bài trình bày investment return 3–5 phút nên đi theo 5 phần:
+            </p>
+
+            <ol>
+              <li><strong>Opening:</strong> giới thiệu investment evaluation và investment thesis.</li>
+              <li><strong>Returns:</strong> IRR, ROI, payback period.</li>
+              <li><strong>Upside &amp; downside:</strong> các kịch bản và kết quả tương ứng.</li>
+              <li><strong>Risks &amp; mitigation:</strong> rủi ro chính và cách giảm thiểu.</li>
+              <li><strong>Key messages &amp; summary:</strong> 3 thông điệp + kết luận.</li>
+            </ol>
+
+            <h4>Checklist khi trình bày investment return</h4>
+
+            <ul class="checklist">
+              <li>Có investment thesis trước khi đi vào con số.</li>
+              <li>Có IRR, ROI, payback period với kỳ so sánh.</li>
+              <li>Có upside case và downside case.</li>
+              <li>Có risks kèm mitigation.</li>
+              <li>Có 3 key messages rõ ràng.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Opening + Investment Thesis + Returns</h3>
+
+            <p>
+              Xây phần mở đầu, investment thesis và returns. Mục tiêu khoảng 1–2 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning. I'd like to walk you through the investment evaluation for the Riverside Township project.
+                Let me start with our <span class="hl-violet">investment thesis</span>.
+              </p>
+
+              <p>
+                Our thesis is built on three pillars: strong real demand, excellent connectivity, and disciplined phasing.
+                On a base case basis, the project generates an <span class="hl-violet">IRR of 18 percent</span> and an
+                <span class="hl-violet">ROI of 32 percent</span> over five years, with a payback period of about four years.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. I'd like to walk you through the investment evaluation for the Riverside Township project. Let me start with our investment thesis. Our thesis is built on three pillars: strong real demand, excellent connectivity, and disciplined phasing. On a base case basis, the project generates an IRR of 18 percent and an ROI of 32 percent over five years, with a payback period of about four years."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Thêm Upside/Downside + Risks</h3>
+
+            <p>
+              Thêm upside/downside và risks. Mục tiêu khoảng 3 phút khi nối với Round 1.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Let me explain the upside and downside. The <span class="hl-emerald">upside case</span> assumes prices
+                increase by 10 percent and absorption accelerates, pushing the IRR to 24 percent. The
+                <span class="hl-orange">downside case</span> assumes prices drop by 10 percent and absorption slows by 20 percent.
+                Even in this case, the IRR remains positive at 12 percent.
+              </p>
+
+              <p>
+                The key risks are legal delays, construction cost escalation, and slower absorption. We mitigate these
+                by completing legal milestones early, using fixed-price contracts, and phasing the project to match sales.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Let me explain the upside and downside. The upside case assumes prices increase by 10 percent and absorption accelerates, pushing the IRR to 24 percent. The downside case assumes prices drop by 10 percent and absorption slows by 20 percent. Even in this case, the IRR remains positive at 12 percent. The key risks are legal delays, construction cost escalation, and slower absorption. We mitigate these by completing legal milestones early, using fixed-price contracts, and phasing the project to match sales."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Investment Return 3–5 phút</h3>
+
+            <p>
+              Nối Round 1 + Round 2, thêm 3 key messages và summary. Mục tiêu trọn vẹn 3–5 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                So what are the <span class="hl-orange">key messages from this investment evaluation</span>? There are three.
+                First, the project delivers strong returns in the base case, with an IRR well above our 15 percent hurdle rate.
+                Second, the project is resilient — even in the downside case, returns remain positive.
+                Third, our disciplined approach to phasing and risk mitigation protects the downside while preserving the upside.
+              </p>
+
+              <p>
+                To summarize, this investment offers attractive risk-adjusted returns, supported by real demand,
+                strong connectivity, and disciplined execution. I'm happy to take any questions.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="So what are the key messages from this investment evaluation? There are three. First, the project delivers strong returns in the base case, with an IRR well above our 15 percent hurdle rate. Second, the project is resilient — even in the downside case, returns remain positive. Third, our disciplined approach to phasing and risk mitigation protects the downside while preserving the upside. To summarize, this investment offers attractive risk-adjusted returns, supported by real demand, strong connectivity, and disciplined execution. I'm happy to take any questions."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 3 — bài trình bày investment return 3–5 phút với số liệu thật của bạn.
+              Nếu chưa đủ thời lượng, hãy mở rộng bằng cách giải thích kỹ hơn từng trụ cột của thesis hoặc từng kịch bản.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có investment thesis trước khi đi vào con số không?</li>
+              <li>Bạn có IRR, ROI, payback period không?</li>
+              <li>Bạn có upside case và downside case không?</li>
+              <li>Bạn có risks kèm mitigation không?</li>
+              <li>Bạn có 3 key messages rõ ràng không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Nhầm ROI với IRR.</li>
+              <li>Đi thẳng vào con số mà không nêu thesis trước.</li>
+              <li>Trình bày upside mà không đề cập downside.</li>
+              <li>Nêu risk mà không có mitigation.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: viết investment memo summary, ghi âm phần trình bày và viết reflection.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Viết investment memo summary</h3>
+
+            <p>
+              Viết investment memo summary cho khoản đầu tư. Memo cần có investment thesis, returns,
+              upside/downside, risks và recommendation.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có investment thesis với các trụ cột.</li>
+              <li>Có returns: IRR, ROI, payback period.</li>
+              <li>Có upside case và downside case.</li>
+              <li>Có risks kèm mitigation.</li>
+              <li>Có recommendation rõ ràng.</li>
+            </ul>
+
+            <h4>Model Answer · Investment Memo Summary</h4>
+
+            <div class="memo-box">
+              <div class="memo-header">
+                <div class="kicker">Investment Memo Summary</div>
+                <div class="title">Riverside Township — Riverside Township Project</div>
+              </div>
+              <div class="memo-body">
+                <div class="memo-section">
+                  <div class="memo-label">Investment Thesis</div>
+                  <div class="memo-content">
+                    Our thesis is built on three pillars:
+                    <ul>
+                      <li>Strong real demand in the eastern corridor</li>
+                      <li>Excellent connectivity supporting owner-occupiers and rental demand</li>
+                      <li>Disciplined phasing to match supply with demand</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="memo-section">
+                  <div class="memo-label">Returns (Base Case) <span class="memo-pill positive">Attractive</span></div>
+                  <div class="memo-content">
+                    IRR: 18% · ROI: 32% over 5 years · Payback: ~4 years.
+                    IRR is well above our 15% hurdle rate.
+                  </div>
+                </div>
+
+                <div class="memo-section">
+                  <div class="memo-label">Upside / Downside <span class="memo-pill positive">Resilient</span></div>
+                  <div class="memo-content">
+                    Upside case: IRR 24% (prices +10%, absorption accelerates).
+                    Downside case: IRR 12% (prices −10%, absorption −20%) — still positive.
+                  </div>
+                </div>
+
+                <div class="memo-section">
+                  <div class="memo-label">Key Risks &amp; Mitigation <span class="memo-pill caution">Managed</span></div>
+                  <div class="memo-content">
+                    Risks: legal delays, cost escalation, slower absorption.
+                    Mitigation: early legal milestones, fixed-price contracts, disciplined phasing.
+                  </div>
+                </div>
+
+                <div class="memo-reco">
+                  Recommendation: PROCEED — attractive risk-adjusted returns, supported by real demand and disciplined execution.
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Investment memo summary for Riverside Township. Investment thesis: our thesis is built on three pillars — strong real demand in the eastern corridor, excellent connectivity supporting owner-occupiers and rental demand, and disciplined phasing to match supply with demand. Returns, base case: I R R of 18 percent, R O I of 32 percent over five years, payback of about four years. I R R is well above our 15 percent hurdle rate. Upside case: I R R of 24 percent. Downside case: I R R of 12 percent, still positive. Key risks: legal delays, cost escalation, slower absorption, mitigated by early legal milestones, fixed-price contracts, and disciplined phasing. Recommendation: proceed. The investment offers attractive risk-adjusted returns, supported by real demand and disciplined execution."
+            >
+              Nghe investment memo summary
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm phần trình bày investment memo</h3>
+
+            <p>
+              Dùng investment memo bạn vừa viết và ghi âm phần trình bày 1–2 phút,
+              như thể bạn đang báo cáo với hội đồng đầu tư.
+            </p>
+
+            <h4>Recording Checklist</h4>
+            <ul class="checklist">
+              <li>Mở đầu bằng investment thesis.</li>
+              <li>Trình bày returns với IRR, ROI, payback.</li>
+              <li>Nêu upside và downside case.</li>
+              <li>Nêu risks kèm mitigation.</li>
+              <li>Kết thúc bằng recommendation rõ ràng.</li>
+            </ul>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cấu trúc bạn sẽ tiếp tục dùng khi trình bày investment.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã trình bày đủ thesis, returns, upside/downside, risks và recommendation.
+                Improve: Tôi cần giải thích thesis kỹ hơn trước khi đi vào con số.
+                Keep: On a risk-adjusted basis, this investment offers attractive returns.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow rose">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi trình bày investment return</h2>
+          <p>
+            Tránh các lỗi này để phần trình bày investment return của bạn rõ ràng, có lập luận và thuyết phục.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nhầm ROI (tổng lợi nhuận trên vốn) với IRR (tỷ suất nội bộ).</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The ROI is 32% over five years, and the IRR is 18% — both well above our hurdle rate.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đi thẳng vào con số mà không nêu investment thesis trước.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Our investment thesis is built on three pillars: real demand, connectivity, and disciplined phasing.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Trình bày upside mà không đề cập downside.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The upside is an IRR of 24%, while the downside is limited to 12%, which is still positive.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nêu risk mà không có mitigation.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The main risks are legal delays and cost escalation, mitigated by early milestones and fixed-price contracts.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 18 khi có thể</h2>
+          <p>
+            Trước khi sang Day 19, hãy đảm bảo bạn đã nắm được bộ ngôn ngữ investment evaluation.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng ROI, Payback, Risk.</li>
+            <li>Tôi có thể dùng Upside, Downside, Investment thesis.</li>
+            <li>Tôi có thể dùng risk-adjusted return, hurdle rate.</li>
+            <li>Tôi có thể nói Our investment thesis is based on...</li>
+            <li>Tôi có thể nói The upside is..., while the downside is limited to...</li>
+            <li>Tôi có thể trình bày investment return trong 3–5 phút.</li>
+            <li>Tôi có thể viết investment memo summary.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-17.html">
+            <small>Previous Day · Week 3</small>
+            <strong>Day 17 · Funding</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 18 Complete</strong>
+          </button>
+
+          <a href="level-1-day-19.html">
+            <small>Next Day · Week 3</small>
+            <strong>Day 19 · JV &amp; Partnership</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 18 · Investment Evaluation</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 18 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["18"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 18 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 18/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 18 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 18/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["18"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "Our investment thesis is built on three pillars: real demand, strong connectivity, and disciplined phasing. The project delivers an I R R of 18 percent, well above our hurdle rate. On a risk-adjusted basis, this investment offers attractive returns.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

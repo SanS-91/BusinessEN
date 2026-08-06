@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 14 | Case Study | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 14 - Case Study: mô tả một dự án theo cấu trúc overview, location, master plan, product mix, sales, financial highlights, key risks; Speaking topic Describe One Project; Output tạo outline 5 slide và trả lời 2 câu hỏi khó."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f7f8ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfdff;
+      --text-strong: #202a52;
+      --text-body: #42507a;
+      --text-muted: #6b76a1;
+      --text-soft: #8b96b9;
+      --line: rgba(37, 50, 99, 0.10);
+      --line-soft: rgba(37, 50, 99, 0.07);
+      --shadow-lg: 0 24px 70px rgba(30, 42, 92, 0.09);
+      --shadow-md: 0 14px 36px rgba(30, 42, 92, 0.07);
+      --shadow-sm: 0 8px 20px rgba(30, 42, 92, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --indigo: #4f46e5; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4338ca;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --cyan: #06b6d4; --cyan-soft: #ecfeff; --cyan-line: #a5f3fc; --cyan-text: #0e7490;
+      --sky: #0ea5e9; --sky-soft: #f0f9ff; --sky-line: #bae6fd; --sky-text: #0369a1;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(6, 182, 212, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(14, 165, 233, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(13, 148, 136, 0.08), transparent 24%),
+        linear-gradient(180deg, #fbfcff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--cyan-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(30, 42, 92, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #515d88; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #24305a; background: #eef2ff; border-color: #c7d2fe; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--cyan-soft);
+      color: var(--cyan-text); border: 1px solid var(--cyan-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(30, 42, 92, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.teal { background: var(--teal-soft); color: var(--teal-text); border-color: var(--teal-line); }
+    .plan-pill.cyan { background: var(--cyan-soft); color: var(--cyan-text); border-color: var(--cyan-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--cyan-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    /* WEEK 2 COLOR — fresh water: teal → cyan → sky (same for Day 8–14) */
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.22), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.16), transparent 18%),
+        linear-gradient(135deg, #0d9488 0%, #06b6d4 48%, #0ea5e9 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #0f766e; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn-blue { background: var(--cyan-soft); color: var(--cyan-text); border-color: var(--cyan-line); }
+    .btn-soft { background: #ffffff; color: #312e81; border-color: #c7d2fe; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(236, 254, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(6, 182, 212, 0.18); color: var(--cyan-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.teal { color: var(--teal-text); border-color: var(--teal-line); background: var(--teal-soft); }
+    .eyebrow.cyan { color: var(--cyan-text); border-color: var(--cyan-line); background: var(--cyan-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-teal, .tint-cyan, .tint-sky, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-indigo, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfdff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #fbfaff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-cyan { border-top: 6px solid var(--cyan); background: linear-gradient(180deg, #ffffff, #f5feff); }
+    .tint-sky { border-top: 6px solid var(--sky); background: linear-gradient(180deg, #ffffff, #f5fbff); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #d8def4;
+      background: #fbfcff; color: #26304f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #06b6d4; box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(37, 50, 99, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8faff; border: 1px solid #dbe2f5; color: #33406a; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8faff; border: 1px solid #dbe2f5;
+      color: #42527b; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #e6ebfa; color: #3d4a74; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--cyan-line); background: var(--cyan-soft);
+      color: var(--cyan-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #cffafe; }
+    .audio-btn.playing { background: #0e7490; color: #ffffff; border-color: #0e7490; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8faff; color: #4a5784;
+      border: 1px solid #dbe2f5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #e6ebfa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #33406a; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #42507a; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfdff; border: 1px solid #a5f3fc; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #2d3a61; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--cyan-text); }
+
+    .hl-blue, .hl-violet, .hl-teal, .hl-cyan, .hl-orange, .hl-emerald, .hl-rose { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-teal { background: linear-gradient(180deg, rgba(13, 148, 136, 0), rgba(13, 148, 136, 0.14)); color: var(--teal-text); }
+    .hl-cyan { background: linear-gradient(180deg, rgba(6, 182, 212, 0), rgba(6, 182, 212, 0.14)); color: var(--cyan-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+    .hl-rose { background: linear-gradient(180deg, rgba(225, 29, 72, 0), rgba(225, 29, 72, 0.12)); color: var(--rose-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8faff;
+      border: 1px solid #e6ebfa; border-left: 5px solid var(--emerald); color: #2d3a61; font-weight: 600;
+    }
+
+    /* Framework */
+    .framework-panel { padding: 22px; margin-bottom: 22px; }
+    .framework-panel h3 { margin: 0 0 6px; font-size: 22px; color: var(--text-strong); letter-spacing: -0.02em; }
+    .framework-panel p { margin: 0 0 14px; color: var(--text-muted); }
+    .framework-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .framework-item {
+      padding: 12px 10px; border-radius: 14px; background: linear-gradient(180deg, #ffffff, #f5feff);
+      border: 1px solid #a5f3fc; font-weight: 800; color: var(--cyan-text); text-align: center; font-size: 14px;
+    }
+
+    /* Slide outline */
+    .slide-outline { display: grid; gap: 12px; margin-top: 16px; }
+    .slide-card {
+      background: #ffffff; border: 1px solid #a5f3fc; border-radius: 18px; padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .slide-no {
+      display: inline-flex; align-items: center; min-height: 28px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--cyan-soft); color: var(--cyan-text); border: 1px solid var(--cyan-line); margin-bottom: 10px;
+    }
+    .slide-card h4 { margin: 0 0 8px; font-size: 19px; color: var(--text-strong); letter-spacing: -0.02em; }
+    .slide-card ul { margin: 0; padding-left: 18px; display: grid; gap: 7px; color: var(--text-body); }
+
+    /* Q&A */
+    .qa-grid { display: grid; gap: 14px; margin-top: 16px; }
+    .qa-item {
+      background: #ffffff; border: 1px solid #a5f3fc; border-radius: 18px; padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .qa-question {
+      font-weight: 900; color: var(--cyan-text); margin-bottom: 10px; font-size: 17px;
+    }
+    .qa-answer { color: var(--text-body); line-height: 1.85; }
+    .qa-answer p { margin: 0 0 10px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f4c76; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #4d5986;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #eef2ff; border-color: #c7d2fe; color: #312e81; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+      .framework-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel, .framework-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+      .framework-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 14</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 14/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill cyan" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#case-language">15 phút · Case Language</a>
+      <a class="plan-pill violet" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill teal" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 14</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 2 · Final</span>
+            <span class="hero-tag">Day 14 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Describe One Project</span>
+          </div>
+
+          <h1 class="hero-title">Case Study</h1>
+
+          <p class="hero-subtitle">
+            Day 14 là ngày tổng kết Week 2. Bạn sẽ tích hợp toàn bộ ngôn ngữ bất động sản đã học thành một
+            <strong>case study dự án hoàn chỉnh</strong>: overview, location &amp; connectivity, master plan,
+            product mix, sales &amp; absorption, financial highlights và key risks.
+            Bạn có thể dùng một dự án Nam Long hoặc dự án bạn đang phụ trách.
+          </p>
+
+          <div class="hero-quote">
+            Một case study tốt không phải là danh sách sự kiện. Đó là một câu chuyện dự án có luận điểm rõ ràng:
+            vì sao dự án này có nhu cầu thật, vì sao cấu trúc sản phẩm hợp lý, và vì sao rủi ro đang được kiểm soát.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ hoàn thành một case study dự án có thể trình bày trong 5 phút
+            và sẵn sàng trả lời câu hỏi khó.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Case Language &amp; Framework · 15 phút</strong>
+              <span>
+                Ôn 7 phần của một case study và 8 thuật ngữ case study: case study, overview, connectivity,
+                product mix, absorption, financial highlights, key risks, mitigation.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases &amp; Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu để trình bày case study: opening, location, master plan, product mix,
+                sales &amp; absorption, risks &amp; mitigation.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe một bài case study mẫu khoảng 5 phút. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần: Round 1 overview + location + master plan; Round 2 product mix + sales + financial highlights;
+                Round 3 full case study 5 phút kèm risks và summary.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Tạo outline 5 slide cho case study. Tự trả lời 2 câu hỏi khó. Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE LANGUAGE -->
+    <section class="section" id="case-language">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Case Language &amp; Framework</h2>
+          <p>
+            Trước khi học từ vựng, hãy nắm khung 7 phần của một case study. Sau đó học 8 thuật ngữ giúp bạn
+            trình bày từng phần một cách chuyên nghiệp.
+          </p>
+        </div>
+
+        <div class="panel framework-panel">
+          <h3>7-part Case Study Structure</h3>
+          <p>Một case study dự án nên đi theo 7 phần sau để người nghe dễ theo dõi và dễ tin.</p>
+
+          <div class="framework-grid">
+            <div class="framework-item">1. Overview</div>
+            <div class="framework-item">2. Location &amp; connectivity</div>
+            <div class="framework-item">3. Master plan</div>
+            <div class="framework-item">4. Product mix</div>
+            <div class="framework-item">5. Sales &amp; absorption</div>
+            <div class="framework-item">6. Financial highlights</div>
+            <div class="framework-item">7. Key risks</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>case study</h3>
+              <button class="audio-btn" type="button" data-speak="case study. Today I'd like to present a case study of a 50-hectare integrated township.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈkeɪs ˌstʌdi/</span>
+            <p class="vn">Nghiên cứu tình huống / dự án điển hình</p>
+
+            <div class="note">
+              Ghi chú: case study dùng để phân tích một dự án cụ thể như một ví dụ thuyết phục.
+              Khi trình bày, luôn nêu luận điểm chính ngay từ đầu.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> present a case study, case study of a project, real-world case study</li>
+              <li><strong>Example:</strong> Today I'd like to present a case study of a 50-hectare integrated township.</li>
+              <li><strong>Native alternative:</strong> project case, example project</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>overview</h3>
+              <button class="audio-btn" type="button" data-speak="overview. Let me start with a quick overview of the project.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈoʊvərvjuː/</span>
+            <p class="vn">Tổng quan</p>
+
+            <div class="note">
+              Ghi chú: overview cần ngắn nhưng đủ: tên dự án, vị trí, quy mô, phân khúc, luận điểm đầu tư.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> project overview, give an overview, quick overview</li>
+              <li><strong>Example:</strong> Let me start with a quick overview of the project.</li>
+              <li><strong>Native alternative:</strong> summary, snapshot</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>connectivity</h3>
+              <button class="audio-btn" type="button" data-speak="connectivity. The project benefits from strong connectivity to the city center and the planned metro line.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kəˌnekˈtɪvəti/</span>
+            <p class="vn">Kết nối giao thông / liên kết vùng</p>
+
+            <div class="note">
+              Ghi chú: connectivity là lợi thế lớn trong bất động sản. Hãy nêu cụ thể thời gian di chuyển và hạ tầng lân cận.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> strong connectivity, improve connectivity, connectivity to the city center</li>
+              <li><strong>Example:</strong> The project benefits from strong connectivity to the city center and the planned metro line.</li>
+              <li><strong>Native alternative:</strong> access, transport links</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>product mix</h3>
+              <button class="audio-btn" type="button" data-speak="product mix. The product mix includes apartments, townhouses, and retail space.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈprɑːdʌkt mɪks/</span>
+            <p class="vn">Cơ cấu sản phẩm</p>
+
+            <div class="note">
+              Ghi chú: product mix cho biết dự án có những loại sản phẩm nào. Nên gắn product mix với chiến lược bán hàng theo giai đoạn.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> diversified product mix, product mix includes, adjust the product mix</li>
+              <li><strong>Example:</strong> The product mix includes apartments, townhouses, and retail space.</li>
+              <li><strong>Native alternative:</strong> product portfolio, offering mix</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>absorption</h3>
+              <button class="audio-btn" type="button" data-speak="absorption. Absorption has reached 65 percent of Phase 1 since the soft launch.">Nghe</button>
+            </div>
+
+            <span class="ipa">/əbˈzɔːrpʃn/</span>
+            <p class="vn">Tỷ lệ hấp thụ</p>
+
+            <div class="note">
+              Ghi chú: absorption đo tốc độ thị trường hấp thụ sản phẩm. Đây là bằng chứng quan trọng cho nhu cầu thật.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> market absorption, absorption rate, strong absorption</li>
+              <li><strong>Example:</strong> Absorption has reached 65 percent of Phase 1 since the soft launch.</li>
+              <li><strong>Native alternative:</strong> take-up rate, sell-through</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>financial highlights</h3>
+              <button class="audio-btn" type="button" data-speak="financial highlights. The financial highlights include an 18 percent base-case IRR and a positive NPV.">Nghe</button>
+            </div>
+
+            <span class="ipa">/faɪˈnænʃl ˈhaɪlaɪts/</span>
+            <p class="vn">Điểm nhấn tài chính</p>
+
+            <div class="note">
+              Ghi chú: financial highlights nên gồm IRR, NPV, payback, funding structure và downside test. Không nên liệt kê quá nhiều số.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key financial highlights, financial highlights include, present financial highlights</li>
+              <li><strong>Example:</strong> The financial highlights include an 18 percent base-case IRR and a positive NPV.</li>
+              <li><strong>Native alternative:</strong> key financial metrics, financial snapshot</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>key risks</h3>
+              <button class="audio-btn" type="button" data-speak="key risks. The key risks are legal delays, construction cost escalation, and slower absorption.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kiː rɪsks/</span>
+            <p class="vn">Rủi ro chính</p>
+
+            <div class="note">
+              Ghi chú: nêu key risks không làm yếu case study. Ngược lại, nó cho thấy bạn hiểu dự án và đã chuẩn bị mitigation.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> identify key risks, key risks include, manage key risks</li>
+              <li><strong>Example:</strong> The key risks are legal delays, construction cost escalation, and slower absorption.</li>
+              <li><strong>Native alternative:</strong> main risks, risk factors</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>mitigation</h3>
+              <button class="audio-btn" type="button" data-speak="mitigation. Our mitigation plan includes phasing, fixed-price contracts, and a liquidity buffer.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌmɪtɪˈɡeɪʃn/</span>
+            <p class="vn">Biện pháp giảm thiểu</p>
+
+            <div class="note">
+              Ghi chú: mỗi risk nên đi kèm mitigation. Đây là phần nhà đầu tư và Ban lãnh đạo đặc biệt quan tâm.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> mitigation plan, mitigation measures, risk mitigation</li>
+              <li><strong>Example:</strong> Our mitigation plan includes phasing, fixed-price contracts, and a liquidity buffer.</li>
+              <li><strong>Native alternative:</strong> corrective action, risk response</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Block 2 · 20 phút</span>
+          <h2>Phrases &amp; Sentence Patterns</h2>
+          <p>
+            6 mẫu câu giúp bạn trình bày case study theo từng phần: mở đầu, vị trí, master plan, product mix,
+            sales &amp; absorption, risks &amp; mitigation.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>I'd like to walk you through...</h3>
+              <button class="audio-btn" type="button" data-speak="I'd like to walk you through a case study of Riverside Township, a 50-hectare integrated development.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-cyan">I'd like to walk you through + case/project</span>.
+              Dùng để mở đầu bài trình bày case study.
+            </div>
+
+            <div class="example">
+              <span class="label">Opening statement</span>
+              <p>
+                I'd like to walk you through a case study of Riverside Township, a 50-hectare integrated development.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay dự án: a case study of a mixed-use project / a case study of our Phase 1 launch.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh mở đầu bằng quá nhiều số liệu. Nên nêu luận điểm trước: dự án này hấp dẫn vì sao.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>The project is located in..., with connectivity to...</h3>
+              <button class="audio-btn" type="button" data-speak="The project is located in the eastern part of the city, with strong connectivity to the main highway and the planned metro line.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-teal">The project is located in + vị trí, with connectivity to + hạ tầng</span>.
+              Dùng để mô tả location &amp; connectivity.
+            </div>
+
+            <div class="example">
+              <span class="label">Location statement</span>
+              <p>
+                The project is located in the eastern part of the city, with strong connectivity to the main highway
+                and the planned metro line.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay hạ tầng: with connectivity to the airport / with connectivity to schools and hospitals.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Nêu thời gian di chuyển cụ thể: 20 minutes to the city center, 10 minutes to the metro.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>The master plan allocates...</h3>
+              <button class="audio-btn" type="button" data-speak="The master plan allocates 60 percent of the land to residential use, 20 percent to commercial, and 20 percent to parks and infrastructure.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">The master plan allocates + % + to + mục đích</span>.
+              Dùng để mô tả cơ cấu sử dụng đất.
+            </div>
+
+            <div class="example">
+              <span class="label">Master plan statement</span>
+              <p>
+                The master plan allocates 60 percent of the land to residential use, 20 percent to commercial,
+                and 20 percent to parks and infrastructure.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay tỷ lệ: allocates 70 percent to residential / allocates more land to green space.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh chỉ nói tỷ lệ mà không nêu ý nghĩa. Nên nói tỷ lệ đó hỗ trợ livability hoặc commercial revenue.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>The product mix includes...</h3>
+              <button class="audio-btn" type="button" data-speak="The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">The product mix includes + loại sản phẩm + số lượng</span>.
+              Dùng để mô tả cơ cấu sản phẩm.
+            </div>
+
+            <div class="example">
+              <span class="label">Product mix statement</span>
+              <p>
+                The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay sản phẩm: includes villas and shophouses / includes serviced apartments and office space.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Gắn product mix với phasing: sản phẩm nào bán trước, sản phẩm nào bán sau.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Sales have achieved..., with absorption at...</h3>
+              <button class="audio-btn" type="button" data-speak="Sales have achieved 450 bookings, with absorption at about 65 percent of Phase 1.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">Sales have achieved + kết quả, with absorption at + %</span>.
+              Dùng để báo cáo bằng chứng thị trường.
+            </div>
+
+            <div class="example">
+              <span class="label">Sales statement</span>
+              <p>
+                Sales have achieved 450 bookings, with absorption at about 65 percent of Phase 1.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay kết quả: achieved 200 units sold / achieved 70 percent of the launch target.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nói sales tốt chung chung. Nên đưa booking, absorption, ASP hoặc so sánh với forecast.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>The key risks are..., mitigated by...</h3>
+              <button class="audio-btn" type="button" data-speak="The key risks are legal delays, construction cost escalation, and slower absorption, mitigated by phasing, fixed-price contracts, and a liquidity buffer.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">The key risks are + risks, mitigated by + biện pháp</span>.
+              Dùng để kết thúc case study một cách đáng tin.
+            </div>
+
+            <div class="example">
+              <span class="label">Risk statement</span>
+              <p>
+                The key risks are legal delays, construction cost escalation, and slower absorption,
+                mitigated by phasing, fixed-price contracts, and a liquidity buffer.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay risk và mitigation: risks are interest rate increases and slow pre-sales, mitigated by flexible payment plans.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nêu risk mà không có mitigation. Cũng tránh nói “no risks” vì làm giảm độ tin cậy.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow teal">Block 3 · 20 phút</span>
+          <h2>Listening · Case Study Presentation</h2>
+          <p>
+            Nghe một bài case study mẫu khoảng 5 phút. Đây là mô hình để bạn tái hiện với dự án thật của mình.
+            Nếu bạn dùng dự án Nam Long hoặc dự án đang phụ trách, hãy thay số liệu tương ứng.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm luận điểm chính của case study.</li>
+            <li>Nghe lần hai để nhận diện 7 phần: overview, location, master plan, product mix, sales, financial highlights, risks.</li>
+            <li>Nghe lần ba để phân tích cách người nói nối các phần và xử lý risk.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. Today I'd like to present a case study of Riverside Township, a Nam Long-style integrated township. Please note this is a sample case; you can replace it with your own project. Overview: Riverside Township is a 50-hectare integrated development located in the eastern part of the city. The project is positioned as an affordable-to-mid-end township that serves young families and professionals. The investment thesis is simple: strong real housing demand, good connectivity, and disciplined phasing. Location and connectivity: The project is 20 minutes from the city center via the main highway, and 10 minutes from the planned metro station. It is close to existing schools, a hospital, and a commercial center. This connectivity supports both owner-occupiers and rental demand. Master plan: The master plan allocates 60 percent of the land to residential use, 20 percent to commercial and retail, and 20 percent to parks, schools, and infrastructure. The plot ratio is 2.5, with a total GFA of about 1.25 million square meters. The design combines low-rise townhouses near the riverfront with high-rise towers near the commercial core. Product mix: The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space. The first phase focuses on townhouses and mid-rise apartments to create early cash flow. The second phase introduces high-rise towers once infrastructure and community facilities are visible. Sales and absorption: Since the soft launch, we have received 450 bookings, and absorption has reached about 65 percent of Phase 1. The average selling price is around 2,300 dollars per square meter, slightly above our base-case assumption. This supports the view that the market accepts the product positioning. Financial highlights: The total development cost is approximately 180 million dollars. The project is funded by 30 percent equity, 50 percent bank loan, and 20 percent pre-sales. In the base case, the project IRR is about 18 percent, NPV is positive, and payback is around four years. The downside case still produces a positive IRR of about 12 percent, assuming sales slow by 20 percent. Key risks: The key risks are legal approval delays, construction cost escalation, and slower-than-expected absorption. We mitigate these by completing legal milestones before major construction, using fixed-price contracts where possible, and phasing the project to match sales. We also keep a liquidity buffer equal to six months of construction costs. To summarize, Riverside Township offers a clear investment case: real demand, strong connectivity, a balanced master plan, and disciplined financial management. I'm happy to take questions."
+            >
+              Nghe toàn bộ case study
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Opening &amp; Overview]</span><br />
+              Good morning. Today I'd like to present a case study of Riverside Township, a Nam Long-style integrated township.
+              Please note this is a sample case; you can replace it with your own project.
+            </p>
+
+            <p>
+              <span class="speaker">[Overview]</span><br />
+              Riverside Township is a 50-hectare integrated development located in the eastern part of the city.
+              The project is positioned as an affordable-to-mid-end township that serves young families and professionals.
+              The investment thesis is simple: strong real housing demand, good connectivity, and disciplined phasing.
+            </p>
+
+            <p>
+              <span class="speaker">[Location &amp; Connectivity]</span><br />
+              The project is 20 minutes from the city center via the main highway, and 10 minutes from the planned metro station.
+              It is close to existing schools, a hospital, and a commercial center.
+              This connectivity supports both owner-occupiers and rental demand.
+            </p>
+
+            <p>
+              <span class="speaker">[Master Plan]</span><br />
+              The master plan allocates 60 percent of the land to residential use, 20 percent to commercial and retail,
+              and 20 percent to parks, schools, and infrastructure. The plot ratio is 2.5, with a total GFA of about
+              1.25 million square meters. The design combines low-rise townhouses near the riverfront with high-rise towers
+              near the commercial core.
+            </p>
+
+            <p>
+              <span class="speaker">[Product Mix]</span><br />
+              The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space.
+              The first phase focuses on townhouses and mid-rise apartments to create early cash flow.
+              The second phase introduces high-rise towers once infrastructure and community facilities are visible.
+            </p>
+
+            <p>
+              <span class="speaker">[Sales &amp; Absorption]</span><br />
+              Since the soft launch, we have received 450 bookings, and absorption has reached about 65 percent of Phase 1.
+              The average selling price is around 2,300 dollars per square meter, slightly above our base-case assumption.
+              This supports the view that the market accepts the product positioning.
+            </p>
+
+            <p>
+              <span class="speaker">[Financial Highlights]</span><br />
+              The total development cost is approximately 180 million dollars. The project is funded by 30 percent equity,
+              50 percent bank loan, and 20 percent pre-sales. In the base case, the project IRR is about 18 percent,
+              NPV is positive, and payback is around four years. The downside case still produces a positive IRR of about
+              12 percent, assuming sales slow by 20 percent.
+            </p>
+
+            <p>
+              <span class="speaker">[Key Risks]</span><br />
+              The key risks are legal approval delays, construction cost escalation, and slower-than-expected absorption.
+              We mitigate these by completing legal milestones before major construction, using fixed-price contracts where possible,
+              and phasing the project to match sales. We also keep a liquidity buffer equal to six months of construction costs.
+            </p>
+
+            <p>
+              <span class="speaker">[Summary]</span><br />
+              To summarize, Riverside Township offers a clear investment case: real demand, strong connectivity,
+              a balanced master plan, and disciplined financial management. I'm happy to take questions.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> What is the investment thesis of the project?</li>
+            <li><strong>Question 2:</strong> What connectivity advantages does the project have?</li>
+            <li><strong>Question 3:</strong> How is the master plan allocated?</li>
+            <li><strong>Question 4:</strong> What evidence shows market acceptance?</li>
+            <li><strong>Question 5:</strong> What are the key risks and mitigations?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The investment thesis is strong real housing demand, good connectivity, and disciplined phasing.
+              2. The project is 20 minutes from the city center via the main highway and 10 minutes from the planned metro station.
+              3. The master plan allocates 60% residential, 20% commercial and retail, and 20% parks, schools, and infrastructure.
+              4. The project has 450 bookings and absorption of about 65% of Phase 1, with ASP slightly above the base-case assumption.
+              5. The key risks are legal delays, construction cost escalation, and slower absorption; mitigations include legal milestones first, fixed-price contracts, phasing, and a liquidity buffer.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Thesis</span>
+            <p>
+              The investment thesis is simple: strong real housing demand, good connectivity, and disciplined phasing.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The investment thesis is simple: strong real housing demand, good connectivity, and disciplined phasing.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Product mix</span>
+            <p>
+              The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Risk mitigation</span>
+            <p>
+              We mitigate these risks by completing legal milestones first, using fixed-price contracts, and phasing the project to match sales.
+            </p>
+            <button class="audio-btn" type="button" data-speak="We mitigate these risks by completing legal milestones first, using fixed-price contracts, and phasing the project to match sales.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào luận điểm: real demand, connectivity, disciplined phasing.</li>
+            <li>Đọc rõ số liệu: 50 hectares, 1.25 million square meters, 450 bookings, 65 percent.</li>
+            <li>Giọng chắc và bình tĩnh khi nói về risks và mitigation.</li>
+            <li>Ngắt rõ giữa 7 phần để người nghe không bị quá tải.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Case Study 5 phút</h2>
+          <p>
+            Luyện 3 vòng tăng dần. Mục tiêu cuối cùng là trình bày case study dự án trong 5 phút
+            với cấu trúc 7 phần rõ ràng.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Bài trình bày case study 5 phút nên đi theo 7 phần:
+            </p>
+
+            <ol>
+              <li><strong>Overview:</strong> tên dự án, quy mô, phân khúc, investment thesis.</li>
+              <li><strong>Location &amp; connectivity:</strong> vị trí, thời gian di chuyển, hạ tầng lân cận.</li>
+              <li><strong>Master plan:</strong> land use, plot ratio, GFA, thiết kế.</li>
+              <li><strong>Product mix:</strong> loại sản phẩm, số lượng, phasing.</li>
+              <li><strong>Sales &amp; absorption:</strong> bookings, absorption, ASP.</li>
+              <li><strong>Financial highlights:</strong> cost, funding, IRR, NPV, downside.</li>
+              <li><strong>Key risks:</strong> risks + mitigation + summary.</li>
+            </ol>
+
+            <h4>Checklist khi trình bày case study</h4>
+
+            <ul class="checklist">
+              <li>Có investment thesis rõ ràng ngay từ đầu.</li>
+              <li>Có bằng chứng vị trí và connectivity cụ thể.</li>
+              <li>Có master plan và product mix gắn với chiến lược bán hàng.</li>
+              <li>Có số liệu sales &amp; absorption.</li>
+              <li>Có financial highlights và downside test.</li>
+              <li>Có key risks kèm mitigation.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Overview + Location + Master Plan</h3>
+
+            <p>
+              Xây phần mở đầu và 3 phần đầu của case study. Mục tiêu khoảng 1.5–2 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning. I'd like to present a case study of Riverside Township, a 50-hectare integrated development
+                in the eastern part of the city. The project is positioned as an affordable-to-mid-end township for
+                young families and professionals. <span class="hl-cyan">The investment thesis</span> is based on real
+                housing demand, good connectivity, and disciplined phasing.
+              </p>
+
+              <p>
+                The project is located 20 minutes from the city center via the main highway, and 10 minutes from the
+                planned metro station. It is close to schools, a hospital, and a commercial center.
+                <span class="hl-teal">The master plan</span> allocates 60 percent of the land to residential use,
+                20 percent to commercial and retail, and 20 percent to parks, schools, and infrastructure.
+                The plot ratio is 2.5, with total GFA of about 1.25 million square meters.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. I'd like to present a case study of Riverside Township, a 50-hectare integrated development in the eastern part of the city. The project is positioned as an affordable-to-mid-end township for young families and professionals. The investment thesis is based on real housing demand, good connectivity, and disciplined phasing. The project is located 20 minutes from the city center via the main highway, and 10 minutes from the planned metro station. It is close to schools, a hospital, and a commercial center. The master plan allocates 60 percent of the land to residential use, 20 percent to commercial and retail, and 20 percent to parks, schools, and infrastructure. The plot ratio is 2.5, with total GFA of about 1.25 million square meters."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Product Mix + Sales + Financial Highlights</h3>
+
+            <p>
+              Thêm product mix, sales &amp; absorption, financial highlights. Mục tiêu khoảng 3.5 phút khi nối với Round 1.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <span class="hl-violet">The product mix</span> includes 1,200 apartments, 300 townhouses, and
+                15,000 square meters of retail space. The first phase focuses on townhouses and mid-rise apartments
+                to create early cash flow. The second phase introduces high-rise towers once facilities are visible.
+              </p>
+
+              <p>
+                Since the soft launch, we have received 450 bookings, and <span class="hl-emerald">absorption has reached
+                about 65 percent of Phase 1</span>. The average selling price is around 2,300 dollars per square meter,
+                slightly above our base-case assumption.
+              </p>
+
+              <p>
+                Financially, total development cost is approximately 180 million dollars. Funding is 30 percent equity,
+                50 percent bank loan, and 20 percent pre-sales. In the base case, IRR is about 18 percent, NPV is positive,
+                and payback is around four years.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="The product mix includes 1,200 apartments, 300 townhouses, and 15,000 square meters of retail space. The first phase focuses on townhouses and mid-rise apartments to create early cash flow. The second phase introduces high-rise towers once facilities are visible. Since the soft launch, we have received 450 bookings, and absorption has reached about 65 percent of Phase 1. The average selling price is around 2,300 dollars per square meter, slightly above our base-case assumption. Financially, total development cost is approximately 180 million dollars. Funding is 30 percent equity, 50 percent bank loan, and 20 percent pre-sales. In the base case, IRR is about 18 percent, NPV is positive, and payback is around four years."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Case Study 5 phút</h3>
+
+            <p>
+              Nối Round 1 + Round 2, thêm key risks, mitigation và summary. Mục tiêu trọn vẹn 5 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <span class="hl-orange">The key risks</span> are legal approval delays, construction cost escalation,
+                and slower-than-expected absorption. We mitigate these by completing legal milestones before major construction,
+                using fixed-price contracts where possible, and phasing the project to match sales.
+                We also keep a liquidity buffer equal to six months of construction costs.
+              </p>
+
+              <p>
+                In the downside case, assuming sales slow by 20 percent, IRR remains positive at about 12 percent.
+                To summarize, the project offers real demand, strong connectivity, a balanced master plan,
+                and disciplined financial management. I'm happy to take questions.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="The key risks are legal approval delays, construction cost escalation, and slower-than-expected absorption. We mitigate these by completing legal milestones before major construction, using fixed-price contracts where possible, and phasing the project to match sales. We also keep a liquidity buffer equal to six months of construction costs. In the downside case, assuming sales slow by 20 percent, IRR remains positive at about 12 percent. To summarize, the project offers real demand, strong connectivity, a balanced master plan, and disciplined financial management. I'm happy to take questions."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 3 — bài case study 5 phút với dự án thật của bạn. Nếu bạn dùng dự án Nam Long,
+              hãy thay số liệu mẫu bằng số liệu bạn nắm rõ. Nếu bạn dùng dự án đang phụ trách, hãy chọn số liệu
+              bạn có thể bảo vệ được khi bị hỏi.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có investment thesis rõ ràng không?</li>
+              <li>Bạn có đủ 7 phần của case study không?</li>
+              <li>Bạn có bằng chứng sales &amp; absorption không?</li>
+              <li>Bạn có financial highlights và downside test không?</li>
+              <li>Bạn có risks và mitigation không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Trình bày như một danh sách số liệu, không có storyline.</li>
+              <li>Nêu quá nhiều chi tiết nhỏ khiến người nghe mất luận điểm.</li>
+              <li>Nói risk nhưng không có mitigation.</li>
+              <li>Kết thúc đột ngột, không tóm tắt investment case.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: tạo outline 5 slide cho case study, tự trả lời 2 câu hỏi khó và viết reflection.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Tạo outline 5 slide</h3>
+
+            <p>
+              Tạo outline 5 slide để trình bày case study dự án. Mỗi slide cần có một thông điệp chính,
+              không nên nhồi quá nhiều chữ.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có đủ 5 slide.</li>
+              <li>Mỗi slide có tiêu đề và 3–5 bullet.</li>
+              <li>Có số liệu cụ thể nhưng không quá tải.</li>
+              <li>Có risks &amp; mitigation ở slide cuối.</li>
+              <li>Có thể dùng để trình bày trong 5 phút.</li>
+            </ul>
+
+            <h4>Model Answer · 5-Slide Outline</h4>
+
+            <div class="slide-outline">
+              <div class="slide-card">
+                <span class="slide-no">Slide 1</span>
+                <h4>Overview &amp; Investment Thesis</h4>
+                <ul>
+                  <li>Project: Riverside Township, 50 hectares, eastern part of the city.</li>
+                  <li>Positioning: affordable-to-mid-end integrated township.</li>
+                  <li>Thesis: real housing demand + strong connectivity + disciplined phasing.</li>
+                </ul>
+              </div>
+
+              <div class="slide-card">
+                <span class="slide-no">Slide 2</span>
+                <h4>Location &amp; Master Plan</h4>
+                <ul>
+                  <li>20 minutes to city center; 10 minutes to planned metro station.</li>
+                  <li>Land use: 60% residential, 20% commercial, 20% parks and infrastructure.</li>
+                  <li>Plot ratio: 2.5; total GFA: about 1.25 million square meters.</li>
+                </ul>
+              </div>
+
+              <div class="slide-card">
+                <span class="slide-no">Slide 3</span>
+                <h4>Product Mix &amp; Phasing</h4>
+                <ul>
+                  <li>1,200 apartments, 300 townhouses, 15,000 square meters of retail.</li>
+                  <li>Phase 1: townhouses and mid-rise apartments for early cash flow.</li>
+                  <li>Phase 2: high-rise towers once facilities are visible.</li>
+                </ul>
+              </div>
+
+              <div class="slide-card">
+                <span class="slide-no">Slide 4</span>
+                <h4>Sales &amp; Financial Highlights</h4>
+                <ul>
+                  <li>450 bookings; absorption about 65% of Phase 1.</li>
+                  <li>ASP around 2,300 dollars per square meter.</li>
+                  <li>Cost about 180 million dollars; funding: 30% equity, 50% bank loan, 20% pre-sales.</li>
+                  <li>Base-case IRR about 18%; downside IRR about 12%.</li>
+                </ul>
+              </div>
+
+              <div class="slide-card">
+                <span class="slide-no">Slide 5</span>
+                <h4>Key Risks &amp; Mitigation</h4>
+                <ul>
+                  <li>Risks: legal delays, construction cost escalation, slower absorption.</li>
+                  <li>Mitigation: legal milestones first, fixed-price contracts, phasing with sales.</li>
+                  <li>Liquidity buffer: six months of construction costs.</li>
+                  <li>Next step: approve Phase 2 launch criteria and funding drawdown plan.</li>
+                </ul>
+              </div>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Five-slide case outline. Slide one: overview and investment thesis. Riverside Township, 50 hectares, eastern part of the city, positioned for young families and professionals. Thesis: real housing demand, strong connectivity, disciplined phasing. Slide two: location and master plan. 20 minutes to city center, 10 minutes to planned metro. Land use: 60 percent residential, 20 percent commercial, 20 percent parks and infrastructure. Plot ratio 2.5, total GFA about 1.25 million square meters. Slide three: product mix and phasing. 1,200 apartments, 300 townhouses, 15,000 square meters of retail. Phase one: townhouses and mid-rise apartments. Phase two: high-rise towers. Slide four: sales and financial highlights. 450 bookings, absorption 65 percent of phase one, ASP around 2,300 dollars per square meter. Development cost about 180 million dollars, funding 30 percent equity, 50 percent bank loan, 20 percent pre-sales. Base case IRR 18 percent, downside IRR 12 percent. Slide five: key risks and mitigation. Legal delays, construction cost escalation, slower absorption. Mitigation: legal milestones first, fixed-price contracts, phasing with sales, six-month liquidity buffer."
+            >
+              Nghe 5-slide outline
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Tự trả lời 2 câu hỏi khó</h3>
+
+            <p>
+              Sau khi hoàn thành outline, hãy tự đặt 2 câu hỏi khó mà nhà đầu tư hoặc Ban lãnh đạo có thể hỏi.
+              Dưới đây là 2 câu mẫu và đáp án gợi ý.
+            </p>
+
+            <div class="qa-grid">
+              <div class="qa-item">
+                <div class="qa-question">
+                  Question 1: What happens if absorption is 30 percent lower than expected?
+                </div>
+
+                <div class="qa-answer">
+                  <p>
+                    If absorption is 30 percent lower than expected, we first stress-test cash flow and slow down
+                    Phase 2 launches. We would prioritize early cash-flow products, adjust the sales pace rather than
+                    cut prices immediately, and delay non-essential construction.
+                  </p>
+
+                  <p>
+                    We also have a liquidity buffer equal to six months of construction costs, and we can draw down
+                    the bank loan only when pre-sales reach agreed thresholds. The downside case still shows a positive
+                    IRR of about 12 percent, so the project remains viable, but returns would be lower and timing longer.
+                  </p>
+
+                  <button
+                    class="audio-btn"
+                    type="button"
+                    data-speak="If absorption is 30 percent lower than expected, we first stress-test cash flow and slow down Phase two launches. We would prioritize early cash flow products, adjust the sales pace rather than cut prices immediately, and delay non-essential construction. We also have a liquidity buffer equal to six months of construction costs, and we can draw down the bank loan only when pre-sales reach agreed thresholds. The downside case still shows a positive IRR of about 12 percent, so the project remains viable, but returns would be lower and timing longer."
+                  >
+                    Nghe đáp án 1
+                  </button>
+                </div>
+              </div>
+
+              <div class="qa-item">
+                <div class="qa-question">
+                  Question 2: What if the construction permit is delayed by three months?
+                </div>
+
+                <div class="qa-answer">
+                  <p>
+                    If the construction permit is delayed by three months, we would re-sequence early works that do not
+                    require the full permit, such as site preparation and show apartment fit-out where allowed.
+                    We would also adjust the pre-sales timeline and communicate clearly with customers and partners.
+                  </p>
+
+                  <p>
+                    The financial model includes a contingency buffer, and the critical path shows that a three-month
+                    delay reduces IRR by about 50 basis points, but does not break the investment case. Our priority
+                    is to complete legal milestones early to avoid repeated delays.
+                  </p>
+
+                  <button
+                    class="audio-btn"
+                    type="button"
+                    data-speak="If the construction permit is delayed by three months, we would re-sequence early works that do not require the full permit, such as site preparation and show apartment fit-out where allowed. We would also adjust the pre-sales timeline and communicate clearly with customers and partners. The financial model includes a contingency buffer, and the critical path shows that a three-month delay reduces IRR by about 50 basis points, but does not break the investment case. Our priority is to complete legal milestones early to avoid repeated delays."
+                  >
+                    Nghe đáp án 2
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt trong case study.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần trình bày sau.</li>
+              <li><strong>Keep:</strong> 1 cấu trúc bạn sẽ tiếp tục dùng khi mô tả dự án.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã trình bày đủ 7 phần và có investment thesis rõ ràng.
+                Improve: Tôi cần giảm số liệu ở slide 4 và nhấn mạnh implication hơn.
+                Keep: The key risks are..., mitigated by...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi trình bày case study</h2>
+          <p>
+            Tránh các lỗi này để case study của bạn có storyline, có bằng chứng và có độ tin cậy cao.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Liệt kê quá nhiều sự kiện mà không có investment thesis hoặc storyline.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The investment thesis is simple: real demand, good connectivity, and disciplined phasing.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đưa số liệu mà không nói ý nghĩa: ASP, IRR, absorption chỉ là con số.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>ASP is slightly above our base-case assumption, which supports the view that the market accepts the positioning.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nói “no major risks” hoặc bỏ qua phần rủi ro.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The key risks are legal delays, cost escalation, and slower absorption, mitigated by phasing and buffers.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không chuẩn bị câu hỏi khó, đặc biệt về downside scenario.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>In the downside case, assuming sales slow by 20 percent, IRR remains positive at about 12 percent.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 14 khi có thể</h2>
+          <p>
+            Đây là ngày cuối của Week 2. Trước khi sang Week 3, hãy đảm bảo bạn đã hoàn thành case study hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể trình bày overview và investment thesis rõ ràng.</li>
+            <li>Tôi có thể mô tả location &amp; connectivity với bằng chứng cụ thể.</li>
+            <li>Tôi có thể trình bày master plan và product mix.</li>
+            <li>Tôi có thể báo cáo sales &amp; absorption.</li>
+            <li>Tôi có thể nêu financial highlights và downside test.</li>
+            <li>Tôi có thể trình bày key risks kèm mitigation.</li>
+            <li>Tôi có thể trình bày case study trong 5 phút.</li>
+            <li>Tôi có thể tạo outline 5 slide.</li>
+            <li>Tôi có thể trả lời ít nhất 2 câu hỏi khó.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-13.html">
+            <small>Previous Day · Week 2</small>
+            <strong>Day 13 · Operation</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 14 Complete</strong>
+          </button>
+
+          <a href="level-1-day-15.html">
+            <small>Next Day · Week 3</small>
+            <strong>Day 15 · Financial Statements</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 14 · Case Study</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 14 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["14"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 14 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 14/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 14 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 14/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["14"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "I'd like to walk you through a case study of a 50-hectare integrated township. The investment thesis is real demand, strong connectivity, and disciplined phasing.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

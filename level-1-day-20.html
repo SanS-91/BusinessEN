@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 20 | Risk Analysis | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 20 - Risk Analysis: trình bày risk assessment với Construction Risk, Legal Risk, Sales Risk, Funding Risk, Market Risk, Execution Risk; Speaking topic Risk Assessment; Output tạo risk matrix gồm 5 rủi ro và mitigation plan."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f8f7ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfcff;
+      --text-strong: #241f4e;
+      --text-body: #45406e;
+      --text-muted: #6e6896;
+      --text-soft: #908ab2;
+      --line: rgba(60, 45, 120, 0.10);
+      --line-soft: rgba(60, 45, 120, 0.07);
+      --shadow-lg: 0 24px 70px rgba(58, 42, 120, 0.10);
+      --shadow-md: 0 14px 36px rgba(58, 42, 120, 0.08);
+      --shadow-sm: 0 8px 20px rgba(58, 42, 120, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --purple: #8b5cf6; --purple-soft: #faf5ff; --purple-line: #e9d5ff; --purple-text: #7e22ce;
+      --indigo: #6366f1; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4f46e5;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --cyan: #06b6d4; --cyan-soft: #ecfeff; --cyan-line: #a5f3fc; --cyan-text: #0e7490;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(124, 58, 237, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(139, 92, 246, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(99, 102, 241, 0.08), transparent 24%),
+        linear-gradient(180deg, #fcfbff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--violet-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(58, 42, 120, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #312a63; background: #f1edff; border-color: #ddd0ff; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--violet-soft);
+      color: var(--violet-text); border: 1px solid var(--violet-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(58, 42, 120, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.purple { background: var(--purple-soft); color: var(--purple-text); border-color: var(--purple-line); }
+    .plan-pill.indigo { background: var(--indigo-soft); color: var(--indigo-text); border-color: var(--indigo-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--violet-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    /* WEEK 3 COLOR — finance violet: violet → purple → indigo (same for Day 15–21) */
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.20), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.14), transparent 18%),
+        linear-gradient(135deg, #7c3aed 0%, #8b5cf6 48%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #6d28d9; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn-blue { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .btn-soft { background: #ffffff; color: #4c1d95; border-color: #ddd0ff; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(245, 240, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(124, 58, 237, 0.18); color: var(--violet-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.purple { color: var(--purple-text); border-color: var(--purple-line); background: var(--purple-soft); }
+    .eyebrow.indigo { color: var(--indigo-text); border-color: var(--indigo-line); background: var(--indigo-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-purple, .tint-indigo, .tint-teal, .tint-cyan, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfcff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #faf7ff); }
+    .tint-purple { border-top: 6px solid var(--purple); background: linear-gradient(180deg, #ffffff, #fbf8ff); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-cyan { border-top: 6px solid var(--cyan); background: linear-gradient(180deg, #ffffff, #f5feff); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #ddd4f4;
+      background: #fbfaff; color: #3a2f5f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #7c3aed; box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(60, 45, 120, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8f6ff; border: 1px solid #e3daf5; color: #453a6e; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8f6ff; border: 1px solid #e3daf5;
+      color: #5a4f85; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #ece7fa; color: #46406e; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--violet-line); background: var(--violet-soft);
+      color: var(--violet-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #ece2ff; }
+    .audio-btn.playing { background: #6d28d9; color: #ffffff; border-color: #6d28d9; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8f6ff; color: #5a5480;
+      border: 1px solid #e3daf5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #ece7fa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #3a3462; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #45406e; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfaff; border: 1px solid #e9d5ff; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #342e5e; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--violet-text); }
+
+    .hl-blue, .hl-violet, .hl-purple, .hl-indigo, .hl-orange, .hl-emerald, .hl-rose { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-purple { background: linear-gradient(180deg, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.13)); color: var(--purple-text); }
+    .hl-indigo { background: linear-gradient(180deg, rgba(99, 102, 241, 0), rgba(99, 102, 241, 0.13)); color: var(--indigo-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+    .hl-rose { background: linear-gradient(180deg, rgba(225, 29, 72, 0), rgba(225, 29, 72, 0.12)); color: var(--rose-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8f6ff;
+      border: 1px solid #ece7fa; border-left: 5px solid var(--emerald); color: #342e5e; font-weight: 600;
+    }
+
+    /* Risk matrix component */
+    .riskmatrix-box {
+      margin-top: 16px; background: linear-gradient(180deg, #ffffff, #faf7ff);
+      border: 1px solid #e9d5ff; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .riskmatrix-header { padding: 18px 22px; background: linear-gradient(135deg, #7c3aed, #6366f1); color: #fff; }
+    .riskmatrix-header .kicker { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+    .riskmatrix-header .title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
+    .riskmatrix-body { padding: 22px; display: grid; gap: 16px; }
+    .risk-card {
+      padding: 16px 18px; background: #fff; border: 1px solid #ede4ff; border-radius: 16px;
+    }
+    .risk-card .risk-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;
+    }
+    .risk-card .risk-name { font-weight: 800; color: var(--text-strong); font-size: 17px; }
+    .risk-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .risk-badge {
+      display: inline-flex; align-items: center; padding: 3px 10px; border-radius: var(--radius-pill);
+      font-size: 12px; font-weight: 800;
+    }
+    .risk-badge.low { background: var(--emerald-soft); color: var(--emerald-text); border: 1px solid var(--emerald-line); }
+    .risk-badge.medium { background: var(--amber-soft); color: var(--amber-text); border: 1px solid var(--amber-line); }
+    .risk-badge.high { background: var(--rose-soft); color: var(--rose-text); border: 1px solid var(--rose-line); }
+    .risk-card .risk-mitigation { color: var(--text-body); font-size: 15px; line-height: 1.7; margin-top: 6px; }
+    .risk-card .risk-residual { margin-top: 10px; font-size: 14px; font-weight: 700; color: var(--text-muted); }
+    .risk-card .risk-residual strong { color: var(--emerald-text); }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f3a66; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #8a84a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #55507a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #f1edff; border-color: #ddd0ff; color: #4c1d95; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 20</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 20/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill violet" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill purple" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill indigo" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 20</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 3 · Finance &amp; Investment</span>
+            <span class="hero-tag">Day 20 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Risk Assessment</span>
+          </div>
+
+          <h1 class="hero-title">Risk Analysis</h1>
+
+          <p class="hero-subtitle">
+            Day 20 đưa bạn vào trung tâm của quản trị rủi ro dự án.
+            Bạn sẽ học ngôn ngữ của <strong>Construction Risk</strong>, <strong>Legal Risk</strong>, <strong>Sales Risk</strong>,
+            <strong>Funding Risk</strong>, <strong>Market Risk</strong> và <strong>Execution Risk</strong> — bộ công cụ
+            để trình bày một risk assessment thuyết phục với hội đồng đầu tư và ban lãnh đạo.
+          </p>
+
+          <div class="hero-quote">
+            Một risk assessment tốt không phải là danh sách những điều có thể sai.
+            Đó là một lập luận logic: rủi ro nào quan trọng nhất, khả năng xảy ra và tác động ra sao,
+            và chúng ta đã làm gì để giảm thiểu chúng. Người nói tốt biến nỗi sợ thành sự tự tin có kiểm soát.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được risk matrix hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary &amp; Risk Terms · 15 phút</strong>
+              <span>
+                Học 8 thuật ngữ risk: Construction Risk, Legal Risk, Sales Risk, Funding Risk, Market Risk,
+                Execution Risk, mitigation, risk appetite. Nghe từng item, lặp lại và đặt 1 câu với dự án thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases &amp; Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu trình bày risk assessment: risk identification, mitigation, likelihood/impact,
+                worst case, risk appetite, residual risk. Làm substitution drill.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe một bài trình bày risk assessment mẫu. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần, xây từng phần của bài trình bày risk assessment cho đến khi bạn trình bày
+                trọn vẹn trong 3–5 phút với số liệu thật của mình.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Tạo risk matrix gồm 5 rủi ro và mitigation plan. Ghi âm phần trình bày risk matrix.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary &amp; Risk Terms</h2>
+          <p>
+            8 thuật ngữ risk cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.
+            Đây là bộ từ vựng bạn sẽ dùng để trình bày risk assessment.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>Construction Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Construction Risk. The main construction risk is cost escalation and delays, which we mitigate with fixed-price contracts.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kənˈstrʌkʃn rɪsk/</span>
+            <p class="vn">Rủi ro xây dựng</p>
+
+            <div class="note">
+              Ghi chú: Construction risk là rủi ro liên quan đến quá trình xây dựng — chi phí vượt dự toán, chậm tiến độ, chất lượng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> construction risk, construction cost escalation, construction delay</li>
+              <li><strong>Example:</strong> The main construction risk is cost escalation and delays, which we mitigate with fixed-price contracts.</li>
+              <li><strong>Native alternative:</strong> build risk, development risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Legal Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Legal Risk. The main legal risk is delay in obtaining permits, which we mitigate by engaging legal counsel early.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈliːɡl rɪsk/</span>
+            <p class="vn">Rủi ro pháp lý</p>
+
+            <div class="note">
+              Ghi chú: Legal risk là rủi ro liên quan đến pháp lý — chậm giấy phép, thay đổi quy định, tranh chấp.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> legal risk, regulatory risk, legal exposure</li>
+              <li><strong>Example:</strong> The main legal risk is delay in obtaining permits, which we mitigate by engaging legal counsel early.</li>
+              <li><strong>Native alternative:</strong> regulatory risk, compliance risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Sales Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Sales Risk. The main sales risk is slower-than-expected absorption, which we mitigate by phasing the project to match sales.">Nghe</button>
+            </div>
+
+            <span class="ipa">/seɪlz rɪsk/</span>
+            <p class="vn">Rủi ro bán hàng</p>
+
+            <div class="note">
+              Ghi chú: Sales risk là rủi ro liên quan đến bán hàng — hấp thụ chậm hơn kỳ vọng, giá bán thấp hơn dự kiến.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> sales risk, absorption risk, sales velocity risk</li>
+              <li><strong>Example:</strong> The main sales risk is slower-than-expected absorption, which we mitigate by phasing the project to match sales.</li>
+              <li><strong>Native alternative:</strong> demand risk, market absorption risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>Funding Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Funding Risk. The main funding risk is difficulty securing financing, which we mitigate by securing committed financing upfront.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈfʌndɪŋ rɪsk/</span>
+            <p class="vn">Rủi ro tài trợ vốn</p>
+
+            <div class="note">
+              Ghi chú: Funding risk là rủi ro liên quan đến nguồn vốn — khó huy động vốn, lãi suất tăng, giải ngân chậm.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> funding risk, financing risk, liquidity risk</li>
+              <li><strong>Example:</strong> The main funding risk is difficulty securing financing, which we mitigate by securing committed financing upfront.</li>
+              <li><strong>Native alternative:</strong> financing risk, capital risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Market Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Market Risk. The main market risk is a market downturn affecting demand, which we mitigate by targeting real demand rather than speculation.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈmɑːrkɪt rɪsk/</span>
+            <p class="vn">Rủi ro thị trường</p>
+
+            <div class="note">
+              Ghi chú: Market risk là rủi ro liên quan đến thị trường — suy thoái, thay đổi cung cầu, biến động giá.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> market risk, market downturn, market volatility</li>
+              <li><strong>Example:</strong> The main market risk is a market downturn affecting demand, which we mitigate by targeting real demand rather than speculation.</li>
+              <li><strong>Native alternative:</strong> market downturn risk, cyclical risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Execution Risk</h3>
+              <button class="audio-btn" type="button" data-speak="Execution Risk. The main execution risk is poor coordination between teams, which we mitigate with clear governance and regular reviews.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌeksɪˈkjuːʃn rɪsk/</span>
+            <p class="vn">Rủi ro thực thi</p>
+
+            <div class="note">
+              Ghi chú: Execution risk là rủi ro liên quan đến năng lực thực thi — phối hợp kém, thiếu năng lực, quản lý yếu.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> execution risk, implementation risk, operational risk</li>
+              <li><strong>Example:</strong> The main execution risk is poor coordination between teams, which we mitigate with clear governance and regular reviews.</li>
+              <li><strong>Native alternative:</strong> implementation risk, delivery risk</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>mitigation</h3>
+              <button class="audio-btn" type="button" data-speak="Mitigation. We mitigate construction risk by using fixed-price contracts and maintaining a 10 percent contingency buffer.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌmɪtɪˈɡeɪʃn/</span>
+            <p class="vn">Biện pháp giảm thiểu</p>
+
+            <div class="note">
+              Ghi chú: Mitigation là biện pháp giảm thiểu rủi ro. Luôn nêu mitigation kèm theo mỗi rủi ro khi trình bày.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> risk mitigation, mitigation plan, mitigation measures</li>
+              <li><strong>Example:</strong> We mitigate construction risk by using fixed-price contracts and maintaining a 10 percent contingency buffer.</li>
+              <li><strong>Native alternative:</strong> risk reduction, risk management</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>risk appetite</h3>
+              <button class="audio-btn" type="button" data-speak="Risk appetite. After mitigation, all residual risks are within our risk appetite, which is moderate for this project type.">Nghe</button>
+            </div>
+
+            <span class="ipa">/rɪsk ˈæpɪtaɪt/</span>
+            <p class="vn">Mức chấp nhận rủi ro</p>
+
+            <div class="note">
+              Ghi chú: Risk appetite là mức rủi ro tối đa mà tổ chức chấp nhận. Dùng để kết luận risk assessment.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> risk appetite, within risk appetite, risk tolerance</li>
+              <li><strong>Example:</strong> After mitigation, all residual risks are within our risk appetite, which is moderate for this project type.</li>
+              <li><strong>Native alternative:</strong> risk tolerance, risk threshold</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Block 2 · 20 phút</span>
+          <h2>Phrases &amp; Sentence Patterns</h2>
+          <p>
+            6 mẫu câu giúp bạn trình bày risk assessment theo từng phần: risk identification, mitigation,
+            likelihood/impact, worst case, risk appetite và residual risk.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>The main risk is..., which could lead to...</h3>
+              <button class="audio-btn" type="button" data-speak="The main risk is construction cost escalation, which could lead to budget overruns and project delays.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">The main risk is + rủi ro + which could lead to + hậu quả</span>.
+              Dùng để nêu rủi ro và hậu quả tiềm tàng.
+            </div>
+
+            <div class="example">
+              <span class="label">Risk statement</span>
+              <p>
+                The main risk is construction cost escalation, which could lead to budget overruns and project delays.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay rủi ro và hậu quả: legal delays, which could lead to construction start delays / sales risk, which could lead to cash flow pressure.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh nêu rủi ro mà không nói hậu quả. Nên giải thích rủi ro đó ảnh hưởng thế nào đến dự án.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>We mitigate this by...</h3>
+              <button class="audio-btn" type="button" data-speak="We mitigate this by using fixed-price contracts and maintaining a 10 percent contingency buffer.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">We mitigate this by + biện pháp</span>.
+              Dùng để nêu cách giảm thiểu rủi ro.
+            </div>
+
+            <div class="example">
+              <span class="label">Mitigation statement</span>
+              <p>
+                We mitigate this by using fixed-price contracts and maintaining a 10 percent contingency buffer.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay biện pháp: engaging legal counsel early / phasing the project to match sales / securing committed financing upfront.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Luôn nêu mitigation kèm theo mỗi rủi ro. Nhà đầu tư muốn biết bạn kiểm soát rủi ro thế nào.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The likelihood is low/medium/high, but the impact is...</h3>
+              <button class="audio-btn" type="button" data-speak="The likelihood is low, but the impact is high — so we maintain a contingency buffer to be safe.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-purple">The likelihood is + mức + but the impact is + mức</span>.
+              Dùng để đánh giá likelihood và impact của rủi ro.
+            </div>
+
+            <div class="example">
+              <span class="label">Likelihood/impact statement</span>
+              <p>
+                The likelihood is low, but the impact is high — so we maintain a contingency buffer to be safe.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay mức: medium likelihood, high impact / low likelihood, low impact / high likelihood, medium impact.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh chỉ nói rủi ro "cao" hay "thấp" chung chung. Nên tách rõ likelihood và impact.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>In the worst case,...</h3>
+              <button class="audio-btn" type="button" data-speak="In the worst case, construction costs could escalate by 20 percent, but our contingency buffer would still cover it.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">In the worst case, + kịch bản xấu nhất (+ nhưng vẫn kiểm soát được)</span>.
+              Dùng để nêu kịch bản xấu nhất nhưng cho thấy vẫn kiểm soát được.
+            </div>
+
+            <div class="example">
+              <span class="label">Worst case statement</span>
+              <p>
+                In the worst case, construction costs could escalate by 20 percent, but our contingency buffer would still cover it.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay kịch bản: sales could drop by 30%, but we have a liquidity buffer / permits could be delayed by 6 months, but we have contingency plans.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Nên nêu worst case nhưng kèm theo "but we can still handle it" — cho thấy bạn đã chuẩn bị.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Our risk appetite is...</h3>
+              <button class="audio-btn" type="button" data-speak="Our risk appetite is moderate for this project type, and all residual risks fall within that threshold.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">Our risk appetite is + mức (+ và các rủi ro đều nằm trong ngưỡng)</span>.
+              Dùng để kết luận risk assessment.
+            </div>
+
+            <div class="example">
+              <span class="label">Risk appetite statement</span>
+              <p>
+                Our risk appetite is moderate for this project type, and all residual risks fall within that threshold.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay mức: conservative / moderate / aggressive / within acceptable limits.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh kết luận "no risks" hoặc "all risks are managed" mà không nêu cụ thể. Nên nêu risk appetite và residual risk.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-cyan">
+            <div class="card-top">
+              <h3>The residual risk after mitigation is...</h3>
+              <button class="audio-btn" type="button" data-speak="The residual risk after mitigation is low, which is within our risk appetite for this project type.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-indigo">The residual risk after mitigation is + mức</span>.
+              Dùng để nêu rủi ro còn lại sau khi đã giảm thiểu.
+            </div>
+
+            <div class="example">
+              <span class="label">Residual risk statement</span>
+              <p>
+                The residual risk after mitigation is low, which is within our risk appetite for this project type.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay mức: low / low to medium / medium / acceptable / within tolerance.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh chỉ nói đã mitigate mà không nói residual risk còn bao nhiêu. Nên nêu rõ mức residual risk.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow indigo">Block 3 · 20 phút</span>
+          <h2>Listening · Risk Assessment Presentation</h2>
+          <p>
+            Nghe một bài trình bày risk assessment mẫu. Đây là mô hình để bạn tái hiện với số liệu thật của mình.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm cấu trúc bài trình bày risk assessment.</li>
+            <li>Nghe lần hai để nhận diện các patterns: main risk, mitigate, likelihood/impact, worst case, residual risk.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: overview → top 5 risks → mitigation → residual risk → key messages.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning everyone. I'd like to walk you through the risk assessment for the Riverside Township project, and explain how we plan to manage the key risks. Let me start with an overview. We have identified six main categories of risk: construction risk, legal risk, sales risk, funding risk, market risk, and execution risk. I'll walk you through the top five risks, ranked by their combined likelihood and impact. First, construction risk. This is rated as medium likelihood but high impact. The main concern is construction cost escalation and delays. We mitigate this by using fixed-price contracts where possible, maintaining a 10 percent contingency buffer, and conducting regular progress reviews. The residual risk after mitigation is low. Second, legal risk. This is rated as low likelihood but high impact. The main concern is delays in obtaining permits and approvals. We mitigate this by engaging legal counsel early, completing legal milestones before major construction, and maintaining regular dialogue with authorities. The residual risk after mitigation is low. Third, sales risk. This is rated as medium likelihood and medium impact. The main concern is slower-than-expected absorption. We mitigate this by phasing the project to match sales, maintaining flexible pricing, and building a strong sales pipeline. The residual risk after mitigation is low to medium. Fourth, funding risk. This is rated as low likelihood but high impact. The main concern is difficulty securing financing or rising interest rates. We mitigate this by securing committed financing upfront, maintaining a liquidity buffer, and using fixed-rate financing where possible. The residual risk after mitigation is low. Fifth, market risk. This is rated as medium likelihood and medium impact. The main concern is a market downturn affecting demand and pricing. We mitigate this by targeting real demand rather than speculation, maintaining a diversified product mix, and building in pricing flexibility. The residual risk after mitigation is medium. So what are the key messages from this risk assessment? There are three. First, our top risks are well-understood and have clear mitigation plans. Second, after mitigation, all residual risks are at acceptable levels within our risk appetite. Third, we have contingency buffers and regular monitoring to catch emerging risks early. To summarize, this project has a well-structured risk management framework. The key risks are identified, mitigated, and monitored. I'm happy to take any questions."
+            >
+              Nghe toàn bộ bài trình bày risk assessment
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Opening &amp; Overview]</span><br />
+              Good morning everyone. I'd like to walk you through the risk assessment for the Riverside Township project,
+              and explain how we plan to manage the key risks. Let me start with an overview. We have identified
+              <span class="hl-violet">six main categories of risk</span>: construction risk, legal risk, sales risk,
+              funding risk, market risk, and execution risk. I'll walk you through the top five risks,
+              ranked by their combined likelihood and impact.
+            </p>
+
+            <p>
+              <span class="speaker">[Risk 1: Construction]</span><br />
+              First, construction risk. This is rated as <span class="hl-orange">medium likelihood but high impact</span>.
+              The main concern is construction cost escalation and delays. We mitigate this by using fixed-price contracts
+              where possible, maintaining a 10 percent contingency buffer, and conducting regular progress reviews.
+              The residual risk after mitigation is low.
+            </p>
+
+            <p>
+              <span class="speaker">[Risk 2: Legal]</span><br />
+              Second, legal risk. This is rated as <span class="hl-orange">low likelihood but high impact</span>.
+              The main concern is delays in obtaining permits and approvals. We mitigate this by engaging legal counsel early,
+              completing legal milestones before major construction, and maintaining regular dialogue with authorities.
+              The residual risk after mitigation is low.
+            </p>
+
+            <p>
+              <span class="speaker">[Risk 3: Sales]</span><br />
+              Third, sales risk. This is rated as <span class="hl-orange">medium likelihood and medium impact</span>.
+              The main concern is slower-than-expected absorption. We mitigate this by phasing the project to match sales,
+              maintaining flexible pricing, and building a strong sales pipeline.
+              The residual risk after mitigation is low to medium.
+            </p>
+
+            <p>
+              <span class="speaker">[Risk 4: Funding]</span><br />
+              Fourth, funding risk. This is rated as <span class="hl-orange">low likelihood but high impact</span>.
+              The main concern is difficulty securing financing or rising interest rates. We mitigate this by securing
+              committed financing upfront, maintaining a liquidity buffer, and using fixed-rate financing where possible.
+              The residual risk after mitigation is low.
+            </p>
+
+            <p>
+              <span class="speaker">[Risk 5: Market]</span><br />
+              Fifth, market risk. This is rated as <span class="hl-orange">medium likelihood and medium impact</span>.
+              The main concern is a market downturn affecting demand and pricing. We mitigate this by targeting real demand
+              rather than speculation, maintaining a diversified product mix, and building in pricing flexibility.
+              The residual risk after mitigation is medium.
+            </p>
+
+            <p>
+              <span class="speaker">[Key Messages &amp; Summary]</span><br />
+              So what are the key messages from this risk assessment? There are three. First, our top risks are well-understood
+              and have clear mitigation plans. Second, after mitigation, all residual risks are at acceptable levels
+              within our risk appetite. Third, we have contingency buffers and regular monitoring to catch emerging risks early.
+              To summarize, this project has a well-structured risk management framework. The key risks are identified,
+              mitigated, and monitored. I'm happy to take any questions.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> What are the six main categories of risk identified?</li>
+            <li><strong>Question 2:</strong> Which risk is rated medium likelihood but high impact, and how is it mitigated?</li>
+            <li><strong>Question 3:</strong> Which risk has low likelihood but high impact, and what is the mitigation?</li>
+            <li><strong>Question 4:</strong> What is the residual risk for market risk after mitigation?</li>
+            <li><strong>Question 5:</strong> What are the three key messages from the risk assessment?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The six categories are: construction risk, legal risk, sales risk, funding risk, market risk, and execution risk.
+              2. Construction risk is rated medium likelihood, high impact. Mitigated by fixed-price contracts, contingency buffer, and regular reviews.
+              3. Legal risk is rated low likelihood, high impact. Mitigated by engaging legal counsel early and completing legal milestones first.
+              4. The residual risk for market risk after mitigation is medium.
+              5. The three key messages are: risks are well-understood with clear mitigation, residual risks are within risk appetite, and contingency buffers with monitoring catch emerging risks.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Risk identification</span>
+            <p>
+              The main risk is construction cost escalation, which could lead to budget overruns and project delays.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The main risk is construction cost escalation, which could lead to budget overruns and project delays.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Mitigation</span>
+            <p>
+              We mitigate this by using fixed-price contracts and maintaining a 10 percent contingency buffer.
+            </p>
+            <button class="audio-btn" type="button" data-speak="We mitigate this by using fixed-price contracts and maintaining a 10 percent contingency buffer.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Residual risk</span>
+            <p>
+              The residual risk after mitigation is low, which is within our risk appetite for this project type.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The residual risk after mitigation is low, which is within our risk appetite for this project type.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Đọc rõ các mức: low, medium, high — nhấn vào mức độ rủi ro.</li>
+            <li>Đọc rõ các con số: 10 percent contingency, 20 percent cost escalation.</li>
+            <li>Nhấn vào các từ khóa: mitigate, residual, within risk appetite.</li>
+            <li>Ngắt rõ giữa các phần: overview → risks → mitigation → residual → key messages.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Risk Assessment trong 3–5 phút</h2>
+          <p>
+            Luyện 3 vòng tăng dần. Mục tiêu cuối cùng là trình bày risk assessment trong 3–5 phút
+            theo cấu trúc: overview → top risks → mitigation → residual risk → key messages.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Bài trình bày risk assessment 3–5 phút nên đi theo 5 phần:
+            </p>
+
+            <ol>
+              <li><strong>Opening:</strong> giới thiệu risk assessment và các loại rủi ro.</li>
+              <li><strong>Top risks:</strong> các rủi ro hàng đầu với likelihood và impact.</li>
+              <li><strong>Mitigation:</strong> cách giảm thiểu từng rủi ro.</li>
+              <li><strong>Residual risk:</strong> rủi ro còn lại sau mitigation.</li>
+              <li><strong>Key messages &amp; summary:</strong> 3 thông điệp + kết luận.</li>
+            </ol>
+
+            <h4>Checklist khi trình bày risk assessment</h4>
+
+            <ul class="checklist">
+              <li>Có các loại rủi ro được xác định rõ ràng.</li>
+              <li>Có likelihood và impact cho mỗi rủi ro.</li>
+              <li>Có mitigation cho mỗi rủi ro.</li>
+              <li>Có residual risk sau mitigation.</li>
+              <li>Có 3 key messages rõ ràng.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Opening + Risk Overview + Top 2 Risks</h3>
+
+            <p>
+              Xây phần mở đầu và 2 rủi ro hàng đầu. Mục tiêu khoảng 1–2 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning. I'd like to walk you through the <span class="hl-violet">risk assessment</span>
+                for the Riverside Township project. We have identified six main categories of risk,
+                and I'll walk you through the top five, ranked by likelihood and impact.
+              </p>
+
+              <p>
+                First, <span class="hl-violet">construction risk</span> — rated medium likelihood but high impact.
+                The main concern is cost escalation and delays. Second, <span class="hl-violet">legal risk</span> —
+                rated low likelihood but high impact. The main concern is delays in obtaining permits.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. I'd like to walk you through the risk assessment for the Riverside Township project. We have identified six main categories of risk, and I'll walk you through the top five, ranked by likelihood and impact. First, construction risk — rated medium likelihood but high impact. The main concern is cost escalation and delays. Second, legal risk — rated low likelihood but high impact. The main concern is delays in obtaining permits."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Thêm Mitigation + Risk Matrix</h3>
+
+            <p>
+              Thêm mitigation cho các rủi ro. Mục tiêu khoảng 3 phút khi nối với Round 1.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Let me explain how we <span class="hl-blue">mitigate</span> these risks. For construction risk,
+                we use fixed-price contracts where possible, maintain a 10 percent contingency buffer,
+                and conduct regular progress reviews. For legal risk, we engage legal counsel early,
+                complete legal milestones before major construction, and maintain regular dialogue with authorities.
+              </p>
+
+              <p>
+                For sales risk, we phase the project to match sales and maintain flexible pricing.
+                For funding risk, we secure committed financing upfront and maintain a liquidity buffer.
+                For market risk, we target real demand rather than speculation.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Let me explain how we mitigate these risks. For construction risk, we use fixed-price contracts where possible, maintain a 10 percent contingency buffer, and conduct regular progress reviews. For legal risk, we engage legal counsel early, complete legal milestones before major construction, and maintain regular dialogue with authorities. For sales risk, we phase the project to match sales and maintain flexible pricing. For funding risk, we secure committed financing upfront and maintain a liquidity buffer. For market risk, we target real demand rather than speculation."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Risk Assessment 3–5 phút</h3>
+
+            <p>
+              Nối Round 1 + Round 2, thêm residual risk và 3 key messages. Mục tiêu trọn vẹn 3–5 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                So what is the <span class="hl-emerald">residual risk</span> after mitigation?
+                For construction, legal, and funding risks, the residual risk is low. For sales risk,
+                it's low to medium. For market risk, it's medium. All residual risks fall within our risk appetite.
+              </p>
+
+              <p>
+                So what are the key messages from this risk assessment? There are three. First, our top risks
+                are well-understood and have clear mitigation plans. Second, after mitigation, all residual risks
+                are at acceptable levels within our risk appetite. Third, we have contingency buffers and regular
+                monitoring to catch emerging risks early.
+              </p>
+
+              <p>
+                To summarize, this project has a well-structured risk management framework. The key risks are identified,
+                mitigated, and monitored. I'm happy to take any questions.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="So what is the residual risk after mitigation? For construction, legal, and funding risks, the residual risk is low. For sales risk, it's low to medium. For market risk, it's medium. All residual risks fall within our risk appetite. So what are the key messages from this risk assessment? There are three. First, our top risks are well-understood and have clear mitigation plans. Second, after mitigation, all residual risks are at acceptable levels within our risk appetite. Third, we have contingency buffers and regular monitoring to catch emerging risks early. To summarize, this project has a well-structured risk management framework. The key risks are identified, mitigated, and monitored. I'm happy to take any questions."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 3 — bài trình bày risk assessment 3–5 phút với số liệu thật của bạn.
+              Nếu chưa đủ thời lượng, hãy mở rộng bằng cách giải thích kỹ hơn từng mitigation hoặc thêm ví dụ.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có các loại rủi ro được xác định rõ ràng không?</li>
+              <li>Bạn có likelihood và impact cho mỗi rủi ro không?</li>
+              <li>Bạn có mitigation cho mỗi rủi ro không?</li>
+              <li>Bạn có residual risk sau mitigation không?</li>
+              <li>Bạn có 3 key messages rõ ràng không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Liệt kê rủi ro mà không có mitigation.</li>
+              <li>Không tách rõ likelihood và impact.</li>
+              <li>Không nêu residual risk sau mitigation.</li>
+              <li>Kết luận "no risks" thay vì nêu risk appetite.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: tạo risk matrix gồm 5 rủi ro và mitigation plan, ghi âm phần trình bày và viết reflection.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Tạo risk matrix gồm 5 rủi ro và mitigation plan</h3>
+
+            <p>
+              Tạo risk matrix cho dự án. Mỗi rủi ro cần có likelihood, impact, mitigation và residual risk.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Có 5 rủi ro chính.</li>
+              <li>Mỗi rủi ro có likelihood và impact.</li>
+              <li>Mỗi rủi ro có mitigation cụ thể.</li>
+              <li>Mỗi rủi ro có residual risk sau mitigation.</li>
+              <li>Có nhận định về risk appetite.</li>
+            </ul>
+
+            <h4>Model Answer · Risk Matrix</h4>
+
+            <div class="riskmatrix-box">
+              <div class="riskmatrix-header">
+                <div class="kicker">Risk Matrix</div>
+                <div class="title">Riverside Township — Top 5 Risks &amp; Mitigation</div>
+              </div>
+              <div class="riskmatrix-body">
+                <div class="risk-card">
+                  <div class="risk-head">
+                    <span class="risk-name">1. Construction Risk</span>
+                    <div class="risk-badges">
+                      <span class="risk-badge medium">Likelihood: Medium</span>
+                      <span class="risk-badge high">Impact: High</span>
+                    </div>
+                  </div>
+                  <div class="risk-mitigation">
+                    <strong>Mitigation:</strong> Fixed-price contracts, 10% contingency buffer, regular progress reviews.
+                  </div>
+                  <div class="risk-residual">
+                    Residual risk: <strong>Low</strong>
+                  </div>
+                </div>
+
+                <div class="risk-card">
+                  <div class="risk-head">
+                    <span class="risk-name">2. Legal Risk</span>
+                    <div class="risk-badges">
+                      <span class="risk-badge low">Likelihood: Low</span>
+                      <span class="risk-badge high">Impact: High</span>
+                    </div>
+                  </div>
+                  <div class="risk-mitigation">
+                    <strong>Mitigation:</strong> Legal counsel early, legal milestones before construction, regular dialogue with authorities.
+                  </div>
+                  <div class="risk-residual">
+                    Residual risk: <strong>Low</strong>
+                  </div>
+                </div>
+
+                <div class="risk-card">
+                  <div class="risk-head">
+                    <span class="risk-name">3. Sales Risk</span>
+                    <div class="risk-badges">
+                      <span class="risk-badge medium">Likelihood: Medium</span>
+                      <span class="risk-badge medium">Impact: Medium</span>
+                    </div>
+                  </div>
+                  <div class="risk-mitigation">
+                    <strong>Mitigation:</strong> Phasing to match sales, flexible pricing, strong sales pipeline.
+                  </div>
+                  <div class="risk-residual">
+                    Residual risk: <strong>Low–Medium</strong>
+                  </div>
+                </div>
+
+                <div class="risk-card">
+                  <div class="risk-head">
+                    <span class="risk-name">4. Funding Risk</span>
+                    <div class="risk-badges">
+                      <span class="risk-badge low">Likelihood: Low</span>
+                      <span class="risk-badge high">Impact: High</span>
+                    </div>
+                  </div>
+                  <div class="risk-mitigation">
+                    <strong>Mitigation:</strong> Committed financing upfront, liquidity buffer, fixed-rate financing.
+                  </div>
+                  <div class="risk-residual">
+                    Residual risk: <strong>Low</strong>
+                  </div>
+                </div>
+
+                <div class="risk-card">
+                  <div class="risk-head">
+                    <span class="risk-name">5. Market Risk</span>
+                    <div class="risk-badges">
+                      <span class="risk-badge medium">Likelihood: Medium</span>
+                      <span class="risk-badge medium">Impact: Medium</span>
+                    </div>
+                  </div>
+                  <div class="risk-mitigation">
+                    <strong>Mitigation:</strong> Target real demand, diversified product mix, pricing flexibility.
+                  </div>
+                  <div class="risk-residual">
+                    Residual risk: <strong>Medium</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Risk matrix for Riverside Township. Risk one: construction risk — medium likelihood, high impact, mitigated by fixed-price contracts, 10 percent contingency buffer, and regular progress reviews. Residual risk: low. Risk two: legal risk — low likelihood, high impact, mitigated by legal counsel early and legal milestones before construction. Residual risk: low. Risk three: sales risk — medium likelihood, medium impact, mitigated by phasing to match sales and flexible pricing. Residual risk: low to medium. Risk four: funding risk — low likelihood, high impact, mitigated by committed financing upfront and liquidity buffer. Residual risk: low. Risk five: market risk — medium likelihood, medium impact, mitigated by targeting real demand and diversified product mix. Residual risk: medium. All residual risks fall within our moderate risk appetite."
+            >
+              Nghe risk matrix
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm phần trình bày risk matrix</h3>
+
+            <p>
+              Dùng risk matrix bạn vừa tạo và ghi âm phần trình bày 1–2 phút,
+              như thể bạn đang báo cáo với hội đồng đầu tư hoặc ban lãnh đạo.
+            </p>
+
+            <h4>Recording Checklist</h4>
+            <ul class="checklist">
+              <li>Mở đầu bằng tổng quan các loại rủi ro.</li>
+              <li>Trình bày từng rủi ro với likelihood và impact.</li>
+              <li>Nêu mitigation cho mỗi rủi ro.</li>
+              <li>Nêu residual risk sau mitigation.</li>
+              <li>Kết thúc bằng nhận định về risk appetite.</li>
+            </ul>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cấu trúc bạn sẽ tiếp tục dùng khi trình bày risk.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã trình bày đủ 5 rủi ro với likelihood, impact và mitigation rõ ràng.
+                Improve: Tôi cần giải thích residual risk kỹ hơn thay vì chỉ nêu mức.
+                Keep: We mitigate this by... The residual risk after mitigation is...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow rose">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi trình bày risk assessment</h2>
+          <p>
+            Tránh các lỗi này để phần trình bày risk assessment của bạn rõ ràng, có cấu trúc và thuyết phục.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Liệt kê rủi ro mà không có mitigation.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The main risk is construction cost escalation, which we mitigate with fixed-price contracts and a contingency buffer.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không tách rõ likelihood và impact khi đánh giá rủi ro.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The likelihood is low, but the impact is high — so we maintain a contingency buffer to be safe.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không nêu residual risk sau mitigation.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The residual risk after mitigation is low, which is within our risk appetite for this project type.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết luận "no risks" hoặc "all risks are managed" mà không cụ thể.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>After mitigation, all residual risks are at acceptable levels within our moderate risk appetite.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 20 khi có thể</h2>
+          <p>
+            Trước khi sang Day 21, hãy đảm bảo bạn đã nắm được bộ ngôn ngữ risk analysis.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng Construction Risk, Legal Risk, Sales Risk.</li>
+            <li>Tôi có thể dùng Funding Risk, Market Risk, Execution Risk.</li>
+            <li>Tôi có thể dùng mitigation, risk appetite.</li>
+            <li>Tôi có thể nói The main risk is..., which could lead to...</li>
+            <li>Tôi có thể nói We mitigate this by...</li>
+            <li>Tôi có thể trình bày risk assessment trong 3–5 phút.</li>
+            <li>Tôi có thể tạo risk matrix gồm 5 rủi ro và mitigation plan.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-19.html">
+            <small>Previous Day · Week 3</small>
+            <strong>Day 19 · JV &amp; Partnership</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 20 Complete</strong>
+          </button>
+
+          <a href="level-1-day-21.html">
+            <small>Next Day · Week 3</small>
+            <strong>Day 21 · Presentation: Explain Financial Model</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 20 · Risk Analysis</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 20 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["20"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 20 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 20/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 20 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 20/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["20"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "The main risk is construction cost escalation, which we mitigate with fixed-price contracts. The residual risk after mitigation is low, which is within our risk appetite.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

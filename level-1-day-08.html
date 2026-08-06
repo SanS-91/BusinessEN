@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 08 | Project Master Planning | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 8 - Project Master Planning: mô tả master plan với land use, plot ratio, GFA, NSA, infrastructure, township, mixed-use, low-rise, high-rise; Speaking topic Master Plan Overview; Output tóm tắt master plan bằng 6 bullet."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f7f8ff;
+      --surface: #ffffff;
+      --surface-soft: #fcfdff;
+      --text-strong: #202a52;
+      --text-body: #42507a;
+      --text-muted: #6b76a1;
+      --text-soft: #8b96b9;
+      --line: rgba(37, 50, 99, 0.10);
+      --line-soft: rgba(37, 50, 99, 0.07);
+      --shadow-lg: 0 24px 70px rgba(30, 42, 92, 0.09);
+      --shadow-md: 0 14px 36px rgba(30, 42, 92, 0.07);
+      --shadow-sm: 0 8px 20px rgba(30, 42, 92, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #2563eb; --blue-soft: #eff6ff; --blue-line: #bfdbfe; --blue-text: #1d4ed8;
+      --violet: #7c3aed; --violet-soft: #f5f3ff; --violet-line: #ddd6fe; --violet-text: #6d28d9;
+      --indigo: #4f46e5; --indigo-soft: #eef2ff; --indigo-line: #c7d2fe; --indigo-text: #4338ca;
+      --teal: #0d9488; --teal-soft: #f0fdfa; --teal-line: #99f6e4; --teal-text: #0f766e;
+      --orange: #ea580c; --orange-soft: #fff7ed; --orange-line: #fed7aa; --orange-text: #c2410c;
+      --emerald: #059669; --emerald-soft: #ecfdf5; --emerald-line: #a7f3d0; --emerald-text: #047857;
+      --rose: #e11d48; --rose-soft: #fff1f2; --rose-line: #fecdd3; --rose-text: #be123c;
+      --amber: #d97706; --amber-soft: #fffbeb; --amber-line: #fde68a; --amber-text: #92400e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(37, 99, 235, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(124, 58, 237, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(13, 148, 136, 0.08), transparent 24%),
+        linear-gradient(180deg, #fbfcff 0%, var(--page) 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--indigo-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(30, 42, 92, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #515d88; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: #24305a; background: #eef2ff; border-color: #c7d2fe; }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--blue-soft);
+      color: var(--blue-text); border: 1px solid var(--blue-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(30, 42, 92, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.violet { background: var(--violet-soft); color: var(--violet-text); border-color: var(--violet-line); }
+    .plan-pill.teal { background: var(--teal-soft); color: var(--teal-text); border-color: var(--teal-line); }
+    .plan-pill.orange { background: var(--orange-soft); color: var(--orange-text); border-color: var(--orange-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--indigo-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.18), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.12), transparent 18%),
+        linear-gradient(135deg, #0e5f56 0%, #0d9488 38%, #147d96 70%, #2563eb 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.88); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.18);
+      font-weight: 600; color: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: #0b4a42; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.28); }
+    .btn-blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .btn-soft { background: #ffffff; color: #312e81; border-color: #c7d2fe; box-shadow: var(--shadow-sm); }
+    .btn.completed { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.40), rgba(238, 242, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.72); border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(79, 70, 229, 0.12); color: var(--indigo-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.violet { color: var(--violet-text); border-color: var(--violet-line); background: var(--violet-soft); }
+    .eyebrow.teal { color: var(--teal-text); border-color: var(--teal-line); background: var(--teal-soft); }
+    .eyebrow.orange { color: var(--orange-text); border-color: var(--orange-line); background: var(--orange-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-blue, .tint-violet, .tint-teal, .tint-orange,
+    .tint-emerald, .tint-rose, .tint-indigo, .tint-amber { background: linear-gradient(180deg, #ffffff, #fcfdff); }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #f7fbff); }
+    .tint-violet { border-top: 6px solid var(--violet); background: linear-gradient(180deg, #ffffff, #fbfaff); }
+    .tint-teal { border-top: 6px solid var(--teal); background: linear-gradient(180deg, #ffffff, #f6fffe); }
+    .tint-orange { border-top: 6px solid var(--orange); background: linear-gradient(180deg, #ffffff, #fffaf5); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #f7fff9); }
+    .tint-rose { border-top: 6px solid var(--rose); background: linear-gradient(180deg, #ffffff, #fff8f9); }
+    .tint-indigo { border-top: 6px solid var(--indigo); background: linear-gradient(180deg, #ffffff, #f8f9ff); }
+    .tint-amber { border-top: 6px solid var(--amber); background: linear-gradient(180deg, #ffffff, #fffdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #d8def4;
+      background: #fbfcff; color: #26304f; font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: #4f46e5; box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.08); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: var(--amber-soft); border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(37, 50, 99, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: #f8faff; border: 1px solid #dbe2f5; color: #33406a; font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: #f8faff; border: 1px solid #dbe2f5;
+      color: #42527b; font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: var(--amber-soft);
+      border: 1px solid var(--amber-line); color: var(--amber-text); font-weight: 600; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #e6ebfa; color: #3d4a74; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--indigo-line); background: var(--indigo-soft);
+      color: var(--indigo-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: #312e81; color: #ffffff; border-color: #312e81; }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: #f8faff; color: #4a5784;
+      border: 1px solid #dbe2f5; margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #e6ebfa; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: #33406a; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: #42507a; }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: #fbfdff; border: 1px solid #dbeafe; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: #2d3a61; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--teal-text); }
+
+    .hl-blue, .hl-violet, .hl-teal, .hl-orange, .hl-emerald { padding: 0 5px; border-radius: 7px; font-weight: 700; }
+    .hl-blue { background: linear-gradient(180deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.14)); color: var(--blue-text); }
+    .hl-violet { background: linear-gradient(180deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.13)); color: var(--violet-text); }
+    .hl-teal { background: linear-gradient(180deg, rgba(13, 148, 136, 0), rgba(13, 148, 136, 0.14)); color: var(--teal-text); }
+    .hl-orange { background: linear-gradient(180deg, rgba(234, 88, 12, 0), rgba(234, 88, 12, 0.13)); color: var(--orange-text); }
+    .hl-emerald { background: linear-gradient(180deg, rgba(5, 150, 105, 0), rgba(5, 150, 105, 0.13)); color: var(--emerald-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: var(--emerald-soft); border: 1px solid var(--emerald-line); margin-top: 14px; }
+    .answer-box p { margin: 0; color: #14532d; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #f8faff;
+      border: 1px solid #e6ebfa; border-left: 5px solid var(--emerald); color: #2d3a61; font-weight: 600;
+    }
+
+    .output-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+
+    .output-list li {
+      padding: 12px 14px; border-radius: 16px; background: #f8faff;
+      border: 1px solid #e6ebfa; color: #33406a; font-weight: 600; line-height: 1.8;
+    }
+
+    .bullets-box {
+      padding: 20px; border-radius: 20px; background: #ffffff;
+      border: 1px solid #99f6e4; margin-top: 14px;
+    }
+
+    .bullets-box ul { margin: 0; padding-left: 20px; display: grid; gap: 10px; color: #2d3a61; font-weight: 600; }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff8f9, #fff1f2); border: 1px solid var(--rose-line); }
+    .mistake-card.better { background: linear-gradient(180deg, #f8fff9, #ecfdf5); border: 1px solid var(--emerald-line); }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: #3f4c76; font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #4d5986;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: #eef2ff; border-color: #c7d2fe; color: #312e81; }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    /* MOBILE: bỏ sticky để xem thoải mái hơn */
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 8</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 8/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill blue" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill violet" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill teal" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill orange" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 8</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 2 · Real Estate English</span>
+            <span class="hero-tag">Day 8 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Master Plan Overview</span>
+          </div>
+
+          <h1 class="hero-title">Project Master Planning</h1>
+
+          <p class="hero-subtitle">
+            Chào mừng bạn đến Week 2 — Real Estate English. Day 8 mở đầu bằng ngôn ngữ của quy hoạch tổng thể:
+            <strong>land use</strong>, <strong>plot ratio</strong>, <strong>GFA</strong>, <strong>NSA</strong>,
+            <strong>infrastructure</strong>, <strong>township</strong>, <strong>mixed-use</strong>,
+            <strong>low-rise</strong> và <strong>high-rise</strong>. Đây là bộ từ vựng nền tảng để bạn mô tả
+            bất kỳ dự án bất động sản nào với đối tác và nhà đầu tư.
+          </p>
+
+          <div class="hero-quote">
+            Master plan là "bản đồ" của cả dự án. Người nói tốt không chỉ liệt kê con số —
+            họ kể câu chuyện về cách mảnh đất được tổ chức, phân bổ và phát triển thành một cộng đồng.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>
+            Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.
+          </p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>
+            Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn các giọng như
+            <strong>Microsoft Aria Online (Natural)</strong>,
+            <strong>Microsoft Jenny Online (Natural)</strong>,
+            <strong>Microsoft Ana Online (Natural)</strong>,
+            hoặc <strong>Google US English</strong>.
+          </p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-blue" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành.
+            Nếu bạn muốn âm thanh tự nhiên hơn nữa, bạn có thể thu file mp3 thật hoặc dùng voice AI,
+            sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src. Hệ thống player đã hỗ trợ sẵn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>
+            Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được một bản tóm tắt master plan hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Master Plan Terms · 15 phút</strong>
+              <span>
+                Học 9 thuật ngữ quy hoạch: land use, plot ratio, GFA, NSA, infrastructure, township, mixed-use,
+                low-rise, high-rise. Nghe từng item, lặp lại và đặt 1 câu với dự án thật của bạn.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>
+                Luyện 6 mẫu câu mô tả master plan: phân bổ land use, plot ratio, GFA, thành phần dự án,
+                infrastructure và thiết kế mixed-use. Làm substitution drill với số liệu thật.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>
+                Nghe trọn vẹn một bài trình bày master plan mẫu. Nghe 3 lần: ý chính, patterns, cấu trúc.
+                Làm comprehension questions và shadowing.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>
+                Luyện 3 vòng tăng dần, xây từng phần của bài mô tả master plan cho đến khi bạn trình bày
+                trọn vẹn trong 3 phút với dự án thật của mình.
+              </span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>
+                Tóm tắt master plan bằng 6 bullet. Ghi âm phần trình bày 6 bullet đó.
+                Viết reflection 3 dòng: Good, Improve, Keep.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Master Plan Terms</h2>
+          <p>
+            9 thuật ngữ quy hoạch cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.
+            Đây là bộ từ vựng bạn sẽ dùng suốt Week 2.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>land use</h3>
+              <button class="audio-btn" type="button" data-speak="land use. The master plan allocates 60 percent of the land for residential use.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈlænd ˌjuːz/</span>
+            <p class="vn">Mục đích sử dụng đất</p>
+
+            <div class="note">
+              Ghi chú: land use mô tả đất được dùng để làm gì — residential, commercial, industrial, hay public space.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> land use allocation, land use plan, residential / commercial land use</li>
+              <li><strong>Example:</strong> The master plan allocates 60 percent of the land for residential use.</li>
+              <li><strong>Native alternative:</strong> zoning, land designation</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>plot ratio</h3>
+              <button class="audio-btn" type="button" data-speak="plot ratio. The plot ratio is set at 2.5, which allows a good balance between density and livability.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈplɑːt ˈreɪʃioʊ/</span>
+            <p class="vn">Hệ số sử dụng đất</p>
+
+            <div class="note">
+              Ghi chú: plot ratio = GFA chia cho diện tích đất. Plot ratio cao nghĩa là mật độ xây dựng cao.
+              Còn gọi là FAR (Floor Area Ratio) ở một số thị trường.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> plot ratio of 2.5, set the plot ratio, plot ratio is capped at</li>
+              <li><strong>Example:</strong> The plot ratio is set at 2.5, which allows a good balance between density and livability.</li>
+              <li><strong>Native alternative:</strong> FAR (Floor Area Ratio)</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>GFA (Gross Floor Area)</h3>
+              <button class="audio-btn" type="button" data-speak="GFA, or Gross Floor Area. The total GFA of the project is about 1.25 million square meters.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌdʒiː ef ˈeɪ/ · /ɡroʊs flɔːr ˈeriə/</span>
+            <p class="vn">Tổng diện tích sàn</p>
+
+            <div class="note">
+              Ghi chú: GFA là tổng diện tích sàn xây dựng của toàn dự án. Đây là chỉ số then chốt để tính quy mô.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> total GFA, GFA of the project, GFA per plot</li>
+              <li><strong>Example:</strong> The total GFA of the project is about 1.25 million square meters.</li>
+              <li><strong>Native alternative:</strong> gross floor area, total built-up area</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>NSA (Net Site Area)</h3>
+              <button class="audio-btn" type="button" data-speak="NSA, or Net Site Area. The net site area excludes public roads and open green space.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌen es ˈeɪ/ · /net saɪt ˈeriə/</span>
+            <p class="vn">Diện tích đất ròng</p>
+
+            <div class="note">
+              Ghi chú: NSA là diện tích đất thực tế để phát triển, sau khi trừ đường công cộng, cây xanh công cộng.
+              Phân biệt với gross site area.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> net site area, NSA of the plot, NSA after deductions</li>
+              <li><strong>Example:</strong> The net site area excludes public roads and open green space.</li>
+              <li><strong>Native alternative:</strong> net developable area</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>infrastructure</h3>
+              <button class="audio-btn" type="button" data-speak="infrastructure. The infrastructure includes roads, drainage, utilities, and a central park.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈɪnfrəstrʌktʃər/</span>
+            <p class="vn">Hạ tầng</p>
+
+            <div class="note">
+              Ghi chú: infrastructure là hệ thống hạ tầng — đường, điện, nước, thoát nước, viễn thông, công viên.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> infrastructure development, supporting infrastructure, infrastructure investment</li>
+              <li><strong>Example:</strong> The infrastructure includes roads, drainage, utilities, and a central park.</li>
+              <li><strong>Native alternative:</strong> public works, utilities and amenities</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>township</h3>
+              <button class="audio-btn" type="button" data-speak="township. The project is designed as a self-contained township where residents can live, work, and shop.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈtaʊnʃɪp/</span>
+            <p class="vn">Khu đô thị / thị trấn</p>
+
+            <div class="note">
+              Ghi chú: township là khu đô thị tích hợp, có đủ chức năng sống — ở, làm việc, mua sắm, giải trí.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> self-contained township, township development, integrated township</li>
+              <li><strong>Example:</strong> The project is designed as a self-contained township where residents can live, work, and shop.</li>
+              <li><strong>Native alternative:</strong> master-planned community, integrated development</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>mixed-use</h3>
+              <button class="audio-btn" type="button" data-speak="mixed-use. This is a mixed-use development, combining residential, commercial, and retail spaces.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌmɪkst ˈjuːz/</span>
+            <p class="vn">Đa chức năng / hỗn hợp</p>
+
+            <div class="note">
+              Ghi chú: mixed-use nghĩa là một dự án kết hợp nhiều chức năng — ở, thương mại, văn phòng, bán lẻ.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> mixed-use development, mixed-use project, mixed-use complex</li>
+              <li><strong>Example:</strong> This is a mixed-use development, combining residential, commercial, and retail spaces.</li>
+              <li><strong>Native alternative:</strong> integrated development, multi-functional project</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>low-rise</h3>
+              <button class="audio-btn" type="button" data-speak="low-rise. The low-rise area includes townhouses and villas along the riverfront.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈloʊ raɪz/</span>
+            <p class="vn">Thấp tầng</p>
+
+            <div class="note">
+              Ghi chú: low-rise là công trình thấp tầng — thường là townhouse, villa, shophouse, dưới ~8 tầng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> low-rise area, low-rise residential, low-rise townhouses</li>
+              <li><strong>Example:</strong> The low-rise area includes townhouses and villas along the riverfront.</li>
+              <li><strong>Native alternative:</strong> low-density housing, landed homes</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>high-rise</h3>
+              <button class="audio-btn" type="button" data-speak="high-rise. The high-rise area features residential towers near the commercial core.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈhaɪ raɪz/</span>
+            <p class="vn">Cao tầng</p>
+
+            <div class="note">
+              Ghi chú: high-rise là công trình cao tầng — thường là căn hộ chung cư, tháp văn phòng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> high-rise towers, high-rise residential, high-rise blocks</li>
+              <li><strong>Example:</strong> The high-rise area features residential towers near the commercial core.</li>
+              <li><strong>Native alternative:</strong> high-density towers, apartment towers</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow violet">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>
+            6 mẫu câu cốt lõi để mô tả master plan. Mỗi mẫu có công thức, ví dụ theo ngữ cảnh,
+            substitution drill và lỗi cần tránh.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-teal">
+            <div class="card-top">
+              <h3>The master plan allocates...</h3>
+              <button class="audio-btn" type="button" data-speak="The master plan allocates approximately 60 percent of the land for residential use, 20 percent for commercial, and 20 percent for parks and infrastructure.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-teal">The master plan allocates + % đất + for + mục đích</span>.
+              Dùng để mô tả phân bổ land use.
+            </div>
+
+            <div class="example">
+              <span class="label">Land use allocation</span>
+              <p>
+                The master plan allocates approximately 60 percent of the land for residential use,
+                20 percent for commercial, and 20 percent for parks and infrastructure.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay % và mục đích: 70% residential / 15% commercial / 15% green space.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh: <span class="hl-orange">The land uses 60% for house.</span>
+                Nên: <span class="hl-teal">The master plan allocates 60% of the land for residential use.</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>The plot ratio is set at...</h3>
+              <button class="audio-btn" type="button" data-speak="The plot ratio is set at 2.5, which gives us a good balance between density and livability.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">The plot ratio is set at + số</span>.
+              Dùng để nêu hệ số sử dụng đất.
+            </div>
+
+            <div class="example">
+              <span class="label">Plot ratio statement</span>
+              <p>
+                The plot ratio is set at 2.5, which gives us a good balance between density and livability.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay số: set at 1.5 (low density) / set at 3.5 (high density) / capped at 2.0.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Native alternative</span>
+              <p>The project has a plot ratio of 2.5... / With a plot ratio of 2.5, we can...</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-violet">
+            <div class="card-top">
+              <h3>The total GFA is approximately...</h3>
+              <button class="audio-btn" type="button" data-speak="The total GFA is approximately 1.25 million square meters, based on the plot ratio and site area.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-violet">The total GFA is approximately + diện tích sàn</span>.
+              Dùng để nêu tổng diện tích sàn.
+            </div>
+
+            <div class="example">
+              <span class="label">GFA statement</span>
+              <p>
+                The total GFA is approximately 1.25 million square meters, based on the plot ratio and site area.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay diện tích: 800,000 square meters / over 2 million square meters.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Với nhà đầu tư, nên giải thích ngắn: <span class="hl-violet">GFA stands for Gross Floor Area...</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>The development consists of...</h3>
+              <button class="audio-btn" type="button" data-speak="The development consists of both low-rise and high-rise components, along with commercial and retail spaces.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-orange">The development consists of + các thành phần</span>.
+              Dùng để liệt kê thành phần dự án.
+            </div>
+
+            <div class="example">
+              <span class="label">Components statement</span>
+              <p>
+                The development consists of both low-rise and high-rise components, along with commercial and retail spaces.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay thành phần: townhouses and villas / residential towers / a school and a central park.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Common mistake</span>
+              <p>
+                Tránh: <span class="hl-orange">The development is consist of...</span>
+                Nên: <span class="hl-orange">The development consists of...</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>The infrastructure includes...</h3>
+              <button class="audio-btn" type="button" data-speak="The infrastructure includes a main boulevard, internal roads, drainage and utility systems, as well as a central park and a school.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-emerald">The infrastructure includes + hạng mục hạ tầng</span>.
+              Dùng để mô tả hạ tầng dự án.
+            </div>
+
+            <div class="example">
+              <span class="label">Infrastructure statement</span>
+              <p>
+                The infrastructure includes a main boulevard, internal roads, drainage and utility systems,
+                as well as a central park and a school.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay hạng mục: a wastewater treatment plant / underground parking / smart utilities.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Native alternative</span>
+              <p>The project is supported by... / Infrastructure will include...</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-indigo">
+            <div class="card-top">
+              <h3>The project is designed as a mixed-use township...</h3>
+              <button class="audio-btn" type="button" data-speak="The project is designed as a mixed-use township where residents can live, work, and shop within the same community.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: <span class="hl-blue">The project is designed as a mixed-use township + mệnh đề</span>.
+              Dùng để nêu định vị tổng thể của dự án.
+            </div>
+
+            <div class="example">
+              <span class="label">Positioning statement</span>
+              <p>
+                The project is designed as a mixed-use township where residents can live, work, and shop
+                within the same community.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>
+                Thay mệnh đề: where families can enjoy green living / that integrates living and leisure.
+              </p>
+            </div>
+
+            <div class="example">
+              <span class="label">Register note</span>
+              <p>
+                Đây là câu định vị — nên đặt ở đầu hoặc cuối bài mô tả để tạo ấn tượng tổng thể.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow teal">Block 3 · 20 phút</span>
+          <h2>Listening · Master Plan Presentation</h2>
+          <p>
+            Nghe trọn vẹn một bài trình bày master plan mẫu. Đây là "đích đến" mà bạn sẽ tái hiện trong phần Speaking.
+            Bài trình bày này dùng toàn bộ 9 thuật ngữ và 6 mẫu câu của Day 8.
+          </p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm bức tranh tổng thể của master plan.</li>
+            <li>Nghe lần hai để nhận diện các patterns: allocates, plot ratio, GFA, consists of, infrastructure, mixed-use.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: positioning → land use → density → product mix → infrastructure → summary.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning everyone. I'd like to walk you through the master plan for the Riverside Township project. The project is located on a 50-hectare site in the eastern part of the city. The master plan allocates approximately 60 percent of the land for residential use, 20 percent for commercial and retail, and the remaining 20 percent for parks, schools, and public infrastructure. The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million square meters. This allows us to balance density with livability. In terms of product mix, the development consists of both low-rise and high-rise components. The low-rise area includes townhouses and villas along the riverfront, while the high-rise area features residential towers near the commercial core. This mixed-use design means residents can live, work, and shop within the same township. The infrastructure includes a main boulevard, internal road networks, drainage and utility systems, as well as a central park and a school. All infrastructure is designed to support the full build-out of the township. To summarize, this master plan creates a balanced, mixed-use township with a plot ratio of 2.5, a total GFA of 1.25 million square meters, and a combination of low-rise and high-rise products. I'm happy to go into more detail on any part of the plan. Thank you."
+            >
+              Nghe toàn bộ bài trình bày
+            </button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p>
+              <span class="speaker">[Opening & Positioning]</span><br />
+              Good morning everyone. I'd like to walk you through the master plan for the Riverside Township project.
+              The project is located on a <span class="hl-teal">50-hectare site</span> in the eastern part of the city.
+            </p>
+
+            <p>
+              <span class="speaker">[Land use allocation]</span><br />
+              <span class="hl-teal">The master plan allocates</span> approximately 60 percent of the land for
+              residential use, 20 percent for commercial and retail, and the remaining 20 percent for parks,
+              schools, and public infrastructure.
+            </p>
+
+            <p>
+              <span class="speaker">[Density & GFA]</span><br />
+              <span class="hl-blue">The plot ratio is set at 2.5</span>, which gives us a total gross floor area
+              of about 1.25 million square meters. This allows us to balance density with livability.
+            </p>
+
+            <p>
+              <span class="speaker">[Product mix]</span><br />
+              In terms of product mix, <span class="hl-orange">the development consists of</span> both low-rise
+              and high-rise components. The low-rise area includes townhouses and villas along the riverfront,
+              while the high-rise area features residential towers near the commercial core.
+              This <span class="hl-violet">mixed-use</span> design means residents can live, work, and shop
+              within the same township.
+            </p>
+
+            <p>
+              <span class="speaker">[Infrastructure]</span><br />
+              <span class="hl-emerald">The infrastructure includes</span> a main boulevard, internal road networks,
+              drainage and utility systems, as well as a central park and a school. All infrastructure is designed
+              to support the full build-out of the township.
+            </p>
+
+            <p>
+              <span class="speaker">[Summary]</span><br />
+              To summarize, this master plan creates a balanced, mixed-use township with a plot ratio of 2.5,
+              a total GFA of 1.25 million square meters, and a combination of low-rise and high-rise products.
+              I'm happy to go into more detail on any part of the plan. Thank you.
+            </p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Question 1:</strong> How large is the site, and where is it located?</li>
+            <li><strong>Question 2:</strong> How is the land use allocated?</li>
+            <li><strong>Question 3:</strong> What is the plot ratio, and what GFA does it produce?</li>
+            <li><strong>Question 4:</strong> What is the difference between the low-rise and high-rise areas?</li>
+            <li><strong>Question 5:</strong> What infrastructure supports the township?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>
+              1. The site is 50 hectares, located in the eastern part of the city.
+              2. Land use is allocated 60% residential, 20% commercial and retail, and 20% parks, schools, and infrastructure.
+              3. The plot ratio is 2.5, producing a total GFA of about 1.25 million square meters.
+              4. The low-rise area has townhouses and villas along the riverfront; the high-rise area has residential towers near the commercial core.
+              5. Infrastructure includes a main boulevard, internal roads, drainage and utilities, a central park, and a school.
+            </p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Land use</span>
+            <p>
+              The master plan allocates approximately 60 percent of the land for residential use.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The master plan allocates approximately 60 percent of the land for residential use.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Density</span>
+            <p>
+              The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million square meters.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million square meters.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Product mix</span>
+            <p>
+              The development consists of both low-rise and high-rise components.
+            </p>
+            <button class="audio-btn" type="button" data-speak="The development consists of both low-rise and high-rise components.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Đọc rõ các con số: 50 hectares, 60 percent, 2.5, 1.25 million.</li>
+            <li>Phát âm đúng các thuật ngữ: infrastructure, township, mixed-use, low-rise, high-rise.</li>
+            <li>Nhấn vào động từ chính: allocates, consists of, includes.</li>
+            <li>Giọng bình tĩnh, rõ ràng khi trình bày số liệu quy hoạch.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section alt" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow orange">Block 4 · 20 phút</span>
+          <h2>Speaking · Master Plan Overview trong 3 phút</h2>
+          <p>
+            Luyện 3 vòng tăng dần, xây từng phần của bài mô tả master plan cho đến khi bạn trình bày
+            trọn vẹn trong 3 phút với dự án thật của mình.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Speaking Structure</h3>
+
+            <p>
+              Bài mô tả master plan 3 phút gồm 6 phần:
+            </p>
+
+            <ol>
+              <li><strong>Positioning:</strong> giới thiệu dự án, vị trí, quy mô tổng.</li>
+              <li><strong>Land use:</strong> phân bổ sử dụng đất.</li>
+              <li><strong>Density:</strong> plot ratio và GFA.</li>
+              <li><strong>Product mix:</strong> low-rise, high-rise, mixed-use.</li>
+              <li><strong>Infrastructure:</strong> hạ tầng hỗ trợ.</li>
+              <li><strong>Summary:</strong> tóm tắt định vị tổng thể.</li>
+            </ol>
+
+            <h4>Checklist khi mô tả master plan</h4>
+
+            <ul class="checklist">
+              <li>Có vị trí và quy mô tổng (site area).</li>
+              <li>Có phân bổ land use với phần trăm.</li>
+              <li>Có plot ratio và GFA.</li>
+              <li>Có product mix: low-rise / high-rise.</li>
+              <li>Có infrastructure.</li>
+              <li>Có câu định vị mixed-use township.</li>
+            </ul>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 1 · Positioning + Land use</h3>
+
+            <p>
+              Xây phần mở đầu và phân bổ land use. Mục tiêu khoảng 1 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning. I'd like to walk you through the master plan for the Riverside Township project.
+                The project is located on a <span class="hl-teal">50-hectare site</span> in the eastern part of the city.
+              </p>
+
+              <p>
+                <span class="hl-teal">The master plan allocates</span> approximately 60 percent of the land for
+                residential use, 20 percent for commercial and retail, and 20 percent for parks, schools,
+                and public infrastructure.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. I'd like to walk you through the master plan for the Riverside Township project. The project is located on a 50-hectare site in the eastern part of the city. The master plan allocates approximately 60 percent of the land for residential use, 20 percent for commercial and retail, and 20 percent for parks, schools, and public infrastructure."
+            >
+              Nghe Round 1
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Thêm Density + Product mix</h3>
+
+            <p>
+              Thêm plot ratio, GFA và product mix. Mục tiêu khoảng 2 phút.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                <span class="hl-blue">The plot ratio is set at 2.5</span>, which gives us a total gross floor area
+                of about 1.25 million square meters. This allows us to balance density with livability.
+              </p>
+
+              <p>
+                In terms of product mix, <span class="hl-orange">the development consists of</span> both low-rise
+                and high-rise components. The low-rise area includes townhouses and villas along the riverfront,
+                while the high-rise area features residential towers near the commercial core.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million square meters. This allows us to balance density with livability. In terms of product mix, the development consists of both low-rise and high-rise components. The low-rise area includes townhouses and villas along the riverfront, while the high-rise area features residential towers near the commercial core."
+            >
+              Nghe Round 2
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Master Plan 3 phút</h3>
+
+            <p>
+              Thêm infrastructure và câu định vị tổng thể. Chạy trọn vẹn bài mô tả 3 phút với dự án thật của bạn.
+            </p>
+
+            <div class="answer-box">
+              <p>
+                Good morning. I'd like to walk you through the master plan for the Riverside Township project.
+                The project is located on a 50-hectare site in the eastern part of the city.
+              </p>
+
+              <p>
+                The master plan allocates approximately 60 percent of the land for residential use, 20 percent for
+                commercial and retail, and 20 percent for parks, schools, and public infrastructure.
+              </p>
+
+              <p>
+                The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million
+                square meters. In terms of product mix, the development consists of both low-rise and high-rise
+                components. The low-rise area includes townhouses and villas along the riverfront, while the
+                high-rise area features residential towers near the commercial core.
+              </p>
+
+              <p>
+                The infrastructure includes a main boulevard, internal roads, drainage and utility systems,
+                as well as a central park and a school.
+              </p>
+
+              <p>
+                To summarize, this master plan creates a balanced, mixed-use township with a plot ratio of 2.5,
+                a total GFA of 1.25 million square meters, and a combination of low-rise and high-rise products.
+                I'm happy to go into more detail on any part of the plan. Thank you.
+              </p>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Good morning. I'd like to walk you through the master plan for the Riverside Township project. The project is located on a 50-hectare site in the eastern part of the city. The master plan allocates approximately 60 percent of the land for residential use, 20 percent for commercial and retail, and 20 percent for parks, schools, and public infrastructure. The plot ratio is set at 2.5, which gives us a total gross floor area of about 1.25 million square meters. In terms of product mix, the development consists of both low-rise and high-rise components. The low-rise area includes townhouses and villas along the riverfront, while the high-rise area features residential towers near the commercial core. The infrastructure includes a main boulevard, internal roads, drainage and utility systems, as well as a central park and a school. To summarize, this master plan creates a balanced, mixed-use township with a plot ratio of 2.5, a total GFA of 1.25 million square meters, and a combination of low-rise and high-rise products. I'm happy to go into more detail on any part of the plan. Thank you."
+            >
+              Nghe Round 3
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>
+              Ghi âm Round 3 — bài mô tả master plan 3 phút với dự án thật của bạn.
+              Nếu chưa đủ 3 phút, hãy mở rộng bằng số liệu và chi tiết cụ thể từ dự án.
+            </p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có nêu vị trí và site area không?</li>
+              <li>Bạn có phân bổ land use với phần trăm không?</li>
+              <li>Bạn có plot ratio và GFA không?</li>
+              <li>Bạn có mô tả low-rise và high-rise không?</li>
+              <li>Bạn có infrastructure và câu định vị không?</li>
+            </ul>
+
+            <h4>Lỗi cần tránh</h4>
+            <ul>
+              <li>Liệt kê con số mà không có cấu trúc 6 phần.</li>
+              <li>Quên câu định vị mixed-use township.</li>
+              <li>Đọc phần trăm quá nhanh, không rõ.</li>
+              <li>Kết thúc đột ngột, không tóm tắt.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Presentation / Email / Case</h2>
+          <p>
+            Output cuối ngày: tóm tắt master plan bằng 6 bullet, ghi âm phần trình bày và viết reflection.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Tóm tắt master plan bằng 6 bullet</h3>
+
+            <p>
+              Viết bản tóm tắt master plan bằng đúng 6 bullet, phủ đủ 6 phần:
+              positioning, land use, density, product mix, infrastructure, summary.
+            </p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Đúng 6 bullet.</li>
+              <li>Dùng ít nhất 6 thuật ngữ trong bài.</li>
+              <li>Có số liệu cụ thể: site area, %, plot ratio, GFA.</li>
+              <li>Có câu định vị mixed-use township.</li>
+              <li>Ngắn gọn, dễ đọc, phù hợp gửi cho nhà đầu tư.</li>
+            </ul>
+
+            <h4>Model Answer</h4>
+
+            <div class="bullets-box">
+              <ul>
+                <li><span class="hl-teal">Project:</span> Riverside Township — a 50-hectare site in the eastern part of the city.</li>
+                <li><span class="hl-teal">Land use:</span> 60% residential, 20% commercial & retail, 20% parks, schools & infrastructure.</li>
+                <li><span class="hl-blue">Density:</span> Plot ratio of 2.5, total GFA of about 1.25 million sqm.</li>
+                <li><span class="hl-orange">Product mix:</span> Mixed-use — low-rise townhouses & villas by the riverfront, high-rise towers near the commercial core.</li>
+                <li><span class="hl-emerald">Infrastructure:</span> Main boulevard, internal roads, drainage & utilities, central park, and a school.</li>
+                <li><span class="hl-violet">Positioning:</span> A balanced, self-contained mixed-use township where residents can live, work, and shop.</li>
+              </ul>
+            </div>
+
+            <button
+              class="audio-btn"
+              type="button"
+              data-speak="Master plan summary. Project: Riverside Township, a 50-hectare site in the eastern part of the city. Land use: 60 percent residential, 20 percent commercial and retail, 20 percent parks, schools, and infrastructure. Density: plot ratio of 2.5, total GFA of about 1.25 million square meters. Product mix: mixed-use, with low-rise townhouses and villas by the riverfront, and high-rise towers near the commercial core. Infrastructure: main boulevard, internal roads, drainage and utilities, central park, and a school. Positioning: a balanced, self-contained mixed-use township where residents can live, work, and shop."
+            >
+              Nghe 6 bullet mẫu
+            </button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm phần trình bày 6 bullet</h3>
+
+            <p>
+              Dùng 6 bullet bạn vừa viết và ghi âm phần trình bày 1–2 phút, như thể bạn đang tóm tắt
+              master plan cho nhà đầu tư.
+            </p>
+
+            <h4>Recording Checklist</h4>
+            <ul class="checklist">
+              <li>Mở đầu bằng câu positioning.</li>
+              <li>Đọc rõ các con số: site area, %, plot ratio, GFA.</li>
+              <li>Nhấn vào các thuật ngữ: mixed-use, low-rise, high-rise.</li>
+              <li>Kết thúc bằng câu định vị tổng thể.</li>
+            </ul>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Sau khi hoàn thành, hãy viết ngắn gọn 3 dòng:</p>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cụm từ bạn sẽ tiếp tục dùng khi mô tả dự án.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>
+                Good: Tôi đã tóm tắt đủ 6 phần với số liệu cụ thể.
+                Improve: Tôi cần đọc phần trăm chậm và rõ hơn.
+                Keep: The master plan allocates...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section alt" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi mô tả master plan</h2>
+          <p>
+            Tránh các lỗi này để phần mô tả master plan của bạn rõ ràng, có cấu trúc và chuyên nghiệp.
+          </p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>The project is very big and has many buildings.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The project is located on a 50-hectare site, with a total GFA of about 1.25 million square meters.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>The development is consist of low-rise and high-rise.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The development consists of both low-rise and high-rise components.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nói plot ratio hoặc GFA mà không giải thích ý nghĩa.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The plot ratio is set at 2.5, which allows us to balance density with livability.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Liệt kê số liệu rời rạc, không có câu định vị tổng thể.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>To summarize, this master plan creates a balanced, mixed-use township where residents can live, work, and shop.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 8 khi có thể</h2>
+          <p>
+            Trước khi sang Day 9, hãy đảm bảo bạn đã nắm được bộ ngôn ngữ quy hoạch tổng thể.
+          </p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng land use, plot ratio, GFA, NSA.</li>
+            <li>Tôi có thể dùng infrastructure, township, mixed-use.</li>
+            <li>Tôi có thể dùng low-rise và high-rise.</li>
+            <li>Tôi có thể nói The master plan allocates...</li>
+            <li>Tôi có thể nói The plot ratio is set at... và The total GFA is...</li>
+            <li>Tôi có thể nói The development consists of...</li>
+            <li>Tôi có thể mô tả master plan trong 3 phút.</li>
+            <li>Tôi có thể tóm tắt master plan bằng 6 bullet.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-07.html">
+            <small>Previous Day · Week 1</small>
+            <strong>Day 7 · Role Play · Integrated Practice</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 8 Complete</strong>
+          </button>
+
+          <a href="level-1-day-09.html">
+            <small>Next Day · Week 2</small>
+            <strong>Day 9 · Development Timeline</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 8 · Project Master Planning</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 8 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["8"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 8 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 8/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 8 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 8/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["8"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "The master plan allocates 60 percent of the land for residential use. The plot ratio is set at 2.5, giving a total GFA of about 1.25 million square meters. The development consists of both low-rise and high-rise components.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
