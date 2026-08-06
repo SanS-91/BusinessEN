@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 | Real Estate & Investment English | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 2 - Real Estate & Investment English: 30 ngày chuyên sâu về tài chính dự án, Feasibility Study, Financial Model, JV, M&A, và đàm phán với đối tác, ngân hàng, nhà đầu tư."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #faf8fc;
+      --surface: #ffffff;
+      --surface-soft: #fbfaff;
+      --text-strong: #3d2814;
+      --text-body: #5a4a3a;
+      --text-muted: #8a7a6a;
+      --text-soft: #a89888;
+      --line: rgba(120, 80, 40, 0.10);
+      --line-soft: rgba(120, 80, 40, 0.07);
+      --shadow-lg: 0 24px 70px rgba(120, 80, 40, 0.10);
+      --shadow-md: 0 14px 36px rgba(120, 80, 40, 0.08);
+      --shadow-sm: 0 8px 20px rgba(120, 80, 40, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      /* Cool tones for weeks */
+      --week5-blue: #3b82f6; --week5-blue-soft: #eff6ff; --week5-blue-line: #bfdbfe; --week5-blue-text: #1d4ed8;
+      --week6-violet: #8b5cf6; --week6-violet-soft: #f5f3ff; --week6-violet-line: #ddd6fe; --week6-violet-text: #7e22ce;
+      --week7-indigo: #6366f1; --week7-indigo-soft: #eef2ff; --week7-indigo-line: #c7d2fe; --week7-indigo-text: #4f46e5;
+      --week8-teal: #14b8a6; --week8-teal-soft: #f0fdfa; --week8-teal-line: #99f6e4; --week8-teal-text: #0f766e;
+      --week9-purple: #a855f7; --week9-purple-soft: #faf5ff; --week9-purple-line: #e9d5ff; --week9-purple-text: #9333ea;
+      /* Hub purple theme */
+      --hub-purple: #9333ea; --hub-purple-soft: #faf5ff; --hub-purple-line: #e9d5ff; --hub-purple-text: #7e22ce;
+      --hub-light: #f3e8ff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(147, 51, 234, 0.08), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(139, 92, 246, 0.08), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(99, 102, 241, 0.06), transparent 24%),
+        linear-gradient(180deg, #faf8fc 0%, #f5f3ff 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #fff; color: var(--hub-purple-text); padding: 10px 14px; border-radius: 12px; font-weight: 700; }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.60);
+      box-shadow: 0 8px 24px rgba(147, 51, 234, 0.06);
+    }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #6a5a4a; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: var(--hub-purple-text); background: var(--hub-purple-soft); border-color: var(--hub-purple-line); }
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--hub-purple-soft);
+      color: var(--hub-purple-text); border: 1px solid var(--hub-purple-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .breadcrumb { padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .breadcrumb a { text-decoration: none; color: var(--hub-purple-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.25), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.18), transparent 18%),
+        linear-gradient(135deg, #9333ea 0%, #a855f7 35%, #8b5cf6 70%, #7c3aed 100%);
+      color: #fff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none;
+    }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.25); color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+    .hero-tag.purple { background: rgba(233, 213, 255, 0.30); border-color: rgba(233, 213, 255, 0.50); }
+    .hero-title { margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800; }
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.92); }
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.25);
+      font-weight: 600; color: rgba(255, 255, 255, 0.96);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #fff; color: var(--hub-purple-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.16); color: #fff; border-color: rgba(255, 255, 255, 0.35); }
+    .btn-purple { background: var(--hub-purple-soft); color: var(--hub-purple-text); border-color: var(--hub-purple-line); }
+    .btn-soft { background: #fff; color: var(--hub-purple-text); border-color: var(--hub-purple-line); box-shadow: var(--shadow-sm); }
+
+    .section { padding: 54px 0; }
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.50), rgba(245, 243, 255, 0.70));
+      border-top: 1px solid rgba(255, 255, 255, 0.80); border-bottom: 1px solid var(--line-soft);
+    }
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--hub-purple-line); color: var(--hub-purple-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+    .eyebrow.purple { color: var(--hub-purple-text); border-color: var(--hub-purple-line); background: var(--hub-purple-soft); }
+    .eyebrow.blue { color: var(--week5-blue-text); border-color: var(--week5-blue-line); background: var(--week5-blue-soft); }
+    .eyebrow.violet { color: var(--week6-violet-text); border-color: var(--week6-violet-line); background: var(--week6-violet-soft); }
+    .eyebrow.indigo { color: var(--week7-indigo-text); border-color: var(--week7-indigo-line); background: var(--week7-indigo-soft); }
+    .eyebrow.teal { color: var(--week8-teal-text); border-color: var(--week8-teal-line); background: var(--week8-teal-soft); }
+    .section-head h2 { margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px); line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800; }
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .tint-purple { border-top: 6px solid var(--hub-purple); background: linear-gradient(180deg, #fff, #faf5ff); }
+    .tint-blue { border-top: 6px solid var(--week5-blue); background: linear-gradient(180deg, #fff, #eff6ff); }
+    .tint-violet { border-top: 6px solid var(--week6-violet); background: linear-gradient(180deg, #fff, #f5f3ff); }
+    .tint-indigo { border-top: 6px solid var(--week7-indigo); background: linear-gradient(180deg, #fff, #eef2ff); }
+    .tint-teal { border-top: 6px solid var(--week8-teal); background: linear-gradient(180deg, #fff, #f0fdfa); }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+    .checklist li { padding: 12px 14px; border-radius: 16px; background: var(--hub-purple-soft); border: 1px solid var(--hub-purple-line); border-left: 5px solid var(--hub-purple); color: var(--hub-purple-text); font-weight: 600; }
+
+    /* Week sections with cool tones */
+    .week-section { margin-bottom: 48px; }
+    .week-header {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 28px; padding: 24px; margin-bottom: 22px;
+      border-left: 6px solid;
+    }
+    .week-header.blue { border-left-color: var(--week5-blue); background: linear-gradient(135deg, #eff6ff, #fff); }
+    .week-header.violet { border-left-color: var(--week6-violet); background: linear-gradient(135deg, #f5f3ff, #fff); }
+    .week-header.indigo { border-left-color: var(--week7-indigo); background: linear-gradient(135deg, #eef2ff, #fff); }
+    .week-header.teal { border-left-color: var(--week8-teal); background: linear-gradient(135deg, #f0fdfa, #fff); }
+    .week-header.purple { border-left-color: var(--week9-purple); background: linear-gradient(135deg, #faf5ff, #fff); }
+    
+    .week-header .week-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+    .week-header .week-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); font-size: 13px; font-weight: 700;
+      background: rgba(255, 255, 255, 0.90); border: 1px solid;
+    }
+    .week-header.blue .week-tag { color: var(--week5-blue-text); border-color: var(--week5-blue-line); background: var(--week5-blue-soft); }
+    .week-header.violet .week-tag { color: var(--week6-violet-text); border-color: var(--week6-violet-line); background: var(--week6-violet-soft); }
+    .week-header.indigo .week-tag { color: var(--week7-indigo-text); border-color: var(--week7-indigo-line); background: var(--week7-indigo-soft); }
+    .week-header.teal .week-tag { color: var(--week8-teal-text); border-color: var(--week8-teal-line); background: var(--week8-teal-soft); }
+    .week-header.purple .week-tag { color: var(--week9-purple-text); border-color: var(--week9-purple-line); background: var(--week9-purple-soft); }
+    
+    .week-header .week-duration { font-size: 14px; font-weight: 700; color: var(--text-muted); }
+    .week-header h3 { margin: 0 0 8px; font-size: 28px; color: var(--text-strong); }
+    .week-header.blue h3 { color: var(--week5-blue-text); }
+    .week-header.violet h3 { color: var(--week6-violet-text); }
+    .week-header.indigo h3 { color: var(--week7-indigo-text); }
+    .week-header.teal h3 { color: var(--week8-teal-text); }
+    .week-header.purple h3 { color: var(--week9-purple-text); }
+    .week-header p { margin: 0; color: var(--text-muted); font-size: 16px; }
+
+    /* Day cards with week-specific colors */
+    .day-card {
+      display: flex; flex-direction: column; gap: 12px;
+      background: var(--surface); border: 1px solid var(--line);
+      border-top: 6px solid; border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+    .day-card:hover { transform: translateY(-3px); }
+    .day-card.blue { border-top-color: var(--week5-blue); }
+    .day-card.violet { border-top-color: var(--week6-violet); }
+    .day-card.indigo { border-top-color: var(--week7-indigo); }
+    .day-card.teal { border-top-color: var(--week8-teal); }
+    .day-card.purple { border-top-color: var(--week9-purple); }
+    
+    .day-card .day-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .day-card .day-tag {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 6px 11px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      border: 1px solid;
+    }
+    .day-card.blue .day-tag { background: var(--week5-blue-soft); color: var(--week5-blue-text); border-color: var(--week5-blue-line); }
+    .day-card.violet .day-tag { background: var(--week6-violet-soft); color: var(--week6-violet-text); border-color: var(--week6-violet-line); }
+    .day-card.indigo .day-tag { background: var(--week7-indigo-soft); color: var(--week7-indigo-text); border-color: var(--week7-indigo-line); }
+    .day-card.teal .day-tag { background: var(--week8-teal-soft); color: var(--week8-teal-text); border-color: var(--week8-teal-line); }
+    .day-card.purple .day-tag { background: var(--week9-purple-soft); color: var(--week9-purple-text); border-color: var(--week9-purple-line); }
+    
+    .day-card .day-time {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 6px 11px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      background: #fffaf5; color: #8a7a6a; border: 1px solid #f5e7d7;
+    }
+    .day-card h3 { margin: 0; font-size: 20px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .day-card p { margin: 0; color: var(--text-muted); flex: 1; }
+    .day-card .day-focus {
+      list-style: none; margin: 0; padding: 0; display: grid; gap: 8px;
+    }
+    .day-card .day-focus li {
+      padding: 10px 12px; border-radius: 14px; background: #fffaf5;
+      border: 1px solid #f5e7d7; color: #5a4a3a; font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .prev-next a { display: flex; flex-direction: column; gap: 6px; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease; text-align: left; }
+    .prev-next a:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #a89888; }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .footer-links a { text-decoration: none; font-weight: 600; font-size: 14px; color: #6a5a4a; padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease; }
+    .footer-links a:hover { background: var(--hub-purple-soft); border-color: var(--hub-purple-line); color: var(--hub-purple-text); }
+
+    @media (max-width: 1180px) {
+      .grid-3, .grid-2, .prev-next { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 760px) {
+      .topbar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 2 · Real Estate & Investment</span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a class="active" href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+      <span class="progress-chip">Level 2 · 0/30 ngày</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <span>Level 2</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 2</span>
+            <span class="hero-tag purple">Real Estate & Investment English</span>
+            <span class="hero-tag">30 ngày</span>
+            <span class="hero-tag">90 phút / ngày</span>
+          </div>
+
+          <h1 class="hero-title">Real Estate & Investment English</h1>
+
+          <p class="hero-subtitle">
+            Level 2 đưa bạn vào thế giới chuyên sâu của tài chính bất động sản và đầu tư.
+            Bạn sẽ học cách trình bày Feasibility Study, giải thích Financial Model,
+            thảo luận JV và M&A, và đàm phán với đối tác, ngân hàng, nhà đầu tư bằng ngôn ngữ chuyên nghiệp.
+          </p>
+
+          <div class="hero-quote">
+            Level 1 đã cho bạn nền tảng giao tiếp. Level 2 đưa bạn vào thế giới chuyên sâu của tài chính bất động sản —
+            nơi mỗi con số đều có câu chuyện, và mỗi quyết định đều có logic.
+          </div>
+
+          <div style="display: flex; gap: 24px; margin-top: 26px; flex-wrap: wrap;">
+            <div>
+              <div style="font-size: 32px; font-weight: 800; color: #e9d5ff;">5</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.85);">tuần học</div>
+            </div>
+            <div>
+              <div style="font-size: 32px; font-weight: 800; color: #e9d5ff;">30</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.85);">daily lessons</div>
+            </div>
+            <div>
+              <div style="font-size: 32px; font-weight: 800; color: #e9d5ff;">90</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.85);">phút mỗi ngày</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#objectives">Xem mục tiêu Level 2</a>
+            <a class="btn btn-secondary" href="#week-5">Bắt đầu Week 5</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section class="section" id="objectives">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Level 2 Objectives</span>
+          <h2>Mục tiêu Level 2</h2>
+          <p>Sau khi hoàn thành Level 2, bạn sẽ có thể:</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-purple">
+            <h3>Trình bày Feasibility Study</h3>
+            <p>Trình bày Feasibility Study bằng tiếng Anh một cách chuyên nghiệp, bao gồm market analysis, financial projections, và risk assessment.</p>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <h3>Giải thích Financial Model</h3>
+            <p>Giải thích Financial Model với các metrics quan trọng: IRR, NPV, payback period, và sensitivity analysis.</p>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <h3>Thảo luận JV, M&A</h3>
+            <p>Thảo luận về Joint Ventures và Mergers & Acquisitions: structure, terms, và strategic rationale.</p>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <h3>Đàm phán với đối tác, ngân hàng, nhà đầu tư</h3>
+            <p>Đàm phán với các bên liên quan khác nhau: partners, banks, investors, với ngôn ngữ phù hợp cho từng đối tượng.</p>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <h3>Xử lý câu hỏi về risk, return, exit</h3>
+            <p>Xử lý các câu hỏi khó về risk, return, và exit strategy một cách tự tin và chuyên nghiệp.</p>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <h3>Đầu tư bất động sản chuyên sâu</h3>
+            <p>Hiểu và giao tiếp về các khái niệm đầu tư bất động sản chuyên sâu: cap rate, cash-on-cash return, và market cycles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30-Day Plan -->
+    <section class="section alt" id="plan">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">30-Day Plan</span>
+          <h2>Lộ trình 30 ngày của Level 2</h2>
+          <p>Mỗi ngày 90 phút. Mỗi tuần có một mục tiêu riêng. Hãy bắt đầu từ Day 31 và đi theo đúng thứ tự để xây dựng kiến thức chuyên sâu.</p>
+        </div>
+
+        <!-- Week 5 -->
+        <div class="week-section" id="week-5">
+          <div class="week-header blue">
+            <div class="week-meta">
+              <span class="week-tag">Week 5</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+            <h3>Project Finance & Feasibility Study</h3>
+            <p>Tuần đầu tiên của Level 2 tập trung vào project finance structures và feasibility study components - nền tảng của mọi quyết định đầu tư.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 31</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Project Finance Overview</h3>
+              <p>Tổng quan về project finance: cấu trúc, đặc điểm, và sự khác biệt so với corporate finance.</p>
+              <ul class="day-focus">
+                <li>Focus: project finance structure, non-recourse financing, SPV</li>
+                <li>Output: giải thích project finance structure 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 32</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Feasibility Study Components</h3>
+              <p>Các thành phần của feasibility study: market, technical, financial, legal, và environmental.</p>
+              <ul class="day-focus">
+                <li>Focus: market feasibility, technical feasibility, financial feasibility</li>
+                <li>Output: trình bày FS components 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 33</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Market Analysis</h3>
+              <p>Phân tích thị trường: supply-demand, market trends, competitive landscape, và target market.</p>
+              <ul class="day-focus">
+                <li>Focus: supply-demand analysis, market trends, competitive analysis</li>
+                <li>Output: trình bày market analysis 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 34</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Financial Projections</h3>
+              <p>Dự báo tài chính: revenue projections, cost projections, và profit projections.</p>
+              <ul class="day-focus">
+                <li>Focus: revenue projections, cost structure, profit margins</li>
+                <li>Output: trình bày financial projections 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 35</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Risk Assessment</h3>
+              <p>Đánh giá rủi ro: risk identification, risk assessment, và risk mitigation strategies.</p>
+              <ul class="day-focus">
+                <li>Focus: risk identification, risk assessment, mitigation strategies</li>
+                <li>Output: trình bày risk assessment 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 36</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Feasibility Study Presentation</h3>
+              <p>Trình bày feasibility study hoàn chỉnh: market, technical, financial, legal, risk.</p>
+              <ul class="day-focus">
+                <li>Focus: FS presentation structure, key findings, recommendation</li>
+                <li>Output: trình bày FS hoàn chỉnh 10 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card blue">
+              <div class="day-top">
+                <span class="day-tag">Day 37</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Week 5 Review</h3>
+              <p>Ôn tập và thực hành: tổng hợp kiến thức Week 5 và thực hành trình bày FS.</p>
+              <ul class="day-focus">
+                <li>Focus: review Week 5, practice FS presentation</li>
+                <li>Output: ghi âm FS presentation 10 phút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="week-section" id="week-6">
+          <div class="week-header violet">
+            <div class="week-meta">
+              <span class="week-tag">Week 6</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+            <h3>Financial Model & Investment Metrics</h3>
+            <p>Tuần thứ hai tập trung vào financial modeling techniques và investment metrics - ngôn ngữ của quyết định đầu tư.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 38</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Financial Modeling Basics</h3>
+              <p>Cơ bản về financial modeling: cấu trúc model, inputs, calculations, và outputs.</p>
+              <ul class="day-focus">
+                <li>Focus: model structure, inputs, calculations, outputs</li>
+                <li>Output: giải thích financial model structure 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 39</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Investment Metrics: IRR & NPV</h3>
+              <p>Các metrics đầu tư quan trọng: IRR, NPV, và cách giải thích ý nghĩa của chúng.</p>
+              <ul class="day-focus">
+                <li>Focus: IRR, NPV, interpretation, decision criteria</li>
+                <li>Output: giải thích IRR & NPV 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 40</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Sensitivity Analysis</h3>
+              <p>Phân tích độ nhạy: cách test độ nhạy của model với các biến số khác nhau.</p>
+              <ul class="day-focus">
+                <li>Focus: sensitivity analysis, scenario testing, variable impact</li>
+                <li>Output: trình bày sensitivity analysis 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 41</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Scenario Planning</h3>
+              <p>Lập kế hoạch theo kịch bản: base case, upside case, downside case.</p>
+              <ul class="day-focus">
+                <li>Focus: base case, upside case, downside case, scenario comparison</li>
+                <li>Output: trình bày scenario planning 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 42</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Investment Decision Criteria</h3>
+              <p>Tiêu chí quyết định đầu tư: hurdle rate, payback period, risk-adjusted return.</p>
+              <ul class="day-focus">
+                <li>Focus: hurdle rate, payback period, risk-adjusted return</li>
+                <li>Output: trình bày investment decision criteria 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 43</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Financial Model Presentation</h3>
+              <p>Trình bày financial model hoàn chỉnh: assumptions, metrics, sensitivity, recommendation.</p>
+              <ul class="day-focus">
+                <li>Focus: model presentation, key metrics, recommendation</li>
+                <li>Output: trình bày financial model 10 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card violet">
+              <div class="day-top">
+                <span class="day-tag">Day 44</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Week 6 Review</h3>
+              <p>Ôn tập và thực hành: tổng hợp kiến thức Week 6 và thực hành trình bày financial model.</p>
+              <ul class="day-focus">
+                <li>Focus: review Week 6, practice financial model presentation</li>
+                <li>Output: ghi âm financial model presentation 10 phút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 7 -->
+        <div class="week-section" id="week-7">
+          <div class="week-header indigo">
+            <div class="week-meta">
+              <span class="week-tag">Week 7</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+            <h3>JV, M&A & Deal Structures</h3>
+            <p>Tuần thứ ba tập trung vào cấu trúc giao dịch: joint ventures, mergers & acquisitions, và deal structures.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 45</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>JV Structures</h3>
+              <p>Cấu trúc joint venture: types of JVs, JV structures, và strategic rationale.</p>
+              <ul class="day-focus">
+                <li>Focus: JV types, JV structures, strategic rationale</li>
+                <li>Output: giải thích JV structure 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 46</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>M&A Transactions</h3>
+              <p>Giao dịch M&A: types of M&A, M&A process, và strategic rationale.</p>
+              <ul class="day-focus">
+                <li>Focus: M&A types, M&A process, strategic rationale</li>
+                <li>Output: giải thích M&A transaction 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 47</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Deal Structures</h3>
+              <p>Cấu trúc giao dịch: deal structures, term sheets, và key terms.</p>
+              <ul class="day-focus">
+                <li>Focus: deal structures, term sheets, key terms</li>
+                <li>Output: giải thích deal structure 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 48</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Term Sheets</h3>
+              <p>Term sheets: cấu trúc term sheet, key terms, và negotiation points.</p>
+              <ul class="day-focus">
+                <li>Focus: term sheet structure, key terms, negotiation points</li>
+                <li>Output: giải thích term sheet 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 49</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Strategic Partnerships</h3>
+              <p>Quan hệ đối tác chiến lược: strategic partnerships, partnership structures, và benefits.</p>
+              <ul class="day-focus">
+                <li>Focus: strategic partnerships, partnership structures, benefits</li>
+                <li>Output: giải thích strategic partnership 3 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 50</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>JV/M&A Presentation</h3>
+              <p>Trình bày JV/M&A deal: structure, terms, strategic rationale, benefits.</p>
+              <ul class="day-focus">
+                <li>Focus: JV/M&A presentation, structure, terms, benefits</li>
+                <li>Output: trình bày JV/M&A deal 10 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card indigo">
+              <div class="day-top">
+                <span class="day-tag">Day 51</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Week 7 Review</h3>
+              <p>Ôn tập và thực hành: tổng hợp kiến thức Week 7 và thực hành trình bày JV/M&A.</p>
+              <ul class="day-focus">
+                <li>Focus: review Week 7, practice JV/M&A presentation</li>
+                <li>Output: ghi âm JV/M&A presentation 10 phút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 8 -->
+        <div class="week-section" id="week-8">
+          <div class="week-header teal">
+            <div class="week-meta">
+              <span class="week-tag">Week 8</span>
+              <span class="week-duration">7 ngày · 90 phút / ngày</span>
+            </div>
+            <h3>Bank & Investor Negotiation</h3>
+            <p>Tuần thứ tư tập trung vào đàm phán với ngân hàng và nhà đầu tư - kỹ năng quan trọng nhất trong đầu tư bất động sản.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 52</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Bank Negotiation</h3>
+              <p>Đàm phán với ngân hàng: loan terms, covenants, và relationship management.</p>
+              <ul class="day-focus">
+                <li>Focus: loan terms, covenants, relationship management</li>
+                <li>Output: đàm phán bank loan terms 5 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 53</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Investor Negotiation</h3>
+              <p>Đàm phán với nhà đầu tư: investment terms, returns, và exit strategy.</p>
+              <ul class="day-focus">
+                <li>Focus: investment terms, returns, exit strategy</li>
+                <li>Output: đàm phán investment terms 5 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 54</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Partner Negotiation</h3>
+              <p>Đàm phán với đối tác: partnership terms, responsibilities, và benefits.</p>
+              <ul class="day-focus">
+                <li>Focus: partnership terms, responsibilities, benefits</li>
+                <li>Output: đàm phán partnership terms 5 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 55</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Term Sheet Negotiation</h3>
+              <p>Đàm phán term sheet: key terms, negotiation points, và deal closing.</p>
+              <ul class="day-focus">
+                <li>Focus: term sheet negotiation, key terms, deal closing</li>
+                <li>Output: đàm phán term sheet 5 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 56</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Relationship Management</h3>
+              <p>Quản lý quan hệ: relationship management, stakeholder communication, và long-term relationships.</p>
+              <ul class="day-focus">
+                <li>Focus: relationship management, stakeholder communication</li>
+                <li>Output: quản lý stakeholder relationship 5 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 57</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Negotiation Presentation</h3>
+              <p>Trình bày negotiation strategy: strategy, approach, expected outcomes.</p>
+              <ul class="day-focus">
+                <li>Focus: negotiation strategy, approach, expected outcomes</li>
+                <li>Output: trình bày negotiation strategy 10 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card teal">
+              <div class="day-top">
+                <span class="day-tag">Day 58</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Week 8 Review</h3>
+              <p>Ôn tập và thực hành: tổng hợp kiến thức Week 8 và thực hành đàm phán.</p>
+              <ul class="day-focus">
+                <li>Focus: review Week 8, practice negotiation</li>
+                <li>Output: ghi âm negotiation scenario 10 phút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 9 -->
+        <div class="week-section" id="week-9">
+          <div class="week-header purple">
+            <div class="week-meta">
+              <span class="week-tag">Week 9</span>
+              <span class="week-duration">2 ngày · 90 phút / ngày</span>
+            </div>
+            <h3>Final Assessment & Review</h3>
+            <p>Tuần cuối cùng của Level 2: đánh giá cuối kỳ và ôn tập tổng hợp.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="day-card purple">
+              <div class="day-top">
+                <span class="day-tag">Day 59</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Level 2 Final Assessment</h3>
+              <p>Bài đánh giá cuối Level 2: trình bày investment proposal hoàn chỉnh với Q&A.</p>
+              <ul class="day-focus">
+                <li>Focus: investment proposal presentation, Q&A handling</li>
+                <li>Output: ghi âm investment proposal 15 phút + Q&A 10 phút</li>
+              </ul>
+            </div>
+
+            <div class="day-card purple">
+              <div class="day-top">
+                <span class="day-tag">Day 60</span>
+                <span class="day-time">90 phút</span>
+              </div>
+              <h3>Level 2 Review & Level 3 Preview</h3>
+              <p>Ôn tập Level 2 và xem trước Level 3: tổng hợp kiến thức và chuẩn bị cho Level 3.</p>
+              <ul class="day-focus">
+                <li>Focus: review Level 2, preview Level 3</li>
+                <li>Output: self-assessment Level 2 + preview Level 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Level 2 Milestone -->
+    <section class="section" id="milestone">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Level 2 Milestone</span>
+          <h2>Sau Level 2, bạn có thể làm gì?</h2>
+          <p>Đây là các năng lực tối thiểu bạn cần đạt trước khi bước vào Level 3.</p>
+        </div>
+
+        <div class="checklist">
+          <li>Trình bày Feasibility Study bằng tiếng Anh một cách chuyên nghiệp.</li>
+          <li>Giải thích Financial Model với các metrics quan trọng: IRR, NPV, payback period.</li>
+          <li>Thảo luận về Joint Ventures và M&A: structure, terms, strategic rationale.</li>
+          <li>Đàm phán với ngân hàng, nhà đầu tư, đối tác bằng ngôn ngữ chuyên nghiệp.</li>
+          <li>Xử lý câu hỏi về risk, return, exit strategy một cách tự tin.</li>
+          <li>Trình bày investment proposal hoàn chỉnh với Q&A.</li>
+          <li>Quản lý quan hệ với các stakeholders khác nhau.</li>
+          <li>Sẵn sàng cho Level 3: Executive English.</li>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Self-Check -->
+    <section class="section alt" id="self-check">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Quick Self-Check</span>
+          <h2>Kiểm tra trực giác trước khi bắt đầu</h2>
+          <p>Ba câu hỏi dưới đây giúp bạn cảm nhận mức độ chuyên sâu của Level 2 so với Level 1.</p>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <h3 style="margin-bottom: 14px;">1. Bạn cần trình bày Feasibility Study cho nhà đầu tư. Câu nào phù hợp nhất?</h3>
+            <div style="display: grid; gap: 10px;">
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">A. "The project is feasible. We should invest."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">B. "Based on our feasibility study, the project shows strong market demand, solid financial projections with IRR of 18%, and manageable risks. We recommend proceeding with the investment."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">C. "The project looks good. Let's invest."</button>
+            </div>
+            <p style="margin-top: 10px; font-size: 14px; color: var(--text-muted);"><strong>Đáp án:</strong> B. Trình bày FS chuyên nghiệp cần có market analysis, financial metrics, và recommendation rõ ràng.</p>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 14px;">2. Nhà đầu tư hỏi về IRR. Câu trả lời nào tốt nhất?</h3>
+            <div style="display: grid; gap: 10px;">
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">A. "The IRR is 18%."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">B. "The project IRR is 18%, which exceeds our hurdle rate of 15% by 300 basis points, indicating strong returns relative to risk."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">C. "The IRR is good. We should invest."</button>
+            </div>
+            <p style="margin-top: 10px; font-size: 14px; color: var(--text-muted);"><strong>Đáp án:</strong> B. Giải thích IRR cần so sánh với hurdle rate và giải thích ý nghĩa.</p>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 14px;">3. Ngân hàng hỏi về risk mitigation. Câu trả lời nào tốt nhất?</h3>
+            <div style="display: grid; gap: 10px;">
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">A. "We have mitigated the risks."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">B. "We've identified key risks including construction delays and market slowdown. Our mitigation strategies include fixed-price contracts for 70% of construction costs and a 10% contingency buffer."</button>
+              <button style="text-align: left; padding: 12px; border-radius: 12px; border: 1px solid #f5e7d7; background: #fffaf5; cursor: pointer;">C. "The risks are manageable. Don't worry."</button>
+            </div>
+            <p style="margin-top: 10px; font-size: 14px; color: var(--text-muted);"><strong>Đáp án:</strong> B. Risk mitigation chuyên nghiệp cần nêu rõ risks và mitigation strategies cụ thể.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow purple">Navigation</span>
+          <h2>Điều hướng</h2>
+        </div>
+        <div class="prev-next">
+          <a href="level-1.html">
+            <small>Previous Level</small>
+            <strong>Level 1 · Business English Foundation</strong>
+          </a>
+          <div></div>
+          <a href="level-3.html">
+            <small>Next Level</small>
+            <strong>Level 3 · Executive English</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section alt">
+      <div class="container">
+        <div style="text-align: center; padding: 40px; background: linear-gradient(135deg, #9333ea, #a855f7); border-radius: 24px; color: white;">
+          <h2 style="margin-bottom: 14px; font-size: 32px;">Sẵn sàng bắt đầu Level 2?</h2>
+          <p style="margin-bottom: 20px; font-size: 17px;">Bắt đầu với Day 31: Project Finance Overview. Mỗi ngày 90 phút, đi sâu vào tài chính bất động sản và đầu tư chuyên sâu.</p>
+          <a href="level-2-day-31.html" style="display: inline-block; padding: 14px 28px; background: white; color: #7e22ce; border-radius: 12px; font-weight: 700; text-decoration: none;">Bắt đầu Level 2 · Day 31</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Executive English 90 Days</strong><span> · Level 2 · Real Estate & Investment English</span></div>
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
