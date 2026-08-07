@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 1 Day 41 | Scenario Planning | Executive English 90</title>
+  <meta
+    name="description"
+    content="Level 1 Day 41 - Scenario Planning: Lập kế hoạch theo kịch bản với base case, upside case, downside case, scenario comparison; Speaking topic Scenario Comparison; Output trình bày scenario planning 3 phút."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --page: #f0f9ff;
+      --surface: #ffffff;
+      --surface-soft: #f8fbff;
+      --text-strong: #0c4a6e;
+      --text-body: #075985;
+      --text-muted: #0369a1;
+      --text-soft: #0284c7;
+      --line: rgba(14, 165, 233, 0.10);
+      --line-soft: rgba(14, 165, 233, 0.07);
+      --shadow-lg: 0 24px 70px rgba(14, 165, 233, 0.10);
+      --shadow-md: 0 14px 36px rgba(14, 165, 233, 0.07);
+      --shadow-sm: 0 8px 20px rgba(14, 165, 233, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --blue: #0284c7;
+      --blue-deep: #0369a1;
+      --blue-soft: #e0f2fe;
+      --blue-line: #bae6fd;
+      --blue-text: #075985;
+      --emerald: #059669;
+      --emerald-soft: #ecfdf5;
+      --emerald-line: #a7f3d0;
+      --emerald-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-body);
+      background: var(--page);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      color: var(--blue-text);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(14, 165, 233, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-strong);
+      min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-soft);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #5a5480;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--blue-deep);
+      background: var(--blue-soft);
+      border-color: var(--blue-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      border: 1px solid var(--blue-line);
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky;
+      top: 68px;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft);
+      box-shadow: 0 8px 18px rgba(14, 165, 233, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+      scrollbar-width: none;
+    }
+
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid;
+      transition: 0.16s ease;
+    }
+
+    .plan-pill.blue { background: var(--blue-soft); color: var(--blue-text); border-color: var(--blue-line); }
+    .plan-pill.emerald { background: var(--emerald-soft); color: var(--emerald-text); border-color: var(--emerald-line); }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .breadcrumb a { text-decoration: none; color: var(--blue-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 40%, #7dd3fc 100%);
+      color: var(--text-strong);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      left: 36px;
+      top: 36px;
+      font-size: 32px;
+      opacity: 0.7;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      right: -56px;
+      bottom: -56px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(14, 165, 233, 0.08);
+      pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.20);
+      color: var(--blue-deep);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+      max-width: 980px;
+      font-weight: 800;
+      color: var(--blue-deep);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0;
+      max-width: 950px;
+      font-size: 18px;
+      line-height: 1.9;
+      color: var(--text-body);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0;
+      max-width: 900px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(14, 165, 233, 0.15);
+      font-weight: 600;
+      color: var(--text-body);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 12px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--blue-deep); color: #ffffff; box-shadow: 0 16px 34px rgba(14, 165, 233, 0.25); }
+    .btn-primary:hover { background: #075985; }
+    .btn-secondary { background: rgba(14, 165, 233, 0.10); color: var(--blue-deep); border: 1px solid var(--blue-line); }
+
+    .section { padding: 54px 0; }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(224, 242, 254, 0.50), rgba(186, 230, 253, 0.40));
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-head {
+      max-width: 920px;
+      margin: 0 auto 28px;
+      text-align: left;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(14, 165, 233, 0.18);
+      color: var(--blue-text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.blue { color: var(--blue-text); border-color: var(--blue-line); background: var(--blue-soft); }
+    .eyebrow.emerald { color: var(--emerald-text); border-color: var(--emerald-line); background: var(--emerald-soft); }
+
+    .section-head h2 {
+      margin: 13px 0 10px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14;
+      letter-spacing: -0.035em;
+      color: var(--text-strong);
+      font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .soft-card {
+      height: 100%;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 22px;
+      transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+
+    .soft-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.32;
+      letter-spacing: -0.02em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .tint-blue { border-top: 6px solid var(--blue); background: linear-gradient(180deg, #ffffff, #e0f2fe); }
+    .tint-emerald { border-top: 6px solid var(--emerald); background: linear-gradient(180deg, #ffffff, #ecfdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-strong);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%;
+      min-height: 50px;
+      border-radius: 16px;
+      border: 1px solid #bae6fd;
+      background: #f0f9ff;
+      color: var(--text-strong);
+      font: inherit;
+      font-weight: 600;
+      padding: 12px 14px;
+      outline: none;
+    }
+
+    .field select:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.10); }
+
+    .audio-note {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 18px;
+      background: var(--amber-soft);
+      border: 1px solid var(--amber-line);
+      color: var(--amber-text);
+      font-weight: 600;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px dashed rgba(14, 165, 233, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-line);
+      color: var(--blue-deep);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text-strong);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .ipa {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 5px 10px;
+      border-radius: 12px;
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-line);
+      color: var(--blue-deep);
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--amber-soft);
+      border: 1px solid var(--amber-line);
+      color: var(--amber-text);
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #bae6fd;
+      color: var(--text-body);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--blue-line);
+      background: var(--blue-soft);
+      color: var(--blue-text);
+      font: inherit;
+      font-weight: 700;
+      min-height: 40px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: 0.18s ease;
+      white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #bae6fd; }
+    .audio-btn.playing { background: var(--blue-deep); color: #ffffff; border-color: var(--blue-deep); }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--blue-soft);
+      color: var(--blue-deep);
+      border: 1px solid var(--blue-line);
+      margin-bottom: 8px;
+    }
+
+    .example {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid #bae6fd;
+      margin-top: 10px;
+    }
+
+    .example p { margin: 0 0 10px; color: #1a1a1a; font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+
+    .listening-panel h3, .task-panel h3 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      letter-spacing: -0.025em;
+      color: var(--text-strong);
+      font-weight: 800;
+    }
+
+    .listening-panel h4, .task-panel h4 {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+      display: grid;
+      gap: 9px;
+      color: var(--text-body);
+    }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+      border: 1px solid var(--blue-line);
+      margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px;
+      font-size: 18px;
+      line-height: 2;
+      color: #1a1a1a;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--blue-deep); }
+
+    .answer-box {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--emerald-soft);
+      border: 1px solid var(--emerald-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p { margin: 0; color: #1a1a1a; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-line);
+      border-left: 5px solid var(--blue);
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    .mistakes-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .mistake-item {
+      padding: 20px;
+      border-radius: 16px;
+      border-left: 4px solid;
+      transition: all 0.3s ease;
+    }
+
+    .mistake-item:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .mistake-item:nth-child(1) {
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+      border-left-color: var(--blue);
+    }
+
+    .mistake-item:nth-child(2) {
+      background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 100%);
+      border-left-color: var(--emerald);
+    }
+
+    .mistake-item:nth-child(3) {
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+      border-left-color: var(--blue);
+    }
+
+    .mistake-item:nth-child(4) {
+      background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 100%);
+      border-left-color: var(--emerald);
+    }
+
+    .mistake-avoid {
+      color: var(--rose-text);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .mistake-avoid::before {
+      content: "✗ ";
+      font-weight: 800;
+    }
+
+    .mistake-should {
+      color: #1a1a1a;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .mistake-should::before {
+      content: "✓ ";
+      font-weight: 800;
+    }
+
+    .mistake-text {
+      color: var(--text-body);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-decoration: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow-md);
+      padding: 18px;
+      transition: 0.18s ease;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-soft);
+    }
+
+    .prev-next strong {
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
+      color: var(--text-strong);
+      font-weight: 700;
+    }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--line-soft);
+      padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      color: #55507a;
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--blue-soft);
+      border-color: var(--blue-line);
+      color: var(--blue-deep);
+    }
+
+    @media (max-width: 1180px) {
+      .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 1 · Day 41</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-1.html">Level 1</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 41/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill blue" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill blue" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill blue" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill blue" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill blue" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill emerald" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-1.html">Level 1</a>
+        <span>›</span>
+        <span>Day 41</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 1</span>
+            <span class="hero-tag">Week 6 · Financial Model</span>
+            <span class="hero-tag">Day 41 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Scenario Planning</span>
+          </div>
+
+          <h1 class="hero-title">Scenario Planning</h1>
+
+          <p class="hero-subtitle">
+            Day 41 tập trung vào scenario planning: lập kế hoạch theo kịch bản với base case, upside case, downside case.
+            Bạn sẽ học cách so sánh các kịch bản và giải thích tại sao dự án vẫn viable trong mọi kịch bản.
+          </p>
+
+          <div class="hero-quote">
+            Scenario planning không chỉ là đưa ra các con số. Đó là cách bạn chứng minh rằng bạn đã suy nghĩ về mọi khả năng
+            và chuẩn bị sẵn sàng cho mọi tình huống. Người nói giỏi không chỉ trình bày base case — họ so sánh và giải thích
+            tại sao dự án vẫn đáng đầu tư trong mọi kịch bản.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn <strong>Microsoft Aria Online (Natural)</strong>, <strong>Microsoft Jenny Online (Natural)</strong>, hoặc <strong>Google US English</strong>.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài trình bày scenario planning hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Scenario Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ scenario planning: base case, upside case, downside case, scenario analysis, scenario comparison, stress test, key driver, downside protection. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 6 mẫu câu scenario planning: base case, upside case, downside case, scenario comparison, stress test, key takeaway. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một bài trình bày scenario planning mẫu 3 phút. Nghe 3 lần: base case, upside/downside, comparison. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng tăng dần: Round 1 (base case 1 phút), Round 2 (upside/downside 2 phút), Round 3 (full scenario planning 3 phút). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Hoàn thiện bài trình bày scenario planning 3 phút. Ghi âm bài hoàn chỉnh. Tự chấm theo rubric 5 tiêu chí. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Scenario Terms</h2>
+          <p>8 thuật ngữ scenario planning cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>base case</h3>
+              <button class="audio-btn" type="button" data-speak="base case. In the base case, the project delivers an 18 percent IRR with a 4-year payback period.">Nghe</button>
+            </div>
+
+            <span class="ipa">/beɪs keɪs/</span>
+            <p class="vn">Kịch bản cơ sở</p>
+
+            <div class="note">
+              Ghi chú: Base case là kịch bản cơ sở — kịch bản có khả năng xảy ra cao nhất. Là kịch bản tham chiếu chính.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> base case, base case scenario, base case assumptions</li>
+              <li><strong>Example:</strong> In the base case, the project delivers an 18 percent IRR with a 4-year payback period.</li>
+              <li><strong>Native alternative:</strong> base case, base scenario</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>upside case</h3>
+              <button class="audio-btn" type="button" data-speak="upside case. In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈʌpsaɪd keɪs/</span>
+            <p class="vn">Kịch bản tích cực</p>
+
+            <div class="note">
+              Ghi chú: Upside case là kịch bản tích cực — khi mọi thứ tốt hơn kỳ vọng. Cho thấy tiềm năng tối đa của dự án.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> upside case, upside scenario, upside potential</li>
+              <li><strong>Example:</strong> In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.</li>
+              <li><strong>Native alternative:</strong> upside case, best case scenario</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>downside case</h3>
+              <button class="audio-btn" type="button" data-speak="downside case. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈdaʊnsaɪd keɪs/</span>
+            <p class="vn">Kịch bản tiêu cực</p>
+
+            <div class="note">
+              Ghi chú: Downside case là kịch bản tiêu cực — khi mọi thứ xấu hơn kỳ vọng. Quan trọng để chứng minh dự án vẫn viable.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> downside case, downside scenario, downside risk</li>
+              <li><strong>Example:</strong> In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</li>
+              <li><strong>Native alternative:</strong> downside case, worst case scenario</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>scenario analysis</h3>
+              <button class="audio-btn" type="button" data-speak="scenario analysis. We conducted scenario analysis to test how changes in key assumptions affect the IRR.">Nghe</button>
+            </div>
+
+            <span class="ipa">/səˈnærio əˈnæləsɪs/</span>
+            <p class="vn">Phân tích kịch bản</p>
+
+            <div class="note">
+              Ghi chú: Scenario analysis là phân tích các kịch bản khác nhau. Bao gồm base case, upside case, downside case.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> scenario analysis, conduct scenario analysis, scenario testing</li>
+              <li><strong>Example:</strong> We conducted scenario analysis to test how changes in key assumptions affect the IRR.</li>
+              <li><strong>Native alternative:</strong> scenario analysis, scenario planning</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>scenario comparison</h3>
+              <button class="audio-btn" type="button" data-speak="scenario comparison. Compared with the base case, the upside case shows 20 percent higher returns.">Nghe</button>
+            </div>
+
+            <span class="ipa">/səˈnærioʊ kəmˈpærɪsn/</span>
+            <p class="vn">So sánh kịch bản</p>
+
+            <div class="note">
+              Ghi chú: Scenario comparison là so sánh các kịch bản với nhau. Giúp người nghe thấy sự khác biệt giữa các kịch bản.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> scenario comparison, compare scenarios, scenario analysis</li>
+              <li><strong>Example:</strong> Compared with the base case, the upside case shows 20 percent higher returns.</li>
+              <li><strong>Native alternative:</strong> scenario comparison, scenario comparison</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>stress test</h3>
+              <button class="audio-btn" type="button" data-speak="stress test. We stress tested the model with a 20 percent price drop and 20 percent slower absorption.">Nghe</button>
+            </div>
+
+            <span class="ipa">/stres test/</span>
+            <p class="vn">Stress test (kiểm tra áp lực)</p>
+
+            <div class="note">
+              Ghi chú: Stress test là kiểm tra mô hình trong điều kiện cực đoan. Chứng minh dự án vẫn viable ngay cả trong worst case.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> stress test the model, conduct stress test, stress test scenario</li>
+              <li><strong>Example:</strong> We stress tested the model with a 20 percent price drop and 20 percent slower absorption.</li>
+              <li><strong>Native alternative:</strong> stress test, stress testing</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>key driver</h3>
+              <button class="audio-btn" type="button" data-speak="key driver. The key driver of the upside case is higher selling prices.">Nghe</button>
+            </div>
+
+            <span class="ipa">/kiː ˈdraɪvər/</span>
+            <p class="vn">Yếu tố then chốt</p>
+
+            <div class="note">
+              Ghi chú: Key driver là yếu tố then chốt ảnh hưởng đến kết quả. Trong scenario planning, cần giải thích key driver của mỗi kịch bản.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key driver, key drivers of, key driver of upside</li>
+              <li><strong>Example:</strong> The key driver of the upside case is higher selling prices.</li>
+              <li><strong>Native alternative:</strong> key driver, key factor</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>downside protection</h3>
+              <button class="audio-btn" type="button" data-speak="downside protection. The project has built-in downside protection through fixed-price contracts and a 10 percent contingency buffer.">Nghe</button>
+            </div>
+
+            <span class="ipa">/daʊnsaɪd prətekʃn/</span>
+            <p class="vn">Bảo vệ downside</p>
+
+            <div class="note">
+              Ghi chú: Downside protection là các biện pháp bảo vệ khi mọi thứ không theo kế hoạch. Quan trọng để giảm rủi ro.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> built-in downside protection, downside protection mechanisms, provide downside protection</li>
+              <li><strong>Example:</strong> The project has built-in downside protection through fixed-price contracts and a 10 percent contingency buffer.</li>
+              <li><strong>Native alternative:</strong> downside risk mitigation, downside safeguards</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section alt" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>6 mẫu câu giúp bạn trình bày scenario planning: base case, upside case, downside case, scenario comparison, stress test, key takeaway.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>In the base case...</h3>
+              <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: In the base case + kết quả. Dùng để giải thích kịch bản cơ sở.
+            </div>
+
+            <div class="example">
+              <span class="label">Base case</span>
+              <p>In the base case, the project delivers an 18 percent IRR with a 4-year payback period.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay kết quả: delivers 20% IRR / delivers 15% IRR.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>In the upside case...</h3>
+              <button class="audio-btn" type="button" data-speak="In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: In the upside case + assumption + kết quả. Dùng để giải thích kịch bản tích cực.
+            </div>
+
+            <div class="example">
+              <span class="label">Upside case</span>
+              <p>In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay assumption: 10% higher absorption / 10% lower costs. Thay kết quả: IRR increases to 20% / IRR increases to 25%.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>In the downside case...</h3>
+              <button class="audio-btn" type="button" data-speak="In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: In the downside case + assumption + kết quả + ý nghĩa. Dùng để giải thích kịch bản tiêu cực.
+            </div>
+
+            <div class="example">
+              <span class="label">Downside case</span>
+              <p>In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay assumption: 10% slower absorption / 10% higher costs. Thay ý nghĩa: still viable / still above hurdle.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Compared with the base case...</h3>
+              <button class="audio-btn" type="button" data-speak="Compared with the base case, the upside case shows 20 percent higher returns.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: Compared with the base case + so sánh. Dùng để so sánh các kịch bản.
+            </div>
+
+            <div class="example">
+              <span class="label">Scenario comparison</span>
+              <p>Compared with the base case, the upside case shows 20 percent higher returns.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay so sánh: the downside case shows 10% lower returns / the upside case shows stronger returns.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Even under stress...</h3>
+              <button class="audio-btn" type="button" data-speak="Even under stress, with a 20 percent price drop, the project still delivers a positive return.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: Even under stress + condition + kết quả. Dùng để nhấn mạnh dự án vẫn viable.
+            </div>
+
+            <div class="example">
+              <span class="label">Stress test</span>
+              <p>Even under stress, with a 20 percent price drop, the project still delivers a positive return.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay condition: 10% slower absorption / 10% higher costs. Thay kết quả: still viable / still above hurdle.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>The key takeaway from the scenario analysis is...</h3>
+              <button class="audio-btn" type="button" data-speak="The key takeaway from the scenario analysis is that the project remains viable across all scenarios.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: The key takeaway from the scenario analysis is + kết luận. Dùng để kết luận scenario analysis.
+            </div>
+
+            <div class="example">
+              <span class="label">Key takeaway</span>
+              <p>The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay kết luận: the project is resilient / the downside is limited / the upside is significant.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 3 · 20 phút</span>
+          <h2>Listening · Scenario Planning Presentation</h2>
+          <p>Nghe một bài trình bày scenario planning mẫu 3 phút. Đây là mô hình để bạn tái hiện với số liệu thật của mình.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm cấu trúc bài trình bày.</li>
+            <li>Nghe lần hai để nhận diện các patterns: base case, upside/downside, comparison.</li>
+            <li>Nghe lần ba để phân tích: base case có rõ ràng không? Upside/downside có ý nghĩa không? Comparison có rõ ràng không?</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period. In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate. Compared with the base case, the upside case shows 20 percent higher returns. Even under stress, the project still delivers a positive return. The key takeaway from the scenario analysis is that the project remains viable across all scenarios.">Nghe toàn bộ bài trình bày</button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p><span class="speaker">[Base Case]</span>In the base case, the project delivers an 18 percent IRR with a 4-year payback period.</p>
+
+            <p><span class="speaker">[Upside Case]</span>In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.</p>
+
+            <p><span class="speaker">[Downside Case]</span>In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</p>
+
+            <p><span class="speaker">[Comparison]</span>Compared with the base case, the upside case shows 20 percent higher returns.</p>
+
+            <p><span class="speaker">[Stress Test]</span>Even under stress, the project still delivers a positive return.</p>
+
+            <p><span class="speaker">[Conclusion]</span>The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li><strong>Q1:</strong> What is the IRR and payback period in the base case?</li>
+            <li><strong>Q2:</strong> What is the IRR in the upside case?</li>
+            <li><strong>Q3:</strong> What is the IRR in the downside case?</li>
+            <li><strong>Q4:</strong> What is the key takeaway from the scenario analysis?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>1. IRR is 18% with a 4-year payback period.<br />
+            2. IRR increases to 22% in the upside case.<br />
+            3. IRR drops to 12% in the downside case, still above the hurdle rate.<br />
+            4. The project remains viable across all scenarios.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Base case</span>
+            <p>In the base case, the project delivers an 18 percent IRR with a 4-year payback period.</p>
+            <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Upside/Downside</span>
+            <p>In the upside case, the IRR increases to 22 percent. In the downside case, the IRR drops to 12 percent.</p>
+            <button class="audio-btn" type="button" data-speak="In the upside case, the IRR increases to 22 percent. In the downside case, the IRR drops to 12 percent.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Conclusion</span>
+            <p>The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</p>
+            <button class="audio-btn" type="button" data-speak="The key takeaway from the scenario analysis is that the project remains viable across all scenarios.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các metrics: "18 PERCENT", "4-YEAR payback", "22 PERCENT", "12 PERCENT".</li>
+            <li>Nhấn vào so sánh: "HIGHER returns", "DROPS to".</li>
+            <li>Giọng chắc chắn khi kết luận: "The KEY TAKEAWAY is..."</li>
+            <li>Ngắt rõ giữa các phần: base case → upside → downside → comparison → conclusion.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Block 4 · 20 phút</span>
+          <h2>Speaking · Scenario Planning 3 Minutes</h2>
+          <p>Luyện 3 vòng tăng dần. Mục tiêu cuối cùng: trình bày scenario planning trong 3 phút mà không đọc slide.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Round 1 · Base Case (1 phút)</h3>
+
+            <p>Giải thích base case: IRR, payback, ý nghĩa.</p>
+
+            <div class="answer-box">
+              <p>Base case: In the base case, the project delivers an 18 percent IRR with a 4-year payback period.</p>
+              <p>Meaning: This indicates strong returns relative to our 15 percent hurdle rate.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period. This indicates strong returns relative to our 15 percent hurdle rate.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · Upside/Downside (2 phút)</h3>
+
+            <p>Thêm upside case và downside case.</p>
+
+            <div class="answer-box">
+              <p>Upside: In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent.</p>
+              <p>Downside: In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</p>
+              <p>Comparison: Compared with the base case, the upside case shows 20 percent higher returns.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate. Compared with the base case, the upside case shows 20 percent higher returns.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Scenario Planning (3 phút)</h3>
+
+            <p>Hoàn chỉnh: base case + upside/downside + comparison + conclusion.</p>
+
+            <div class="answer-box">
+              <p>Base case: In the base case, the project delivers an 18 percent IRR with a 4-year payback period, indicating strong returns relative to our 15 percent hurdle rate.</p>
+              <p>Upside/Downside: In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</p>
+              <p>Comparison: Compared with the base case, the upside case shows 20 percent higher returns.</p>
+              <p>Conclusion: The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period, indicating strong returns relative to our 15 percent hurdle rate. In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate. Compared with the base case, the upside case shows 20 percent higher returns. The key takeaway from the scenario analysis is that the project remains viable across all scenarios.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>Ghi âm hoặc ghi hình Round 3 — bài trình bày scenario planning 3 phút. Tự chấm theo rubric bên dưới.</p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Base case có rõ ràng với IRR và payback không?</li>
+              <li>Upside/downside có assumption và kết quả không?</li>
+              <li>Comparison có rõ ràng không?</li>
+              <li>Conclusion có rõ ràng không?</li>
+              <li>Có giải thích ý nghĩa của scenario analysis không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow emerald">Block 5 · 15 phút</span>
+          <h2>Output · Scenario Planning Presentation</h2>
+          <p>Output cuối ngày: hoàn thiện bài trình bày scenario planning 3 phút, ghi âm, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: 3-Minute Presentation Outline</h3>
+
+            <p>Tạo outline bài trình bày scenario planning 3 phút. Mỗi phần có 1 key message rõ ràng.</p>
+
+            <h4>Model Answer · 3-Minute Presentation Outline</h4>
+
+            <div class="answer-box">
+              <p><strong>3-Minute Scenario Planning Presentation</strong></p>
+              <p><strong>1. Base Case</strong><br />
+              In the base case, the project delivers an 18 percent IRR with a 4-year payback period, indicating strong returns relative to our 15 percent hurdle rate.</p>
+              <p><strong>2. Upside/Downside</strong><br />
+              In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate.</p>
+              <p><strong>3. Comparison</strong><br />
+              Compared with the base case, the upside case shows 20 percent higher returns.</p>
+              <p><strong>4. Conclusion</strong><br />
+              The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="In the base case, the project delivers an 18 percent IRR with a 4-year payback period, indicating strong returns relative to our 15 percent hurdle rate. In the upside case, assuming 10 percent higher prices, the IRR increases to 22 percent. In the downside case, assuming 20 percent lower prices, the IRR drops to 12 percent, still above our hurdle rate. Compared with the base case, the upside case shows 20 percent higher returns. The key takeaway from the scenario analysis is that the project remains viable across all scenarios.">Nghe bài trình bày</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm / Ghi hình 3 phút</h3>
+
+            <p>Ghi âm hoặc ghi hình bài trình bày scenario planning 3 phút. Mục tiêu: không đọc slide, giải thích rõ ràng, có cấu trúc.</p>
+
+            <h4>Recording Checklist</h4>
+            <ul class="checklist">
+              <li>Base case rõ ràng với IRR và payback.</li>
+              <li>Upside/downside có assumption và kết quả.</li>
+              <li>Comparison rõ ràng.</li>
+              <li>Conclusion rõ ràng.</li>
+              <li>Giải thích ý nghĩa của scenario analysis.</li>
+              <li>Không đọc slide — nói bằng lời của bạn.</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+
+            <div class="answer-box">
+              <p><strong>Self-Assessment: 5 Criteria for Scenario Planning Presentation</strong></p>
+              <p><strong>1. Base case explanation</strong><br />
+              Needs work: Không giải thích base case.<br />
+              Good: Giải thích base case nhưng thiếu ý nghĩa.<br />
+              Excellent: Giải thích base case với IRR, payback và ý nghĩa.</p>
+              <p><strong>2. Upside/downside explanation</strong><br />
+              Needs work: Không giải thích upside/downside.<br />
+              Good: Giải thích upside/downside nhưng thiếu assumption.<br />
+              Excellent: Giải thích upside/downside với assumption và kết quả rõ ràng.</p>
+              <p><strong>3. Comparison clarity</strong><br />
+              Needs work: Không so sánh các kịch bản.<br />
+              Good: Có so sánh nhưng thiếu rõ ràng.<br />
+              Excellent: So sánh rõ ràng giữa các kịch bản.</p>
+              <p><strong>4. Conclusion clarity</strong><br />
+              Needs work: Không có conclusion rõ ràng.<br />
+              Good: Có conclusion nhưng thiếu key takeaway.<br />
+              Excellent: Conclusion rõ ràng với key takeaway rõ ràng.</p>
+              <p><strong>5. Meaning of scenario analysis</strong><br />
+              Needs work: Không giải thích ý nghĩa của scenario analysis.<br />
+              Good: Giải thích ý nghĩa nhưng thiếu rõ ràng.<br />
+              Excellent: Giải thích ý nghĩa của scenario analysis rõ ràng.</p>
+            </div>
+
+            <h3>Reflection 3 dòng</h3>
+
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện.</li>
+              <li><strong>Keep:</strong> 1 kỹ thuật bạn sẽ tiếp tục dùng.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã giải thích rõ base case với IRR và payback. Improve: Tôi cần giải thích upside/downside sâu hơn. Keep: "The key takeaway from the scenario analysis is..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi trình bày scenario planning</h2>
+          <p>Tránh các lỗi này để bài trình bày của bạn rõ ràng, chuyên nghiệp và thuyết phục.</p>
+        </div>
+
+        <div class="mistakes-grid">
+          <div class="mistake-item">
+            <div class="mistake-avoid">Tránh: Đọc số mà không giải thích: "IRR is 18 percent." (Rồi sao?)</div>
+            <div class="mistake-should">Nên: IRR is 18 percent, indicating strong returns relative to our 15 percent hurdle rate.</div>
+          </div>
+
+          <div class="mistake-item">
+            <div class="mistake-avoid">Tránh: Không giải thích upside/downside: "There are upside and downside cases." (Như thế nào?)</div>
+            <div class="mistake-should">Nên: In the upside case, the IRR increases to 22 percent. In the downside case, the IRR drops to 12 percent.</div>
+          </div>
+
+          <div class="mistake-item">
+            <div class="mistake-avoid">Tránh: So sánh mà không rõ ràng: "The upside is better." (Tốt hơn như thế nào?)</div>
+            <div class="mistake-should">Nên: Compared with the base case, the upside case shows 20 percent higher returns.</div>
+          </div>
+
+          <div class="mistake-item">
+            <div class="mistake-avoid">Tránh: Kết thúc mà không có conclusion rõ ràng: "That's all."</div>
+            <div class="mistake-should">Nên: The key takeaway from the scenario analysis is that the project remains viable across all scenarios.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 41 khi có thể</h2>
+          <p>Trước khi sang Day 42, hãy đảm bảo bạn đã hoàn thành bài trình bày scenario planning hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng base case, upside case, downside case.</li>
+            <li>Tôi có thể dùng scenario analysis, scenario comparison, stress test.</li>
+            <li>Tôi có thể dùng key driver, downside protection.</li>
+            <li>Tôi có thể giải thích base case với IRR và payback.</li>
+            <li>Tôi có thể giải thích upside/downside với assumption và kết quả.</li>
+            <li>Tôi có thể so sánh các kịch bản rõ ràng.</li>
+            <li>Tôi có thể đưa ra conclusion rõ ràng.</li>
+            <li>Tôi đã ghi âm hoặc ghi hình bài trình bày 3 phút.</li>
+            <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow blue">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-1-day-40.html">
+            <small>Previous Day</small>
+            <strong>Day 40 · Sensitivity Analysis</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 41 Complete</strong>
+          </button>
+
+          <a href="level-1-day-42.html">
+            <small>Next Day</small>
+            <strong>Day 42 · Investment Decision Criteria</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 1 · Day 41 · Scenario Planning</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 41 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-1";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["41"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 41 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 41/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 41 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 41/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["41"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "In the base case, the project delivers an 18 percent IRR. In the upside case, the IRR increases to 22 percent. The project remains viable across all scenarios.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
