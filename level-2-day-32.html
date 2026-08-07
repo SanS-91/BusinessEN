@@ -13,30 +13,40 @@
   <style>
     :root {
       --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-      --page: #f7f8ff;
+       /* Tím phối kem - soft, ấm, không neon */
+      --page: #f7f3fa;
       --surface: #ffffff;
-      --surface-soft: #fcfcff;
-      --text-strong: #202a52;
-      --text-body: #42507a;
-      --text-muted: #6b76a1;
-      --text-soft: #8b96b9;
-      --line: rgba(37, 50, 99, 0.10);
-      --line-soft: rgba(37, 50, 99, 0.07);
-      --shadow-lg: 0 24px 70px rgba(30, 42, 92, 0.10);
-      --shadow-md: 0 14px 36px rgba(30, 42, 92, 0.08);
-      --shadow-sm: 0 8px 20px rgba(30, 42, 92, 0.05);
+      --surface-soft: #faf7fc;
+      --text-strong: #3b1f6e;
+      --text-body: #4a2d7a;
+      --text-muted: #7a6a9a;
+      --text-soft: #9a8bb5;
+      --line: rgba(75, 40, 120, 0.10);
+      --line-soft: rgba(75, 40, 120, 0.06);
+      --shadow-lg: 0 24px 70px rgba(75, 40, 120, 0.10);
+      --shadow-md: 0 14px 36px rgba(75, 40, 120, 0.07);
+      --shadow-sm: 0 8px 20px rgba(75, 40, 120, 0.04);
       --radius-xl: 34px;
       --radius-lg: 26px;
       --radius-md: 18px;
       --radius-pill: 999px;
+
+      /* Tím chủ đạo - ấm, mềm */
       --purple: #7c3aed;
-      --purple-soft: #f5f3ff;
-      --purple-line: #ddd6fe;
-      --purple-text: #6d28d9;
-      --indigo: #4f46e5;
-      --indigo-soft: #eef2ff;
-      --indigo-line: #c7d2fe;
-      --indigo-text: #4338ca;
+      --purple-deep: #5b21b6;
+      --purple-soft: #ede4f5;
+      --purple-line: #d4c4e8;
+      --purple-text: #5b21b6;
+
+      /* Kem phối tím */
+      --cream: #f5efe0;
+      --cream-soft: #faf6ec;
+      --cream-line: #ebe4d0;
+
+      --indigo: #6d28d9;
+      --indigo-soft: #ede4f5;
+      --indigo-line: #d4c4e8;
+      --indigo-text: #5b21b6;
       --emerald: #059669;
       --emerald-soft: #ecfdf5;
       --emerald-line: #a7f3d0;
@@ -50,6 +60,7 @@
       --rose-line: #fecdd3;
       --rose-text: #be123c;
     }
+
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
