@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 Day 55 | Term Sheet Negotiation | Executive English 90</title>
+  <meta name="description" content="Level 2 Day 55 | Term Sheet Negotiation | Executive English 90" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      /* Teal Theme for Week 8 */
+      --primary: #0f766e;
+      --primary-soft: #f0fdfa;
+      --primary-line: #99f6e4;
+      --primary-text: #0f766e;
+      --page: #f0fdfa;
+      --surface: #ffffff;
+      --text-strong: #134e4a;
+      --text-body: #115e59;
+      --text-muted: #0d9488;
+      --text-soft: #14b8a6;
+      --line: rgba(13, 148, 136, 0.10);
+      --line-soft: rgba(13, 148, 136, 0.05);
+      --shadow-lg: 0 24px 70px rgba(13, 148, 136, 0.10);
+      --shadow-md: 0 14px 36px rgba(13, 148, 136, 0.08);
+      --shadow-sm: 0 8px 20px rgba(13, 148, 136, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      
+      /* Highlight Colors for Different Content Types */
+      --hl-blue: #3b82f6;
+      --hl-purple: #8b5cf6;
+      --hl-orange: #f97316;
+      --hl-emerald: #10b981;
+      --hl-rose: #f43f5e;
+      --hl-amber: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(13, 148, 136, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(20, 184, 166, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(15, 118, 110, 0.08), transparent 24%),
+        linear-gradient(180deg, #f0fdfa 0%, #f0fdfa 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--primary-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(13, 148, 136, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: var(--primary-text); background: var(--primary-soft); border-color: var(--primary-line); }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(13, 148, 136, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--primary-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--primary-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(13, 148, 136, 0.18); color: var(--primary-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .tint-blue { border-top: 6px solid var(--hl-blue); background: linear-gradient(180deg, #ffffff, #eff6ff); }
+    .tint-purple { border-top: 6px solid var(--hl-purple); background: linear-gradient(180deg, #ffffff, #f5f3ff); }
+    .tint-orange { border-top: 6px solid var(--hl-orange); background: linear-gradient(180deg, #ffffff, #fff7ed); }
+    .tint-emerald { border-top: 6px solid var(--hl-emerald); background: linear-gradient(180deg, #ffffff, #ecfdf5); }
+    .tint-rose { border-top: 6px solid var(--hl-rose); background: linear-gradient(180deg, #ffffff, #fff1f2); }
+    .tint-amber { border-top: 6px solid var(--hl-amber); background: linear-gradient(180deg, #ffffff, #fffbeb); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid var(--primary-line);
+      background: var(--primary-soft); color: var(--text-strong); font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(13, 148, 136, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--primary-line); color: var(--text-body); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--primary-line); background: var(--primary-soft);
+      color: var(--primary-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #ccfbf1; }
+    .audio-btn.playing { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid var(--primary-line); margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: var(--text-body); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: var(--text-body); }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: var(--primary-soft); border: 1px solid var(--primary-line); margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: var(--text-body); font-weight: 400; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--primary-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: #ecfdf5; border: 1px solid #a7f3d0; margin-top: 14px; }
+    .answer-box p { margin: 0; color: #065f46; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; border-left: 5px solid var(--primary); color: #065f46; font-weight: 600;
+    }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff1f2, #ffe4e6); border: 1px solid #fecdd3; }
+    .mistake-card.better { background: linear-gradient(180deg, #f0fdfa, #ccfbf1); border: 1px solid #99f6e4; }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+    .mistake-card p { margin: 0; color: var(--text-body); font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #6a5a4a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: var(--primary-soft); border-color: var(--primary-line); color: var(--primary-text); }
+
+    @media (max-width: 1180px) {
+      .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 2 · Day 55</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 55/60</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--primary-soft); color: var(--primary-text); border-color: var(--primary-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe;" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: #eef2ff; color: #4f46e5; border-color: #c7d2fe;" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: #fff7ed; color: #ea580c; border-color: #fed7aa;" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-2.html">Level 2</a>
+        <span>›</span>
+        <span>Day 55</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 2</span>
+            <span class="hero-tag">Week 8 · Bank & Investor Negotiation</span>
+            <span class="hero-tag">Day 55 / 60</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Term Sheet Negotiation</span>
+          </div>
+
+          <h1 class="hero-title">Term Sheet Negotiation</h1>
+
+          <p class="hero-subtitle">
+            Day 55 tập trung vào đàm phán term sheet: key terms, negotiation points, và deal closing.
+            Đây là kỹ năng quan trọng để chốt thỏa thuận đầu tư với các điều khoản rõ ràng và công bằng.
+          </p>
+
+          <div class="hero-quote">
+            Term sheet không chỉ là danh sách điều khoản. Đó là nền tảng của thỏa thuận đầu tư, nơi các bên thống nhất
+            về equity, governance, profit distribution và exit mechanism. Một term sheet rõ ràng giúp tránh tranh chấp
+            và đảm bảo quá trình closing diễn ra suôn sẻ.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ hoàn thành buổi đàm phán term sheet hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Term Sheet Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ term sheet: term sheet, key terms, negotiation points, deal closing, conditions precedent, representations & warranties, covenants, escrow. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 6 mẫu câu đàm phán term sheet: proposing terms, negotiating key terms, handling objections, finding middle ground, closing deal, finalizing agreement. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một buổi đàm phán term sheet mẫu. Nghe 3 lần: key terms discussion, negotiation points, deal closing. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng: Round 1 (3 phút), Round 2 (4 phút), Round 3 (5 phút). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Chuẩn bị 1-page term sheet summary. Ghi âm đàm phán 5 phút. Tự chấm theo rubric. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Term Sheet Terms</h2>
+          <p>8 thuật ngữ term sheet cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Term Sheet</h3>
+              <button class="audio-btn" type="button" data-speak="Term Sheet">Nghe</button>
+            </div>
+
+            <span class="ipa">/tɜːrm it/</span>
+            <p class="vn">Bảng điều khoản</p>
+
+            <div class="note">Ghi chú: Term sheet là tài liệu tóm tắt các điều khoản chính của thỏa thuận đầu tư trước khi soạn thảo hợp đồng chính thức.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: term sheet, proposed term sheet, negotiate term sheet</li>
+              <li>Example: We need to finalize the term sheet before proceeding to the definitive agreement.</li>
+              <li>Native alternative: term sheet, letter of intent</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Key Terms</h3>
+              <button class="audio-btn" type="button" data-speak="Key Terms">Nghe</button>
+            </div>
+
+            <span class="ipa">/kiː tɜːrmz/</span>
+            <p class="vn">Điều khoản chính</p>
+
+            <div class="note">Ghi chú: Key terms là các điều khoản quan trọng nhất trong term sheet: equity, valuation, governance, exit.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: key terms, key terms include, negotiate key terms</li>
+              <li>Example: The key terms include equity split, valuation, governance structure, and exit mechanism.</li>
+              <li>Native alternative: key terms, main terms</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Negotiation Points</h3>
+              <button class="audio-btn" type="button" data-speak="Negotiation Points">Nghe</button>
+            </div>
+
+            <span class="ipa">/nɪˌɡoʊʃiˈeɪʃn pɔnts/</span>
+            <p class="vn">Điểm đàm phán</p>
+
+            <div class="note">Ghi chú: Negotiation points là các điểm cần đàm phán trong term sheet.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: negotiation points, key negotiation points, main negotiation points</li>
+              <li>Example: The main negotiation points are equity split, board representation, and exit timeline.</li>
+              <li>Native alternative: negotiation points, negotiation items</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Deal Closing</h3>
+              <button class="audio-btn" type="button" data-speak="Deal Closing">Nghe</button>
+            </div>
+
+            <span class="ipa">/diːl ˈkloʊzɪ/</span>
+            <p class="vn">Chốt giao dịch</p>
+
+            <div class="note">Ghi chú: Deal closing là quá trình chốt giao dịch và ký kết hợp đồng chính thức.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: deal closing, closing process, closing date</li>
+              <li>Example: We expect deal closing within 60 days after finalizing the term sheet.</li>
+              <li>Native alternative: deal closing, transaction closing</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Conditions Precedent</h3>
+              <button class="audio-btn" type="button" data-speak="Conditions Precedent">Nghe</button>
+            </div>
+
+            <span class="ipa">/kənˈdɪʃnz ˈpriːsɪdənt/</span>
+            <p class="vn">Điều kiện tiên quyết</p>
+
+            <div class="note">Ghi chú: Conditions precedent là các điều kiện phải được đáp ứng trước khi giao dịch được hoàn tất.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: conditions precedent, satisfy conditions precedent, conditions precedent include</li>
+              <li>Example: Conditions precedent include regulatory approval and shareholder approval.</li>
+              <li>Native alternative: conditions precedent, closing conditions</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>Representations & Warranties</h3>
+              <button class="audio-btn" type="button" data-speak="Representations & Warranties">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌreprɪzenˈteɪʃnz ənd ˈwrəntiz/</span>
+            <p class="vn">Cam kết & Bảo đảm</p>
+
+            <div class="note">Ghi chú: Representations & warranties là các cam kết và bảo đảm pháp lý của các bên trong hợp đồng.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: representations and warranties, breach of representations, standard representations</li>
+              <li>Example: The agreement includes standard representations and warranties from both parties.</li>
+              <li>Native alternative: reps and warranties, representations & warranties</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Covenants</h3>
+              <button class="audio-btn" type="button" data-speak="Covenants">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈkʌvənənts/</span>
+            <p class="vn">Điều ước (điều kiện ràng buộc)</p>
+
+            <div class="note">Ghi chú: Covenants là các điều kiện ràng buộc trong hợp đồng. Vi phạm covenant có thể dẫn đến hậu quả pháp lý.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: financial covenants, affirmative covenants, negative covenants</li>
+              <li>Example: The loan agreement includes financial covenants requiring a minimum DSCR of 1.5x.</li>
+              <li>Native alternative: covenants, loan covenants</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Escrow</h3>
+              <button class="audio-btn" type="button" data-speak="Escrow">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈeskroʊ/</span>
+            <p class="vn">Tài khoản ký quỹ</p>
+
+            <div class="note">Ghi chú: Escrow là tài khoản trung gian giữ tiền hoặc tài sản cho đến khi các điều kiện giao dịch được đáp ứng.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: escrow account, funds held in escrow, release from escrow</li>
+              <li>Example: 10% of the purchase price will be held in escrow until closing conditions are satisfied.</li>
+              <li>Native alternative: escrow account, escrow</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>6 mẫu câu đàm phán term sheet: proposing terms, negotiating key terms, handling objections, finding middle ground, closing deal, finalizing agreement.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>We propose the following key terms...</h3>
+              <button class="audio-btn" type="button" data-speak="We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We propose the following key terms: + terms. Dùng để đề xuất các điều khoản chính.</div>
+
+            <div class="example">
+              <span class="label">Proposing terms</span>
+              <p>We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay terms: 50-50 split / 3-year exit / majority board seats.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>We need to negotiate the following points...</h3>
+              <button class="audio-btn" type="button" data-speak="We need to negotiate the following points: equity split, board representation, and profit distribution.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We need to negotiate the following points: + points. Dùng để xác định các điểm cần đàm phán.</div>
+
+            <div class="example">
+              <span class="label">Negotiating key terms</span>
+              <p>We need to negotiate the following points: equity split, board representation, and profit distribution.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay points: exit timeline / governance structure / capital call mechanism.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>I understand your concern about..., but...</h3>
+              <button class="audio-btn" type="button" data-speak="I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: I understand your concern about + concern, but + solution. Dùng để xử lý phản đối.</div>
+
+            <div class="example">
+              <span class="label">Handling objections</span>
+              <p>I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay concern: equity split / board control / profit distribution.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Let's find a middle ground on...</h3>
+              <button class="audio-btn" type="button" data-speak="Let's find a middle ground on the equity split: we propose 55-45 with equal board representation.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: Let's find a middle ground on + area: + proposal. Dùng để tìm điểm chung.</div>
+
+            <div class="example">
+              <span class="label">Finding middle ground</span>
+              <p>Let's find a middle ground on the equity split: we propose 55-45 with equal board representation.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay area: exit timeline / board seats / profit distribution.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Our recommendation is to finalize the term sheet with...</h3>
+              <button class="audio-btn" type="button" data-speak="Our recommendation is to finalize the term sheet with a 60-40 equity split and clear exit mechanism.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: Our recommendation is to finalize the term sheet with + terms. Dùng để chốt thỏa thuận.</div>
+
+            <div class="example">
+              <span class="label">Closing deal</span>
+              <p>Our recommendation is to finalize the term sheet with a 60-40 equity split and clear exit mechanism.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay terms: 50-50 split / equal board seats / clear profit distribution.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>We believe this structure works for both parties...</h3>
+              <button class="audio-btn" type="button" data-speak="We believe this structure works for both parties and ensures fair profit distribution.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We believe this structure works for both parties + reason. Dùng để kết thúc đàm phán.</div>
+
+            <div class="example">
+              <span class="label">Finalizing agreement</span>
+              <p>We believe this structure works for both parties and ensures fair profit distribution.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay reason: ensures strategic alignment / ensures operational control / ensures fair returns.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Term Sheet Negotiation</h2>
+          <p>Nghe một buổi đàm phán term sheet mẫu. Đây là mô hình để bạn thực hành đàm phán term sheet.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm key terms discussion và negotiation flow.</li>
+            <li>Nghe lần hai để nhận diện các patterns: proposing terms, negotiating key terms, handling objections.</li>
+            <li>Nghe lần ba để phân tích negotiation techniques: finding middle ground, closing deal.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning. Thank you for meeting with us today. We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation. We need to negotiate the following points: equity split, board representation, and profit distribution. I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months. Let's find a middle ground on the equity split: we propose 55-45 with equal board representation. Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months. We believe this structure works for both parties and ensures fair profit distribution. Thank you.">Nghe toàn bộ term sheet negotiation</button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p><span class="speaker">[Proposing Terms]</span>Good morning. Thank you for meeting with us today. We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+
+            <p><span class="speaker">[Negotiating Key Terms]</span>We need to negotiate the following points: equity split, board representation, and profit distribution.</p>
+
+            <p><span class="speaker">[Handling Objections]</span>I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+
+            <p><span class="speaker">[Finding Middle Ground]</span>Let's find a middle ground on the equity split: we propose 55-45 with equal board representation.</p>
+
+            <p><span class="speaker">[Closing Deal]</span>Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months.</p>
+
+            <p><span class="speaker">[Finalizing Agreement]</span>We believe this structure works for both parties and ensures fair profit distribution. Thank you.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li>Q1: What are the proposed key terms?</li>
+            <li>Q2: What are the main negotiation points?</li>
+            <li>Q3: What is the concern about exit timeline?</li>
+            <li>Q4: What is the proposed middle ground on equity split?</li>
+            <li>Q5: What is the final recommendation?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>1. 60-40 equity split, 5-year exit timeline, and equal board representation.<br />
+            2. Equity split, board representation, and profit distribution.<br />
+            3. Concern about exit timeline; addressed by offering clear exit mechanism within 18 months.<br />
+            4. 55-45 equity split with equal board representation.<br />
+            5. Finalize term sheet with 55-45 equity split, equal board representation, and clear exit mechanism within 18 months.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Proposing terms</span>
+            <p>We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+            <button class="audio-btn" type="button" data-speak="We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Handling objections</span>
+            <p>I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+            <button class="audio-btn" type="button" data-speak="I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Closing deal</span>
+            <p>Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months.</p>
+            <button class="audio-btn" type="button" data-speak="Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các từ khóa: key terms, equity split, board representation, exit mechanism.</li>
+            <li>Giọng tự tin, chắc chắn khi đề xuất terms và closing.</li>
+            <li>Giọng hợp tác, tôn trọng khi handling objections.</li>
+            <li>Pause sau mỗi đề xuất để đối tác phản hồi.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Term Sheet Negotiation</h2>
+          <p>Luyện 3 vòng tăng dần: đàm phán ngắn → đàm phán đầy đủ → đàm phán hoàn chỉnh. Mục tiêu: tự tin đàm phán term sheet.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Round 1 · 3 phút</h3>
+
+            <p>Đàm phán ngắn 3 phút: proposing terms, negotiating key terms, handling objections.</p>
+
+            <div class="answer-box">
+              <p>Terms: We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+              <p>Negotiation: We need to negotiate the following points: equity split, board representation, and profit distribution.</p>
+              <p>Objections: I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation. We need to negotiate the following points: equity split, board representation, and profit distribution. I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 4 phút</h3>
+
+            <p>Mở rộng đàm phán lên 4 phút: thêm finding middle ground, closing deal.</p>
+
+            <div class="answer-box">
+              <p>Terms (1 min): We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+              <p>Negotiation (1 min): We need to negotiate the following points: equity split, board representation, and profit distribution.</p>
+              <p>Objections (1 min): I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+              <p>Middle Ground (1 min): Let's find a middle ground on the equity split: we propose 55-45 with equal board representation. Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation. We need to negotiate the following points: equity split, board representation, and profit distribution. I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months. Let's find a middle ground on the equity split: we propose 55-45 with equal board representation. Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · 5 phút</h3>
+
+            <p>Đàm phán hoàn chỉnh 5 phút: thêm finalizing agreement.</p>
+
+            <div class="answer-box">
+              <p>Terms (1 min): We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation.</p>
+              <p>Negotiation (1 min): We need to negotiate the following points: equity split, board representation, and profit distribution.</p>
+              <p>Objections (1 min): I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months.</p>
+              <p>Middle Ground (1 min): Let's find a middle ground on the equity split: we propose 55-45 with equal board representation.</p>
+              <p>Closing (1 min): Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months. We believe this structure works for both parties and ensures fair profit distribution. Thank you.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="We propose the following key terms: 60-40 equity split, 5-year exit timeline, and equal board representation. We need to negotiate the following points: equity split, board representation, and profit distribution. I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months. Let's find a middle ground on the equity split: we propose 55-45 with equal board representation. Our recommendation is to finalize the term sheet with a 55-45 equity split, equal board representation, and a clear exit mechanism within 18 months. We believe this structure works for both parties and ensures fair profit distribution. Thank you.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>Ghi âm Round 3 hoàn chỉnh: đàm phán 5 phút. Đây là buổi đàm phán term sheet hoàn chỉnh.</p>
+
+            <h4>Self-review</h4>
+
+            <ul>
+              <li>Đàm phán có cấu trúc rõ ràng (terms, negotiation, objections, middle ground, closing)?</li>
+              <li>Bạn có tự tin, hợp tác khi đàm phán?</li>
+              <li>Bạn có xử lý phản đối của đối tác không?</li>
+              <li>Bạn có đề xuất middle ground và closing rõ ràng không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Term Sheet Negotiation</h2>
+          <p>Output cuối ngày: chuẩn bị 1-page term sheet summary, ghi âm đàm phán 5 phút, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: 1-Page Term Sheet Summary</h3>
+
+            <p>Chuẩn bị 1-page term sheet summary cho dự án của bạn. Summary cần có: key terms, negotiation points, conditions precedent, exit mechanism.</p>
+
+            <h4>Model Answer · 1-Page Term Sheet Summary</h4>
+
+            <div class="answer-box">
+              <p><strong>Term Sheet Summary</strong></p>
+              <p><strong>Riverside Phase 2 — JV Term Sheet</strong></p>
+              <p><strong>1. Key Terms</strong></p>
+              <p>Equity Split: 55-45 (us/partner)</p>
+              <p>Board Representation: 5 seats (3 from us, 2 from partner)</p>
+              <p>Exit Timeline: 18 months from project completion</p>
+              <p><strong>2. Negotiation Points</strong></p>
+              <p>Equity split: 55-45 with equal board representation</p>
+              <p>Profit distribution: Proportional to equity ownership</p>
+              <p>Exit mechanism: Clear exit within 18 months</p>
+              <p><strong>3. Conditions Precedent</strong></p>
+              <p>Regulatory approval</p>
+              <p>Shareholder approval</p>
+              <p>Finalization of definitive agreement</p>
+              <p><strong>4. Exit Mechanism</strong></p>
+              <p>Primary exit: Sell completed project to institutional investor within 18 months</p>
+              <p>Target: 20% premium to cost</p>
+              <p>Escrow: 10% of purchase price held in escrow until closing conditions are satisfied</p>
+              <p><strong>5. Recommendation</strong></p>
+              <p>Recommendation: Finalize term sheet with 55-45 equity split, equal board representation, and clear exit mechanism within 18 months. The structure ensures strategic alignment and fair profit distribution for both parties.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Term Sheet Summary. Riverside Phase 2 — JV Term Sheet. 1. Key Terms: Equity Split 55-45 (us/partner). Board Representation: 5 seats (3 from us, 2 from partner). Exit Timeline: 18 months from project completion. 2. Negotiation Points: Equity split 55-45 with equal board representation. Profit distribution: Proportional to equity ownership. Exit mechanism: Clear exit within 18 months. 3. Conditions Precedent: Regulatory approval, shareholder approval, finalization of definitive agreement. 4. Exit Mechanism: Primary exit is to sell completed project to institutional investor within 18 months. Target: 20% premium to cost. Escrow: 10% of purchase price held in escrow until closing conditions are satisfied. 5. Recommendation: Finalize term sheet with 55-45 equity split, equal board representation, and clear exit mechanism within 18 months. The structure ensures strategic alignment and fair profit distribution for both parties.">Nghe term sheet summary</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Đàm phán 5 phút</h3>
+
+            <p>Ghi âm đàm phán 5 phút term sheet. Đây là bài test tổng hợp cuối cùng.</p>
+
+            <h4>Recording Checklist</h4>
+
+            <ul>
+              <li>Đàm phán có cấu trúc rõ ràng (terms, negotiation, objections, middle ground, closing)?</li>
+              <li>Bạn có tự tin, hợp tác khi đàm phán?</li>
+              <li>Bạn có xử lý phản đối của đối tác không?</li>
+              <li>Bạn có đề xuất middle ground và closing rõ ràng không?</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+
+            <p>Tự chấm đàm phán theo 5 tiêu chí:</p>
+
+            <ul>
+              <li><strong>Structure (1-5):</strong> Có terms rõ ràng, negotiation rõ ràng, objections, middle ground, closing?</li>
+              <li><strong>Confidence (1-5):</strong> Tự tin, hợp tác, không defensive khi đàm phán?</li>
+              <li><strong>Flexibility (1-5):</strong> Có đề xuất middle ground và nhượng bộ hợp lý?</li>
+              <li><strong>Clarity (1-5):</strong> Rõ ràng, dễ hiểu, không quá technical?</li>
+              <li><strong>Closing (1-5):</strong> Closing rõ ràng, next step rõ ràng?</li>
+            </ul>
+
+            <h4>Reflection 3 dòng</h4>
+
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã xử lý phản đối của đối tác một cách hợp tác. Improve: Tôi cần đề xuất middle ground cụ thể hơn. Keep: "I understand your concern, but..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi đàm phán term sheet</h2>
+          <p>Tránh các lỗi này để buổi đàm phán term sheet của bạn chuyên nghiệp và thuyết phục.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đàm phán không có cấu trúc rõ ràng, nhảy lung tung giữa các điều khoản.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"We propose the following key terms: equity split, board representation, exit timeline."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Defensive khi đối tác nêu phản đối: "No, that's not possible."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"I understand your concern about the exit timeline, but we can offer a clear exit mechanism within 18 months."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không đề xuất middle ground: "We need 60% equity stake."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"Let's find a middle ground on the equity split: we propose 55-45 with equal board representation."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc đột ngột: "That's all. Thanks." Không có next step.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"Our recommendation is to finalize the term sheet with a 55-45 equity split. We believe this structure works for both parties. Thank you."</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 55 khi có thể</h2>
+          <p>Trước khi sang Day 56, hãy đảm bảo bạn đã hoàn thành buổi đàm phán term sheet hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng term sheet, key terms, negotiation points, deal closing.</li>
+            <li>Tôi có thể dùng conditions precedent, representations & warranties, covenants, escrow.</li>
+            <li>Tôi có thể đàm phán 5 phút với cấu trúc rõ ràng.</li>
+            <li>Tôi có thể xử lý phản đối của đối tác một cách hợp tác.</li>
+            <li>Tôi có thể đề xuất middle ground và nhượng bộ hợp lý.</li>
+            <li>Tôi có thể chuẩn bị 1-page term sheet summary.</li>
+            <li>Tôi đã ghi âm đàm phán 5 phút hoàn chỉnh.</li>
+            <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-2-day-54.html">
+            <small>Previous Day</small>
+            <strong>Day 54 · Partner Negotiation</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 55 Complete</strong>
+          </button>
+
+          <a href="level-2-day-56.html">
+            <small>Next Day</small>
+            <strong>Day 56 · Relationship Management</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 2 · Day 55 · Term Sheet Negotiation</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 55 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-2";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["55"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 55 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 55/60 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 55 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 55/60";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["55"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "We propose the following key terms: 60-40 equity split, 5-year exit timeline. Let's find a middle ground on the equity split.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
