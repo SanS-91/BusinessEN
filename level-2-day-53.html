@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 Day 53 | Investor Negotiation | Executive English 90</title>
+  <meta name="description" content="Level 2 Day 53 | Investor Negotiation | Executive English 90" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      /* Teal Theme for Week 8 */
+      --primary: #0f766e;
+      --primary-soft: #f0fdfa;
+      --primary-line: #99f6e4;
+      --primary-text: #0f766e;
+      --page: #f0fdfa;
+      --surface: #ffffff;
+      --text-strong: #134e4a;
+      --text-body: #115e59;
+      --text-muted: #0d9488;
+      --text-soft: #14b8a6;
+      --line: rgba(13, 148, 136, 0.10);
+      --line-soft: rgba(13, 148, 136, 0.05);
+      --shadow-lg: 0 24px 70px rgba(13, 148, 136, 0.10);
+      --shadow-md: 0 14px 36px rgba(13, 148, 136, 0.08);
+      --shadow-sm: 0 8px 20px rgba(13, 148, 136, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      
+      /* Highlight Colors for Different Content Types */
+      --hl-blue: #3b82f6;
+      --hl-purple: #8b5cf6;
+      --hl-orange: #f97316;
+      --hl-emerald: #10b981;
+      --hl-rose: #f43f5e;
+      --hl-amber: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(13, 148, 136, 0.09), transparent 26%),
+        radial-gradient(circle at 90% 8%, rgba(20, 184, 166, 0.09), transparent 22%),
+        radial-gradient(circle at 76% 82%, rgba(15, 118, 110, 0.08), transparent 24%),
+        linear-gradient(180deg, #f0fdfa 0%, #f0fdfa 100%);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--primary-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.84); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(13, 148, 136, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: var(--primary-text); background: var(--primary-soft); border-color: var(--primary-line); }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(13, 148, 136, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--primary-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--primary-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(13, 148, 136, 0.18); color: var(--primary-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .tint-blue { border-top: 6px solid var(--hl-blue); background: linear-gradient(180deg, #ffffff, #eff6ff); }
+    .tint-purple { border-top: 6px solid var(--hl-purple); background: linear-gradient(180deg, #ffffff, #f5f3ff); }
+    .tint-orange { border-top: 6px solid var(--hl-orange); background: linear-gradient(180deg, #ffffff, #fff7ed); }
+    .tint-emerald { border-top: 6px solid var(--hl-emerald); background: linear-gradient(180deg, #ffffff, #ecfdf5); }
+    .tint-rose { border-top: 6px solid var(--hl-rose); background: linear-gradient(180deg, #ffffff, #fff1f2); }
+    .tint-amber { border-top: 6px solid var(--hl-amber); background: linear-gradient(180deg, #ffffff, #fffbeb); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid var(--primary-line);
+      background: var(--primary-soft); color: var(--text-strong); font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(13, 148, 136, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--primary-line); color: var(--text-body); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--primary-line); background: var(--primary-soft);
+      color: var(--primary-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #ccfbf1; }
+    .audio-btn.playing { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid var(--primary-line); margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: var(--text-body); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: var(--text-body); }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: var(--primary-soft); border: 1px solid var(--primary-line); margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: var(--text-body); font-weight: 400; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--primary-text); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: #ecfdf5; border: 1px solid #a7f3d0; margin-top: 14px; }
+    .answer-box p { margin: 0; color: #065f46; font-weight: 600; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; border-left: 5px solid var(--primary); color: #065f46; font-weight: 600;
+    }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff1f2, #ffe4e6); border: 1px solid #fecdd3; }
+    .mistake-card.better { background: linear-gradient(180deg, #f0fdfa, #ccfbf1); border: 1px solid #99f6e4; }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+    .mistake-card p { margin: 0; color: var(--text-body); font-weight: 600; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #7783a8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #6a5a4a;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: var(--primary-soft); border-color: var(--primary-line); color: var(--primary-text); }
+
+    @media (max-width: 1180px) {
+      .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 2 · Day 53</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 53/60</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--primary-soft); color: var(--primary-text); border-color: var(--primary-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe;" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: #eef2ff; color: #4f46e5; border-color: #c7d2fe;" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: #fff7ed; color: #ea580c; border-color: #fed7aa;" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-2.html">Level 2</a>
+        <span>›</span>
+        <span>Day 53</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 2</span>
+            <span class="hero-tag">Week 8 · Bank & Investor Negotiation</span>
+            <span class="hero-tag">Day 53 / 60</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Investor Negotiation</span>
+          </div>
+
+          <h1 class="hero-title">Investor Negotiation</h1>
+
+          <p class="hero-subtitle">
+            Day 53 tập trung vào đàm phán với nhà đầu tư: investment terms, returns, và exit strategy.
+            Đây là kỹ năng quan trọng để gọi vốn và thuyết phục nhà đầu tư.
+          </p>
+
+          <div class="hero-quote">
+            Đàm phán với nhà đầu tư không phải là xin tiền. Đó là thuyết phục họ rằng bạn là đối tác đáng tin cậy,
+            dự án khả thi, và lợi nhuận hấp dẫn. Nhà đầu tư không đầu tư vì họ thích bạn — họ đầu tư vì bạn chứng minh được khả năng tạo ra lợi nhuận.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ hoàn thành buổi đàm phán với nhà đầu tư hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Investor Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ investor: investment terms, equity stake, expected returns, exit strategy, valuation, due diligence, investment committee, capital commitment. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 6 mẫu câu đàm phán nhà đầu tư: opening pitch, presenting returns, addressing concerns, negotiating terms, offering flexibility, closing deal. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một buổi đàm phán mẫu với nhà đầu tư. Nghe 3 lần: investment terms, returns discussion, exit strategy. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng: Round 1 (3 phút), Round 2 (4 phút), Round 3 (5 phút). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Chuẩn bị 1-page investment proposal. Ghi âm đàm phán 5 phút. Tự chấm theo rubric. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Investor Terms</h2>
+          <p>8 thuật ngữ nhà đầu tư cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Investment Terms</h3>
+              <button class="audio-btn" type="button" data-speak="Investment Terms">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɪnˈvestmənt tɜːrmz/</span>
+            <p class="vn">Điều khoản đầu tư</p>
+
+            <div class="note">Ghi chú: Investment terms là các điều khoản của khoản đầu tư: equity stake, returns, exit strategy.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: investment terms, favorable investment terms, negotiate investment terms</li>
+              <li>Example: We are negotiating favorable investment terms with the institutional investor.</li>
+              <li>Native alternative: investment terms, deal terms</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Equity Stake</h3>
+              <button class="audio-btn" type="button" data-speak="Equity Stake">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈekwəti steɪk/</span>
+            <p class="vn">Phần vốn góp</p>
+
+            <div class="note">Ghi chú: Equity stake là tỷ lệ sở hữu của nhà đầu tư trong dự án.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: equity stake, majority equity stake, minority equity stake</li>
+              <li>Example: The investor is seeking a 30% equity stake in the project.</li>
+              <li>Native alternative: equity stake, ownership stake</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>Expected Returns</h3>
+              <button class="audio-btn" type="button" data-speak="Expected Returns">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɪkˈspektɪd rɪˈtːrnz/</span>
+            <p class="vn">Lợi nhuận kỳ vọng</p>
+
+            <div class="note">Ghi chú: Expected returns là lợi nhuận mà nhà đầu tư kỳ vọng từ khoản đầu tư.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: expected returns, target returns, attractive expected returns</li>
+              <li>Example: The project offers expected returns of 18% IRR, exceeding the investor's target of 15%.</li>
+              <li>Native alternative: expected returns, target returns</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>Exit Strategy</h3>
+              <button class="audio-btn" type="button" data-speak="Exit Strategy">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈeksɪt ˈstrætədʒi/</span>
+            <p class="vn">Chiến lược thoát</p>
+
+            <div class="note">Ghi chú: Exit strategy là kế hoạch thoát khỏi khoản đầu tư để thu hồi vốn và lợi nhuận.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: clear exit strategy, viable exit strategy, exit strategy is to</li>
+              <li>Example: Our exit strategy is to sell the completed project to an institutional investor within 18 months.</li>
+              <li>Native alternative: exit plan, exit route</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>Valuation</h3>
+              <button class="audio-btn" type="button" data-speak="Valuation">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌvæljueɪʃn/</span>
+            <p class="vn">Định giá</p>
+
+            <div class="note">Ghi chú: Valuation là giá trị của dự án hoặc công ty được định giá.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: project valuation, company valuation, pre-money valuation</li>
+              <li>Example: The project valuation is $80 million based on the appraised value.</li>
+              <li>Native alternative: valuation, company value</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>Due Diligence</h3>
+              <button class="audio-btn" type="button" data-speak="Due Diligence">Nghe</button>
+            </div>
+
+            <span class="ipa">/djuː ˈdɪlɪdʒəns/</span>
+            <p class="vn">Thẩm định</p>
+
+            <div class="note">Ghi chú: Due diligence là quá trình thẩm định toàn diện trước khi đầu tư.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: conduct due diligence, complete due diligence, comprehensive due diligence</li>
+              <li>Example: The investor will conduct due diligence covering legal, financial, and operational aspects.</li>
+              <li>Native alternative: due diligence process, DD process</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Investment Committee</h3>
+              <button class="audio-btn" type="button" data-speak="Investment Committee">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɪnˈvestmənt kəˈmɪti/</span>
+            <p class="vn">Hội đồng đầu tư</p>
+
+            <div class="note">Ghi chú: Investment Committee là hội đồng phê duyệt khoản đầu tư.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: investment committee, present to investment committee, IC approval</li>
+              <li>Example: We need to present the project to the investment committee for approval.</li>
+              <li>Native alternative: investment committee, IC</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Capital Commitment</h3>
+              <button class="audio-btn" type="button" data-speak="Capital Commitment">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈkæpɪtl kəmɪtmənt/</span>
+            <p class="vn">Cam kết vốn</p>
+
+            <div class="note">Ghi chú: Capital commitment là số vốn mà nhà đầu tư cam kết đầu tư.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: capital commitment, total capital commitment, commit capital</li>
+              <li>Example: The investor's capital commitment is $20 million for a 30% equity stake.</li>
+              <li>Native alternative: capital commitment, funding commitment</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>6 mẫu câu đàm phán nhà đầu tư: opening pitch, presenting returns, addressing concerns, negotiating terms, offering flexibility, closing deal.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>We are seeking...</h3>
+              <button class="audio-btn" type="button" data-speak="We are seeking a $20 million investment for a 30% equity stake in the project.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We are seeking + amount + investment + for + equity stake. Dùng để mở đầu yêu cầu đầu tư.</div>
+
+            <div class="example">
+              <span class="label">Opening pitch</span>
+              <p>We are seeking a $20 million investment for a 30% equity stake in the project.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay amount: $15 million / $25 million. Thay equity stake: 25% / 35%.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The project offers expected returns of...</h3>
+              <button class="audio-btn" type="button" data-speak="The project offers expected returns of 18% IRR, exceeding your target of 15%.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The project offers expected returns of + returns. Dùng để trình bày lợi nhuận kỳ vọng.</div>
+
+            <div class="example">
+              <span class="label">Presenting returns</span>
+              <p>The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay returns: 20% IRR / 15% IRR. Thay target: 12% / 18%.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-orange">
+            <div class="card-top">
+              <h3>We understand your concern about...</h3>
+              <button class="audio-btn" type="button" data-speak="We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We understand your concern about + concern, but + evidence. Dùng để xử lý quan ngại của nhà đầu tư.</div>
+
+            <div class="example">
+              <span class="label">Addressing concerns</span>
+              <p>We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay concern: the valuation / the risk profile / the timeline.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-emerald">
+            <div class="card-top">
+              <h3>We are flexible on...</h3>
+              <button class="audio-btn" type="button" data-speak="We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We are flexible on + term. Dùng để đàm phán linh hoạt về điều khoản.</div>
+
+            <div class="example">
+              <span class="label">Negotiating terms</span>
+              <p>We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay term: the valuation / the exit timeline / the returns structure.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-rose">
+            <div class="card-top">
+              <h3>We can offer...</h3>
+              <button class="audio-btn" type="button" data-speak="We can offer a preferred return structure with 8% annual dividend until exit.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: We can offer + concession. Dùng để đưa ra nhượng bộ.</div>
+
+            <div class="example">
+              <span class="label">Offering flexibility</span>
+              <p>We can offer a preferred return structure with 8% annual dividend until exit.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay concession: additional collateral / higher returns / shorter timeline.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-amber">
+            <div class="card-top">
+              <h3>Our recommendation is...</h3>
+              <button class="audio-btn" type="button" data-speak="Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: Our recommendation is + action. Dùng để kết thúc đàm phán với recommendation rõ ràng.</div>
+
+            <div class="example">
+              <span class="label">Closing deal</span>
+              <p>Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: proceed with the investment / move forward / approve the deal.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Investor Negotiation</h2>
+          <p>Nghe một buổi đàm phán mẫu với nhà đầu tư. Đây là mô hình để bạn thực hành đàm phán với nhà đầu tư.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm investment terms và returns discussion.</li>
+            <li>Nghe lần hai để nhận diện các patterns: opening pitch, presenting returns, addressing concerns.</li>
+            <li>Nghe lần ba để phân tích negotiation techniques: offering flexibility, closing deal.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project. The project offers expected returns of 18% IRR, exceeding your target of 15%. We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale. We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount. We can offer a preferred return structure with 8% annual dividend until exit. Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months. We believe this structure works for both parties. Thank you.">Nghe toàn bộ investor negotiation</button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p><span class="speaker">[Opening Pitch]</span>Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project.</p>
+
+            <p><span class="speaker">[Presenting Returns]</span>The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+
+            <p><span class="speaker">[Addressing Concerns]</span>We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale.</p>
+
+            <p><span class="speaker">[Negotiating Terms]</span>We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount.</p>
+
+            <p><span class="speaker">[Offering Flexibility]</span>We can offer a preferred return structure with 8% annual dividend until exit.</p>
+
+            <p><span class="speaker">[Closing Deal]</span>Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months. We believe this structure works for both parties. Thank you.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li>Q1: What is the requested investment amount and equity stake?</li>
+            <li>Q2: What are the expected returns and how do they compare to the investor's target?</li>
+            <li>Q3: What is the concern about exit timeline and how is it addressed?</li>
+            <li>Q4: What flexibility is offered on the equity stake?</li>
+            <li>Q5: What is the final recommendation?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>1. $20 million investment for 30% equity stake.<br />
+            2. 18% IRR, exceeding the investor's target of 15%.<br />
+            3. Concern about exit timeline; addressed by preliminary interest from two institutional investors.<br />
+            4. Flexible on equity stake: 25% to 35% depending on investment amount.<br />
+            5. Proceed with investment at $20 million for 30% equity, with exit within 18 months.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Opening pitch</span>
+            <p>We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project.</p>
+            <button class="audio-btn" type="button" data-speak="We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Presenting returns</span>
+            <p>The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+            <button class="audio-btn" type="button" data-speak="The project offers expected returns of 18% IRR, exceeding your target of 15%.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Closing deal</span>
+            <p>Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months.</p>
+            <button class="audio-btn" type="button" data-speak="Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các từ khóa: investment, equity stake, expected returns, IRR.</li>
+            <li>Giọng tự tin, chắc chắn khi trình bày returns và recommendation.</li>
+            <li>Giọng hợp tác, tôn trọng khi address concerns.</li>
+            <li>Pause sau mỗi đề xuất để nhà đầu tư phản hồi.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Investor Negotiation</h2>
+          <p>Luyện 3 vòng tăng dần: đàm phán ngắn → đàm phán đầy đủ → đàm phán hoàn chỉnh. Mục tiêu: tự tin đàm phán với nhà đầu tư.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Round 1 · 3 phút</h3>
+
+            <p>Đàm phán ngắn 3 phút: opening pitch, presenting returns, addressing concerns.</p>
+
+            <div class="answer-box">
+              <p>Opening: Good morning. We are seeking a $20 million investment for a 30% equity stake.</p>
+              <p>Returns: The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+              <p>Concerns: We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning. We are seeking a $20 million investment for a 30% equity stake. The project offers expected returns of 18% IRR, exceeding your target of 15%. We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 4 phút</h3>
+
+            <p>Mở rộng đàm phán lên 4 phút: thêm negotiating terms, offering flexibility.</p>
+
+            <div class="answer-box">
+              <p>Opening (1 min): Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project.</p>
+              <p>Returns (1 min): The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+              <p>Concerns (1 min): We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale.</p>
+              <p>Flexibility (1 min): We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount. We can offer a preferred return structure with 8% annual dividend until exit.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project. The project offers expected returns of 18% IRR, exceeding your target of 15%. We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale. We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount. We can offer a preferred return structure with 8% annual dividend until exit.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · 5 phút</h3>
+
+            <p>Đàm phán hoàn chỉnh 5 phút: thêm closing deal.</p>
+
+            <div class="answer-box">
+              <p>Opening (1 min): Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project.</p>
+              <p>Returns (1 min): The project offers expected returns of 18% IRR, exceeding your target of 15%.</p>
+              <p>Concerns (1 min): We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale.</p>
+              <p>Flexibility (1 min): We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount. We can offer a preferred return structure with 8% annual dividend until exit.</p>
+              <p>Closing (1 min): Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months. We believe this structure works for both parties. Thank you.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning. Thank you for meeting with us today. We are seeking a $20 million investment for a 30% equity stake in our Riverside Phase 2 project. The project offers expected returns of 18% IRR, exceeding your target of 15%. We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors for the exit sale. We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount. We can offer a preferred return structure with 8% annual dividend until exit. Our recommendation is to proceed with the investment at $20 million for 30% equity, with a clear exit strategy within 18 months. We believe this structure works for both parties. Thank you.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>Ghi âm Round 3 hoàn chỉnh: đàm phán 5 phút. Đây là buổi đàm phán với nhà đầu tư hoàn chỉnh.</p>
+
+            <h4>Self-review</h4>
+
+            <ul>
+              <li>Đàm phán có cấu trúc rõ ràng (opening, returns, concerns, flexibility, closing)?</li>
+              <li>Bạn có tự tin, hợp tác khi đàm phán?</li>
+              <li>Bạn có xử lý quan ngại của nhà đầu tư không?</li>
+              <li>Bạn có đề xuất flexibility và closing rõ ràng không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Investor Negotiation</h2>
+          <p>Output cuối ngày: chuẩn bị 1-page investment proposal, ghi âm đàm phán 5 phút, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: 1-Page Investment Proposal</h3>
+
+            <p>Chuẩn bị 1-page investment proposal cho dự án của bạn. Proposal cần có: investment amount, equity stake, expected returns, exit strategy, valuation.</p>
+
+            <h4>Model Answer · 1-Page Investment Proposal</h4>
+
+            <div class="answer-box">
+              <p><strong>Investment Proposal</strong></p>
+              <p><strong>Riverside Phase 2 — Investment Opportunity</strong></p>
+              <p><strong>1. Investment Amount</strong></p>
+              <p>Seeking $20 million investment for 30% equity stake.</p>
+              <p><strong>2. Expected Returns</strong></p>
+              <p>Project IRR: 18% (exceeds target of 15% by 300 bps)</p>
+              <p>Preferred return: 8% annual dividend until exit</p>
+              <p><strong>3. Exit Strategy</strong></p>
+              <p>Primary exit: Sell to institutional investor within 18 months</p>
+              <p>Target: 20% premium to cost</p>
+              <p>Preliminary interest from 2 institutional investors</p>
+              <p><strong>4. Valuation</strong></p>
+              <p>Project valuation: $80 million (appraised value)</p>
+              <p>Post-money valuation: $100 million</p>
+              <p><strong>5. Flexibility</strong></p>
+              <p>Equity stake: 25% to 35% depending on investment amount</p>
+              <p>Return structure: Preferred dividend or equity participation</p>
+              <p><strong>6. Recommendation</strong></p>
+              <p>Recommendation: Proceed with $20 million investment for 30% equity, with clear exit strategy within 18 months. The project offers attractive risk-adjusted returns with built-in downside protection.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Investment Proposal. Riverside Phase 2 — Investment Opportunity. 1. Investment Amount: Seeking $20 million investment for 30% equity stake. 2. Expected Returns: Project IRR 18%, exceeds target of 15% by 300 bps. Preferred return: 8% annual dividend until exit. 3. Exit Strategy: Primary exit is to sell to institutional investor within 18 months. Target: 20% premium to cost. Preliminary interest from 2 institutional investors. 4. Valuation: Project valuation $80 million based on appraised value. Post-money valuation: $100 million. 5. Flexibility: Equity stake 25% to 35% depending on investment amount. Return structure: Preferred dividend or equity participation. 6. Recommendation: Proceed with $20 million investment for 30% equity, with clear exit strategy within 18 months. The project offers attractive risk-adjusted returns with built-in downside protection.">Nghe investment proposal</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Đàm phán 5 phút</h3>
+
+            <p>Ghi âm đàm phán 5 phút với nhà đầu tư. Đây là bài test tổng hợp cuối cùng.</p>
+
+            <h4>Recording Checklist</h4>
+
+            <ul>
+              <li>Đàm phán có cấu trúc rõ ràng (opening, returns, concerns, flexibility, closing)?</li>
+              <li>Bạn có tự tin, hợp tác khi đàm phán?</li>
+              <li>Bạn có xử lý quan ngại của nhà đầu tư không?</li>
+              <li>Bạn có đề xuất flexibility và closing rõ ràng không?</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+
+            <p>Tự chấm đàm phán theo 5 tiêu chí:</p>
+
+            <ul>
+              <li><strong>Structure (1-5):</strong> Có opening rõ ràng, returns rõ ràng, concerns, flexibility, closing?</li>
+              <li><strong>Confidence (1-5):</strong> Tự tin, hợp tác, không defensive khi đàm phán?</li>
+              <li><strong>Flexibility (1-5):</strong> Có đề xuất flexibility và nhượng bộ hợp lý?</li>
+              <li><strong>Clarity (1-5):</strong> Rõ ràng, dễ hiểu, không quá technical?</li>
+              <li><strong>Closing (1-5):</strong> Closing rõ ràng, next step rõ ràng?</li>
+            </ul>
+
+            <h4>Reflection 3 dòng</h4>
+
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã xử lý quan ngại của nhà đầu tư một cách hợp tác. Improve: Tôi cần đề xuất flexibility cụ thể hơn. Keep: "We understand your concern, but..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi đàm phán với nhà đầu tư</h2>
+          <p>Tránh các lỗi này để buổi đàm phán với nhà đầu tư của bạn chuyên nghiệp và thuyết phục.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đàm phán không có cấu trúc rõ ràng, nhảy lung tung giữa các điều khoản.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"We are seeking a $20 million investment for a 30% equity stake. The project offers expected returns of 18% IRR..."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Defensive khi nhà đầu tư nêu quan ngại: "No, that's not a problem."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"We understand your concern about the exit timeline, but we have preliminary interest from two institutional investors."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không đề xuất flexibility: "We need 30% equity stake."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"We are flexible on the equity stake: we can offer 25% to 35% depending on the investment amount."</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc đột ngột: "That's all. Thanks." Không có next step.</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>"Our recommendation is to proceed with the investment at $20 million for 30% equity. We believe this structure works for both parties. Thank you."</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 53 khi có thể</h2>
+          <p>Trước khi sang Day 54, hãy đảm bảo bạn đã hoàn thành buổi đàm phán với nhà đầu tư hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng investment terms, equity stake, expected returns, exit strategy.</li>
+            <li>Tôi có thể dùng valuation, due diligence, investment committee, capital commitment.</li>
+            <li>Tôi có thể đàm phán 5 phút với cấu trúc rõ ràng.</li>
+            <li>Tôi có thể xử lý quan ngại của nhà đầu tư một cách hợp tác.</li>
+            <li>Tôi có thể đề xuất flexibility và nhượng bộ hợp lý.</li>
+            <li>Tôi có thể chuẩn bị 1-page investment proposal.</li>
+            <li>Tôi đã ghi âm đàm phán 5 phút hoàn chỉnh.</li>
+            <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-2-day-52.html">
+            <small>Previous Day</small>
+            <strong>Day 52 · Bank Negotiation</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 53 Complete</strong>
+          </button>
+
+          <a href="level-2-day-54.html">
+            <small>Next Day</small>
+            <strong>Day 54 · Partner Negotiation</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 2 · Day 53 · Investor Negotiation</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 53 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-2";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["53"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 53 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 53/60 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 53 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 53/60";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["53"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "We are seeking a $20 million investment for a 30% equity stake. The project offers expected returns of 18% IRR. Our recommendation is to proceed with the investment.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
