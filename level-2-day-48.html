@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 Day 48 | Term Sheets | Executive English 90</title>
+  <meta name="description" content="Level 2 Day 48 - Term Sheets: Cấu trúc term sheet, key terms, và negotiation points." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      /* Deep Blue Theme */
+      --primary: #1e3a8a;
+      --primary-soft: #eff6ff;
+      --primary-line: #bfdbfe;
+      --primary-text: #1e40af;
+      --page: #f8fafc;
+      --surface: #ffffff;
+      --text-strong: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      --line: rgba(15, 23, 42, 0.10);
+      --line-soft: rgba(15, 23, 42, 0.05);
+      --shadow-lg: 0 24px 70px rgba(15, 23, 42, 0.10);
+      --shadow-md: 0 14px 36px rgba(15, 23, 42, 0.08);
+      --shadow-sm: 0 8px 20px rgba(15, 23, 42, 0.05);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+
+      /* Section Highlight Colors */
+      --hl-vocab: #3b82f6;
+      --hl-pattern: #8b5cf6;
+      --hl-listen: #6366f1;
+      --hl-speak: #f97316;
+      --hl-output: #10b981;
+      --hl-mistake: #f43f5e;
+      --hl-mastery: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.8; color: var(--text-body);
+      background: var(--page);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: #ffffff; color: var(--primary-text); padding: 10px 14px; border-radius: 12px; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0; }
+
+    .brand { display: flex; flex-direction: column; text-decoration: none; color: var(--text-strong); min-width: 220px; }
+    .brand strong { font-size: 18px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; }
+    .brand span { margin-top: 3px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-soft); }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a {
+      text-decoration: none; color: #5a5480; font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.18s ease;
+    }
+    .nav a:hover, .nav a.active { color: var(--primary-text); background: var(--primary-soft); border-color: var(--primary-line); }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill); background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line-soft); box-shadow: 0 8px 18px rgba(15, 23, 42, 0.03);
+    }
+
+    .plan-bar-inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid; transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--primary-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+      color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::after {
+      content: ""; position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); pointer-events: none;
+    }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px; font-weight: 800;
+    }
+
+    .hero-subtitle { margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9; color: rgba(255, 255, 255, 0.90); }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px; border-radius: 20px;
+      background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.20);
+      font-weight: 500; color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; position: relative; z-index: 2; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit; font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--primary-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.14); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.80);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .eyebrow.vocab { color: var(--hl-vocab); border-color: var(--hl-vocab); background: #eff6ff; }
+    .eyebrow.pattern { color: var(--hl-pattern); border-color: var(--hl-pattern); background: #f5f3ff; }
+    .eyebrow.listen { color: var(--hl-listen); border-color: var(--hl-listen); background: #eef2ff; }
+    .eyebrow.speak { color: var(--hl-speak); border-color: var(--hl-speak); background: #fff7ed; }
+    .eyebrow.output { color: var(--hl-output); border-color: var(--hl-output); background: #ecfdf5; }
+    .eyebrow.mistake { color: var(--hl-mistake); border-color: var(--hl-mistake); background: #fff1f2; }
+    .eyebrow.mastery { color: var(--hl-mastery); border-color: var(--hl-mastery); background: #fffbeb; }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em; color: var(--text-strong); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+
+    .soft-card {
+      height: 100%; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 22px; transition: 0.18s ease;
+    }
+
+    .soft-card:hover { transform: translateY(-3px); }
+    .soft-card h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.32; letter-spacing: -0.02em; color: var(--text-strong); font-weight: 700; }
+    .soft-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .tint-blue { border-top: 6px solid var(--hl-vocab); background: linear-gradient(180deg, #ffffff, #eff6ff); }
+    .tint-purple { border-top: 6px solid var(--hl-pattern); background: linear-gradient(180deg, #ffffff, #f5f3ff); }
+    .tint-indigo { border-top: 6px solid var(--hl-listen); background: linear-gradient(180deg, #ffffff, #eef2ff); }
+    .tint-orange { border-top: 6px solid var(--hl-speak); background: linear-gradient(180deg, #ffffff, #fff7ed); }
+    .tint-emerald { border-top: 6px solid var(--hl-output); background: linear-gradient(180deg, #ffffff, #ecfdf5); }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-strong);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px; border: 1px solid #bfdbfe;
+      background: #eff6ff; color: var(--text-strong); font: inherit; font-weight: 600; padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed rgba(15, 23, 42, 0.12);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong { display: block; margin-bottom: 4px; color: var(--text-strong); font-size: 17px; line-height: 1.45; }
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--primary-soft); border: 1px solid var(--primary-line);
+      color: var(--primary-text); font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-strong); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #bfdbfe; color: var(--text-body); font-size: 14px; font-weight: 400; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--primary-line); background: var(--primary-soft);
+      color: var(--primary-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #dbeafe; }
+    .audio-btn.playing { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; background: var(--primary-soft);
+      color: var(--primary-text); border: 1px solid var(--primary-line); margin-bottom: 8px;
+    }
+
+    .example { padding: 14px; border-radius: 16px; background: rgba(255, 255, 255, 0.78); border: 1px solid #bfdbfe; margin-top: 10px; }
+    .example p { margin: 0 0 10px; color: var(--text-body); font-weight: 400; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel, .task-panel { padding: 26px; height: 100%; }
+    .listening-panel h3, .task-panel h3 { margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em; color: var(--text-strong); font-weight: 800; }
+    .listening-panel h4, .task-panel h4 { margin: 24px 0 12px; font-size: 19px; color: var(--text-strong); font-weight: 700; }
+
+    .listening-panel ol, .listening-panel ul,
+    .task-panel ol, .task-panel ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 9px; color: var(--text-body); }
+
+    .listening-panel li, .task-panel li { line-height: 1.8; }
+
+    .transcript { padding: 22px; border-radius: 22px; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border: 1px solid #c7d2fe; margin-top: 16px; }
+    .transcript p { margin: 0 0 16px; font-size: 18px; line-height: 2; color: var(--text-body); font-weight: 400; }
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 700; color: var(--hl-listen); }
+
+    .answer-box { padding: 18px; border-radius: 20px; background: #ecfdf5; border: 1px solid #a7f3d0; margin-top: 14px; }
+    .answer-box p { margin: 0; color: #065f46; font-weight: 400; line-height: 2; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px; border-radius: 16px; background: #fffbeb;
+      border: 1px solid #fde68a; border-left: 5px solid var(--hl-mastery); color: #92400e; font-weight: 400;
+    }
+
+    .mistake-list { display: grid; gap: 12px; }
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mistake-card { border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md); }
+    .mistake-card.avoid { background: linear-gradient(180deg, #fff1f2, #ffe4e6); border: 1px solid #fecdd3; }
+    .mistake-card.better { background: linear-gradient(180deg, #ecfdf5, #d1fae5); border: 1px solid #a7f3d0; }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase; background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: var(--rose-text); border-color: var(--rose-line); }
+    .mistake-label.emerald { color: var(--emerald-text); border-color: var(--emerald-line); }
+    .mistake-card p { margin: 0; color: var(--text-body); font-weight: 400; }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow-md); padding: 18px; transition: 0.18s ease;
+      text-align: left; font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .prev-next small { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-soft); }
+    .prev-next strong { font-size: 18px; line-height: 1.4; letter-spacing: -0.015em; color: var(--text-strong); font-weight: 700; }
+
+    .footer { padding: 32px 0 58px; color: #94a3b8; }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--line-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: #64748b;
+      padding: 8px 11px; border-radius: var(--radius-pill); border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover { background: var(--primary-soft); border-color: var(--primary-line); color: var(--primary-text); }
+
+    @media (max-width: 1180px) {
+      .grid-2, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 2 · Day 48</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 48/60</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--primary-soft); color: var(--primary-text); border-color: var(--primary-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe;" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: #eef2ff; color: #4f46e5; border-color: #c7d2fe;" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: #fff7ed; color: #ea580c; border-color: #fed7aa;" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-2.html">Level 2</a>
+        <span>›</span>
+        <span>Day 48</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 2</span>
+            <span class="hero-tag">Week 7 · JV, M&A & Deal Structures</span>
+            <span class="hero-tag">Day 48 / 60</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Term Sheets</span>
+          </div>
+
+          <h1 class="hero-title">Term Sheets</h1>
+
+          <p class="hero-subtitle">
+            Day 48 tập trung vào term sheets: cấu trúc term sheet, key terms, và negotiation points.
+            Bạn sẽ học cách giải thích cấu trúc term sheet một cách chuyên nghiệp trong 3 phút.
+          </p>
+
+          <div class="hero-quote">
+            Term sheet không chỉ là danh sách điều khoản. Đó là bản đồ dẫn đường cho toàn bộ giao dịch.
+            Một term sheet rõ ràng bảo vệ lợi ích của các bên và tạo nền tảng cho đàm phán thành công.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và giải thích cấu trúc term sheet trong 3 phút.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Term Sheet Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ term sheet: Term Sheet, Letter of Intent (LOI), Definitive Agreement, Closing Conditions, Escrow, Representations & Warranties, Covenants, Exclusivity Period. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 6 mẫu câu cho term sheet: term sheet outlines, LOI sets out, definitive agreement formalizes, closing conditions, escrow account, exclusivity period. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một bài giải thích term sheet mẫu 3 phút. Nghe 3 lần: term sheet structure, key terms, negotiation points. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng: Round 1 (5 phút), Round 2 (7 phút), Round 3 (8 phút). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Giải thích term sheet 3 phút. Ghi âm bài hoàn chỉnh. Tự chấm theo rubric 5 tiêu chí. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow vocab">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Term Sheet Terms</h2>
+          <p>8 thuật ngữ term sheet cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Term Sheet</h3>
+              <button class="audio-btn" type="button" data-speak="Term Sheet">Nghe</button>
+            </div>
+
+            <span class="ipa">/tɜːrm ʃit/</span>
+            <p class="vn">Bảng điều khoản</p>
+
+            <div class="note">Ghi chú: Term sheet là tài liệu tóm tắt các điều khoản chính của giao dịch trước khi soạn thảo hợp đồng chính thức.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: term sheet outlines, key terms in the term sheet, sign the term sheet</li>
+              <li>Example: The term sheet outlines the key terms of the proposed acquisition.</li>
+              <li>Native alternative: term sheet, letter of intent</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Letter of Intent (LOI)</h3>
+              <button class="audio-btn" type="button" data-speak="Letter of Intent">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈletər əv ɪnˈtent/</span>
+            <p class="vn">Thư ngỏ ý định</p>
+
+            <div class="note">Ghi chú: LOI là thư thể hiện ý định tham gia giao dịch, thường không ràng buộc pháp lý trừ một số điều khoản cụ thể.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: sign an LOI, LOI sets out, non-binding LOI</li>
+              <li>Example: The LOI sets out the key terms and conditions of the proposed transaction.</li>
+              <li>Native alternative: letter of intent, LOI</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Definitive Agreement</h3>
+              <button class="audio-btn" type="button" data-speak="Definitive Agreement">Nghe</button>
+            </div>
+
+            <span class="ipa">/dɪˈfɪnətɪv əˈɡriːmənt/</span>
+            <p class="vn">Thỏa thuận chính thức</p>
+
+            <div class="note">Ghi chú: Definitive agreement là hợp đồng chính thức ràng buộc pháp lý, được soạn thảo sau khi term sheet được ký kết.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: definitive agreement will formalize, sign the definitive agreement, definitive agreement terms</li>
+              <li>Example: The definitive agreement will formalize the terms outlined in the term sheet.</li>
+              <li>Native alternative: definitive agreement, final agreement</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Closing Conditions</h3>
+              <button class="audio-btn" type="button" data-speak="Closing Conditions">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈkloʊzɪ kənˈdɪʃnz/</span>
+            <p class="vn">Điều kiện hoàn tất</p>
+
+            <div class="note">Ghi chú: Closing conditions là các điều kiện phải được đáp ứng trước khi giao dịch được hoàn tất.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: closing conditions must be met, subject to closing conditions, satisfy closing conditions</li>
+              <li>Example: Closing is subject to regulatory approval and other closing conditions.</li>
+              <li>Native alternative: closing conditions, conditions precedent</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Escrow</h3>
+              <button class="audio-btn" type="button" data-speak="Escrow">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˈeskroʊ/</span>
+            <p class="vn">Tài khoản ký quỹ</p>
+
+            <div class="note">Ghi chú: Escrow là tài khoản trung gian giữ tiền hoặc tài sản cho đến khi các điều kiện giao dịch được đáp ứng.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: escrow account, funds held in escrow, release from escrow</li>
+              <li>Example: The escrow account will hold 10 percent of the purchase price until closing conditions are met.</li>
+              <li>Native alternative: escrow account, escrow</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Representations & Warranties</h3>
+              <button class="audio-btn" type="button" data-speak="Representations & Warranties">Nghe</button>
+            </div>
+
+            <span class="ipa">/ˌreprɪzenˈteɪʃnz ənd ˈwrəntiz/</span>
+            <p class="vn">Cam kết & Bảo đảm</p>
+
+            <div class="note">Ghi chú: Representations & Warranties là các cam kết và bảo đảm pháp lý của các bên trong giao dịch.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: representations and warranties, breach of representations, standard representations</li>
+              <li>Example: The definitive agreement includes standard representations and warranties from both parties.</li>
+              <li>Native alternative: reps and warranties, representations & warranties</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Covenants</h3>
+              <button class="audio-btn" type="button" data-speak="Covenants">Nghe</button>
+            </div>
+
+            <span class="ipa">/kʌvənənts/</span>
+            <p class="vn">Cam kết (điều ước)</p>
+
+            <div class="note">Ghi chú: Covenants là các điều ước hoặc cam kết trong hợp đồng, yêu cầu các bên thực hiện hoặc không thực hiện một số hành động.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: affirmative covenants, negative covenants, breach of covenants</li>
+              <li>Example: The agreement includes covenants requiring the company to maintain certain financial ratios.</li>
+              <li>Native alternative: covenants, contractual covenants</li>
+            </ul>
+          </article>
+
+          <article class="soft-card tint-blue">
+            <div class="card-top">
+              <h3>Exclusivity Period</h3>
+              <button class="audio-btn" type="button" data-speak="Exclusivity Period">Nghe</button>
+            </div>
+
+            <span class="ipa">/ekskluːˈsvəti ˈpɪəriəd/</span>
+            <p class="vn">Thời gian độc quyền</p>
+
+            <div class="note">Ghi chú: Exclusivity period là khoảng thời gian mà bên bán không được đàm phán với các bên khác.</div>
+
+            <ul class="mini-list">
+              <li>Collocation: exclusivity period, no-shop clause, exclusivity agreement</li>
+              <li>Example: The exclusivity period is 60 days, during which the seller cannot negotiate with other parties.</li>
+              <li>Native alternative: exclusivity period, no-shop period</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow pattern">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>6 mẫu câu cho term sheet: term sheet outlines, LOI sets out, definitive agreement formalizes, closing conditions, escrow account, exclusivity period.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The term sheet outlines...</h3>
+              <button class="audio-btn" type="button" data-speak="The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The term sheet outlines + key terms. Dùng để giải thích nội dung term sheet.</div>
+
+            <div class="example">
+              <span class="label">Term sheet</span>
+              <p>The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay nội dung: purchase price and payment terms / key terms and conditions / deal terms and conditions.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The LOI sets out the key terms...</h3>
+              <button class="audio-btn" type="button" data-speak="The LOI sets out the key terms and conditions of the proposed transaction.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The LOI sets out the key terms + of transaction. Dùng để giải thích nội dung LOI.</div>
+
+            <div class="example">
+              <span class="label">LOI</span>
+              <p>The LOI sets out the key terms and conditions of the proposed transaction.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay nội dung: key terms of the acquisition / key terms of the merger / key terms of the partnership.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The definitive agreement will formalize...</h3>
+              <button class="audio-btn" type="button" data-speak="The definitive agreement will formalize the terms outlined in the term sheet.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The definitive agreement will formalize + terms. Dùng để giải thích mục đích của definitive agreement.</div>
+
+            <div class="example">
+              <span class="label">Definitive agreement</span>
+              <p>The definitive agreement will formalize the terms outlined in the term sheet.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay nội dung: the terms of the acquisition / the terms of the merger / the deal terms.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>Closing is subject to...</h3>
+              <button class="audio-btn" type="button" data-speak="Closing is subject to regulatory approval and other closing conditions.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: Closing is subject to + conditions. Dùng để giải thích điều kiện hoàn tất giao dịch.</div>
+
+            <div class="example">
+              <span class="label">Closing conditions</span>
+              <p>Closing is subject to regulatory approval and other closing conditions.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay điều kiện: regulatory approval / shareholder approval / due diligence completion.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The escrow account will hold...</h3>
+              <button class="audio-btn" type="button" data-speak="The escrow account will hold 10 percent of the purchase price until closing conditions are met.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The escrow account will hold + amount + until conditions. Dùng để giải thích mục đích tài khoản escrow.</div>
+
+            <div class="example">
+              <span class="label">Escrow</span>
+              <p>The escrow account will hold 10 percent of the purchase price until closing conditions are met.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay nội dung: 10% of purchase price / funds for indemnification / funds for working capital adjustment.</p>
+            </div>
+          </article>
+
+          <article class="soft-card tint-purple">
+            <div class="card-top">
+              <h3>The exclusivity period is...</h3>
+              <button class="audio-btn" type="button" data-speak="The exclusivity period is 60 days, during which the seller cannot negotiate with other parties.">Nghe</button>
+            </div>
+
+            <div class="note">Công thức: The exclusivity period is + duration + restriction. Dùng để giải thích thời gian độc quyền.</div>
+
+            <div class="example">
+              <span class="label">Exclusivity period</span>
+              <p>The exclusivity period is 60 days, during which the seller cannot negotiate with other parties.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay nội dung: 30 days / 90 days / during which the seller cannot solicit other offers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow listen">Block 3 · 20 phút</span>
+          <h2>Listening · Term Sheet Explanation</h2>
+          <p>Nghe một bài giải thích term sheet mẫu 3 phút. Đây là mô hình để bạn thực hành giải thích term sheet.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li><strong>00:00 – 05:00:</strong> Nghe toàn bộ 1 lần để nắm term sheet structure tổng thể (term sheet, LOI, definitive agreement).</li>
+            <li><strong>05:00 – 10:00:</strong> Nghe lần hai để nhận diện các chi tiết cụ thể: closing conditions, escrow, exclusivity period.</li>
+            <li><strong>10:00 – 15:00:</strong> Nghe lần ba để phân tích closing statement. Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li><strong>15:00 – 20:00:</strong> Shadowing 3 câu trọng tâm (term sheet, closing conditions, exclusivity period).</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning. Today I'd like to walk you through the proposed term sheet for our acquisition. The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements. The LOI sets out the key terms and conditions of the proposed transaction. The definitive agreement will formalize the terms outlined in the term sheet. Closing is subject to regulatory approval and other closing conditions. The escrow account will hold 10 percent of the purchase price until closing conditions are met. The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.">Nghe toàn bộ term sheet (3 phút)</button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p><span class="speaker">[Term Sheet]</span>Good morning. Today I'd like to walk you through the proposed term sheet for our acquisition. The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+
+            <p><span class="speaker">[LOI]</span>The LOI sets out the key terms and conditions of the proposed transaction.</p>
+
+            <p><span class="speaker">[Definitive Agreement]</span>The definitive agreement will formalize the terms outlined in the term sheet.</p>
+
+            <p><span class="speaker">[Closing Conditions]</span>Closing is subject to regulatory approval and other closing conditions.</p>
+
+            <p><span class="speaker">[Escrow]</span>The escrow account will hold 10 percent of the purchase price until closing conditions are met.</p>
+
+            <p><span class="speaker">[Exclusivity Period]</span>The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li>Q1: What does the term sheet outline?</li>
+            <li>Q2: What does the LOI set out?</li>
+            <li>Q3: What will the definitive agreement formalize?</li>
+            <li>Q4: What is closing subject to?</li>
+            <li>Q5: How long is the exclusivity period?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>1. Key terms including purchase price, closing conditions, and escrow arrangements.<br />
+            2. Key terms and conditions of the proposed transaction.<br />
+            3. Terms outlined in the term sheet.<br />
+            4. Regulatory approval and other closing conditions.<br />
+            5. 60 days.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Term Sheet</span>
+            <p>The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+            <button class="audio-btn" type="button" data-speak="The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Closing Conditions</span>
+            <p>Closing is subject to regulatory approval and other closing conditions.</p>
+            <button class="audio-btn" type="button" data-speak="Closing is subject to regulatory approval and other closing conditions.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Exclusivity Period</span>
+            <p>The exclusivity period is 60 days, during which the seller cannot negotiate with other parties.</p>
+            <button class="audio-btn" type="button" data-speak="The exclusivity period is 60 days, during which the seller cannot negotiate with other parties.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các từ khóa: term sheet, LOI, definitive agreement, closing conditions, exclusivity period.</li>
+            <li>Giọng tự tin, chắc chắn khi trình bày cấu trúc term sheet.</li>
+            <li>Pause sau mỗi phần để người nghe tiêu hóa thông tin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow speak">Block 4 · 20 phút</span>
+          <h2>Speaking · Term Sheet Explanation</h2>
+          <p>Luyện 3 vòng tăng dần. Mục tiêu cuối cùng: giải thích term sheet trong 8 phút.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Round 1 · 5 phút</h3>
+
+            <p><strong>00:00 – 02:00:</strong> Chuẩn bị script cơ bản (term sheet, LOI).</p>
+            <p><strong>02:00 – 05:00:</strong> Ghi âm Round 1.</p>
+
+            <div class="answer-box">
+              <p>The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+              <p>The LOI sets out the key terms and conditions of the proposed transaction.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements. The LOI sets out the key terms and conditions of the proposed transaction.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 7 phút</h3>
+
+            <p><strong>00:00 – 03:00:</strong> Thêm definitive agreement và closing conditions vào script.</p>
+            <p><strong>03:00 – 07:00:</strong> Ghi âm Round 2 (full script với definitive agreement và closing conditions).</p>
+
+            <div class="answer-box">
+              <p>The definitive agreement will formalize the terms outlined in the term sheet.</p>
+              <p>Closing is subject to regulatory approval and other closing conditions.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="The definitive agreement will formalize the terms outlined in the term sheet. Closing is subject to regulatory approval and other closing conditions.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Explanation (8 phút)</h3>
+
+            <p><strong>00:00 – 04:00:</strong> Hoàn chỉnh script: thêm escrow và exclusivity period.</p>
+            <p><strong>04:00 – 08:00:</strong> Ghi âm Round 3 (full explanation).</p>
+
+            <div class="answer-box">
+              <p>The escrow account will hold 10 percent of the purchase price until closing conditions are met.</p>
+              <p>The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="The escrow account will hold 10 percent of the purchase price until closing conditions are met. The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>Ghi âm Round 3 — bài giải thích term sheet 8 phút. Tự chấm theo rubric bên dưới.</p>
+
+            <h4>Self-review</h4>
+
+            <p>Có giải thích rõ term sheet không?</p>
+            <p>Có giải thích LOI không?</p>
+            <p>Có giải thích definitive agreement không?</p>
+            <p>Có giải thích closing conditions không?</p>
+            <p>Có giải thích escrow và exclusivity period không?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow output">Block 5 · 15 phút</span>
+          <h2>Output · Term Sheet Explanation</h2>
+          <p>Output cuối ngày: giải thích term sheet 3 phút, ghi âm, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel task-panel">
+            <h3>Task 1: Giải thích Term Sheet (5 phút)</h3>
+
+            <p><strong>00:00 – 03:00:</strong> Chuẩn bị script sử dụng model answer bên dưới.</p>
+            <p><strong>03:00 – 05:00:</strong> Luyện đọc script 2-3 lần để thuộc ý chính.</p>
+
+            <h4>Model Answer · Term Sheet Explanation</h4>
+
+            <div class="answer-box">
+              <p>The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+              <p>The LOI sets out the key terms and conditions of the proposed transaction.</p>
+              <p>The definitive agreement will formalize the terms outlined in the term sheet.</p>
+              <p>Closing is subject to regulatory approval and other closing conditions.</p>
+              <p>The escrow account will hold 10 percent of the purchase price until closing conditions are met.</p>
+              <p>The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements. The LOI sets out the key terms and conditions of the proposed transaction. The definitive agreement will formalize the terms outlined in the term sheet. Closing is subject to regulatory approval and other closing conditions. The escrow account will hold 10 percent of the purchase price until closing conditions are met. The exclusivity period is 60 days, during which the seller cannot negotiate with other parties. Thank you.">Nghe term sheet</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Term Sheet (5 phút)</h3>
+
+            <p><strong>00:00 – 03:00:</strong> Ghi âm bài giải thích term sheet 3 phút.</p>
+            <p><strong>03:00 – 05:00:</strong> Nghe lại và tự chấm theo rubric bên dưới.</p>
+
+            <h4>Recording Checklist</h4>
+
+            <p>Có giải thích rõ term sheet không?</p>
+            <p>Có giải thích LOI không?</p>
+            <p>Có giải thích definitive agreement không?</p>
+            <p>Có giải thích closing conditions không?</p>
+            <p>Có giải thích escrow và exclusivity period không?</p>
+
+            <h3>Task 3: Self-Assessment Rubric (5 phút)</h3>
+
+            <div class="answer-box">
+              <p><strong>Self-Assessment 5 Criteria for Term Sheet Explanation</strong></p>
+              <p><strong>1. Term Sheet</strong> Needs work: Không giải thích rõ. Good: Có giải thích nhưng thiếu chi tiết. Excellent: Giải thích rõ ràng: "The term sheet outlines..."</p>
+              <p><strong>2. LOI</strong> Needs work: Không giải thích LOI. Good: Có giải thích nhưng thiếu rõ ràng. Excellent: Giải thích rõ ràng: "The LOI sets out..."</p>
+              <p><strong>3. Definitive Agreement</strong> Needs work: Không giải thích definitive agreement. Good: Có giải thích nhưng thiếu chi tiết. Excellent: Giải thích rõ ràng: "The definitive agreement will formalize..."</p>
+              <p><strong>4. Closing Conditions</strong> Needs work: Không giải thích closing conditions. Good: Có giải thích nhưng thiếu rõ ràng. Excellent: Giải thích rõ ràng: "Closing is subject to..."</p>
+              <p><strong>5. Escrow & Exclusivity Period</strong> Needs work: Không giải thích. Good: Có giải thích nhưng thiếu rõ ràng. Excellent: Giải thích rõ ràng: "The escrow account will hold... The exclusivity period is..."</p>
+            </div>
+
+            <h3>Reflection 3 dòng</h3>
+
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã giải thích rõ term sheet và LOI. Improve: Tôi cần giải thích closing conditions chi tiết hơn. Keep: "The term sheet outlines..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow mistake">Common Mistakes</span>
+          <h2>4 lỗi thường gặp khi giải thích term sheet</h2>
+          <p>Tránh các lỗi này để bài giải thích term sheet của bạn chuyên nghiệp và thuyết phục.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không giải thích rõ term sheet: "We have a term sheet."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The term sheet outlines the key terms including purchase price, closing conditions, and escrow arrangements.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không giải thích LOI: "We signed an LOI."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The LOI sets out the key terms and conditions of the proposed transaction.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không giải thích closing conditions: "We will close the deal."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Closing is subject to regulatory approval and other closing conditions.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không giải thích escrow và exclusivity period: "We will use an escrow account."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The escrow account will hold 10 percent of the purchase price until closing conditions are met. The exclusivity period is 60 days.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow mastery">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 48 khi có thể</h2>
+          <p>Trước khi sang Day 49, hãy đảm bảo bạn đã hoàn thành bài giải thích term sheet hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel task-panel">
+          <ul class="checklist">
+            <li>Tôi có thể dùng Term Sheet, Letter of Intent (LOI), Definitive Agreement.</li>
+            <li>Tôi có thể dùng Closing Conditions, Escrow, Exclusivity Period.</li>
+            <li>Tôi có thể dùng Representations & Warranties, Covenants.</li>
+            <li>Tôi có thể giải thích term sheet rõ ràng.</li>
+            <li>Tôi có thể giải thích LOI thuyết phục.</li>
+            <li>Tôi có thể giải thích definitive agreement rõ ràng.</li>
+            <li>Tôi có thể giải thích closing conditions và escrow chi tiết.</li>
+            <li>Tôi có thể giải thích exclusivity period rõ ràng.</li>
+            <li>Tôi đã ghi âm bài giải thích term sheet 3 phút.</li>
+            <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+            <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-2-day-47.html">
+            <small>Previous Day</small>
+            <strong>Day 47 · Deal Structures</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 48 Complete</strong>
+          </button>
+
+          <a href="level-2-day-49.html">
+            <small>Next Day</small>
+            <strong>Day 49 · Strategic Partnerships</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 2 · Day 48 · Term Sheets</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 48 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-2";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["48"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 48 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 48/60 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 48 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 48/60";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["48"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "The term sheet outlines the key terms. Closing is subject to regulatory approval. The exclusivity period is 60 days.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
