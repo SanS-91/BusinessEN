@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 3 Day 61 | Executive Storytelling | Executive English 90</title>
+  <meta name="description" content="Level 3 Day 61 - Executive Storytelling: Learn to tell compelling stories that influence, persuade and inspire at the executive level. Narrative structure, narrative arc, executive summary, persuasive communication." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+      /* Premium Executive Palette */
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --royal-blue: #4f46e5;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      color: var(--accent-text);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-primary);
+      min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text);
+      background: var(--accent-soft);
+      border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      border: 1px solid var(--accent-line);
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    /* Plan bar */
+    .plan-bar {
+      position: sticky;
+      top: 68px;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(23, 37, 84, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+      scrollbar-width: none;
+    }
+
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--accent-line);
+      color: var(--accent-text);
+      background: var(--accent-soft);
+      transition: 0.16s ease;
+    }
+
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 22px 0 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--accent-text);
+      font-weight: 700;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      right: -56px;
+      bottom: -56px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+      max-width: 980px;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0;
+      max-width: 950px;
+      font-size: 18px;
+      line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0;
+      max-width: 900px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 12px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); }
+    .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
+
+    /* Sections */
+    .section { padding: 54px 0; }
+
+    .section-head {
+      max-width: 920px;
+      margin: 0 auto 28px;
+      text-align: left;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: var(--surface);
+      border: 1px solid var(--accent-line);
+      color: var(--accent-text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14;
+      letter-spacing: -0.035em;
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 17px;
+    }
+
+    /* Panels */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 26px;
+    }
+
+    /* Audio Settings */
+    .audio-settings { padding: 26px; }
+
+    .settings-row {
+      display: grid;
+      grid-template-columns: 1.2fr 0.5fr auto;
+      gap: 14px;
+      align-items: end;
+      margin-top: 18px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%;
+      min-height: 50px;
+      border-radius: 16px;
+      border: 1px solid var(--accent-line);
+      background: var(--accent-soft);
+      color: var(--text-primary);
+      font: inherit;
+      font-weight: 600;
+      padding: 12px 14px;
+      outline: none;
+    }
+
+    .field select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10);
+    }
+
+    .audio-note {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 18px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Timeline */
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-line);
+      color: var(--accent-text);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .timeline-item span {
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Vocabulary */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .vocab-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      transition: 0.18s ease;
+    }
+
+    .vocab-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .vocab-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .vocab-word {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--accent-line);
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      font: inherit;
+      font-weight: 700;
+      min-height: 40px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: 0.18s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
+    .ipa {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 5px 10px;
+      border-radius: 12px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+
+    .vn-meaning {
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .vocab-note {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .vocab-note strong {
+      color: var(--text-primary);
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .mini-list li strong {
+      color: var(--text-primary);
+    }
+
+    /* Patterns */
+    .pattern-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      transition: 0.18s ease;
+    }
+
+    .pattern-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pattern-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .pattern-phrase {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .pattern-formula {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .pattern-formula strong {
+      color: var(--text-primary);
+    }
+
+    .example-box {
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .example-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      border: 1px solid var(--accent-line);
+      margin-bottom: 8px;
+    }
+
+    .example-box p {
+      margin: 0 0 10px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .example-box p:last-child { margin-bottom: 0; }
+
+    /* Listening */
+    .listening-panel { padding: 26px; }
+
+    .listening-panel h3 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .listening-panel h4 {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+      display: grid;
+      gap: 9px;
+      color: var(--text-secondary);
+    }
+
+    .listening-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px;
+      border-radius: 22px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px;
+      font-size: 18px;
+      line-height: 2;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+
+    .transcript .speaker {
+      font-weight: 700;
+      color: var(--accent-text);
+    }
+
+    .transcript .highlight {
+      background: linear-gradient(180deg, rgba(79, 70, 229, 0), rgba(79, 70, 229, 0.15));
+      color: var(--accent-text);
+      font-weight: 600;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    .answer-box {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--completed);
+      border: 1px solid var(--completed-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p {
+      margin: 0;
+      color: var(--completed-text);
+      font-weight: 600;
+      line-height: 2;
+    }
+
+    /* Speaking */
+    .task-panel { padding: 26px; height: 100%; }
+
+    .task-panel h3 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .task-panel h4 {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .task-panel ol, .task-panel ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+      display: grid;
+      gap: 9px;
+      color: var(--text-secondary);
+    }
+
+    .task-panel li { line-height: 1.8; }
+
+    .script-box {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      margin-top: 14px;
+    }
+
+    .script-box p {
+      margin: 0 0 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      line-height: 1.8;
+    }
+
+    .script-box p:last-child { margin-bottom: 0; }
+
+    /* Output */
+    .output-task {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 18px;
+    }
+
+    .output-task h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .output-task h4 {
+      margin: 20px 0 12px;
+      font-size: 18px;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .output-task p {
+      color: var(--text-secondary);
+    }
+
+    .output-task ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+      color: var(--text-secondary);
+    }
+
+    .output-task li { line-height: 1.8; }
+
+    .model-answer {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      margin-top: 14px;
+    }
+
+    .model-answer p {
+      margin: 0 0 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      line-height: 1.8;
+    }
+
+    .model-answer p:last-child { margin-bottom: 0; }
+
+    .checklist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+
+    .checklist li {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Common Mistakes */
+    .mistake-list { display: grid; gap: 12px; }
+
+    .mistake-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .mistake-card {
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .mistake-card.avoid {
+      background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+      border: 1px solid #fecdd3;
+    }
+
+    .mistake-card.better {
+      background: linear-gradient(180deg, #f0fdfa, #ccfbf1);
+      border: 1px solid #a7f3d0;
+    }
+
+    .mistake-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 5px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      background: #ffffff;
+      border: 1px solid;
+      margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+
+    .mistake-card p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* Mastery */
+    .mastery-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .mastery-list li {
+      padding: 14px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.7;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      padding-left: 48px;
+    }
+
+    .mastery-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      background: var(--completed);
+      border: 1px solid var(--completed-line);
+      color: var(--completed-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Navigation */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .nav-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      text-decoration: none;
+      transition: 0.18s ease;
+      display: block;
+    }
+
+    .nav-box:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-line);
+    }
+
+    .nav-box-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .nav-box-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 58px;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text-muted);
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-line);
+      color: var(--accent-text);
+    }
+
+    /* Responsive */
+    @media (max-width: 1180px) {
+      .vocab-grid, .nav-grid { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 3 · Day 61</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a class="active" href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 61/90</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-3.html">Level 3</a>
+        <span>›</span>
+        <span>Day 61</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 3</span>
+            <span class="hero-tag">Week 9 · Executive Presentation</span>
+            <span class="hero-tag">Day 61 / 90</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Executive Storytelling</span>
+          </div>
+
+          <h1 class="hero-title">Executive Storytelling</h1>
+
+          <p class="hero-subtitle">
+            Day 61 là ngày đầu tiên của Level 3. Bạn sẽ học cách kể chuyện ở cấp executive: cấu trúc câu chuyện,
+            narrative arc, executive summary và persuasive communication. Đây là nền tảng để thuyết phục board,
+            nhà đầu tư và stakeholders ở cấp cao nhất.
+          </p>
+
+          <div class="hero-quote">
+            Một câu chuyện executive không phải là kể lể dài dòng. Đó là câu chuyện có cấu trúc, có bằng chứng,
+            có cảm xúc và có kết luận rõ ràng. Người nghe không nhớ slide — họ nhớ câu chuyện bạn kể.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật hoặc dùng dịch vụ voice AI, sau đó gắn vào các nút nghe bằng thuộc tính data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài storytelling executive hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Storytelling Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ storytelling: narrative arc, hook, climax, resolution, executive summary, persuasive communication, storytelling structure, compelling story. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 4 patterns chính: mở đầu bằng hook, xây dựng narrative arc, nhấn mạnh key message, kết thúc bằng call to action. Mỗi pattern: đọc to 3 ví dụ, làm substitution drill, tự biến đổi theo dự án thật.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe 3 lần: lần 1 nghe ý chính, lần 2 nghe patterns, lần 3 nghe cấu trúc. Làm comprehension questions. Shadowing 3 câu trọng tâm.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Nói 3 vòng: vòng 1 storytelling 60 giây, vòng 2 mở rộng 90 giây, vòng 3 mô phỏng 3 phút. Ghi âm ít nhất 2 vòng và nghe lại để sửa 1 lỗi rõ ràng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Viết script 150–180 từ. Ghi âm final 60–90 giây. Viết reflection 3 dòng: điểm tốt, điểm cần sửa, 1 cụm từ sẽ dùng lại.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Storytelling Terms</h2>
+          <p>8 từ vựng và cụm từ giúp bạn kể chuyện ở cấp executive. Mỗi mục có phiên âm IPA, nghĩa, collocation, ví dụ và native alternative.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">narrative arc</div>
+              <button class="audio-btn" type="button" data-speak="narrative arc">Nghe</button>
+            </div>
+            <div class="ipa">/ˈnærətɪv ɑːrk/</div>
+            <div class="vn-meaning">Cấu trúc câu chuyện</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Narrative arc là cấu trúc câu chuyện: mở đầu → phát triển → cao trào → kết thúc. Dùng để xây dựng bài nói có sức thuyết phục.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> narrative arc structure, compelling narrative arc, clear narrative arc</li>
+              <li><strong>Example:</strong> Every executive presentation needs a clear narrative arc: context, challenge, solution, and call to action.</li>
+              <li><strong>Native alternative:</strong> story structure, narrative structure</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">hook</div>
+              <button class="audio-btn" type="button" data-speak="hook">Nghe</button>
+            </div>
+            <div class="ipa">/hʊk/</div>
+            <div class="vn-meaning">Câu mở đầu gây chú ý</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Hook là câu mở đầu gây chú ý, khiến người nghe muốn nghe tiếp. Rất quan trọng trong executive storytelling.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> strong hook, compelling hook, opening hook</li>
+              <li><strong>Example:</strong> Start with a strong hook: "Three years from now, this decision will transform our portfolio."</li>
+              <li><strong>Native alternative:</strong> opening, attention-grabber</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">climax</div>
+              <button class="audio-btn" type="button" data-speak="climax">Nghe</button>
+            </div>
+            <div class="ipa">/ˈklaɪmæks/</div>
+            <div class="vn-meaning">Điểm cao trào</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Climax là điểm cao trào của câu chuyện — nơi bạn đưa ra recommendation hoặc insight quan trọng nhất.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> reach the climax, the climax of the story, build to the climax</li>
+              <li><strong>Example:</strong> The climax of our presentation is the recommendation: approve Phase 2 funding now.</li>
+              <li><strong>Native alternative:</strong> turning point, key moment</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">resolution</div>
+              <button class="audio-btn" type="button" data-speak="resolution">Nghe</button>
+            </div>
+            <div class="ipa">/ˌrezəˈluːʃn/</div>
+            <div class="vn-meaning">Kết thúc / Giải pháp</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Resolution là phần kết thúc — nơi bạn đưa ra call to action và next steps rõ ràng.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> clear resolution, call to action, next steps</li>
+              <li><strong>Example:</strong> The resolution is clear: approve the funding by end of month to capture the pricing advantage.</li>
+              <li><strong>Native alternative:</strong> conclusion, call to action</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">executive summary</div>
+              <button class="audio-btn" type="button" data-speak="executive summary">Nghe</button>
+            </div>
+            <div class="ipa">/ɪɡˈzekjətv ˈsʌməri/</div>
+            <div class="vn-meaning">Tóm tắt điều hành</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Executive summary là bản tóm tắt ngắn gọn dành cho người ra quyết định. Ngắn, rõ, có kết luận.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> executive summary, brief executive summary, one-page executive summary</li>
+              <li><strong>Example:</strong> The executive summary is simple: this project creates value, the risks are managed, and we recommend proceeding.</li>
+              <li><strong>Native alternative:</strong> executive brief, management summary</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">persuasive communication</div>
+              <button class="audio-btn" type="button" data-speak="persuasive communication">Nghe</button>
+            </div>
+            <div class="ipa">/pərˈsweɪsɪv kəˌmjuːnɪˈkeɪʃn/</div>
+            <div class="vn-meaning">Giao tiếp thuyết phục</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Persuasive communication là giao tiếp có sức thuyết phục — dùng data, logic và cảm xúc để thuyết phục người nghe.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> persuasive communication, persuasive argument, persuasive presentation</li>
+              <li><strong>Example:</strong> Effective persuasive communication combines data, logic, and emotional appeal.</li>
+              <li><strong>Native alternative:</strong> persuasive speaking, influential communication</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">storytelling structure</div>
+              <button class="audio-btn" type="button" data-speak="storytelling structure">Nghe</button>
+            </div>
+            <div class="ipa">/stɔːritellɪ ˈstrʌktʃər/</div>
+            <div class="vn-meaning">Cấu trúc kể chuyện</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Storytelling structure là cấu trúc kể chuyện: hook → context → challenge → solution → call to action.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> storytelling structure, clear storytelling structure, effective storytelling</li>
+              <li><strong>Example:</strong> A clear storytelling structure helps the audience follow your logic and remember your key message.</li>
+              <li><strong>Native alternative:</strong> narrative structure, story framework</li>
+            </ul>
+          </div>
+
+          <div class="vocab-card">
+            <div class="vocab-header">
+              <div class="vocab-word">compelling story</div>
+              <button class="audio-btn" type="button" data-speak="compelling story">Nghe</button>
+            </div>
+            <div class="ipa">/kəmˈpelɪ ˈstɔːri/</div>
+            <div class="vn-meaning">Câu chuyện thuyết phục</div>
+            <div class="vocab-note"><strong>Ghi chú:</strong> Compelling story là câu chuyện có sức thuyết phục — khiến người nghe hành động hoặc thay đổi quan điểm.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> compelling story, tell a compelling story, compelling narrative</li>
+              <li><strong>Example:</strong> We need to tell a compelling story that convinces the board to approve this investment.</li>
+              <li><strong>Native alternative:</strong> persuasive story, powerful narrative</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>4 mẫu câu lõi để kể chuyện ở cấp executive. Mỗi pattern có công thức, ví dụ theo ngữ cảnh, substitution drill và lỗi cần tránh.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <div class="pattern-card">
+            <div class="pattern-header">
+              <div class="pattern-phrase">Let me tell you why this matters...</h3>
+              <button class="audio-btn" type="button" data-speak="Let me tell you why this matters.">Nghe</button>
+            </div>
+            <div class="pattern-formula"><strong>Công thức:</strong> Let me tell you why this matters + lý do. Dùng để mở đầu bằng hook, tạo sự tò mò và kết nối cảm xúc.</div>
+            <div class="example-box">
+              <div class="example-label">Opening hook</div>
+              <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+            </div>
+            <div class="example-box">
+              <div class="example-label">Substitution drill</div>
+              <p>Thay lý do: this is the largest opportunity in our market / this decision will define our competitive position / this is the moment we've been preparing for.</p>
+            </div>
+          </div>
+
+          <div class="pattern-card">
+            <div class="pattern-header">
+              <div class="pattern-phrase">The story begins with...</h3>
+              <button class="audio-btn" type="button" data-speak="The story begins with a simple observation.">Nghe</button>
+            </div>
+            <div class="pattern-formula"><strong>Công thức:</strong> The story begins with + bối cảnh. Dùng để xây dựng narrative arc, bắt đầu từ bối cảnh cụ thể.</div>
+            <div class="example-box">
+              <div class="example-label">Context setting</div>
+              <p>The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening.</p>
+            </div>
+            <div class="example-box">
+              <div class="example-label">Substitution drill</div>
+              <p>Thay bối cảnh: a market shift / a regulatory change / a competitor's move / a customer insight.</p>
+            </div>
+          </div>
+
+          <div class="pattern-card">
+            <div class="pattern-header">
+              <div class="pattern-phrase">The key takeaway here is...</h3>
+              <button class="audio-btn" type="button" data-speak="The key takeaway here is that our IRR exceeds the hurdle rate by 300 basis points.">Nghe</button>
+            </div>
+            <div class="pattern-formula"><strong>Công thức:</strong> The key takeaway here is + mệnh đề. Dùng để nhấn mạnh điểm chính của mỗi phần trong câu chuyện.</div>
+            <div class="example-box">
+              <div class="example-label">Key message</div>
+              <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            </div>
+            <div class="example-box">
+              <div class="example-label">Substitution drill</div>
+              <p>Thay nội dung: the risk is manageable / the market timing is favorable / the downside is limited / the upside is significant.</p>
+            </div>
+          </div>
+
+          <div class="pattern-card">
+            <div class="pattern-header">
+              <div class="pattern-phrase">The bottom line is this:...</h3>
+              <button class="audio-btn" type="button" data-speak="The bottom line is this: this project creates strong value with manageable risk.">Nghe</button>
+            </div>
+            <div class="pattern-formula"><strong>Công thức:</strong> The bottom line is this: + kết luận + call to action. Dùng để kết thúc câu chuyện với kết luận mạnh mẽ và call to action rõ ràng.</div>
+            <div class="example-box">
+              <div class="example-label">Closing with conviction</div>
+              <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            </div>
+            <div class="example-box">
+              <div class="example-label">Substitution drill</div>
+              <p>Thay kết luận: the timing is right / the risk-reward profile is compelling / this is the right move at the right time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Executive Storytelling</h2>
+          <p>Nghe một bài storytelling executive mẫu. Mục tiêu là nhận diện cấu trúc: hook, context, challenge, solution, call to action.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+          <ol>
+            <li>Nghe toàn bộ đoạn storytelling 1 lần để nắm ý chính.</li>
+            <li>Nghe lần hai để nhận diện 4 patterns: hook, narrative arc, key takeaway, bottom line.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: mở đầu, phát triển ý, kết thúc bằng call to action.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm, bắt chước nhịp và stress từ khóa.</li>
+          </ol>
+
+          <button class="audio-btn" type="button" data-speak="Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio. The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening. Our project, Riverside Phase 2, is positioned to capture this opportunity. The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value. The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month. Thank you.">
+            Nghe toàn bộ
+          </button>
+
+          <h4>Transcript</h4>
+          <div class="transcript">
+            <p><span class="highlight">Let me tell you why this matters.</span> Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+            <p><span class="highlight">The story begins with</span> a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening.</p>
+            <p>Our project, Riverside Phase 2, is positioned to capture this opportunity. We have a proven track record from Phase 1, which delivered 18 percent IRR on time and under budget.</p>
+            <p><span class="highlight">The key takeaway here is</span> that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            <p>The risk profile is manageable: we've mitigated construction cost risk through fixed-price contracts, legal delay risk through early milestones, and absorption risk through phased launches.</p>
+            <p><span class="highlight">The bottom line is this:</span> Riverside Phase 2 creates strong value with manageable risk. <span class="highlight">My recommendation is clear:</span> approve Phase 2 funding by the end of this month.</p>
+            <p>Thank you. I'm happy to take any questions.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+          <ul>
+            <li><strong>Q1:</strong> What is the opening hook?</li>
+            <li><strong>Q2:</strong> What is the market observation?</li>
+            <li><strong>Q3:</strong> What is the key takeaway?</li>
+            <li><strong>Q4:</strong> What is the bottom line and recommendation?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+          <div class="answer-box">
+            <p>1. The opening hook is: "Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio."</p>
+            <p>2. The market observation is: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening.</p>
+            <p>3. The key takeaway is: IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            <p>4. The bottom line is: Riverside Phase 2 creates strong value with manageable risk. The recommendation is: approve Phase 2 funding by the end of this month.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+          <div class="example-box">
+            <div class="example-label">Shadow 1</div>
+            <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+            <button class="audio-btn" type="button" data-speak="Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.">Nghe câu 1</button>
+          </div>
+          <div class="example-box">
+            <div class="example-label">Shadow 2</div>
+            <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            <button class="audio-btn" type="button" data-speak="The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.">Nghe câu 2</button>
+          </div>
+          <div class="example-box">
+            <div class="example-label">Shadow 3</div>
+            <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            <button class="audio-btn" type="button" data-speak="The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+          <ul>
+            <li>Nhấn vào các từ khóa: matters, transformed, key takeaway, bottom line, recommendation.</li>
+            <li>Ngắt nhẹ sau mỗi nhóm ý: hook / context / key takeaway / bottom line / recommendation.</li>
+            <li>Giữ tốc độ vừa phải. Không nói quá nhanh vì đây là storytelling.</li>
+            <li>Kết thúc bằng giọng chắc và rõ: My recommendation is clear.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking Practice</h2>
+          <p>Nói 3 vòng: 60 giây, 90 giây và mô phỏng 3 phút. Mục tiêu là tăng dần độ dài và độ tự nhiên, không đọc thuộc máy móc.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <div class="task-panel">
+            <h3>Round 1 · 60 giây</h3>
+            <p>Chỉ giới thiệu: opening hook, context, key takeaway. Chưa cần nói quá nhiều về chi tiết.</p>
+            <div class="script-box">
+              <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+              <p>The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening.</p>
+              <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+              <p>I look forward to discussing the details with you today.</p>
+            </div>
+            <h4>Checklist vòng 1</h4>
+            <ul>
+              <li>Có opening hook tự nhiên.</li>
+              <li>Có context rõ ràng.</li>
+              <li>Có key takeaway mạnh mẽ.</li>
+              <li>Có 1 câu kết nối đến mục tiêu cuộc họp.</li>
+            </ul>
+          </div>
+
+          <div class="task-panel">
+            <h3>Round 2 · 90 giây</h3>
+            <p>Mở rộng thêm risk profile và bottom line.</p>
+            <div class="script-box">
+              <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+              <p>The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening.</p>
+              <p>Our project, Riverside Phase 2, is positioned to capture this opportunity. We have a proven track record from Phase 1, which delivered 18 percent IRR on time and under budget.</p>
+              <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+              <p>The risk profile is manageable: we've mitigated construction cost risk through fixed-price contracts and absorption risk through phased launches.</p>
+              <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            </div>
+            <h4>Checklist vòng 2</h4>
+            <ul>
+              <li>Có risk profile cụ thể.</li>
+              <li>Có bottom line và recommendation rõ ràng.</li>
+              <li>Không liệt kê quá dài.</li>
+              <li>Có ngắt nghỉ giữa các nhóm ý.</li>
+            </ul>
+          </div>
+
+          <div class="task-panel">
+            <h3>Round 3 · Mô phỏng 3 phút</h3>
+            <p>Thêm project context, stakeholders, purpose và closing. Nếu chưa nói đủ 3 phút, hãy mở rộng bằng 1 ví dụ dự án thật của bạn.</p>
+            <div class="script-box">
+              <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+              <p>The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening. Our project, Riverside Phase 2, is positioned to capture this opportunity.</p>
+              <p>We have a proven track record from Phase 1, which delivered 18 percent IRR on time and under budget. My role requires me to translate financial assumptions into clear recommendations for decision makers.</p>
+              <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+              <p>The risk profile is manageable: we've mitigated construction cost risk through fixed-price contracts, legal delay risk through early milestones, and absorption risk through phased launches.</p>
+              <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+              <p>I believe this background will help us have a focused and productive discussion. If helpful, I can also share the detailed model after the meeting. I look forward to your questions and feedback.</p>
+            </div>
+            <h4>Checklist vòng 3</h4>
+            <ul>
+              <li>Có project context hoặc loại dự án.</li>
+              <li>Có stakeholders: board, investors, senior management.</li>
+              <li>Có mục tiêu cuộc họp rõ ràng.</li>
+              <li>Có closing tự nhiên.</li>
+              <li>Giọng chắc, tốc độ vừa phải.</li>
+            </ul>
+          </div>
+
+          <div class="task-panel">
+            <h3>Recording Task</h3>
+            <p>Ghi âm ít nhất 2 vòng. Ưu tiên ghi âm Round 2 và Round 3. Sau đó nghe lại và sửa đúng 1 lỗi.</p>
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có nói rõ hook không?</li>
+              <li>Bạn có nói rõ context không?</li>
+              <li>Bạn có nhấn mạnh key takeaway không?</li>
+              <li>Bạn có ngắt nghỉ đúng chỗ không?</li>
+              <li>Bạn có kết thúc bằng recommendation rõ ràng không?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Executive Storytelling</h2>
+          <p>Output cuối ngày gồm 3 phần: viết script, ghi âm final và reflection. Hoàn thành đủ 3 phần này trước khi chuyển sang Day 62.</p>
+        </div>
+
+        <div class="output-task">
+          <h3>Task 1: Viết script 150–180 từ</h3>
+          <p>Viết một script storytelling executive, dùng trong cuộc họp với board, nhà đầu tư hoặc stakeholders cấp cao.</p>
+          <h4>Yêu cầu</h4>
+          <ul>
+            <li>Dùng ít nhất 4 từ vựng trong mục Vocabulary.</li>
+            <li>Dùng đủ 4 patterns: hook, narrative arc, key takeaway, bottom line.</li>
+            <li>Có cấu trúc: Hook → Context → Challenge → Solution → Call to action.</li>
+            <li>Không viết thông tin cá nhân không liên quan đến công việc.</li>
+            <li>Giọng văn chuyên nghiệp, rõ ràng, phù hợp bối cảnh Real Estate & Investment.</li>
+          </ul>
+
+          <h4>Model Answer</h4>
+          <div class="model-answer">
+            <p>Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio.</p>
+            <p>The story begins with a simple observation: demand in the eastern corridor exceeds supply by 30 percent, and this gap is widening. Our project, Riverside Phase 2, is positioned to capture this opportunity.</p>
+            <p>We have a proven track record from Phase 1, which delivered 18 percent IRR on time and under budget. My role requires me to translate financial assumptions into clear recommendations for decision makers.</p>
+            <p>The key takeaway here is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            <p>The risk profile is manageable: we've mitigated construction cost risk through fixed-price contracts, legal delay risk through early milestones, and absorption risk through phased launches.</p>
+            <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            <p>I believe this background will help us have a focused and productive discussion. I look forward to your questions and feedback.</p>
+          </div>
+
+          <h4>Alternative Version</h4>
+          <div class="model-answer">
+            <p>Let me start with why this matters. This is the largest opportunity in our market, and the window is closing.</p>
+            <p>The story begins with a market shift: demand exceeds supply by 30 percent in the eastern corridor. Our project is positioned to capture this opportunity.</p>
+            <p>We have a proven track record. Phase 1 delivered 18 percent IRR on time and under budget. The key takeaway is that this project creates significant value.</p>
+            <p>The bottom line is clear: approve Phase 2 funding now to capture the pricing advantage. Thank you — I'm happy to take questions.</p>
+          </div>
+        </div>
+
+        <div class="output-task">
+          <h3>Task 2: Ghi âm final 60–90 giây</h3>
+          <p>Sau khi viết script, hãy ghi âm phiên bản final. Mục tiêu là nói rõ, chắc, có ngắt nghỉ và không đọc máy móc.</p>
+          <h4>Recording Checklist</h4>
+          <ul class="checklist">
+            <li>Mở đầu tự nhiên, không quá cứng.</li>
+            <li>Nói rõ hook và context.</li>
+            <li>Nhấn mạnh key takeaway.</li>
+            <li>Kết thúc bằng recommendation rõ ràng.</li>
+            <li>Giọng chắc, tốc độ vừa phải.</li>
+            <li>Không đọc máy móc — nói bằng lời của bạn.</li>
+          </ul>
+        </div>
+
+        <div class="output-task">
+          <h3>Task 3: Reflection 3 dòng</h3>
+          <p>Viết ngắn gọn 3 dòng sau khi nghe lại bản ghi âm:</p>
+          <ul>
+            <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+            <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+            <li><strong>Keep:</strong> 1 cụm từ bạn sẽ tiếp tục dùng trong các ngày tới.</li>
+          </ul>
+          <div class="example-box">
+            <div class="example-label">Reflection mẫu</div>
+            <p>Good: Tôi đã nêu rõ hook và key takeaway. Improve: Tôi cần ngắt nghỉ sau phần context. Keep: "The bottom line is this..."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>3 lỗi thường gặp khi storytelling executive</h2>
+          <p>Tránh các lỗi này để phần storytelling của bạn chuyên nghiệp hơn và phù hợp với bối cảnh executive.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <div class="mistake-card avoid">
+              <div class="mistake-label rose">Tránh</div>
+              <p>Mở đầu quá chung chung: "Today I will talk about the project."</p>
+            </div>
+            <div class="mistake-card better">
+              <div class="mistake-label emerald">Nên</div>
+              <p>Let me tell you why this matters. Three years from now, this decision will transform our portfolio.</p>
+            </div>
+          </div>
+
+          <div class="mistake-item">
+            <div class="mistake-card avoid">
+              <div class="mistake-label rose">Tránh</div>
+              <p>Đọc số liệu mà không giải thích: "IRR is 18 percent." (Rồi sao?)</p>
+            </div>
+            <div class="mistake-card better">
+              <div class="mistake-label emerald">Nên</div>
+              <p>The key takeaway is that our IRR of 18 percent exceeds the hurdle rate by 300 basis points, which means the project creates significant value.</p>
+            </div>
+          </div>
+
+          <div class="mistake-item">
+            <div class="mistake-card avoid">
+              <div class="mistake-label rose">Tránh</div>
+              <p>Kết thúc đột ngột: "That's all. Thanks." Không có call to action.</p>
+            </div>
+            <div class="mistake-card better">
+              <div class="mistake-label emerald">Nên</div>
+              <p>The bottom line is this: approve Phase 2 funding by end of month. My recommendation is clear. Thank you — I'm happy to take questions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 61 khi có thể</h2>
+          <p>Trước khi sang Day 62, hãy đảm bảo bạn đã đạt các năng lực tối thiểu dưới đây.</p>
+        </div>
+
+        <ul class="mastery-list">
+          <li>Tôi có thể dùng narrative arc, hook, climax, resolution trong câu chuyện.</li>
+          <li>Tôi có thể dùng executive summary, persuasive communication, storytelling structure, compelling story.</li>
+          <li>Tôi có thể mở đầu bằng hook gây chú ý.</li>
+          <li>Tôi có thể xây dựng narrative arc: context → challenge → solution.</li>
+          <li>Tôi có thể nhấn mạnh key takeaway.</li>
+          <li>Tôi có thể kết thúc bằng bottom line + call to action.</li>
+          <li>Tôi có thể viết script 150–180 từ phù hợp bối cảnh executive.</li>
+          <li>Tôi có thể ghi âm 60–90 giây mà không đọc máy móc.</li>
+          <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="nav-grid">
+          <a href="level-3.html" class="nav-box">
+            <div class="nav-box-label">Back to Level 3</div>
+            <div class="nav-box-title">Level 3 · Executive English</div>
+          </a>
+
+          <button id="markComplete" class="nav-box" type="button" style="cursor: pointer; text-align: left;">
+            <div class="nav-box-label">Complete</div>
+            <div class="nav-box-title">Mark Day 61 Complete</div>
+          </button>
+
+          <a href="level-2-day-62.html" class="nav-box">
+            <div class="nav-box-label">Next Day</div>
+            <div class="nav-box-title">Day 62 · Executive Summary</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 3 · Day 61 · Executive Storytelling</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 61 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-3";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["61"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<div class='nav-box-label'>Completed</div><div class='nav-box-title'>Day 61 đã hoàn thành</div>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 61/90 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<div class='nav-box-label'>Complete</div><div class='nav-box-title'>Mark Day 61 Complete</div>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 61/90";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["61"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "Let me tell you why this matters. Three years from now, this decision will transform our portfolio. The bottom line is clear: approve the funding now.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

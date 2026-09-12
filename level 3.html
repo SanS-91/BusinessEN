@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 3 | Executive English | Executive English 90</title>
+  <meta name="description" content="Level 3 - Executive English: Giao tiếp ở cấp độ lãnh đạo với sự tự tin và ảnh hưởng. Storytelling, Investment Committee, Executive Negotiation, Leadership Communication." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+      /* Premium Executive Palette - Deep Navy → Indigo → Royal Blue → Soft Lavender */
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --royal-blue: #4f46e5;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+
+      /* Page & Surface */
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+
+      /* Text */
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+
+      /* Borders */
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+
+      /* Shadows */
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+
+      /* Radii */
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+
+      /* Card Tints - subtle 5-15% tints */
+      --tint-lavender: linear-gradient(135deg, #faf5ff 0%, #f5f0ff 100%);
+      --tint-blue: linear-gradient(135deg, #eff6ff 0%, #f0f4ff 100%);
+      --tint-indigo: linear-gradient(135deg, #eef2ff 0%, #f0f0ff 100%);
+      --tint-violet: linear-gradient(135deg, #f5f3ff 0%, #f0ebff 100%);
+
+      /* Week Header Gradient */
+      --week-gradient: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+
+      /* Accent States */
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+
+      /* Completed State - soft mint */
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      color: var(--accent-text);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-primary);
+      min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text);
+      background: var(--accent-soft);
+      border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      border: 1px solid var(--accent-line);
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 22px 0 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--accent-text);
+      font-weight: 700;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      right: -56px;
+      bottom: -56px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+      max-width: 980px;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0;
+      max-width: 950px;
+      font-size: 18px;
+      line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0;
+      max-width: 900px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-stat-value {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+      margin-top: 6px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 12px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); }
+
+    /* Sections */
+    .section { padding: 54px 0; }
+
+    .section-head {
+      max-width: 920px;
+      margin: 0 auto 28px;
+      text-align: left;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: var(--surface);
+      border: 1px solid var(--accent-line);
+      color: var(--accent-text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14;
+      letter-spacing: -0.035em;
+      color: var(--text-primary);
+      font-weight: 800;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 17px;
+    }
+
+    /* Panels */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      padding: 26px;
+    }
+
+    /* Why Grid */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .why-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      transition: 0.18s ease;
+    }
+
+    .why-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .why-item-number {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--accent-text);
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .why-item-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .why-item-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Before/After */
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .before-after-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .before-after-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .before-after-example {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      padding: 12px;
+      background: var(--surface-soft);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--border);
+    }
+
+    .before-after-note {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Coverage Grid */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .coverage-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      transition: 0.18s ease;
+    }
+
+    .coverage-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .coverage-item-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .coverage-item-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Week Sections */
+    .week-section {
+      margin-bottom: 32px;
+    }
+
+    .week-header {
+      background: var(--week-gradient);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 18px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .week-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 10% 50%, rgba(139, 92, 246, 0.20) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .week-header-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .week-header-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.90);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Days Grid */
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .day-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      transition: 0.18s ease;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .day-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--violet-soft) 100%);
+      opacity: 0;
+      transition: 0.18s ease;
+    }
+
+    .day-box:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .day-box:hover::before {
+      opacity: 1;
+    }
+
+    .day-box-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .day-number {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-text);
+    }
+
+    .day-duration {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .day-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .day-focus {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .day-focus-label {
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    .day-output {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .day-output-label {
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    /* Milestone List */
+    .milestone-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .milestone-list li {
+      padding: 14px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.7;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      padding-left: 48px;
+    }
+
+    .milestone-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      background: var(--completed);
+      border: 1px solid var(--completed-line);
+      color: var(--completed-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Self-Check */
+    .self-check-question {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .self-check-question-number {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-text);
+      margin-bottom: 12px;
+    }
+
+    .self-check-option {
+      padding: 12px;
+      background: var(--surface-soft);
+      border-radius: var(--radius-sm);
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-soft);
+    }
+
+    .self-check-answer {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    /* Navigation */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .nav-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      text-decoration: none;
+      transition: 0.18s ease;
+      display: block;
+    }
+
+    .nav-box:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-line);
+    }
+
+    .nav-box-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .nav-box-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-title {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-desc {
+      font-size: 16px;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.90);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 58px;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text-muted);
+      padding: 8px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-line);
+      color: var(--accent-text);
+    }
+
+    /* Responsive */
+    @media (max-width: 1180px) {
+      .why-grid, .before-after-grid, .coverage-grid, .days-grid, .nav-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel { padding: 20px; }
+      .hero-stats { gap: 16px; }
+      .hero-stat-value { font-size: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 3 · Executive English</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a class="active" href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span class="progress-chip">Level 3: 0/30 ngày</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <span>Level 3</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 3</span>
+            <span class="hero-tag">Executive English</span>
+            <span class="hero-tag">30 ngày</span>
+            <span class="hero-tag">90 phút / ngày</span>
+            <span class="hero-tag">Output-first</span>
+          </div>
+
+          <h1 class="hero-title">Executive English</h1>
+
+          <p class="hero-subtitle">
+            Level 3 nâng bạn lên cấp độ lãnh đạo: giao tiếp với sự tự tin và ảnh hưởng ở cấp executive.
+            Bạn sẽ học storytelling, thuyết phục hội đồng đầu tư, đàm phán cấp cao và lãnh đạo truyền thông.
+          </p>
+
+          <div class="hero-quote">
+            Mục tiêu của Level 3 không phải là nói hay hơn. Mục tiêu là nói có ảnh hưởng — để người nghe hành động,
+            để stakeholders đồng thuận, để board approve và để team follow.
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-value">4</span>
+              <span class="hero-stat-label">tuần học</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">30</span>
+              <span class="hero-stat-label">daily lessons</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">90</span>
+              <span class="hero-stat-label">phút mỗi ngày</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">30</span>
+              <span class="hero-stat-label">speaking topics</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">10</span>
+              <span class="hero-stat-label">reflex structure groups</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">1</span>
+              <span class="hero-stat-label">final assessment</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#week-9">Bắt đầu Day 61</a>
+            <a class="btn btn-secondary" href="#self-check">Quick Self-Check</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY THIS LEVEL MATTERS -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why This Level Matters</span>
+          <h2>Vì sao Level 3 quan trọng?</h2>
+          <p>
+            Level 3 không dạy tiếng Anh chung chung. Level 3 huấn luyện bạn dùng tiếng Anh trong các tình huống lãnh đạo cấp cao:
+            thuyết phục board, đàm phán với đối tác chiến lược, xử lý khủng hoảng và truyền thông tầm nhìn.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-item-number">01</div>
+            <div class="why-item-title">Output before perfection</div>
+            <div class="why-item-desc">
+              Mỗi ngày phải tạo ra output: một bài pitch thuyết phục, một bài negotiation thành công,
+              một bài crisis communication hiệu quả. Không học thụ động.
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-number">02</div>
+            <div class="why-item-title">Executive patterns</div>
+            <div class="why-item-desc">
+              Học mẫu câu theo chức năng lãnh đạo: storytelling, persuasion, negotiation, crisis communication,
+              vision casting, board presentation.
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-number">03</div>
+            <div class="why-item-title">Strategic communication</div>
+            <div class="why-item-desc">
+              Ngôn ngữ gắn với bối cảnh chiến lược: board meeting, investor pitch, stakeholder negotiation,
+              crisis management, media communication.
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item-number">04</div>
+            <div class="why-item-title">Leadership register</div>
+            <div class="why-item-desc">
+              Biết cách điều chỉnh ngôn ngữ theo cấp độ: từ team internal đến board level, từ investor pitch
+              đến media interview.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE VS AFTER -->
+    <section class="section" id="before-after">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before vs After</span>
+          <h2>Sau Level 3, cách nói của bạn sẽ thay đổi</h2>
+          <p>
+            Từ câu có cấu trúc, có bối cảnh sang câu có ảnh hưởng, có tầm nhìn và có sức thuyết phục ở cấp executive.
+          </p>
+        </div>
+
+        <div class="before-after-grid">
+          <div class="before-after-item">
+            <div class="before-after-label">Before · Level 2</div>
+            <div class="before-after-example">
+              The project IRR is 18%, exceeding our hurdle rate by 300 basis points. We recommend proceeding with the investment.
+            </div>
+            <div class="before-after-note">
+              Câu đúng, có số liệu, có recommendation. Phù hợp để trình bày investment committee.
+            </div>
+          </div>
+
+          <div class="before-after-item">
+            <div class="before-after-label">After · Level 3</div>
+            <div class="before-after-example">
+              Let me tell you why this matters. Three years from now, when we look back at this decision, we'll see it as the moment we transformed our portfolio. The 18% IRR isn't just a number — it's proof that we're building something transformative.
+            </div>
+            <div class="before-after-note">
+              Câu này có storytelling, có tầm nhìn, có cảm xúc và có sức thuyết phục. Đây là cách nói của một lãnh đạo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGE COVERAGE -->
+    <section class="section" id="coverage">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Language Coverage</span>
+          <h2>Phạm vi ngôn ngữ của Level 3</h2>
+          <p>
+            Level 3 bao phủ 4 lớp ngôn ngữ executive: storytelling, persuasion, negotiation và leadership communication.
+          </p>
+        </div>
+
+        <div class="coverage-grid">
+          <div class="coverage-item">
+            <div class="coverage-item-title">Storytelling</div>
+            <div class="coverage-item-desc">
+              Narrative structure, executive summary, strategic recommendations, persuasive communication.
+            </div>
+          </div>
+
+          <div class="coverage-item">
+            <div class="coverage-item-title">Investment Committee</div>
+            <div class="coverage-item-desc">
+              Present investment proposals, defend assumptions, handle difficult questions, financial justification.
+            </div>
+          </div>
+
+          <div class="coverage-item">
+            <div class="coverage-item-title">Executive Negotiation</div>
+            <div class="coverage-item-desc">
+              Win-win negotiation, managing objections, influencing stakeholders, high-level business discussions.
+            </div>
+          </div>
+
+          <div class="coverage-item">
+            <div class="coverage-item-title">Leadership Communication</div>
+            <div class="coverage-item-desc">
+              Board presentation, crisis communication, strategic thinking, vision & leadership, media communication.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30-DAY PLAN -->
+    <section class="section" id="week-9">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">30-Day Plan</span>
+          <h2>Lộ trình 30 ngày của Level 3</h2>
+          <p>
+            Mỗi ngày 90 phút. Mỗi tuần có một mục tiêu riêng. Hãy bắt đầu từ Day 61 và đi theo đúng thứ tự để xây dựng kỹ năng lãnh đạo.
+          </p>
+        </div>
+
+        <!-- Week 9 -->
+        <div class="week-section">
+          <div class="week-header">
+            <div class="week-header-title">Week 9 · Executive Presentation</div>
+            <div class="week-header-desc">
+              Storytelling, Executive summary, Strategic recommendations, Persuasive communication
+            </div>
+          </div>
+
+          <div class="days-grid">
+            <a href="level-3-day-61.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 61</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Executive Storytelling</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Storytelling structure, narrative arc, executive summary, persuasive communication</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> script + ghi âm phần storytelling 3 phút</div>
+            </a>
+
+            <a href="level-3-day-62.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 62</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Executive Summary</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Executive summary structure, key messages, strategic recommendations</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> viết executive summary 150-200 từ</div>
+            </a>
+
+            <a href="level-3-day-63.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 63</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Strategic Recommendations</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Strategic recommendations, data-driven arguments, persuasive arguments</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> recommendation memo ngắn</div>
+            </a>
+
+            <a href="level-3-day-64.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 64</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Persuasive Communication</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Persuasive language, influence techniques, stakeholder persuasion</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> persuasive pitch 3 phút</div>
+            </a>
+
+            <a href="level-3-day-65.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 65</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Board Presentation</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Board presentation structure, executive presence, board-level communication</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> board presentation 5 phút</div>
+            </a>
+
+            <a href="level-3-day-66.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 66</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Vision Casting</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Vision statement, future vision, inspiring teams, leadership vision</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> vision statement 3 phút</div>
+            </a>
+
+            <a href="level-3-day-67.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 67</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Week 9 Review</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Review Week 9, practice executive storytelling, practice board presentation</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> ghi âm executive presentation 10 phút</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Week 10 -->
+        <div class="week-section">
+          <div class="week-header">
+            <div class="week-header-title">Week 10 · Investment Committee</div>
+            <div class="week-header-desc">
+              Present investment proposals, Defend assumptions, Handle difficult questions, Financial justification
+            </div>
+          </div>
+
+          <div class="days-grid">
+            <a href="level-3-day-68.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 68</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Investment Proposal</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Investment proposal structure, investment thesis, financial justification</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> investment proposal 5 phút</div>
+            </a>
+
+            <a href="level-3-day-69.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 69</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Defending Assumptions</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Defending assumptions, data-driven arguments, handling challenges</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> defense script 3 phút</div>
+            </a>
+
+            <a href="level-3-day-70.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 70</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Handling Difficult Questions</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Handling difficult questions, managing objections, maintaining composure</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> Q&A handling 5 phút</div>
+            </a>
+
+            <a href="level-3-day-71.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 71</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Financial Justification</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Financial justification, ROI justification, NPV justification, IRR justification</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> financial justification 3 phút</div>
+            </a>
+
+            <a href="level-3-day-72.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 72</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">IC Presentation</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> IC presentation structure, executive presence, IC-level communication</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> IC presentation 5 phút</div>
+            </a>
+
+            <a href="level-3-day-73.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 73</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">IC Q&A Mastery</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> IC Q&A techniques, handling pushback, defending recommendations</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> IC Q&A 5 phút</div>
+            </a>
+
+            <a href="level-3-day-74.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 74</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Week 10 Review</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Review Week 10, practice IC presentation, practice IC Q&A</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> ghi âm IC presentation 10 phút</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Week 11 -->
+        <div class="week-section">
+          <div class="week-header">
+            <div class="week-header-title">Week 11 · Executive Negotiation</div>
+            <div class="week-header-desc">
+              Win-win negotiation, Managing objections, Influencing stakeholders, High-level business discussions
+            </div>
+          </div>
+
+          <div class="days-grid">
+            <a href="level-3-day-75.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 75</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Win-Win Negotiation</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Win-win negotiation, mutual benefits, collaborative negotiation</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> negotiation script 5 phút</div>
+            </a>
+
+            <a href="level-3-day-76.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 76</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Managing Objections</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Managing objections, handling resistance, overcoming resistance</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> objection handling 3 phút</div>
+            </a>
+
+            <a href="level-3-day-77.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 77</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Influencing Stakeholders</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Influencing stakeholders, stakeholder management, stakeholder influence</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> stakeholder influence 3 phút</div>
+            </a>
+
+            <a href="level-3-day-78.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 78</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">High-Level Discussions</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> High-level business discussions, strategic discussions, executive discussions</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> high-level discussion 5 phút</div>
+            </a>
+
+            <a href="level-3-day-79.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 79</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Negotiation Strategy</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Negotiation strategy, negotiation planning, negotiation preparation</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> negotiation strategy 3 phút</div>
+            </a>
+
+            <a href="level-3-day-80.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 80</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Advanced Negotiation</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Advanced negotiation techniques, complex negotiations, multi-party negotiations</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> advanced negotiation 5 phút</div>
+            </a>
+
+            <a href="level-3-day-81.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 81</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Week 11 Review</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Review Week 11, practice negotiation, practice stakeholder influence</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> ghi âm negotiation 10 phút</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Week 12 -->
+        <div class="week-section">
+          <div class="week-header">
+            <div class="week-header-title">Week 12 · Leadership Communication</div>
+            <div class="week-header-desc">
+              Board presentation, Crisis communication, Strategic thinking, Vision & leadership, Media communication
+            </div>
+          </div>
+
+          <div class="days-grid">
+            <a href="level-3-day-82.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 82</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Board Presentation</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Board presentation, board-level communication, executive presence</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> board presentation 5 phút</div>
+            </a>
+
+            <a href="level-3-day-83.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 83</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Crisis Communication</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Crisis communication, crisis management, crisis response</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> crisis communication 3 phút</div>
+            </a>
+
+            <a href="level-3-day-84.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 84</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Strategic Thinking</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Strategic thinking, strategic analysis, strategic decision-making</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> strategic thinking 3 phút</div>
+            </a>
+
+            <a href="level-3-day-85.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 85</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Vision & Leadership</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Vision statement, leadership vision, inspiring teams, casting vision</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> vision statement 3 phút</div>
+            </a>
+
+            <a href="level-3-day-86.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 86</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Media Communication</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Media communication, press conference, media interview, public speaking</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> media interview 3 phút</div>
+            </a>
+
+            <a href="level-3-day-87.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 87</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Leadership Presence</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Leadership presence, executive presence, commanding presence</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> leadership presence 3 phút</div>
+            </a>
+
+            <a href="level-3-day-88.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 88</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Week 12 Review</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Review Week 12, practice leadership communication, practice crisis communication</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> ghi âm leadership presentation 10 phút</div>
+            </a>
+
+            <a href="level-3-day-89.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 89</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Final Assessment Prep</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Final assessment preparation, final assessment practice, final assessment review</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> final assessment prep 10 phút</div>
+            </a>
+
+            <a href="level-3-day-90.html" class="day-box">
+              <div class="day-box-header">
+                <span class="day-number">Day 90</span>
+                <span class="day-duration">90 phút</span>
+              </div>
+              <div class="day-title">Final Assessment</div>
+              <div class="day-focus"><span class="day-focus-label">Focus:</span> Final assessment, executive presentation, leadership communication assessment</div>
+              <div class="day-output"><span class="day-output-label">Output:</span> final assessment 20 phút + Q&A 10 phút</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 3 MILESTONE -->
+    <section class="section" id="milestone">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Level 3 Milestone</span>
+          <h2>Sau Level 3, bạn có thể làm gì?</h2>
+          <p>Đây là các năng lực tối thiểu bạn cần đạt sau khi hoàn thành Level 3.</p>
+        </div>
+
+        <ul class="milestone-list">
+          <li>Tự tin storytelling và executive summary ở cấp executive.</li>
+          <li>Trình bày investment proposal và defend assumptions trước IC.</li>
+          <li>Handle difficult questions và maintain composure.</li>
+          <li>Win-win negotiation và manage objections.</li>
+          <li>Influence stakeholders và lead high-level discussions.</li>
+          <li>Board presentation và crisis communication.</li>
+          <li>Strategic thinking và vision casting.</li>
+          <li>Media communication và public speaking.</li>
+          <li>Leadership presence và executive presence.</li>
+          <li>Hoàn thành final assessment với executive-level communication.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUICK SELF-CHECK -->
+    <section class="section" id="self-check">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Quick Self-Check</span>
+          <h2>Kiểm tra trực giác trước khi bắt đầu</h2>
+          <p>Ba câu hỏi dưới đây giúp bạn cảm nhận sự khác nhau giữa Level 2 và Level 3.</p>
+        </div>
+
+        <div class="self-check-question">
+          <div class="self-check-question-number">1. Bạn cần thuyết phục board approve một dự án. Câu nào phù hợp nhất?</div>
+          <div class="self-check-option">
+            A. The project IRR is 18%, exceeding our hurdle rate. We recommend proceeding.
+          </div>
+          <div class="self-check-option">
+            B. Let me tell you why this matters. Three years from now, this decision will transform our portfolio. The 18% IRR isn't just a number — it's proof we're building something transformative.
+          </div>
+          <div class="self-check-option">
+            C. The project is good. We should invest.
+          </div>
+          <div class="self-check-answer">
+            Đáp án đúng: B. Level 3 cần storytelling, tầm nhìn và sức thuyết phục ở cấp executive.
+          </div>
+        </div>
+
+        <div class="self-check-question">
+          <div class="self-check-question-number">2. Bạn cần xử lý một câu hỏi khó từ board. Cách nào phù hợp nhất?</div>
+          <div class="self-check-option">
+            A. I don't know. I'll get back to you.
+          </div>
+          <div class="self-check-option">
+            B. That's a valid concern. Let me address it directly with data and our mitigation strategy.
+          </div>
+          <div class="self-check-option">
+            C. That's not a problem. Don't worry about it.
+          </div>
+          <div class="self-check-answer">
+            Đáp án đúng: B. Level 3 cần acknowledge, address với data và maintain composure.
+          </div>
+        </div>
+
+        <div class="self-check-question">
+          <div class="self-check-question-number">3. Bạn cần đàm phán với đối tác chiến lược. Câu nào phù hợp nhất?</div>
+          <div class="self-check-option">
+            A. We need this deal. Please agree.
+          </div>
+          <div class="self-check-option">
+            B. Let's find a win-win solution that creates value for both parties.
+          </div>
+          <div class="self-check-option">
+            C. Take it or leave it.
+          </div>
+          <div class="self-check-answer">
+            Đáp án đúng: B. Level 3 cần win-win negotiation và influence stakeholders.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng</h2>
+        </div>
+
+        <div class="nav-grid">
+          <a href="level-2.html" class="nav-box">
+            <div class="nav-box-label">Previous Level</div>
+            <div class="nav-box-title">Level 2 · Real Estate & Investment English</div>
+          </a>
+
+          <a href="level-3-day-61.html" class="nav-box">
+            <div class="nav-box-label">Start Level 3</div>
+            <div class="nav-box-title">Day 61 · Executive Storytelling</div>
+          </a>
+
+          <a href="level-3-day-90.html" class="nav-box">
+            <div class="nav-box-label">Final Assessment</div>
+            <div class="nav-box-title">Day 90 · Final Assessment</div>
+          </a>
+        </div>
+
+        <div class="cta-section">
+          <div class="cta-title">Sẵn sàng bắt đầu Level 3?</div>
+          <div class="cta-desc">
+            Bắt đầu với Day 61: Executive Storytelling. Mỗi ngày 90 phút, đi từ storytelling, persuasion, negotiation đến leadership communication. Sau 30 ngày, bạn sẽ có kỹ năng lãnh đạo ở cấp executive.
+          </div>
+          <div class="cta-actions">
+            <a href="level-3-day-61.html" class="btn btn-primary">Bắt đầu Level 3 · Day 61</a>
+            <a href="#week-9" class="btn btn-secondary">Xem 4 tuần học</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 3 · Executive English</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
