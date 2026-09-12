@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Level 3 Day 61 | Executive Storytelling | Executive English 90</title>
-  <meta name="description" content="Level 3 Day 61 - Executive Storytelling: Learn to tell compelling business stories with narrative arc, hook, conflict, resolution, and payoff." />
+  <title>Level 3 Day 62 | Executive Summary | Executive English 90</title>
+  <meta name="description" content="Level 3 Day 62 - Executive Summary: Learn to write concise, impactful executive summaries for decision makers." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,6 @@
     :root {
       --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 
-      /* Premium Executive Palette - Level 3 */
       --navy-deep: #172554;
       --navy: #1e3a8a;
       --indigo: #4338ca;
@@ -87,7 +86,6 @@
     .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
     section[id] { scroll-margin-top: 140px; }
 
-    /* Topbar */
     .topbar {
       position: sticky; top: 0; z-index: 60;
       background: rgba(255, 255, 255, 0.92);
@@ -134,7 +132,6 @@
       border: 1px solid var(--accent-line); font-weight: 700; font-size: 13px; white-space: nowrap;
     }
 
-    /* Plan bar */
     .plan-bar {
       position: sticky; top: 68px; z-index: 50;
       background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
@@ -154,7 +151,6 @@
     }
     .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
 
-    /* Breadcrumb */
     .breadcrumb {
       padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
       display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
@@ -162,7 +158,6 @@
     .breadcrumb a { text-decoration: none; color: var(--accent-text); font-weight: 700; }
     .breadcrumb a:hover { text-decoration: underline; }
 
-    /* Hero */
     .hero { padding: 26px 0 30px; }
 
     .hero-panel {
@@ -237,7 +232,6 @@
     .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); }
     .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
 
-    /* Sections */
     .section { padding: 54px 0; }
 
     .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
@@ -258,13 +252,11 @@
 
     .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
 
-    /* Panels */
     .panel {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 26px;
     }
 
-    /* Audio Settings */
     .audio-settings { padding: 26px; }
     .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
 
@@ -287,7 +279,6 @@
       background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
     }
 
-    /* Timeline */
     .timeline-panel { padding: 26px; }
 
     .timeline-item {
@@ -310,7 +301,6 @@
 
     .timeline-item span { color: var(--text-muted); line-height: 1.75; }
 
-    /* Vocabulary Cards */
     .vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 
     .vocab-card {
@@ -372,7 +362,6 @@
     .audio-btn:hover { background: #e0e7ff; }
     .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
 
-    /* Patterns */
     .pattern-card {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
@@ -411,7 +400,6 @@
     .example p { margin: 0 0 10px; color: var(--text-secondary); font-weight: 600; }
     .example p:last-child { margin-bottom: 0; }
 
-    /* Listening */
     .listening-panel { padding: 26px; }
 
     .listening-panel h3 {
@@ -453,7 +441,6 @@
 
     .answer-box p { margin: 0; color: var(--completed-text); font-weight: 600; line-height: 2; }
 
-    /* Speaking */
     .task-panel { padding: 26px; }
 
     .task-panel h3 {
@@ -473,10 +460,8 @@
 
     .task-panel li { line-height: 1.8; }
 
-    /* Output */
     .output-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 
-    /* Mistakes */
     .mistake-list { display: grid; gap: 12px; }
 
     .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -507,7 +492,6 @@
 
     .mistake-card p { margin: 0; color: var(--text-secondary); font-weight: 600; }
 
-    /* Mastery */
     .mastery-list {
       list-style: none; margin: 24px 0 0; padding: 0;
       display: grid; gap: 12px;
@@ -530,7 +514,6 @@
       font-size: 12px; font-weight: 700;
     }
 
-    /* Navigation */
     .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 
     .prev-next a, .prev-next button {
@@ -555,7 +538,6 @@
       color: var(--text-primary); font-weight: 700;
     }
 
-    /* Footer */
     .footer { padding: 32px 0 58px; color: var(--text-muted); }
 
     .footer-inner {
@@ -601,7 +583,7 @@
     <div class="container topbar-inner">
       <a class="brand" href="index.html">
         <strong>Executive English 90</strong>
-        <span>Level 3 · Day 61</span>
+        <span>Level 3 · Day 62</span>
       </a>
 
       <nav class="nav" aria-label="Điều hướng chính">
@@ -614,7 +596,7 @@
         <a href="assessment.html">Assessment</a>
       </nav>
 
-      <span id="dayChip" class="progress-chip">Day 61/30</span>
+      <span id="dayChip" class="progress-chip">Day 62/30</span>
     </div>
   </header>
 
@@ -636,7 +618,7 @@
         <span>›</span>
         <a href="level-3.html">Level 3</a>
         <span>›</span>
-        <span>Day 61</span>
+        <span>Day 62</span>
       </nav>
     </div>
 
@@ -647,21 +629,21 @@
           <div class="hero-tags">
             <span class="hero-tag">Level 3</span>
             <span class="hero-tag">Week 9 · Executive Presentation</span>
-            <span class="hero-tag">Day 61 / 30</span>
+            <span class="hero-tag">Day 62 / 30</span>
             <span class="hero-tag">90 phút</span>
-            <span class="hero-tag">Speaking topic: Executive Storytelling</span>
+            <span class="hero-tag">Writing topic: Executive Summary</span>
           </div>
 
-          <h1 class="hero-title">Executive Storytelling</h1>
+          <h1 class="hero-title">Executive Summary</h1>
 
           <p class="hero-subtitle">
-            Day 61 mở đầu Week 9 với kỹ năng storytelling ở cấp executive: narrative arc, hook, conflict, resolution và payoff.
-            Bạn sẽ học cách kể một câu chuyện kinh doanh có cấu trúc, có cảm xúc và có sức thuyết phục trong 3 phút.
+            Day 62 dạy bạn viết executive summary: bản tóm tắt ngắn gọn, súc tích dành cho người ra quyết định.
+            Bạn sẽ học cách cô đọng thông tin phức tạp thành 150-200 từ rõ ràng, có kết luận và call to action.
           </p>
 
           <div class="hero-quote">
-            Một câu chuyện executive không phải là kể lại sự kiện. Đó là kể một câu chuyện có cấu trúc, có xung đột,
-            có giải pháp và có kết quả — để người nghe hành động, không chỉ lắng nghe.
+            Executive summary không phải là tóm tắt mọi thứ. Đó là chọn lọc những gì quan trọng nhất để người đọc
+            ra quyết định trong 2 phút. Nếu họ chỉ đọc một trang, đó phải là trang này.
           </div>
 
           <div class="hero-actions">
@@ -716,15 +698,15 @@
         <div class="section-head">
           <span class="eyebrow">Detailed 90-Minute Plan</span>
           <h2>Timeline 90 phút chi tiết</h2>
-          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài storytelling 3 phút hoàn chỉnh.</p>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và viết được executive summary 150-200 từ hoàn chỉnh.</p>
         </div>
 
         <div class="panel timeline-panel">
           <div class="timeline-item">
             <span class="time-pill">00:00 – 00:15</span>
             <div>
-              <strong>Vocabulary & Storytelling Terms · 15 phút</strong>
-              <span>Học 8 thuật ngữ storytelling: narrative arc, hook, conflict, resolution, protagonist, stakes, payoff, throughline. Nghe từng item, lặp lại và đặt 1 câu.</span>
+              <strong>Vocabulary & Summary Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ executive summary: executive summary, key message, recommendation, call to action, concise, impactful, decision maker, bottom line. Nghe từng item, lặp lại và đặt 1 câu.</span>
             </div>
           </div>
 
@@ -732,23 +714,23 @@
             <span class="time-pill">00:15 – 00:35</span>
             <div>
               <strong>Phrases & Sentence Patterns · 20 phút</strong>
-              <span>Luyện 4 mẫu câu storytelling: mở đầu với hook, giới thiệu conflict, xây dựng tension, deliver payoff. Làm substitution drill.</span>
+              <span>Luyện 4 mẫu câu viết executive summary: mở đầu với context, trình bày key findings, đưa ra recommendation, kết thúc với call to action. Làm substitution drill.</span>
             </div>
           </div>
 
           <div class="timeline-item">
             <span class="time-pill">00:35 – 00:55</span>
             <div>
-              <strong>Listening Business · 20 phút</strong>
-              <span>Nghe một bài executive story mẫu 3 phút. Nghe 3 lần: ý chính, patterns, cấu trúc story. Làm comprehension questions và shadowing.</span>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một executive summary mẫu 2 phút. Nghe 3 lần: ý chính, patterns, cấu trúc. Làm comprehension questions và shadowing.</span>
             </div>
           </div>
 
           <div class="timeline-item">
             <span class="time-pill">00:55 – 01:15</span>
             <div>
-              <strong>Speaking Practice · 20 phút</strong>
-              <span>Nói 3 vòng: vòng 1 story 60 giây, vòng 2 story 90 giây với conflict, vòng 3 full executive story 3 phút. Ghi âm ít nhất 2 vòng.</span>
+              <strong>Speaking · 20 phút</strong>
+              <span>Đọc to executive summary 3 vòng: Round 1 (60 giây), Round 2 (90 giây), Round 3 (2 phút). Ghi âm ít nhất 2 vòng.</span>
             </div>
           </div>
 
@@ -756,7 +738,7 @@
             <span class="time-pill">01:15 – 01:30</span>
             <div>
               <strong>Output · 15 phút</strong>
-              <span>Viết script 150-180 từ. Ghi âm final 60-90 giây. Viết reflection 3 dòng: Good, Improve, Keep.</span>
+              <span>Viết executive summary 150-200 từ. Đọc to và ghi âm 60-90 giây. Viết reflection 3 dòng.</span>
             </div>
           </div>
         </div>
@@ -768,168 +750,168 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Block 1 · 15 phút</span>
-          <h2>Vocabulary & Storytelling Terms</h2>
-          <p>8 thuật ngữ storytelling cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+          <h2>Vocabulary & Summary Terms</h2>
+          <p>8 thuật ngữ executive summary cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
         </div>
 
         <div class="vocab-grid">
           <article class="vocab-card">
             <div class="card-top">
-              <h3>narrative arc</h3>
-              <button class="audio-btn" type="button" data-speak="narrative arc">Nghe</button>
+              <h3>executive summary</h3>
+              <button class="audio-btn" type="button" data-speak="executive summary">Nghe</button>
             </div>
 
-            <span class="ipa">/ˈnærətɪv ɑːrk/</span>
-            <p class="vn">Cấu trúc câu chuyện</p>
+            <span class="ipa">/ɡˈzekjətɪv sʌməri/</span>
+            <p class="vn">Tóm tắt điều hành</p>
 
             <div class="note">
-              Ghi chú: Narrative arc là cấu trúc câu chuyện: beginning → rising action → climax → resolution. Dùng để xây dựng câu chuyện có cấu trúc.
+              Ghi chú: Executive summary là bản tóm tắt ngắn gọn dành cho người ra quyết định. Ngắn, rõ, có kết luận và call to action.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> narrative arc, story arc, complete narrative arc</li>
-              <li><strong>Example:</strong> Every executive presentation should have a clear narrative arc.</li>
-              <li><strong>Native alternative:</strong> story structure, plot arc</li>
+              <li><strong>Collocation:</strong> executive summary, brief executive summary, one-page executive summary</li>
+              <li><strong>Example:</strong> The executive summary is simple: this project creates value, the risks are managed, and we recommend proceeding.</li>
+              <li><strong>Native alternative:</strong> executive brief, management summary</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>hook</h3>
-              <button class="audio-btn" type="button" data-speak="hook">Nghe</button>
+              <h3>key message</h3>
+              <button class="audio-btn" type="button" data-speak="key message">Nghe</button>
             </div>
 
-            <span class="ipa">/hʊk/</span>
-            <p class="vn">Câu mở đầu gây chú ý</p>
+            <span class="ipa">/kiː ˈmesɪdʒ/</span>
+            <p class="vn">Thông điệp chính</p>
 
             <div class="note">
-              Ghi chú: Hook là câu mở đầu gây chú ý, kéo người nghe vào câu chuyện. Thường là một câu hỏi, số liệu gây sốc, hoặc tuyên bố mạnh mẽ.
+              Ghi chú: Key message là thông điệp chính bạn muốn người đọc nhớ. Mỗi executive summary nên có 1-3 key messages rõ ràng.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> strong hook, compelling hook, hook the audience</li>
-              <li><strong>Example:</strong> Start with a strong hook: "What if I told you we're leaving 50 million on the table?"</li>
-              <li><strong>Native alternative:</strong> opening hook, attention grabber</li>
+              <li><strong>Collocation:</strong> key message, main message, core message</li>
+              <li><strong>Example:</strong> The key message is that this investment offers strong returns with manageable risk.</li>
+              <li><strong>Native alternative:</strong> key takeaway, main point</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>conflict</h3>
-              <button class="audio-btn" type="button" data-speak="conflict">Nghe</button>
+              <h3>recommendation</h3>
+              <button class="audio-btn" type="button" data-speak="recommendation">Nghe</button>
             </div>
 
-            <span class="ipa">/ˈknflɪkt/</span>
-            <p class="vn">Xung đột / Thách thức</p>
+            <span class="ipa">/ˌrekəmenˈdeɪn/</span>
+            <p class="vn">Khuyến nghị</p>
 
             <div class="note">
-              Ghi chú: Conflict là xung đột hoặc thách thức trong câu chuyện. Không có conflict thì không có câu chuyện — chỉ có báo cáo.
+              Ghi chú: Recommendation là khuyến nghị cụ thể bạn muốn người đọc thực hiện. Phải rõ ràng và có thể hành động.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> central conflict, key conflict, overcome conflict</li>
-              <li><strong>Example:</strong> The central conflict was a 6-month delay that threatened the entire project.</li>
-              <li><strong>Native alternative:</strong> challenge, tension, obstacle</li>
+              <li><strong>Collocation:</strong> clear recommendation, strong recommendation, our recommendation is</li>
+              <li><strong>Example:</strong> Our recommendation is to approve Phase 2 funding by the end of this month.</li>
+              <li><strong>Native alternative:</strong> recommendation, proposal</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>resolution</h3>
-              <button class="audio-btn" type="button" data-speak="resolution">Nghe</button>
+              <h3>call to action</h3>
+              <button class="audio-btn" type="button" data-speak="call to action">Nghe</button>
             </div>
 
-            <span class="ipa">/ˌrezəˈluːʃn/</span>
-            <p class="vn">Giải pháp / Kết thúc</p>
+            <span class="ipa">/kɔːl tuː ˈækʃn/</span>
+            <p class="vn">Kêu gọi hành động</p>
 
             <div class="note">
-              Ghi chú: Resolution là giải pháp hoặc kết thúc của câu chuyện. Đây là phần người nghe chờ đợi nhất.
+              Ghi chú: Call to action là điều cụ thể bạn muốn người đọc làm sau khi đọc. Luôn có thời hạn và hành động rõ ràng.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> clear resolution, successful resolution, reach a resolution</li>
-              <li><strong>Example:</strong> The resolution came when we renegotiated the contract with the main contractor.</li>
-              <li><strong>Native alternative:</strong> solution, outcome, conclusion</li>
+              <li><strong>Collocation:</strong> clear call to action, call to action is, strong call to action</li>
+              <li><strong>Example:</strong> My call to action is clear: approve the budget by Friday.</li>
+              <li><strong>Native alternative:</strong> ask, next step, action item</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>protagonist</h3>
-              <button class="audio-btn" type="button" data-speak="protagonist">Nghe</button>
+              <h3>concise</h3>
+              <button class="audio-btn" type="button" data-speak="concise">Nghe</button>
             </div>
 
-            <span class="ipa">/prəˈtæɡənɪst/</span>
-            <p class="vn">Nhân vật chính</p>
+            <span class="ipa">/kənˈsaɪs/</span>
+            <p class="vn">Súc tích, ngắn gọn</p>
 
             <div class="note">
-              Ghi chú: Protagonist là nhân vật chính trong câu chuyện. Trong business story, protagonist có thể là công ty, team, hoặc khách hàng.
+              Ghi chú: Concise nghĩa là ngắn gọn nhưng đầy đủ thông tin. Executive summary phải concise — không dài dòng.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> main protagonist, story protagonist, protagonist faces</li>
-              <li><strong>Example:</strong> In this story, the protagonist is our project team facing an impossible deadline.</li>
-              <li><strong>Native alternative:</strong> main character, hero of the story</li>
+              <li><strong>Collocation:</strong> concise summary, concise writing, be concise</li>
+              <li><strong>Example:</strong> The executive summary is concise: 150 words, three key points, one clear recommendation.</li>
+              <li><strong>Native alternative:</strong> brief, succinct, to the point</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>stakes</h3>
-              <button class="audio-btn" type="button" data-speak="stakes">Nghe</button>
+              <h3>impactful</h3>
+              <button class="audio-btn" type="button" data-speak="impactful">Nghe</button>
             </div>
 
-            <span class="ipa">/steɪks/</span>
-            <p class="vn">Mức độ quan trọng / Rủi ro</p>
+            <span class="ipa">/ɪmˈpæktfl/</span>
+            <p class="vn">Có tác động, gây ấn tượng</p>
 
             <div class="note">
-              Ghi chú: Stakes là mức độ quan trọng hoặc rủi ro. "High stakes" nghĩa là hậu quả rất lớn nếu thất bại.
+              Ghi chú: Impactful nghĩa là có tác động mạnh, gây ấn tượng. Executive summary phải impactful để người đọc hành động.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> high stakes, raise the stakes, stakes are high</li>
-              <li><strong>Example:</strong> The stakes were high: 200 jobs and a 150 million dollar investment.</li>
-              <li><strong>Native alternative:</strong> risk level, what's at stake</li>
+              <li><strong>Collocation:</strong> impactful summary, impactful message, make an impact</li>
+              <li><strong>Example:</strong> The opening is impactful: we start with the bottom line, not the background.</li>
+              <li><strong>Native alternative:</strong> compelling, powerful, persuasive</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>payoff</h3>
-              <button class="audio-btn" type="button" data-speak="payoff">Nghe</button>
+              <h3>decision maker</h3>
+              <button class="audio-btn" type="button" data-speak="decision maker">Nghe</button>
             </div>
 
-            <span class="ipa">/ˈpeɪɒf/</span>
-            <p class="vn">Kết quả / Giá trị nhận được</p>
+            <span class="ipa">/dɪˈsɪʒn meɪkər/</span>
+            <p class="vn">Người ra quyết định</p>
 
             <div class="note">
-              Ghi chú: Payoff là kết quả hoặc giá trị nhận được ở cuối câu chuyện. Đây là lý do người nghe nên quan tâm.
+              Ghi chú: Decision maker là người có quyền quyết định. Executive summary viết cho decision maker — họ cần thông tin để quyết định nhanh.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> big payoff, final payoff, payoff is clear</li>
-              <li><strong>Example:</strong> The payoff was clear: we delivered on time and 5 percent under budget.</li>
-              <li><strong>Native alternative:</strong> result, outcome, reward</li>
+              <li><strong>Collocation:</strong> key decision maker, senior decision maker, decision maker needs</li>
+              <li><strong>Example:</strong> The decision maker needs three things: the problem, the solution, and the recommendation.</li>
+              <li><strong>Native alternative:</strong> decision maker, approver, stakeholder</li>
             </ul>
           </article>
 
           <article class="vocab-card">
             <div class="card-top">
-              <h3>throughline</h3>
-              <button class="audio-btn" type="button" data-speak="throughline">Nghe</button>
+              <h3>bottom line</h3>
+              <button class="audio-btn" type="button" data-speak="bottom line">Nghe</button>
             </div>
 
-            <span class="ipa">/ˈθrulaɪn/</span>
-            <p class="vn">Sợi chỉ xuyên suốt</p>
+            <span class="ipa">/ˈbɒtəm laɪn/</span>
+            <p class="vn">Điểm mấu chốt</p>
 
             <div class="note">
-              Ghi chú: Throughline là sợi chỉ xuyên suốt kết nối các phần của câu chuyện. Giúp câu chuyện có mạch lạc và logic.
+              Ghi chú: Bottom line là điểm mấu chốt, kết luận cuối cùng. Trong executive summary, bottom line thường đặt ở đầu hoặc cuối.
             </div>
 
             <ul class="mini-list">
-              <li><strong>Collocation:</strong> clear throughline, narrative throughline, strong throughline</li>
-              <li><strong>Example:</strong> The throughline of this story is simple: we turned a crisis into an opportunity.</li>
-              <li><strong>Native alternative:</strong> central theme, main thread</li>
+              <li><strong>Collocation:</strong> the bottom line is, bottom line impact, bottom line result</li>
+              <li><strong>Example:</strong> The bottom line is this: approve now or lose the opportunity.</li>
+              <li><strong>Native alternative:</strong> the bottom line, the key takeaway, the main point</li>
             </ul>
           </article>
         </div>
@@ -942,91 +924,91 @@
         <div class="section-head">
           <span class="eyebrow">Block 2 · 20 phút</span>
           <h2>Phrases & Sentence Patterns</h2>
-          <p>4 mẫu câu storytelling: mở đầu với hook, giới thiệu conflict, xây dựng tension, deliver payoff.</p>
+          <p>4 mẫu câu viết executive summary: mở đầu với context, trình bày key findings, đưa ra recommendation, kết thúc với call to action.</p>
         </div>
 
         <div class="vocab-grid">
           <article class="pattern-card">
             <div class="card-top">
-              <h3>Let me start with a story...</h3>
-              <button class="audio-btn" type="button" data-speak="Let me start with a story. Three years ago, we faced a decision that would define our company.">Nghe</button>
+              <h3>This executive summary outlines...</h3>
+              <button class="audio-btn" type="button" data-speak="This executive summary outlines the key findings and our recommendation for Phase 2 funding.">Nghe</button>
             </div>
 
             <div class="note">
-              Công thức: Let me start with a story + context. Dùng để mở đầu bài nói bằng câu chuyện, thu hút sự chú ý ngay lập tức.
+              Công thức: This executive summary outlines + nội dung chính. Dùng để mở đầu executive summary, nêu rõ phạm vi.
             </div>
 
             <div class="example">
-              <span class="label">Opening with hook</span>
-              <p>Let me start with a story. Three years ago, we faced a decision that would define our company.</p>
+              <span class="label">Opening with context</span>
+              <p>This executive summary outlines the key findings and our recommendation for Phase 2 funding.</p>
             </div>
 
             <div class="example">
               <span class="label">Substitution drill</span>
-              <p>Thay context: Two years ago, we discovered a problem that threatened our biggest project / Last quarter, we faced a challenge that changed everything.</p>
+              <p>Thay nội dung: the investment opportunity / the risk assessment / the project status.</p>
             </div>
           </article>
 
           <article class="pattern-card">
             <div class="card-top">
-              <h3>The challenge we faced was...</h3>
-              <button class="audio-btn" type="button" data-speak="The challenge we faced was a 6-month delay that threatened the entire project timeline.">Nghe</button>
+              <h3>The key findings are...</h3>
+              <button class="audio-btn" type="button" data-speak="The key findings are: strong market demand, proven execution capability, and attractive returns.">Nghe</button>
             </div>
 
             <div class="note">
-              Công thức: The challenge we faced was + conflict. Dùng để giới thiệu xung đột hoặc thách thức chính trong câu chuyện.
+              Công thức: The key findings are + 2-3 điểm chính. Dùng để trình bày findings quan trọng nhất.
             </div>
 
             <div class="example">
-              <span class="label">Introducing conflict</span>
-              <p>The challenge we faced was a 6-month delay that threatened the entire project timeline.</p>
+              <span class="label">Presenting key findings</span>
+              <p>The key findings are: strong market demand, proven execution capability, and attractive returns.</p>
             </div>
 
             <div class="example">
               <span class="label">Substitution drill</span>
-              <p>Thay conflict: a 30 percent budget overrun / a key partner pulling out / a regulatory change that blocked our path.</p>
+              <p>Thay findings: manageable risks / clear competitive advantage / strong financial performance.</p>
             </div>
           </article>
 
           <article class="pattern-card">
             <div class="card-top">
-              <h3>What happened next changed everything...</h3>
-              <button class="audio-btn" type="button" data-speak="What happened next changed everything. We discovered a solution that turned the crisis into an opportunity.">Nghe</button>
+              <h3>Our recommendation is to...</h3>
+              <button class="audio-btn" type="button" data-speak="Our recommendation is to approve Phase 2 funding by the end of this month.">Nghe</button>
             </div>
 
             <div class="note">
-              Công thức: What happened next changed everything + turning point. Dùng để xây dựng tension và dẫn đến điểm转折.
+              Công thức: Our recommendation is to + hành động cụ thể + thời hạn. Dùng để đưa ra recommendation rõ ràng.
             </div>
 
             <div class="example">
-              <span class="label">Building tension</span>
-              <p>What happened next changed everything. We discovered a solution that turned the crisis into an opportunity.</p>
+              <span class="label">Making recommendation</span>
+              <p>Our recommendation is to approve Phase 2 funding by the end of this month.</p>
             </div>
 
             <div class="example">
               <span class="label">Substitution drill</span>
-              <p>Thay turning point: We found a partner who believed in our vision / A new regulation opened a door we hadn't seen.</p>
+              <p>Thay hành động: proceed with the acquisition / increase the budget / launch the project.</p>
             </div>
           </article>
 
           <article class="pattern-card">
             <div class="card-top">
-              <h3>The result was...</h3>
-              <button class="audio-btn" type="button" data-speak="The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders.">Nghe</button>
+              <h3>We recommend taking action by...</h3>
+              <button class="audio-btn" type="button" data-speak="We recommend taking action by Friday to secure the current pricing advantage.">Nghe</button>
             </div>
 
             <div class="note">
-              Công thức: The result was + payoff + impact. Dùng để deliver payoff và kết thúc câu chuyện mạnh mẽ.
+              Công thức: We recommend taking action by + thời hạn + lý do. Dùng để kết thúc với call to action mạnh mẽ.
             </div>
 
             <div class="example">
-              <span class="label">Delivering payoff</span>
-              <p>The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders.</p>
+              <span class="label">Call to action</span>
+              <p>We recommend taking action by Friday to secure the current pricing advantage.</p>
             </div>
 
             <div class="example">
               <span class="label">Substitution drill</span>
-              <p>Thay payoff: we exceeded our target by 30 percent / we transformed a loss into a win / we built something that lasts.</p>
+              <p>Thay thời hạn và lý do: by end of month to capture market demand / immediately to avoid delays.</p>
             </div>
           </article>
         </div>
@@ -1038,86 +1020,86 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Block 3 · 20 phút</span>
-          <h2>Listening Business · Executive Story</h2>
-          <p>Nghe một bài executive story mẫu 3 phút. Đây là mô hình để bạn tái hiện với câu chuyện thật của mình.</p>
+          <h2>Listening · Executive Summary</h2>
+          <p>Nghe một executive summary mẫu 2 phút. Đây là mô hình để bạn viết executive summary của mình.</p>
         </div>
 
         <div class="panel listening-panel">
           <h3>Nhiệm vụ nghe 20 phút</h3>
 
           <ol>
-            <li>Nghe toàn bộ đoạn story 1 lần để nắm ý chính.</li>
-            <li>Nghe lần hai để nhận diện 4 patterns: hook, conflict, turning point, payoff.</li>
-            <li>Nghe lần ba để phân tích cấu trúc: mở đầu, phát triển ý, cao trào, kết thúc.</li>
+            <li>Nghe toàn bộ executive summary 1 lần để nắm ý chính.</li>
+            <li>Nghe lần hai để nhận diện 4 patterns: opening, key findings, recommendation, call to action.</li>
+            <li>Nghe lần ba để phân tích cấu trúc: context → findings → recommendation → action.</li>
             <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
-            <li>Shadowing 3 câu trọng tâm, bắt chước nhịp và stress từ khóa.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
           </ol>
 
           <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
-            <button class="audio-btn" type="button" data-speak="Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders. The throughline of this story is simple: we turned a crisis into an opportunity.">Nghe toàn bộ executive story</button>
+            <button class="audio-btn" type="button" data-speak="This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches. Our recommendation is to approve Phase 2 funding by the end of this month. We recommend taking action now to secure the current pricing advantage and capture strong market demand.">Nghe executive summary</button>
           </div>
 
           <h4>Transcript</h4>
 
           <div class="transcript">
-            <p><span class="speaker">[Hook]</span>Let me start with a story. Two years ago, our biggest project was failing.</p>
+            <p><span class="speaker">[Opening]</span>This executive summary outlines the investment opportunity for Riverside Phase 2.</p>
 
-            <p><span class="speaker">[Conflict]</span>We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment.</p>
+            <p><span class="speaker">[Key Findings]</span>The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR.</p>
 
-            <p><span class="speaker">[Turning Point]</span>What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline.</p>
+            <p><span class="speaker">[Risk Management]</span>The risks are manageable through fixed-price contracts and phased launches.</p>
 
-            <p><span class="speaker">[Payoff]</span>The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders.</p>
+            <p><span class="speaker">[Recommendation]</span>Our recommendation is to approve Phase 2 funding by the end of this month.</p>
 
-            <p><span class="speaker">[Throughline]</span>The throughline of this story is simple: we turned a crisis into an opportunity.</p>
+            <p><span class="speaker">[Call to Action]</span>We recommend taking action now to secure the current pricing advantage and capture strong market demand.</p>
           </div>
 
           <h4>Comprehension Questions</h4>
 
           <ul>
-            <li>Question 1: What was the initial situation?</li>
-            <li>Question 2: What were the three main challenges?</li>
-            <li>Question 3: What were the stakes?</li>
-            <li>Question 4: What was the turning point?</li>
-            <li>Question 5: What was the final result?</li>
+            <li>Question 1: What is the purpose of this executive summary?</li>
+            <li>Question 2: What are the three key findings?</li>
+            <li>Question 3: How are the risks managed?</li>
+            <li>Question 4: What is the recommendation?</li>
+            <li>Question 5: What is the call to action?</li>
           </ul>
 
           <h4>Sample Answers</h4>
 
           <div class="answer-box">
-            <p>1. Their biggest project was failing two years ago.<br />
-            2. Six months behind schedule, 30 percent over budget, main contractor walked away.<br />
-            3. 200 jobs and a 150 million dollar investment.<br />
-            4. Brought in a new team, renegotiated the contract, redesigned the timeline.<br />
-            5. Delivered on time, 5 percent under budget, created lasting value.</p>
+            <p>1. To outline the investment opportunity for Riverside Phase 2.<br />
+            2. Strong market demand (30% supply constraint), proven execution capability (Phase 1), attractive returns (18% IRR).<br />
+            3. Through fixed-price contracts and phased launches.<br />
+            4. Approve Phase 2 funding by end of this month.<br />
+            5. Take action now to secure pricing advantage and capture market demand.</p>
           </div>
 
           <h4>Shadowing Challenge</h4>
 
           <div class="example">
-            <span class="label">Shadow 1 · Hook</span>
-            <p>Let me start with a story. Two years ago, our biggest project was failing.</p>
-            <button class="audio-btn" type="button" data-speak="Let me start with a story. Two years ago, our biggest project was failing.">Nghe câu 1</button>
+            <span class="label">Shadow 1 · Opening</span>
+            <p>This executive summary outlines the investment opportunity for Riverside Phase 2.</p>
+            <button class="audio-btn" type="button" data-speak="This executive summary outlines the investment opportunity for Riverside Phase 2.">Nghe câu 1</button>
           </div>
 
           <div class="example">
-            <span class="label">Shadow 2 · Conflict</span>
-            <p>We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away.</p>
-            <button class="audio-btn" type="button" data-speak="We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away.">Nghe câu 2</button>
+            <span class="label">Shadow 2 · Key findings</span>
+            <p>The key findings are: strong market demand, proven execution capability, and attractive returns.</p>
+            <button class="audio-btn" type="button" data-speak="The key findings are: strong market demand, proven execution capability, and attractive returns.">Nghe câu 2</button>
           </div>
 
           <div class="example">
-            <span class="label">Shadow 3 · Payoff</span>
-            <p>The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders.</p>
-            <button class="audio-btn" type="button" data-speak="The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders.">Nghe câu 3</button>
+            <span class="label">Shadow 3 · Recommendation</span>
+            <p>Our recommendation is to approve Phase 2 funding by the end of this month.</p>
+            <button class="audio-btn" type="button" data-speak="Our recommendation is to approve Phase 2 funding by the end of this month.">Nghe câu 3</button>
           </div>
 
           <h4>Pronunciation Focus</h4>
 
           <ul>
-            <li>Nhấn vào các từ khóa: story, failing, stakes, changed everything, result.</li>
-            <li>Ngắt nhẹ sau mỗi nhóm ý: hook / conflict / turning point / payoff.</li>
-            <li>Giọng chắc chắn khi deliver payoff: "The RESULT was CLEAR..."</li>
-            <li>Kết thúc bằng giọng mạnh và rõ: we turned a crisis into an opportunity.</li>
+            <li>Nhấn vào các từ khóa: executive summary, key findings, recommendation, action.</li>
+            <li>Ngắt nhẹ sau mỗi nhóm ý: opening / findings / risks / recommendation / action.</li>
+            <li>Giọng chắc chắn khi deliver recommendation: "Our RECOMMENDATION is to..."</li>
+            <li>Kết thúc bằng giọng mạnh và rõ: take action NOW.</li>
           </ul>
         </div>
       </div>
@@ -1128,47 +1110,45 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Block 4 · 20 phút</span>
-          <h2>Speaking Practice · Executive Story</h2>
-          <p>Nói 3 vòng: 60 giây, 90 giây và full executive story 3 phút. Mục tiêu là tăng dần độ dài và độ tự nhiên.</p>
+          <h2>Speaking · Executive Summary</h2>
+          <p>Đọc to executive summary 3 vòng: 60 giây, 90 giây và 2 phút. Mục tiêu là tăng dần độ dài và độ tự nhiên.</p>
         </div>
 
         <div class="output-grid">
           <article class="panel task-panel">
             <h3>Round 1 · 60 giây</h3>
 
-            <p>Chỉ giới thiệu: hook và conflict. Chưa cần nói quá nhiều về giải pháp.</p>
+            <p>Chỉ đọc opening và key findings. Chưa cần nói quá nhiều về recommendation.</p>
 
             <div class="answer-box">
-              <p>Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. But what happened next changed everything.</p>
+              <p>This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches.</p>
             </div>
 
-            <button class="audio-btn" type="button" data-speak="Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. But what happened next changed everything.">Nghe Round 1</button>
+            <button class="audio-btn" type="button" data-speak="This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches.">Nghe Round 1</button>
           </article>
 
           <article class="panel task-panel">
             <h3>Round 2 · 90 giây</h3>
 
-            <p>Mở rộng thêm turning point và resolution.</p>
+            <p>Thêm recommendation và lý do.</p>
 
             <div class="answer-box">
-              <p>Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. The result was clear: we delivered on time, 5 percent under budget.</p>
+              <p>This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches. Our recommendation is to approve Phase 2 funding by the end of this month to secure the current pricing advantage.</p>
             </div>
 
-            <button class="audio-btn" type="button" data-speak="Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. The result was clear: we delivered on time, 5 percent under budget.">Nghe Round 2</button>
+            <button class="audio-btn" type="button" data-speak="This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches. Our recommendation is to approve Phase 2 funding by the end of this month to secure the current pricing advantage.">Nghe Round 2</button>
           </article>
 
           <article class="panel task-panel">
-            <h3>Round 3 · Full Executive Story 3 phút</h3>
+            <h3>Round 3 · 2 phút</h3>
 
-            <p>Thêm context, stakeholders, throughline và closing. Nếu chưa nói đủ 3 phút, hãy mở rộng bằng 1 ví dụ dự án thật của bạn.</p>
+            <p>Hoàn chỉnh với call to action mạnh mẽ. Nếu chưa nói đủ 2 phút, hãy mở rộng bằng 1-2 câu về risk management hoặc market context.</p>
 
             <div class="answer-box">
-              <p>Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment.</p>
-              <p>What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. We worked closely with our stakeholders — the bank, the JV partner, and the local authorities — to find a solution that worked for everyone.</p>
-              <p>The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders. The throughline of this story is simple: we turned a crisis into an opportunity. And that's exactly what we're proposing to do again with this new project.</p>
+              <p>This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches. Our recommendation is to approve Phase 2 funding by the end of this month. We recommend taking action now to secure the current pricing advantage and capture strong market demand. The window of opportunity is now.</p>
             </div>
 
-            <button class="audio-btn" type="button" data-speak="Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment. What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. We worked closely with our stakeholders — the bank, the JV partner, and the local authorities — to find a solution that worked for everyone. The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders. The throughline of this story is simple: we turned a crisis into an opportunity. And that's exactly what we're proposing to do again with this new project.">Nghe Round 3</button>
+            <button class="audio-btn" type="button" data-speak="This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint, proven execution capability from Phase 1, and attractive returns of 18 percent IRR. The risks are manageable through fixed-price contracts and phased launches. Our recommendation is to approve Phase 2 funding by the end of this month. We recommend taking action now to secure the current pricing advantage and capture strong market demand. The window of opportunity is now.">Nghe Round 3</button>
           </article>
 
           <article class="panel task-panel">
@@ -1178,11 +1158,11 @@
 
             <h4>Self-review</h4>
             <ul>
-              <li>Bạn có mở đầu bằng hook gây chú ý không?</li>
-              <li>Bạn có giới thiệu conflict rõ ràng không?</li>
-              <li>Bạn có xây dựng tension trước turning point không?</li>
-              <li>Bạn có deliver payoff mạnh mẽ không?</li>
-              <li>Bạn có throughline xuyên suốt câu chuyện không?</li>
+              <li>Bạn có mở đầu rõ ràng với context không?</li>
+              <li>Bạn có trình bày key findings rõ ràng không?</li>
+              <li>Bạn có đưa ra recommendation cụ thể không?</li>
+              <li>Bạn có kết thúc với call to action mạnh mẽ không?</li>
+              <li>Giọng có chắc chắn và tự tin không?</li>
             </ul>
           </article>
         </div>
@@ -1194,53 +1174,53 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Block 5 · 15 phút</span>
-          <h2>Output · Executive Story Script</h2>
-          <p>Output cuối ngày gồm 3 phần: viết script, ghi âm final và reflection. Hoàn thành đủ 3 phần này trước khi chuyển sang Day 62.</p>
+          <h2>Output · Executive Summary</h2>
+          <p>Output cuối ngày gồm 3 phần: viết executive summary, đọc to và ghi âm, reflection. Hoàn thành đủ 3 phần này trước khi chuyển sang Day 63.</p>
         </div>
 
         <div class="output-grid">
           <article class="panel task-panel">
-            <h3>Task 1: Viết script 150-180 từ</h3>
+            <h3>Task 1: Viết executive summary 150-200 từ</h3>
 
-            <p>Viết một script executive story chuyên nghiệp, dùng trong cuộc họp với đối tác, ngân hàng hoặc nhà đầu tư.</p>
+            <p>Viết một executive summary chuyên nghiệp cho dự án của bạn. Dùng trong cuộc họp với đối tác, ngân hàng hoặc nhà đầu tư.</p>
 
             <h4>Yêu cầu</h4>
             <ul>
               <li>Dùng ít nhất 4 từ vựng trong mục Vocabulary.</li>
-              <li>Dùng đủ 4 patterns: hook, conflict, turning point, payoff.</li>
-              <li>Có cấu trúc: Hook → Conflict → Turning Point → Payoff → Throughline.</li>
-              <li>Không viết thông tin cá nhân không liên quan đến công việc.</li>
+              <li>Dùng đủ 4 patterns: opening, key findings, recommendation, call to action.</li>
+              <li>Có cấu trúc: Context → Key Findings → Risk Management → Recommendation → Call to Action.</li>
+              <li>Không viết thông tin không liên quan đến quyết định.</li>
               <li>Giọng văn chuyên nghiệp, rõ ràng, phù hợp bối cảnh Real Estate & Investment.</li>
             </ul>
 
             <h4>Model Answer</h4>
             <div class="answer-box">
-              <p>Let me start with a story. Two years ago, our biggest project was failing. We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away. The stakes were high: 200 jobs and a 150 million dollar investment.</p>
-              <p>What happened next changed everything. Instead of giving up, we brought in a new team, renegotiated the contract, and completely redesigned the project timeline. We worked closely with our stakeholders — the bank, the JV partner, and the local authorities — to find a solution that worked for everyone.</p>
-              <p>The result was clear: we delivered on time, 5 percent under budget, and created lasting value for all stakeholders. The throughline of this story is simple: we turned a crisis into an opportunity. And that's exactly what we're proposing to do again with this new project.</p>
+              <p>This executive summary outlines the investment opportunity for Riverside Phase 2. The key findings are: strong market demand with 30 percent supply constraint in the eastern corridor, proven execution capability demonstrated by Phase 1 which delivered 18 percent IRR on time and 5 percent under budget, and attractive risk-adjusted returns with built-in downside protection.</p>
+              <p>The risks are manageable through fixed-price contracts for 70 percent of construction costs, early legal milestones, and phased launches. Even in a downside scenario with 20 percent price decline, the project still delivers 14 percent IRR, above our hurdle rate.</p>
+              <p>Our recommendation is to approve Phase 2 funding by the end of this month, before the fixed-price contracts expire. We recommend taking action now to secure the current pricing advantage and capture strong market demand. The window of opportunity is now.</p>
             </div>
 
             <h4>Alternative Version</h4>
             <div class="answer-box">
-              <p>Let me tell you about a challenge we faced last year. Our flagship development was in trouble — delays, cost overruns, and a key partner pulling out. The stakes couldn't have been higher.</p>
-              <p>But here's what happened: we brought in fresh leadership, restructured the deal, and rebuilt trust with all stakeholders. The payoff? We not only saved the project — we delivered it ahead of schedule and under budget.</p>
-              <p>The lesson is clear: with the right team and the right approach, any crisis can become an opportunity.</p>
+              <p>This executive summary presents the Phase 2 investment opportunity. Key findings: strong market demand (30% supply constraint), proven track record (Phase 1: 18% IRR, on time, under budget), and attractive returns with downside protection.</p>
+              <p>Risks are managed through fixed-price contracts, early milestones, and phased launches. Downside scenario still delivers 14% IRR, above hurdle rate.</p>
+              <p>Recommendation: approve Phase 2 funding by month-end. Action required now to secure pricing advantage and capture market demand.</p>
             </div>
           </article>
 
           <article class="panel task-panel">
-            <h3>Task 2: Ghi âm final 60-90 giây</h3>
+            <h3>Task 2: Đọc to và ghi âm 60-90 giây</h3>
 
-            <p>Sau khi viết script, hãy ghi âm phiên bản final. Mục tiêu là nói rõ, chắc, có ngắt nghỉ và không đọc máy móc.</p>
+            <p>Sau khi viết executive summary, hãy đọc to và ghi âm phiên bản 60-90 giây. Mục tiêu là nói rõ, chắc, có ngắt nghỉ và không đọc máy móc.</p>
 
             <h4>Recording Checklist</h4>
             <ul>
-              <li>Mở đầu bằng hook tự nhiên, không quá cứng.</li>
-              <li>Nói rõ conflict và stakes.</li>
-              <li>Có turning point rõ ràng.</li>
-              <li>Deliver payoff mạnh mẽ.</li>
-              <li>Kết thúc bằng throughline hoặc lesson.</li>
-              <li>Giọng chắc, tốc độ vừa phải, có ngắt nghỉ.</li>
+              <li>Mở đầu rõ ràng với context.</li>
+              <li>Trình bày key findings rõ ràng.</li>
+              <li>Đưa ra recommendation cụ thể.</li>
+              <li>Kết thúc với call to action mạnh mẽ.</li>
+              <li>Giọng chắc chắn, tốc độ vừa phải.</li>
+              <li>Có ngắt nghỉ giữa các phần.</li>
             </ul>
 
             <h3>Task 3: Reflection 3 dòng</h3>
@@ -1254,7 +1234,7 @@
 
             <div class="example">
               <span class="label">Reflection mẫu</span>
-              <p>Good: Tôi đã mở đầu bằng hook mạnh và deliver payoff rõ ràng. Improve: Tôi cần ngắt nghỉ sau phần conflict để tạo tension. Keep: "The throughline of this story is simple..."</p>
+              <p>Good: Tôi đã trình bày key findings rõ ràng và có cấu trúc. Improve: Tôi cần kết thúc với call to action mạnh mẽ hơn. Keep: "The key findings are..."</p>
             </div>
           </article>
         </div>
@@ -1266,44 +1246,44 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Common Mistakes</span>
-          <h2>3 lỗi thường gặp khi kể executive story</h2>
-          <p>Tránh các lỗi này để câu chuyện của bạn chuyên nghiệp và có sức thuyết phục.</p>
+          <h2>3 lỗi thường gặp khi viết executive summary</h2>
+          <p>Tránh các lỗi này để executive summary của bạn chuyên nghiệp và có sức thuyết phục.</p>
         </div>
 
         <div class="mistake-list">
           <div class="mistake-item">
             <article class="mistake-card avoid">
               <span class="mistake-label rose">Tránh</span>
-              <p>Mở đầu yếu: "I want to tell you about a project."</p>
+              <p>Dài dòng, lan man: "The project is located in the eastern corridor, which has seen significant growth over the past few years..."</p>
             </article>
 
             <article class="mistake-card better">
               <span class="mistake-label emerald">Nên</span>
-              <p>Let me start with a story. Two years ago, our biggest project was failing.</p>
+              <p>The key findings are: strong market demand, proven execution capability, and attractive returns.</p>
             </article>
           </div>
 
           <div class="mistake-item">
             <article class="mistake-card avoid">
               <span class="mistake-label rose">Tránh</span>
-              <p>Không có conflict: "Everything went well and we succeeded."</p>
+              <p>Không có recommendation rõ ràng: "We think this is a good opportunity."</p>
             </article>
 
             <article class="mistake-card better">
               <span class="mistake-label emerald">Nên</span>
-              <p>We were 6 months behind schedule, 30 percent over budget, and our main contractor had just walked away.</p>
+              <p>Our recommendation is to approve Phase 2 funding by the end of this month.</p>
             </article>
           </div>
 
           <div class="mistake-item">
             <article class="mistake-card avoid">
               <span class="mistake-label rose">Tránh</span>
-              <p>Kết thúc yếu: "That's the story. Thank you."</p>
+              <p>Kết thúc yếu: "That's all. Thank you."</p>
             </article>
 
             <article class="mistake-card better">
               <span class="mistake-label emerald">Nên</span>
-              <p>The throughline of this story is simple: we turned a crisis into an opportunity.</p>
+              <p>We recommend taking action now to secure the current pricing advantage. The window of opportunity is now.</p>
             </article>
           </div>
         </div>
@@ -1315,19 +1295,19 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Mastery Checklist</span>
-          <h2>Bạn hoàn thành Day 61 khi có thể</h2>
-          <p>Trước khi sang Day 62, hãy đảm bảo bạn đã đạt các năng lực tối thiểu dưới đây.</p>
+          <h2>Bạn hoàn thành Day 62 khi có thể</h2>
+          <p>Trước khi sang Day 63, hãy đảm bảo bạn đã đạt các năng lực tối thiểu dưới đây.</p>
         </div>
 
         <ul class="mastery-list">
-          <li>Tôi có thể dùng narrative arc, hook, conflict, resolution, protagonist, stakes, payoff, throughline.</li>
-          <li>Tôi có thể dùng 4 patterns: hook, conflict, turning point, payoff.</li>
-          <li>Tôi có thể mở đầu bằng hook gây chú ý.</li>
-          <li>Tôi có thể giới thiệu conflict và stakes rõ ràng.</li>
-          <li>Tôi có thể xây dựng tension trước turning point.</li>
-          <li>Tôi có thể deliver payoff mạnh mẽ.</li>
-          <li>Tôi có thể viết script 150-180 từ phù hợp bối cảnh Real Estate & Investment.</li>
-          <li>Tôi có thể ghi âm 60-90 giây mà không đọc máy móc.</li>
+          <li>Tôi có thể dùng executive summary, key message, recommendation, call to action.</li>
+          <li>Tôi có thể dùng concise, impactful, decision maker, bottom line.</li>
+          <li>Tôi có thể mở đầu với context rõ ràng.</li>
+          <li>Tôi có thể trình bày key findings rõ ràng.</li>
+          <li>Tôi có thể đưa ra recommendation cụ thể.</li>
+          <li>Tôi có thể kết thúc với call to action mạnh mẽ.</li>
+          <li>Tôi có thể viết executive summary 150-200 từ phù hợp bối cảnh Real Estate & Investment.</li>
+          <li>Tôi có thể đọc to và ghi âm 60-90 giây mà không đọc máy móc.</li>
           <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
         </ul>
       </div>
@@ -1342,19 +1322,19 @@
         </div>
 
         <div class="prev-next">
-          <a href="level-3.html">
-            <small>Back to Level 3</small>
-            <strong>Level 3 · Executive English</strong>
+          <a href="level-3-day-61.html">
+            <small>Previous Day</small>
+            <strong>Day 61 · Executive Storytelling</strong>
           </a>
 
           <button id="markComplete" type="button">
             <small>Complete</small>
-            <strong>Mark Day 61 Complete</strong>
+            <strong>Mark Day 62 Complete</strong>
           </button>
 
-          <a href="level-3-day-62.html">
+          <a href="level-3-day-63.html">
             <small>Next Day</small>
-            <strong>Day 62 · Executive Summary</strong>
+            <strong>Day 63 · Strategic Recommendations</strong>
           </a>
         </div>
       </div>
@@ -1365,7 +1345,7 @@
     <div class="container footer-inner">
       <div>
         <strong>Executive English 90 Days</strong>
-        <span> · Level 3 · Day 61 · Executive Storytelling</span>
+        <span> · Level 3 · Day 62 · Executive Summary</span>
       </div>
 
       <nav class="footer-links" aria-label="Điều hướng chân trang">
@@ -1390,7 +1370,7 @@
         return Array.prototype.slice.call((context || document).querySelectorAll(selector));
       }
 
-      /* Progress Day 61 */
+      /* Progress Day 62 */
       function loadProgress(key) {
         try {
           var raw = localStorage.getItem(key);
@@ -1417,26 +1397,26 @@
       function updateCompleteState() {
         if (!markBtn) return;
 
-        if (progress["61"]) {
+        if (progress["62"]) {
           markBtn.classList.add("completed");
-          markBtn.innerHTML = "<small>Completed</small><strong>Day 61 đã hoàn thành</strong>";
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 62 đã hoàn thành</strong>";
 
           if (dayChip) {
-            dayChip.textContent = "Day 61/30 · Đã hoàn thành";
+            dayChip.textContent = "Day 62/30 · Đã hoàn thành";
           }
         } else {
           markBtn.classList.remove("completed");
-          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 61 Complete</strong>";
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 62 Complete</strong>";
 
           if (dayChip) {
-            dayChip.textContent = "Day 61/30";
+            dayChip.textContent = "Day 62/30";
           }
         }
       }
 
       if (markBtn) {
         markBtn.addEventListener("click", function () {
-          progress["61"] = true;
+          progress["62"] = true;
           saveProgress(progressKey, progress);
           updateCompleteState();
         });
@@ -1715,7 +1695,7 @@
         testVoiceBtn.addEventListener("click", function () {
           stopAudio();
 
-          var text = "Let me start with a story. Two years ago, our biggest project was failing. The result was clear: we delivered on time and created lasting value.";
+          var text = "This executive summary outlines the investment opportunity. The key findings are strong market demand, proven execution, and attractive returns. Our recommendation is to approve funding now.";
 
           playWithSpeech(testVoiceBtn, text);
         });
