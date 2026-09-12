@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 3 Day 65 | Board Presentation | Executive English 90</title>
+  <meta name="description" content="Level 3 Day 65 - Board Presentation: Learn to present to board of directors with executive-level clarity, strategic context, and decisive recommendations." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--surface); color: var(--accent-text);
+      padding: 10px 14px; border-radius: var(--radius-sm); font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; padding: 13px 0;
+    }
+
+    .brand {
+      display: flex; flex-direction: column;
+      text-decoration: none; color: var(--text-primary); min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px; line-height: 1.15;
+      letter-spacing: -0.025em; font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px; font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted);
+    }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+
+    .nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text); background: var(--accent-soft); border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(23, 37, 84, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none;
+    }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid;
+      transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--accent-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08); pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+      position: relative; z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18); color: #ffffff;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px;
+      font-weight: 800; position: relative; z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90); position: relative; z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px;
+      border-radius: 20px; background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+      position: relative; z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;
+      position: relative; z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit;
+      font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); }
+    .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: var(--surface);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 26px;
+    }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-primary);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px;
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--text-primary); font: inherit; font-weight: 600;
+      padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed var(--border);
+    }
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); border: 1px solid var(--accent-line);
+      color: var(--accent-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block; margin-bottom: 4px;
+      color: var(--text-primary); font-size: 17px; line-height: 1.45;
+    }
+
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .vocab-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .vocab-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--indigo) 0%, var(--violet-soft) 100%);
+    }
+
+    .vocab-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .vocab-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .vocab-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .card-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; margin-bottom: 10px;
+    }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--accent-soft);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-primary); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px;
+      background: #fffbeb; border: 1px solid #fde68a;
+      color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      color: var(--text-secondary); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--accent-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
+    .pattern-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .pattern-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--violet) 0%, var(--lavender) 100%);
+    }
+
+    .pattern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .pattern-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .pattern-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); margin-bottom: 8px;
+    }
+
+    .example {
+      padding: 14px; border-radius: 16px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .example p { margin: 0 0 10px; color: var(--text-secondary); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel { padding: 26px; }
+
+    .listening-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .listening-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .listening-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px; border-radius: 22px;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      border: 1px solid var(--accent-line); margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px; font-size: 18px; line-height: 2;
+      color: var(--text-secondary); font-weight: 400;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--accent-text); }
+
+    .answer-box {
+      padding: 18px; border-radius: 20px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p { margin: 0; color: var(--completed-text); font-weight: 600; line-height: 2; }
+
+    .task-panel { padding: 26px; }
+
+    .task-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .task-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .task-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .task-panel li { line-height: 1.8; }
+
+    .output-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .mistake-card {
+      border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md);
+    }
+
+    .mistake-card.avoid {
+      background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+      border: 1px solid #fecdd3;
+    }
+
+    .mistake-card.better {
+      background: linear-gradient(180deg, #ecfdf5, #d1fae5);
+      border: 1px solid #a7f3d0;
+    }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+
+    .mistake-card p { margin: 0; color: var(--text-secondary); font-weight: 600; }
+
+    .mastery-list {
+      list-style: none; margin: 24px 0 0; padding: 0;
+      display: grid; gap: 12px;
+    }
+
+    .mastery-list li {
+      padding: 14px 18px; padding-left: 48px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-md); color: var(--text-secondary);
+      font-size: 15px; line-height: 1.7;
+      box-shadow: var(--shadow-sm); position: relative;
+    }
+
+    .mastery-list li::before {
+      content: "✓"; position: absolute; left: 18px; top: 50%;
+      transform: translateY(-50%); width: 22px; height: 22px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      color: var(--completed-text); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 22px; box-shadow: var(--shadow-md); padding: 18px;
+      transition: 0.18s ease; text-align: left;
+      font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-muted);
+    }
+
+    .prev-next strong {
+      font-size: 18px; line-height: 1.4; letter-spacing: -0.015em;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .footer { padding: 32px 0 58px; color: var(--text-muted); }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--border-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: var(--text-muted);
+      padding: 8px 11px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent-text);
+    }
+
+    @media (max-width: 1180px) {
+      .vocab-grid, .output-grid, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 3 · Day 65</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a class="active" href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 65/30</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: var(--completed); color: var(--completed-text); border-color: var(--completed-line);" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-3.html">Level 3</a>
+        <span>›</span>
+        <span>Day 65</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 3</span>
+            <span class="hero-tag">Week 9 · Executive Presentation</span>
+            <span class="hero-tag">Day 65 / 30</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Speaking topic: Board Presentation</span>
+          </div>
+
+          <h1 class="hero-title">Board Presentation</h1>
+
+          <p class="hero-subtitle">
+            Day 65 dạy bạn trình bày trước Ban lãnh đạo (Board of Directors) — cấp độ cao nhất của executive communication.
+            Bạn sẽ học cách trình bày ngắn gọn, tập trung vào strategic context, key metrics và clear recommendation.
+            Board không cần chi tiết — họ cần clarity, confidence và conviction.
+          </p>
+
+          <div class="hero-quote">
+            Trình bày trước Board khác với trình bày trước team. Board có 30 phút, không phải 2 tiếng.
+            Họ không cần biết bạn làm việc chăm chỉ thế nào — họ cần biết kết quả, rủi ro và recommendation.
+            Mỗi slide phải có 1 key message. Mỗi số liệu phải có 1 ý nghĩa. Mỗi phút phải có 1 quyết định.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài board presentation 5 phút hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Board Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ board presentation: board presentation, board member, board chair, fiduciary duty, strategic update, board approval, board meeting, executive summary. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 4 mẫu câu board presentation: opening with purpose, presenting strategic context, delivering key metrics, seeking board approval. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một board presentation mẫu 5 phút. Nghe 3 lần: opening, strategic context, key metrics, recommendation. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Nói 3 vòng: Round 1 (60 giây), Round 2 (90 giây), Round 3 (5 phút). Ghi âm ít nhất 2 vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Viết board presentation script 150-180 từ. Ghi âm final 60-90 giây. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Board Terms</h2>
+          <p>8 thuật ngữ board presentation cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>board presentation</h3>
+              <button class="audio-btn" type="button" data-speak="board presentation">Nghe</button>
+            </div>
+
+            <span class="ipa">/bɔːrd ˌprezənˈteɪʃn/</span>
+            <p class="vn">Trình bày trước Ban lãnh đạo</p>
+
+            <div class="note">
+              Ghi chú: Board presentation là bài trình bày trước Board of Directors. Ngắn gọn, tập trung vào strategic decisions, không đi vào chi tiết vận hành.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> board presentation, quarterly board presentation, board presentation deck</li>
+              <li><strong>Example:</strong> I'm preparing the board presentation for next week's meeting.</li>
+              <li><strong>Native alternative:</strong> board presentation, board deck, board update</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>board member</h3>
+              <button class="audio-btn" type="button" data-speak="board member">Nghe</button>
+            </div>
+
+            <span class="ipa">/bɔːrd ˈmembər/</span>
+            <p class="vn">Thành viên Ban lãnh đạo</p>
+
+            <div class="note">
+              Ghi chú: Board member là thành viên của Board of Directors. Họ có fiduciary duty và quyết định strategic direction.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> board member, independent board member, board member approval</li>
+              <li><strong>Example:</strong> We need to get board member approval before proceeding with Phase 2.</li>
+              <li><strong>Native alternative:</strong> board member, director, board director</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>board chair</h3>
+              <button class="audio-btn" type="button" data-speak="board chair">Nghe</button>
+            </div>
+
+            <span class="ipa">/bɔːrd tʃer/</span>
+            <p class="vn">Chủ tịch Ban lãnh đạo</p>
+
+            <div class="note">
+              Ghi chú: Board chair là người chủ trì cuộc họp Board. Thường là người có ảnh hưởng nhất trong phòng.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> board chair, board chairman, board chairperson</li>
+              <li><strong>Example:</strong> The board chair will lead the discussion on the acquisition proposal.</li>
+              <li><strong>Native alternative:</strong> board chair, chairman of the board, board chairperson</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>fiduciary duty</h3>
+              <button class="audio-btn" type="button" data-speak="fiduciary duty">Nghe</button>
+            </div>
+
+            <span class="ipa">/fɪˈduːieri ˈduːti/</span>
+            <p class="vn">Nghĩa vụ ủy thác</p>
+
+            <div class="note">
+              Ghi chú: Fiduciary duty là nghĩa vụ pháp lý của board member phải hành động vì lợi ích tốt nhất của công ty và cổ đông.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> fiduciary duty, fiduciary responsibility, fulfill fiduciary duty</li>
+              <li><strong>Example:</strong> As board members, we have a fiduciary duty to act in the best interest of shareholders.</li>
+              <li><strong>Native alternative:</strong> fiduciary duty, fiduciary obligation</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>strategic update</h3>
+              <button class="audio-btn" type="button" data-speak="strategic update">Nghe</button>
+            </div>
+
+            <span class="ipa">/strəˈtiːdʒk ˈʌpdet/</span>
+            <p class="vn">Cập nhật chiến lược</p>
+
+            <div class="note">
+              Ghi chú: Strategic update là cập nhật về tình hình chiến lược, không phải operational details. Board cần big picture.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> strategic update, quarterly strategic update, provide strategic update</li>
+              <li><strong>Example:</strong> I'll provide a strategic update on the Phase 2 development before we discuss the budget.</li>
+              <li><strong>Native alternative:</strong> strategic update, strategic briefing</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>board approval</h3>
+              <button class="audio-btn" type="button" data-speak="board approval">Nghe</button>
+            </div>
+
+            <span class="ipa">/bɔːrd əˈpruːvl/</span>
+            <p class="vn">Phê duyệt của Ban lãnh đạo</p>
+
+            <div class="note">
+              Ghi chú: Board approval là sự phê duyệt chính thức từ Board. Cần cho các quyết định lớn: M&A, funding, strategic direction.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> board approval, seek board approval, obtain board approval</li>
+              <li><strong>Example:</strong> We need board approval before signing the acquisition agreement.</li>
+              <li><strong>Native alternative:</strong> board approval, board authorization</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>board meeting</h3>
+              <button class="audio-btn" type="button" data-speak="board meeting">Nghe</button>
+            </div>
+
+            <span class="ipa">/bɔːrd ˈmiːtɪ/</span>
+            <p class="vn">Cuộc họp Ban lãnh đạo</p>
+
+            <div class="note">
+              Ghi chú: Board meeting là cuộc họp chính thức của Board of Directors. Thường quarterly, có agenda rõ ràng và minutes.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> board meeting, quarterly board meeting, board meeting agenda</li>
+              <li><strong>Example:</strong> The next board meeting is scheduled for March 15th to discuss Phase 2 funding.</li>
+              <li><strong>Native alternative:</strong> board meeting, board session</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>executive summary</h3>
+              <button class="audio-btn" type="button" data-speak="executive summary">Nghe</button>
+            </div>
+
+            <span class="ipa">/ɡˈzekjətɪv ˈsʌməri/</span>
+            <p class="vn">Tóm tắt điều hành</p>
+
+            <div class="note">
+              Ghi chú: Executive summary là bản tóm tắt ngắn gọn cho người ra quyết định. Trong board presentation, đây là slide đầu tiên hoặc tài liệu đi kèm.
+            </div>
+
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> executive summary, brief executive summary, one-page executive summary</li>
+              <li><strong>Example:</strong> The executive summary highlights three key points: market opportunity, financial returns, and risk mitigation.</li>
+              <li><strong>Native alternative:</strong> executive summary, executive brief</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>4 mẫu câu board presentation: opening with purpose, presenting strategic context, delivering key metrics, seeking board approval.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The purpose of today's presentation is...</h3>
+              <button class="audio-btn" type="button" data-speak="The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: The purpose of today's presentation is + objective. Dùng để mở đầu board presentation với mục tiêu rõ ràng.
+            </div>
+
+            <div class="example">
+              <span class="label">Opening with purpose</span>
+              <p>The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay objective: to present the Q4 strategic update / to discuss the acquisition proposal / to review the annual budget.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>At a strategic level...</h3>
+              <button class="audio-btn" type="button" data-speak="At a strategic level, this project aligns with our three-year growth plan and strengthens our market position.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: At a strategic level + strategic context. Dùng để trình bày bối cảnh chiến lược, không đi vào chi tiết vận hành.
+            </div>
+
+            <div class="example">
+              <span class="label">Presenting strategic context</span>
+              <p>At a strategic level, this project aligns with our three-year growth plan and strengthens our market position.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay context: this acquisition expands our geographic reach / this investment diversifies our portfolio / this initiative strengthens our competitive advantage.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The key metrics are...</h3>
+              <button class="audio-btn" type="button" data-speak="The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: The key metrics are + 2-3 số liệu quan trọng nhất. Dùng để deliver key metrics ngắn gọn, không lan man.
+            </div>
+
+            <div class="example">
+              <span class="label">Delivering key metrics</span>
+              <p>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay metrics: 20% ROI / 3-year payback / $50M NPV / 25% market share.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>We're seeking board approval to...</h3>
+              <button class="audio-btn" type="button" data-speak="We're seeking board approval to proceed with Phase 2 funding by the end of this month.">Nghe</button>
+            </div>
+
+            <div class="note">
+              Công thức: We're seeking board approval to + action + timeline. Dùng để closing với clear ask và deadline cụ thể.
+            </div>
+
+            <div class="example">
+              <span class="label">Seeking board approval</span>
+              <p>We're seeking board approval to proceed with Phase 2 funding by the end of this month.</p>
+            </div>
+
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: to sign the acquisition agreement / to approve the budget increase / to authorize the strategic partnership. Thay timeline: by end of Q1 / by March 15th / within 30 days.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Board Presentation</h2>
+          <p>Nghe một board presentation mẫu 5 phút. Đây là mô hình để bạn trình bày trước Board của mình.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+
+          <ol>
+            <li>Nghe toàn bộ presentation 1 lần để nắm cấu trúc và mục tiêu.</li>
+            <li>Nghe lần hai để nhận diện 4 patterns: opening with purpose, strategic context, key metrics, board approval.</li>
+            <li>Nghe lần ba để phân tích: mỗi phần có 1 key message không? Số liệu có được giải thích không?</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, well above our 50 percent target, proving market demand. The risks are manageable through fixed-price contracts and phased launches. We're seeking board approval to proceed with Phase 2 funding by the end of this month, before fixed-price contracts expire. Thank you. I'm happy to take your questions.">Nghe board presentation</button>
+          </div>
+
+          <h4>Transcript</h4>
+
+          <div class="transcript">
+            <p><span class="speaker">[Opening]</span>Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.</p>
+
+            <p><span class="speaker">[Strategic Context]</span>At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor.</p>
+
+            <p><span class="speaker">[Key Metrics]</span>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, well above our 50 percent target, proving market demand.</p>
+
+            <p><span class="speaker">[Risk Management]</span>The risks are manageable through fixed-price contracts and phased launches.</p>
+
+            <p><span class="speaker">[Closing]</span>We're seeking board approval to proceed with Phase 2 funding by the end of this month, before fixed-price contracts expire. Thank you. I'm happy to take your questions.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+
+          <ul>
+            <li>Question 1: What is the purpose of the presentation?</li>
+            <li>Question 2: What are the three key metrics mentioned?</li>
+            <li>Question 3: How does Phase 1 performance support the proposal?</li>
+            <li>Question 4: How are risks being managed?</li>
+            <li>Question 5: What is the deadline for board approval?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+
+          <div class="answer-box">
+            <p>1. To seek board approval for Phase 2 funding of $150M.<br />
+            2. 18% IRR, 4-year payback, positive NPV of $42M.<br />
+            3. Phase 1 is 65% sold, above 50% target, proving market demand.<br />
+            4. Through fixed-price contracts and phased launches.<br />
+            5. By end of this month, before fixed-price contracts expire.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+
+          <div class="example">
+            <span class="label">Shadow 1 · Opening</span>
+            <p>The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.</p>
+            <button class="audio-btn" type="button" data-speak="The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.">Nghe câu 1</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 2 · Key Metrics</span>
+            <p>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars.</p>
+            <button class="audio-btn" type="button" data-speak="The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars.">Nghe câu 2</button>
+          </div>
+
+          <div class="example">
+            <span class="label">Shadow 3 · Closing</span>
+            <p>We're seeking board approval to proceed with Phase 2 funding by the end of this month.</p>
+            <button class="audio-btn" type="button" data-speak="We're seeking board approval to proceed with Phase 2 funding by the end of this month.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+
+          <ul>
+            <li>Nhấn vào các từ khóa: purpose, board approval, strategic level, key metrics, 18 PERCENT, 4-YEAR.</li>
+            <li>Giọng chắc chắn, tự tin khi deliver key metrics.</li>
+            <li>Ngắt nhẹ sau mỗi metric: "18 percent IRR... 4-year payback... positive NPV..."</li>
+            <li>Kết thúc bằng giọng mạnh và rõ: "We're seeking board approval..."</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Board Presentation</h2>
+          <p>Nói 3 vòng: 60 giây, 90 giây và 5 phút. Mục tiêu là tăng dần độ dài và độ tự tin.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Round 1 · 60 giây</h3>
+
+            <p>Chỉ trình bày opening, strategic context và key metrics. Chưa cần nói về risks.</p>
+
+            <div class="answer-box">
+              <p>Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, proving market demand.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, proving market demand.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 90 giây</h3>
+
+            <p>Thêm risk management và closing với clear ask.</p>
+
+            <div class="answer-box">
+              <p>Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, well above our 50 percent target. The risks are manageable through fixed-price contracts and phased launches. We're seeking board approval to proceed with Phase 2 funding by the end of this month.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. Phase 1 is 65 percent sold, well above our 50 percent target. The risks are manageable through fixed-price contracts and phased launches. We're seeking board approval to proceed with Phase 2 funding by the end of this month.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full Board Presentation 5 phút</h3>
+
+            <p>Hoàn chỉnh với urgency, closing mạnh mẽ và mở Q&A. Nếu chưa nói đủ 5 phút, hãy mở rộng bằng 1-2 câu về competitive advantage hoặc market timing.</p>
+
+            <div class="answer-box">
+              <p>Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.</p>
+              <p>At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. Phase 1 has proven market demand: 65 percent sold versus 50 percent target.</p>
+              <p>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. These metrics exceed our investment criteria and demonstrate strong risk-adjusted returns.</p>
+              <p>The risks are manageable through fixed-price contracts for 70 percent of construction costs and phased launches to match market absorption. Even in a downside scenario, the project delivers 14 percent IRR, above our hurdle rate.</p>
+              <p>We're seeking board approval to proceed with Phase 2 funding by the end of this month, before fixed-price contracts expire and we lose the pricing advantage. Thank you. I'm happy to take your questions.</p>
+            </div>
+
+            <button class="audio-btn" type="button" data-speak="Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars. At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. Phase 1 has proven market demand: 65 percent sold versus 50 percent target. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. These metrics exceed our investment criteria and demonstrate strong risk-adjusted returns. The risks are manageable through fixed-price contracts for 70 percent of construction costs and phased launches to match market absorption. Even in a downside scenario, the project delivers 14 percent IRR, above our hurdle rate. We're seeking board approval to proceed with Phase 2 funding by the end of this month, before fixed-price contracts expire and we lose the pricing advantage. Thank you. I'm happy to take your questions.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+
+            <p>Ghi âm ít nhất 2 vòng. Ưu tiên ghi âm Round 2 và Round 3. Sau đó nghe lại và sửa đúng 1 lỗi.</p>
+
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có mở đầu với purpose rõ ràng không?</li>
+              <li>Bạn có trình bày strategic context không đi vào chi tiết không?</li>
+              <li>Bạn có deliver key metrics ngắn gọn, rõ ràng không?</li>
+              <li>Bạn có closing với clear ask và deadline không?</li>
+              <li>Giọng có tự tin, chắc chắn khi trình bày trước Board không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Board Presentation Script</h2>
+          <p>Output cuối ngày gồm 3 phần: viết script, ghi âm final và reflection. Hoàn thành đủ 3 phần này trước khi chuyển sang Day 66.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Task 1: Viết script 150-180 từ</h3>
+
+            <p>Viết một board presentation script chuyên nghiệp, dùng trong cuộc họp Board of Directors.</p>
+
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Dùng ít nhất 4 từ vựng trong mục Vocabulary.</li>
+              <li>Dùng đủ 4 patterns: opening with purpose, strategic context, key metrics, board approval.</li>
+              <li>Có cấu trúc: Opening → Strategic Context → Key Metrics → Risk Management → Closing.</li>
+              <li>Không đi vào chi tiết vận hành — chỉ strategic decisions.</li>
+              <li>Giọng văn executive, ngắn gọn, rõ ràng, phù hợp bối cảnh Board presentation.</li>
+            </ul>
+
+            <h4>Model Answer</h4>
+            <div class="answer-box">
+              <p>Good morning, board members. Thank you for your time today. The purpose of today's presentation is to seek board approval for Phase 2 funding of 150 million dollars.</p>
+              <p>At a strategic level, this project aligns with our three-year growth plan and strengthens our market position in the eastern corridor. Phase 1 has proven market demand: 65 percent sold versus 50 percent target, demonstrating strong absorption and pricing power.</p>
+              <p>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. These metrics exceed our investment criteria and demonstrate strong risk-adjusted returns.</p>
+              <p>The risks are manageable through fixed-price contracts for 70 percent of construction costs and phased launches to match market absorption. Even in a downside scenario with 20 percent price decline, the project delivers 14 percent IRR, above our hurdle rate.</p>
+              <p>We're seeking board approval to proceed with Phase 2 funding by the end of this month, before fixed-price contracts expire and we lose the pricing advantage. Thank you. I'm happy to take your questions.</p>
+            </div>
+
+            <h4>Alternative Version</h4>
+            <div class="answer-box">
+              <p>Good morning, board members. The purpose of today's presentation is to seek your approval for Phase 2 funding. At a strategic level, this project strengthens our market position and aligns with our growth strategy. The key metrics are strong: 18% IRR, 4-year payback, and positive NPV. Phase 1 performance proves market demand. Risks are manageable. We're seeking board approval by month-end to capture the current opportunity. Thank you.</p>
+            </div>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm final 60-90 giây</h3>
+
+            <p>Sau khi viết script, hãy ghi âm phiên bản final. Mục tiêu là nói rõ, chắc, có ngắt nghỉ và không đọc máy móc.</p>
+
+            <h4>Recording Checklist</h4>
+            <ul>
+              <li>Mở đầu với purpose rõ ràng.</li>
+              <li>Trình bày strategic context, không đi vào chi tiết.</li>
+              <li>Deliver key metrics ngắn gọn, rõ ràng.</li>
+              <li>Closing với clear ask và deadline.</li>
+              <li>Giọng tự tin, chắc chắn, phù hợp Board presentation.</li>
+              <li>Có ngắt nghỉ giữa các phần.</li>
+            </ul>
+
+            <h3>Task 3: Reflection 3 dòng</h3>
+
+            <p>Viết ngắn gọn 3 dòng sau khi nghe lại bản ghi âm:</p>
+            <ul>
+              <li><strong>Good:</strong> 1 điểm bạn đã làm tốt.</li>
+              <li><strong>Improve:</strong> 1 điểm cần cải thiện ở lần sau.</li>
+              <li><strong>Keep:</strong> 1 cụm từ bạn sẽ tiếp tục dùng trong các ngày tới.</li>
+            </ul>
+
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã mở đầu với purpose rõ ràng và deliver key metrics ngắn gọn. Improve: Tôi cần giọng tự tin hơn khi closing. Keep: "The purpose of today's presentation is..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>3 lỗi thường gặp khi trình bày trước Board</h2>
+          <p>Tránh các lỗi này để board presentation của bạn chuyên nghiệp và thuyết phục.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đi vào chi tiết vận hành: "We're working on the foundation, then superstructure, then fit-out..."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>At a strategic level, this project aligns with our three-year growth plan and strengthens our market position.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đọc số liệu mà không giải thích ý nghĩa: "IRR is 18 percent."</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The key metrics are: 18 percent IRR, 4-year payback, and positive NPV of 42 million dollars. These metrics exceed our investment criteria.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc không có clear ask: "That's all. Any questions?"</p>
+            </article>
+
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>We're seeking board approval to proceed with Phase 2 funding by the end of this month. Thank you. I'm happy to take your questions.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 65 khi có thể</h2>
+          <p>Trước khi sang Day 66, hãy đảm bảo bạn đã đạt các năng lực tối thiểu dưới đây.</p>
+        </div>
+
+        <ul class="mastery-list">
+          <li>Tôi có thể dùng board presentation, board member, board chair, fiduciary duty.</li>
+          <li>Tôi có thể dùng strategic update, board approval, board meeting, executive summary.</li>
+          <li>Tôi có thể mở đầu với "The purpose of today's presentation is..."</li>
+          <li>Tôi có thể trình bày strategic context với "At a strategic level..."</li>
+          <li>Tôi có thể deliver key metrics ngắn gọn, rõ ràng.</li>
+          <li>Tôi có thể closing với "We're seeking board approval to..."</li>
+          <li>Tôi có thể viết board presentation script 150-180 từ phù hợp bối cảnh Board.</li>
+          <li>Tôi có thể ghi âm 60-90 giây với giọng tự tin, chắc chắn.</li>
+          <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-3-day-64.html">
+            <small>Previous Day</small>
+            <strong>Day 64 · Persuasive Communication</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 65 Complete</strong>
+          </button>
+
+          <a href="level-3-day-66.html">
+            <small>Next Day</small>
+            <strong>Day 66 · Vision Casting</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 3 · Day 65 · Board Presentation</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 65 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-3";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["65"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 65 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 65/30 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 65 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 65/30";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["65"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "The purpose of today's presentation is to seek board approval for Phase 2 funding. The key metrics are: 18 percent IRR, 4-year payback, and positive NPV. We're seeking board approval by the end of this month.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
