@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 3 Day 72 | Strategic Decision-Making | Executive English 90</title>
+  <meta name="description" content="Level 3 Day 72 - Strategic Decision-Making: Framework for making, presenting, and defending strategic decisions at the executive level." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--surface); color: var(--accent-text);
+      padding: 10px 14px; border-radius: var(--radius-sm); font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; padding: 13px 0;
+    }
+
+    .brand {
+      display: flex; flex-direction: column;
+      text-decoration: none; color: var(--text-primary); min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px; line-height: 1.15;
+      letter-spacing: -0.025em; font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px; font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted);
+    }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+
+    .nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text); background: var(--accent-soft); border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(23, 37, 84, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none;
+    }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid;
+      transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--accent-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08); pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+      position: relative; z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px;
+      font-weight: 800; position: relative; z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90); position: relative; z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px;
+      border-radius: 20px; background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+      position: relative; z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;
+      position: relative; z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit;
+      font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: var(--surface);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 26px;
+    }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-primary);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px;
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--text-primary); font: inherit; font-weight: 600;
+      padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed var(--border);
+    }
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); border: 1px solid var(--accent-line);
+      color: var(--accent-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block; margin-bottom: 4px;
+      color: var(--text-primary); font-size: 17px; line-height: 1.45;
+    }
+
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .vocab-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .vocab-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--indigo) 0%, var(--violet-soft) 100%);
+    }
+
+    .vocab-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .vocab-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .vocab-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .card-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; margin-bottom: 10px;
+    }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--accent-soft);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-primary); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px;
+      background: #fffbeb; border: 1px solid #fde68a;
+      color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      color: var(--text-secondary); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--accent-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
+    .pattern-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .pattern-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--violet) 0%, var(--lavender) 100%);
+    }
+
+    .pattern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .pattern-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .pattern-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); margin-bottom: 8px;
+    }
+
+    .example {
+      padding: 14px; border-radius: 16px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .example p { margin: 0 0 10px; color: var(--text-secondary); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel { padding: 26px; }
+
+    .listening-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .listening-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .listening-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px; border-radius: 22px;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      border: 1px solid var(--accent-line); margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px; font-size: 18px; line-height: 2;
+      color: var(--text-secondary); font-weight: 400;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--accent-text); }
+
+    .answer-box {
+      padding: 18px; border-radius: 20px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p { margin: 0; color: var(--completed-text); font-weight: 600; line-height: 2; }
+
+    .task-panel { padding: 26px; }
+
+    .task-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .task-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .task-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .task-panel li { line-height: 1.8; }
+
+    .output-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .mistake-card {
+      border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md);
+    }
+
+    .mistake-card.avoid {
+      background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+      border: 1px solid #fecdd3;
+    }
+
+    .mistake-card.better {
+      background: linear-gradient(180deg, #ecfdf5, #d1fae5);
+      border: 1px solid #a7f3d0;
+    }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+
+    .mistake-card p { margin: 0; color: var(--text-secondary); font-weight: 600; }
+
+    .mastery-list {
+      list-style: none; margin: 24px 0 0; padding: 0;
+      display: grid; gap: 12px;
+    }
+
+    .mastery-list li {
+      padding: 14px 18px; padding-left: 48px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-md); color: var(--text-secondary);
+      font-size: 15px; line-height: 1.7;
+      box-shadow: var(--shadow-sm); position: relative;
+    }
+
+    .mastery-list li::before {
+      content: "✓"; position: absolute; left: 18px; top: 50%;
+      transform: translateY(-50%); width: 22px; height: 22px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      color: var(--completed-text); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 22px; box-shadow: var(--shadow-md); padding: 18px;
+      transition: 0.18s ease; text-align: left;
+      font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-muted);
+    }
+
+    .prev-next strong {
+      font-size: 18px; line-height: 1.4; letter-spacing: -0.015em;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .footer { padding: 32px 0 58px; color: var(--text-muted); }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--border-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: var(--text-muted);
+      padding: 8px 11px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent-text);
+    }
+
+    @media (max-width: 1180px) {
+      .vocab-grid, .output-grid, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 3 · Day 72</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a class="active" href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 72/90</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: var(--completed); color: var(--completed-text); border-color: var(--completed-line);" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-3.html">Level 3</a>
+        <span>›</span>
+        <span>Day 72</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 3</span>
+            <span class="hero-tag">Executive Decision-Making</span>
+            <span class="hero-tag">Day 72 / 90</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Strategic Decision Framework</span>
+          </div>
+
+          <h1 class="hero-title">Strategic Decision-Making</h1>
+
+          <p class="hero-subtitle">
+            Day 72 tập trung vào framework ra quyết định chiến lược ở cấp executive: phân tích options, đánh giá trade-offs, và đưa ra quyết định với confidence.
+            Bạn sẽ học cách trình bày decision framework, defend decisions trước board, và communicate decisions với stakeholders.
+          </p>
+
+          <div class="hero-quote">
+            Executive decision-making không phải là chọn option tốt nhất. Đó là chọn option phù hợp nhất với strategic priorities,
+            risk appetite, và organizational capabilities — và có thể defend decision đó trước board và stakeholders.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được decision framework presentation hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Decision Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ decision-making: decision framework, strategic options, trade-offs, risk appetite, decision criteria, go/no-go decision, decision rationale, stakeholder alignment. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 4 mẫu câu decision-making: presenting options, analyzing trade-offs, making recommendation, defending decision. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một bài decision presentation mẫu trước Board 5 phút. Nghe 3 lần: options, trade-offs, recommendation, defense. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng: Round 1 (60 giây - presenting options), Round 2 (90 giây - trade-offs & recommendation), Round 3 (3 phút - full decision presentation). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Viết decision framework script 200-250 từ. Ghi âm final 3 phút. Tự chấm theo rubric 5 tiêu chí. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Decision Terms</h2>
+          <p>8 thuật ngữ decision-making cốt lõi cho executive decision-making. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>decision framework</h3>
+              <button class="audio-btn" type="button" data-speak="decision framework">Nghe</button>
+            </div>
+            <span class="ipa">/dɪˈsʒn ˈfreɪmwɜːrk/</span>
+            <p class="vn">Framework ra quyết định</p>
+            <div class="note">Ghi chú: Decision framework là framework có cấu trúc để đánh giá options và đưa ra quyết định. Bao gồm criteria, options analysis, và recommendation.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> decision framework, strategic decision framework, decision-making framework</li>
+              <li><strong>Example:</strong> We use a structured decision framework to evaluate strategic options and make informed decisions.</li>
+              <li><strong>Native alternative:</strong> decision framework, decision-making framework</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>strategic options</h3>
+              <button class="audio-btn" type="button" data-speak="strategic options">Nghe</button>
+            </div>
+            <span class="ipa">/strəˈtiːdʒɪk ɑːpʃnz/</span>
+            <p class="vn">Các lựa chọn chiến lược</p>
+            <div class="note">Ghi chú: Strategic options là các lựa chọn chiến lược khả thi. Thường có 2-3 options để so sánh và đánh giá.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> strategic options, evaluate strategic options, strategic options analysis</li>
+              <li><strong>Example:</strong> We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.</li>
+              <li><strong>Native alternative:</strong> strategic options, strategic alternatives</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>trade-offs</h3>
+              <button class="audio-btn" type="button" data-speak="trade-offs">Nghe</button>
+            </div>
+            <span class="ipa">/treɪd ɒfs/</span>
+            <p class="vn">Sự đánh đổi</p>
+            <div class="note">Ghi chú: Trade-offs là sự đánh đổi giữa các yếu tố. Mỗi option có trade-offs giữa risk, return, và timing.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key trade-offs, trade-offs between, trade-off analysis</li>
+              <li><strong>Example:</strong> The key trade-off is between higher returns with higher risk versus lower returns with lower risk.</li>
+              <li><strong>Native alternative:</strong> trade-offs, trade-off decisions</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>risk appetite</h3>
+              <button class="audio-btn" type="button" data-speak="risk appetite">Nghe</button>
+            </div>
+            <span class="ipa">/rɪsk ˈæpɪtaɪt/</span>
+            <p class="vn">Khẩu vị rủi ro</p>
+            <div class="note">Ghi chú: Risk appetite là mức độ rủi ro mà tổ chức sẵn sàng chấp nhận. Quyết định phải phù hợp với risk appetite.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> risk appetite, risk appetite framework, within our risk appetite</li>
+              <li><strong>Example:</strong> This option is within our risk appetite and aligns with our strategic priorities.</li>
+              <li><strong>Native alternative:</strong> risk appetite, risk tolerance</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>decision criteria</h3>
+              <button class="audio-btn" type="button" data-speak="decision criteria">Nghe</button>
+            </div>
+            <span class="ipa">/dɪˈsɪʒn kraɪˈtɪəriə/</span>
+            <p class="vn">Tiêu chí quyết định</p>
+            <div class="note">Ghi chú: Decision criteria là các tiêu chí dùng để đánh giá và so sánh options. Thường bao gồm IRR, NPV, risk, và strategic fit.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> decision criteria, key decision criteria, evaluation criteria</li>
+              <li><strong>Example:</strong> Our decision criteria include IRR above 15%, NPV positive, and strategic alignment with our core business.</li>
+              <li><strong>Native alternative:</strong> decision criteria, evaluation criteria</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>go/no-go decision</h3>
+              <button class="audio-btn" type="button" data-speak="go/no-go decision">Nghe</button>
+            </div>
+            <span class="ipa">/ɡoʊ noʊ ɡoʊ dɪˈsɪʒn/</span>
+            <p class="vn">Quyết định go/no-go</p>
+            <div class="note">Ghi chú: Go/no-go decision là quyết định cuối cùng: proceed (go) hoặc stop (no-go). Đây là decision quan trọng nhất.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> go/no-go decision, make go/no-go decision, go/no-go decision point</li>
+              <li><strong>Example:</strong> We need to make a go/no-go decision by end of this month.</li>
+              <li><strong>Native alternative:</strong> go/no-go decision, proceed/stop decision</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>decision rationale</h3>
+              <button class="audio-btn" type="button" data-speak="decision rationale">Nghe</button>
+            </div>
+            <span class="ipa">/dɪˈsɪʒn ˈræʃnəl/</span>
+            <p class="vn">Lý do quyết định</p>
+            <div class="note">Ghi chú: Decision rationale là lý do và logic đằng sau quyết định. Phải rõ ràng và có thể defend trước board.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> decision rationale, clear decision rationale, decision rationale is based on</li>
+              <li><strong>Example:</strong> The decision rationale is based on strong financial returns, manageable risk, and strategic alignment.</li>
+              <li><strong>Native alternative:</strong> decision rationale, decision logic</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>stakeholder alignment</h3>
+              <button class="audio-btn" type="button" data-speak="stakeholder alignment">Nghe</button>
+            </div>
+            <span class="ipa">/steɪkhoʊldər əˈlaɪnmənt/</span>
+            <p class="vn">Sự đồng thuận của stakeholders</p>
+            <div class="note">Ghi chú: Stakeholder alignment là sự đồng thuận của tất cả stakeholders về quyết định. Quan trọng để implement decision thành công.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> stakeholder alignment, achieve stakeholder alignment, stakeholder alignment is critical</li>
+              <li><strong>Example:</strong> Stakeholder alignment is critical for successful implementation of this strategic decision.</li>
+              <li><strong>Native alternative:</strong> stakeholder alignment, stakeholder consensus</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>4 mẫu câu decision-making: presenting options, analyzing trade-offs, making recommendation, defending decision.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>We have identified three strategic options...</h3>
+              <button class="audio-btn" type="button" data-speak="We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.">Nghe</button>
+            </div>
+            <div class="note">Công thức: We have identified + number + strategic options: option 1, option 2, or option 3. Dùng để trình bày các options khả thi.</div>
+            <div class="example">
+              <span class="label">Presenting options</span>
+              <p>We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay options: expand to new market / partner with competitor / maintain current strategy.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The key trade-off is between...</h3>
+              <button class="audio-btn" type="button" data-speak="The key trade-off is between higher returns with higher risk versus lower returns with lower risk.">Nghe</button>
+            </div>
+            <div class="note">Công thức: The key trade-off is between + option A versus + option B. Dùng để phân tích trade-offs giữa các options.</div>
+            <div class="example">
+              <span class="label">Analyzing trade-offs</span>
+              <p>The key trade-off is between higher returns with higher risk versus lower returns with lower risk.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay trade-off: faster growth with higher risk / slower growth with lower risk / balanced approach.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>Based on our analysis, we recommend...</h3>
+              <button class="audio-btn" type="button" data-speak="Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.">Nghe</button>
+            </div>
+            <div class="note">Công thức: Based on our analysis, we recommend + action + rationale. Dùng để đưa ra recommendation với rationale rõ ràng.</div>
+            <div class="example">
+              <span class="label">Making recommendation</span>
+              <p>Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: proceeding with expansion / pursuing partnership / maintaining current strategy.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>This decision is aligned with our strategic priorities because...</h3>
+              <button class="audio-btn" type="button" data-speak="This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.">Nghe</button>
+            </div>
+            <div class="note">Công thức: This decision is aligned with our strategic priorities because + rationale. Dùng để defend decision trước board.</div>
+            <div class="example">
+              <span class="label">Defending decision</span>
+              <p>This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay rationale: it aligns with our growth strategy / it fits our risk appetite / it supports our strategic vision.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Decision Presentation to Board</h2>
+          <p>Nghe một bài decision presentation mẫu trước Board 5 phút. Đây là mô hình để bạn tái hiện với decision thật của mình.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm strategic options và recommendation.</li>
+            <li>Nghe lần hai để nhận diện 4 patterns: presenting options, analyzing trade-offs, making recommendation, defending decision.</li>
+            <li>Nghe lần ba để phân tích: decision rationale, trade-offs analysis, strategic alignment.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns. This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk. Thank you. I'm happy to take your questions.">Nghe decision presentation</button>
+          </div>
+
+          <h4>Transcript</h4>
+          <div class="transcript">
+            <p><span class="speaker">[Opening]</span>Good morning, Board members. Today, I will present our strategic decision framework for Phase 2.</p>
+            <p><span class="speaker">[Presenting Options]</span>We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.</p>
+            <p><span class="speaker">[Analyzing Trade-offs]</span>The key trade-off is between higher returns with higher risk versus lower returns with lower risk.</p>
+            <p><span class="speaker">[Making Recommendation]</span>Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.</p>
+            <p><span class="speaker">[Defending Decision]</span>This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.</p>
+            <p><span class="speaker">[Closing]</span>Thank you. I'm happy to take your questions.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+          <ul>
+            <li>Q1: What are the three strategic options identified?</li>
+            <li>Q2: What is the key trade-off mentioned?</li>
+            <li>Q3: What is the recommendation?</li>
+            <li>Q4: Why is this decision aligned with strategic priorities?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+          <div class="answer-box">
+            <p>1. Proceed with Phase 2, delay by 6 months, or pursue alternative investment.<br />
+            2. Higher returns with higher risk versus lower returns with lower risk.<br />
+            3. Proceeding with Phase 2.<br />
+            4. Because it delivers strong returns while maintaining manageable risk.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+          <div class="example">
+            <span class="label">Shadow 1 · Presenting Options</span>
+            <p>We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.</p>
+            <button class="audio-btn" type="button" data-speak="We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.">Nghe câu 1</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 2 · Making Recommendation</span>
+            <p>Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.</p>
+            <button class="audio-btn" type="button" data-speak="Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.">Nghe câu 2</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 3 · Defending Decision</span>
+            <p>This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.</p>
+            <button class="audio-btn" type="button" data-speak="This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+          <ul>
+            <li>Nhấn vào các từ khóa: strategic options, key trade-off, recommendation, strategic priorities.</li>
+            <li>Giọng chắc chắn khi presenting options và making recommendation.</li>
+            <li>Giọng tự tin khi defending decision.</li>
+            <li>Ngắt nghỉ sau mỗi option và mỗi key point.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Decision Presentation</h2>
+          <p>Luyện 3 vòng: từ presenting options đến full decision presentation. Mục tiêu là thể hiện executive decision-making confidence.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Round 1 · 60 giây (Presenting Options)</h3>
+            <p>Chỉ trình bày strategic options và key trade-offs. Chưa cần đưa ra recommendation.</p>
+            <div class="answer-box">
+              <p>Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 90 giây (Trade-offs & Recommendation)</h3>
+            <p>Thêm analysis trade-offs và making recommendation.</p>
+            <div class="answer-box">
+              <p>Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · 3 phút (Full Decision Presentation)</h3>
+            <p>Trình bày decision hoàn chỉnh: options, trade-offs, recommendation, defense, closing.</p>
+            <div class="answer-box">
+              <p>Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns. This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk. Thank you. I'm happy to take your questions.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns. This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk. Thank you. I'm happy to take your questions.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+            <p>Ghi âm Round 3 — bài decision presentation 3 phút. Tự chấm theo rubric bên dưới.</p>
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có trình bày strategic options rõ ràng không?</li>
+              <li>Bạn có phân tích key trade-offs không?</li>
+              <li>Bạn có đưa ra recommendation với rationale không?</li>
+              <li>Bạn có defend decision trước board không?</li>
+              <li>Giọng có executive decision-making confidence không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Decision Framework Presentation</h2>
+          <p>Output cuối ngày: viết decision framework script, ghi âm final, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Task 1: Viết Decision Framework Script 200-250 từ</h3>
+            <p>Viết một decision framework script chuyên nghiệp, dùng trong cuộc họp với Hội đồng quản trị.</p>
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Dùng ít nhất 4 từ vựng trong mục Vocabulary.</li>
+              <li>Dùng đủ 4 patterns: presenting options, analyzing trade-offs, making recommendation, defending decision.</li>
+              <li>Có cấu trúc: Opening → Options → Trade-offs → Recommendation → Defense → Closing.</li>
+              <li>Không đi vào chi tiết vận hành — chỉ strategic level.</li>
+              <li>Giọng văn executive, rõ ràng, có confidence.</li>
+            </ul>
+            <h4>Model Answer</h4>
+            <div class="answer-box">
+              <p>Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns. This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk. Thank you. I'm happy to take your questions.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Good morning, Board members. Today, I will present our strategic decision framework for Phase 2. We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment. The key trade-off is between higher returns with higher risk versus lower returns with lower risk. Based on our analysis, we recommend proceeding with Phase 2, as it offers the best risk-adjusted returns. This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk. Thank you. I'm happy to take your questions.">Nghe decision presentation</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Final 3 phút</h3>
+            <p>Ghi âm decision presentation 3 phút. Mục tiêu là thể hiện executive decision-making confidence.</p>
+            <h4>Recording Checklist</h4>
+            <ul>
+              <li>Mở đầu với strategic context rõ ràng.</li>
+              <li>Trình bày strategic options rõ ràng.</li>
+              <li>Phân tích key trade-offs rõ ràng.</li>
+              <li>Đưa ra recommendation với rationale rõ ràng.</li>
+              <li>Defend decision trước board.</li>
+              <li>Giọng executive, tự tin, có confidence.</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+            <div class="answer-box">
+              <p><strong>Self-Assessment 5 Criteria</strong></p>
+              <p><strong>1. Presenting Options:</strong> Needs work / Good / Excellent</p>
+              <p><strong>2. Analyzing Trade-offs:</strong> Needs work / Good / Excellent</p>
+              <p><strong>3. Making Recommendation:</strong> Needs work / Good / Excellent</p>
+              <p><strong>4. Defending Decision:</strong> Needs work / Good / Excellent</p>
+              <p><strong>5. Executive Confidence:</strong> Needs work / Good / Excellent</p>
+            </div>
+
+            <h3>Reflection 3 dòng</h3>
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã trình bày strategic options và trade-offs rõ ràng. Improve: Tôi cần defend decision tự tin hơn. Keep: "Based on our analysis, we recommend..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>3 lỗi thường gặp khi trình bày decision trước Board</h2>
+          <p>Tránh các lỗi này để decision presentation của bạn executive và có confidence.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không trình bày options rõ ràng: "We should do this."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>We have identified three strategic options: proceed with Phase 2, delay by 6 months, or pursue alternative investment.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không phân tích trade-offs: "This is the best option."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The key trade-off is between higher returns with higher risk versus lower returns with lower risk.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không defend decision: "We recommend this."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>This decision is aligned with our strategic priorities because it delivers strong returns while maintaining manageable risk.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 72 khi có thể</h2>
+          <p>Trước khi sang Day 73, hãy đảm bảo bạn đã hoàn thành bài decision presentation hoàn chỉnh.</p>
+        </div>
+
+        <ul class="mastery-list">
+          <li>Tôi có thể dùng decision framework, strategic options, trade-offs.</li>
+          <li>Tôi có thể dùng risk appetite, decision criteria, go/no-go decision.</li>
+          <li>Tôi có thể dùng decision rationale, stakeholder alignment.</li>
+          <li>Tôi có thể trình bày strategic options rõ ràng.</li>
+          <li>Tôi có thể phân tích key trade-offs.</li>
+          <li>Tôi có thể đưa ra recommendation với rationale.</li>
+          <li>Tôi có thể defend decision trước board.</li>
+          <li>Tôi có thể thể hiện executive decision-making confidence.</li>
+          <li>Tôi đã ghi âm decision presentation 3 phút.</li>
+          <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+          <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-3-day-71.html">
+            <small>Previous Day</small>
+            <strong>Day 71 · Board-Level Strategic Presentation</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 72 Complete</strong>
+          </button>
+
+          <a href="level-3-day-73.html">
+            <small>Next Day</small>
+            <strong>Day 73 · Next Topic</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 3 · Day 72 · Strategic Decision-Making</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 72 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-3";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["72"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 72 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 72/90 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 72 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 72/90";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["72"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "We have identified three strategic options. Based on our analysis, we recommend proceeding with Phase 2. This decision is aligned with our strategic priorities.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

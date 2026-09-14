@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 Day 69 | Mock Investment Committee | Executive English 90</title>
+  <meta name="description" content="Level 2 Day 69 - Mock Investment Committee: Bài đánh giá cuối Level 2 với investment pitch, Q&A defense, và closing recommendation. Output: 1-page investment memo + ghi âm 15 phút pitch + 10 phút Q&A." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--surface); color: var(--accent-text);
+      padding: 10px 14px; border-radius: var(--radius-sm); font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; padding: 13px 0;
+    }
+
+    .brand {
+      display: flex; flex-direction: column;
+      text-decoration: none; color: var(--text-primary); min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px; line-height: 1.15;
+      letter-spacing: -0.025em; font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px; font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted);
+    }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+
+    .nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text); background: var(--accent-soft); border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(23, 37, 84, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none;
+    }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid;
+      transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--accent-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08); pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+      position: relative; z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px;
+      font-weight: 800; position: relative; z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90); position: relative; z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px;
+      border-radius: 20px; background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+      position: relative; z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;
+      position: relative; z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit;
+      font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: var(--surface);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 26px;
+    }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-primary);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px;
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--text-primary); font: inherit; font-weight: 600;
+      padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed var(--border);
+    }
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); border: 1px solid var(--accent-line);
+      color: var(--accent-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block; margin-bottom: 4px;
+      color: var(--text-primary); font-size: 17px; line-height: 1.45;
+    }
+
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .vocab-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .vocab-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--indigo) 0%, var(--violet-soft) 100%);
+    }
+
+    .vocab-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .vocab-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .vocab-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .card-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; margin-bottom: 10px;
+    }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--accent-soft);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-primary); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px;
+      background: #fffbeb; border: 1px solid #fde68a;
+      color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      color: var(--text-secondary); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--accent-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
+    .pattern-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .pattern-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--violet) 0%, var(--lavender) 100%);
+    }
+
+    .pattern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .pattern-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .pattern-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); margin-bottom: 8px;
+    }
+
+    .example {
+      padding: 14px; border-radius: 16px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .example p { margin: 0 0 10px; color: var(--text-secondary); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel { padding: 26px; }
+
+    .listening-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .listening-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .listening-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px; border-radius: 22px;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      border: 1px solid var(--accent-line); margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px; font-size: 18px; line-height: 2;
+      color: var(--text-secondary); font-weight: 400;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--accent-text); }
+
+    .answer-box {
+      padding: 18px; border-radius: 20px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p { margin: 0; color: var(--completed-text); font-weight: 600; line-height: 2; }
+
+    .task-panel { padding: 26px; }
+
+    .task-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .task-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .task-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .task-panel li { line-height: 1.8; }
+
+    .output-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .mistake-card {
+      border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md);
+    }
+
+    .mistake-card.avoid {
+      background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+      border: 1px solid #fecdd3;
+    }
+
+    .mistake-card.better {
+      background: linear-gradient(180deg, #ecfdf5, #d1fae5);
+      border: 1px solid #a7f3d0;
+    }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+
+    .mistake-card p { margin: 0; color: var(--text-secondary); font-weight: 600; }
+
+    .mastery-list {
+      list-style: none; margin: 24px 0 0; padding: 0;
+      display: grid; gap: 12px;
+    }
+
+    .mastery-list li {
+      padding: 14px 18px; padding-left: 48px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-md); color: var(--text-secondary);
+      font-size: 15px; line-height: 1.7;
+      box-shadow: var(--shadow-sm); position: relative;
+    }
+
+    .mastery-list li::before {
+      content: "✓"; position: absolute; left: 18px; top: 50%;
+      transform: translateY(-50%); width: 22px; height: 22px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      color: var(--completed-text); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 22px; box-shadow: var(--shadow-md); padding: 18px;
+      transition: 0.18s ease; text-align: left;
+      font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-muted);
+    }
+
+    .prev-next strong {
+      font-size: 18px; line-height: 1.4; letter-spacing: -0.015em;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .footer { padding: 32px 0 58px; color: var(--text-muted); }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--border-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: var(--text-muted);
+      padding: 8px 11px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent-text);
+    }
+
+    @media (max-width: 1180px) {
+      .vocab-grid, .output-grid, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 2 · Day 69</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a class="active" href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 69/90</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: var(--completed); color: var(--completed-text); border-color: var(--completed-line);" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-2.html">Level 2</a>
+        <span>›</span>
+        <span>Day 69</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 2</span>
+            <span class="hero-tag">Final Assessment</span>
+            <span class="hero-tag">Day 69 / 90</span>
+            <span class="hero-tag">25 phút</span>
+            <span class="hero-tag">Mock Investment Committee</span>
+          </div>
+
+          <h1 class="hero-title">Mock Investment Committee</h1>
+
+          <p class="hero-subtitle">
+            Day 69 là bài đánh giá cuối Level 2: bạn sẽ mô phỏng một buổi Investment Committee hoàn chỉnh với 15 phút pitch và 10 phút Q&A.
+            Đây là cơ hội để bạn tích hợp tất cả kỹ năng đã học: financial modeling, IRR & NPV, sensitivity analysis, risk assessment, và executive presentation.
+          </p>
+
+          <div class="hero-quote">
+            Investment Committee không phải là bài kiểm tra. Đó là cơ hội để bạn chứng minh rằng bạn không chỉ hiểu dự án,
+            mà còn có thể bảo vệ quyết định đầu tư trước những câu hỏi khó nhất. IC members không tìm kiếm sự hoàn hảo — họ tìm kiếm sự chuẩn bị.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 25 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 25-Minute Plan</span>
+          <h2>Timeline 25 phút chi tiết</h2>
+          <p>Bài đánh giá cuối Level 2 với 15 phút pitch và 10 phút Q&A. Đây là cơ hội để bạn chứng minh tất cả kỹ năng đã học.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:03</span>
+            <div>
+              <strong>Preparation · 3 phút</strong>
+              <span>Chuẩn bị 1-page investment memo. Review key metrics: IRR, NPV, payback, sensitivity, risks. Chuẩn bị tinh thần cho Q&A.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:03 – 00:18</span>
+            <div>
+              <strong>Investment Pitch · 15 phút</strong>
+              <span>Trình bày investment pitch hoàn chỉnh: opening, market context, project overview, financials, sensitivity, risks, recommendation. Không đọc slide — nói bằng lời của bạn.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:18 – 00:28</span>
+            <div>
+              <strong>Q&A Defense · 10 phút</strong>
+              <span>Trả lời 5-7 câu hỏi từ IC members: financial metrics, risk mitigation, market assumptions, exit strategy, recommendation. Xử lý tough questions với confidence.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:28 – 00:30</span>
+            <div>
+              <strong>Self-Assessment · 2 phút</strong>
+              <span>Tự chấm theo rubric 8 tiêu chí. Viết reflection 3 dòng: Good, Improve, Keep. Chuẩn bị tinh thần cho Level 3.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & IC Terms</h2>
+          <p>12 thuật ngữ Investment Committee cốt lõi. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>investment committee</h3>
+              <button class="audio-btn" type="button" data-speak="investment committee">Nghe</button>
+            </div>
+            <span class="ipa">/ɪnˈvestmənt kəˈmɪti/</span>
+            <p class="vn">Ủy ban đầu tư</p>
+            <div class="note">Ghi chú: Investment Committee (IC) là nhóm ra quyết định đầu tư. Thường gồm senior management, CFO, và investment professionals.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> present to IC, IC approval, IC meeting, IC members</li>
+              <li><strong>Example:</strong> We will present the investment case to the IC next week for approval.</li>
+              <li><strong>Native alternative:</strong> investment committee, IC, investment committee members</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>investment thesis</h3>
+              <button class="audio-btn" type="button" data-speak="investment thesis">Nghe</button>
+            </div>
+            <span class="ipa">/nˈvestmənt ˈθiːsɪs/</span>
+            <p class="vn">Luận điểm đầu tư</p>
+            <div class="note">Ghi chú: Investment thesis là luận điểm chính giải thích tại sao đây là cơ hội đầu tư tốt. Phải rõ ràng, có logic, và có bằng chứng.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> investment thesis, strong investment thesis, clear investment thesis</li>
+              <li><strong>Example:</strong> Our investment thesis is based on strong market demand, proven track record, and attractive risk-adjusted returns.</li>
+              <li><strong>Native alternative:</strong> investment thesis, investment rationale</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>IRR (Internal Rate of Return)</h3>
+              <button class="audio-btn" type="button" data-speak="IRR">Nghe</button>
+            </div>
+            <span class="ipa">/ˌaɪ ɑːr ˈɑːr/</span>
+            <p class="vn">Tỷ suất hoàn vốn nội bộ</p>
+            <div class="note">Ghi chú: IRR là tỷ suất lợi nhuận mà tại đó NPV = 0. IRR > hurdle rate = dự án đáng đầu tư. IRR là metric quan trọng nhất trong investment decision.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> project IRR, IRR of X%, IRR exceeds hurdle rate</li>
+              <li><strong>Example:</strong> The project IRR is 18%, which exceeds our hurdle rate of 15% by 300 basis points.</li>
+              <li><strong>Native alternative:</strong> IRR, internal rate of return</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>NPV (Net Present Value)</h3>
+              <button class="audio-btn" type="button" data-speak="NPV">Nghe</button>
+            </div>
+            <span class="ipa">/ˌen piː ˈviː/</span>
+            <p class="vn">Giá trị hiện tại ròng</p>
+            <div class="note">Ghi chú: NPV là giá trị hiện tại của dòng tiền tương lai trừ đi vốn đầu tư. NPV > 0 = dự án tạo giá trị. NPV càng cao càng tốt.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> positive NPV, NPV of X million, NPV exceeds zero</li>
+              <li><strong>Example:</strong> The project has a positive NPV of 42 million dollars, indicating strong value creation.</li>
+              <li><strong>Native alternative:</strong> NPV, net present value</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>payback period</h3>
+              <button class="audio-btn" type="button" data-speak="payback period">Nghe</button>
+            </div>
+            <span class="ipa">/ˈpeɪbæk ˈpɪəriəd/</span>
+            <p class="vn">Thời gian hoàn vốn</p>
+            <div class="note">Ghi chú: Payback period là thời gian cần để thu hồi vốn đầu tư ban đầu. Payback ngắn hơn benchmark = tốt hơn.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> payback period of X years, shorter payback, payback exceeds benchmark</li>
+              <li><strong>Example:</strong> The payback period is 4 years, which is faster than our 5-year benchmark.</li>
+              <li><strong>Native alternative:</strong> payback period, payback</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>hurdle rate</h3>
+              <button class="audio-btn" type="button" data-speak="hurdle rate">Nghe</button>
+            </div>
+            <span class="ipa">/ˈhɜrdl reɪt/</span>
+            <p class="vn">Tỷ suất hurdle (tỷ suất tối thiểu)</p>
+            <div class="note">Ghi chú: Hurdle rate là tỷ suất lợi nhuận tối thiểu mà nhà đầu tư yêu cầu. Project phải vượt qua hurdle rate mới đáng đầu tư.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> hurdle rate of X%, exceeds hurdle rate, meets hurdle rate</li>
+              <li><strong>Example:</strong> Our hurdle rate is 15%, and the project IRR of 18% exceeds this by 300 basis points.</li>
+              <li><strong>Native alternative:</strong> hurdle rate, required rate of return</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>sensitivity analysis</h3>
+              <button class="audio-btn" type="button" data-speak="sensitivity analysis">Nghe</button>
+            </div>
+            <span class="ipa">/ˌsensəˈtɪvəti əˈnæləsɪs/</span>
+            <p class="vn">Phân tích độ nhạy</p>
+            <div class="note">Ghi chú: Sensitivity analysis là phân tích độ nhạy — test xem thay đổi trong assumptions ảnh hưởng thế nào đến IRR và NPV.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> sensitivity analysis, conduct sensitivity analysis, sensitivity to assumptions</li>
+              <li><strong>Example:</strong> We conducted sensitivity analysis to test how changes in key assumptions affect the IRR.</li>
+              <li><strong>Native alternative:</strong> sensitivity analysis, what-if analysis</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>risk mitigation</h3>
+              <button class="audio-btn" type="button" data-speak="risk mitigation">Nghe</button>
+            </div>
+            <span class="ipa">/rɪsk ˌmɪtɪˈɡeɪʃn/</span>
+            <p class="vn">Giảm thiểu rủi ro</p>
+            <div class="note">Ghi chú: Risk mitigation là các biện pháp giảm thiểu rủi ro. IC members luôn hỏi về risk mitigation strategies.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> risk mitigation strategies, risk mitigation measures, effective risk mitigation</li>
+              <li><strong>Example:</strong> Our risk mitigation strategies include fixed-price contracts and phased launches.</li>
+              <li><strong>Native alternative:</strong> risk mitigation, risk reduction</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>exit strategy</h3>
+              <button class="audio-btn" type="button" data-speak="exit strategy">Nghe</button>
+            </div>
+            <span class="ipa">/ˈeksɪt ˈstrætədʒi/</span>
+            <p class="vn">Chiến lược thoát</p>
+            <div class="note">Ghi chú: Exit strategy là kế hoạch thoát khỏi đầu tư để thu hồi vốn và lợi nhuận. IC members luôn hỏi về exit strategy.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> exit strategy, clear exit strategy, exit strategy is to</li>
+              <li><strong>Example:</strong> Our exit strategy is to sell the completed project to an institutional investor within 18 months.</li>
+              <li><strong>Native alternative:</strong> exit strategy, exit plan</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>risk-adjusted return</h3>
+              <button class="audio-btn" type="button" data-speak="risk-adjusted return">Nghe</button>
+            </div>
+            <span class="ipa">/rɪsk əˈdʒstɪd rɪˈtɜːrn/</span>
+            <p class="vn">Lợi nhuận điều chỉnh theo rủi ro</p>
+            <div class="note">Ghi chú: Risk-adjusted return là lợi nhuận sau khi đã tính đến mức độ rủi ro. Returns phải risk-adjusted để so sánh công bằng giữa các cơ hội.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> attractive risk-adjusted return, superior risk-adjusted returns, risk-adjusted return profile</li>
+              <li><strong>Example:</strong> The project delivers an 18 percent IRR, which represents an attractive risk-adjusted return given the market conditions.</li>
+              <li><strong>Native alternative:</strong> risk-adjusted return, risk-adjusted performance</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>investment memo</h3>
+              <button class="audio-btn" type="button" data-speak="investment memo">Nghe</button>
+            </div>
+            <span class="ipa">/ɪnˈvestmənt ˈmemoʊ/</span>
+            <p class="vn">Bản ghi nhớ đầu tư</p>
+            <div class="note">Ghi chú: Investment memo là tài liệu tóm tắt investment case. Thường 1-2 trang, dùng để trình bày trước IC.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> investment memo, 1-page investment memo, prepare investment memo</li>
+              <li><strong>Example:</strong> We have prepared a 1-page investment memo summarizing the key investment highlights.</li>
+              <li><strong>Native alternative:</strong> investment memo, investment summary</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>investment highlights</h3>
+              <button class="audio-btn" type="button" data-speak="investment highlights">Nghe</button>
+            </div>
+            <span class="ipa">/ɪnˈvestmənt ˈhaɪlaɪts/</span>
+            <p class="vn">Điểm nổi bật đầu tư</p>
+            <div class="note">Ghi chú: Investment highlights là những điểm nổi bật nhất của investment case. Thường 3-5 điểm chính.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> key investment highlights, investment highlights include, key highlights</li>
+              <li><strong>Example:</strong> The key investment highlights are: strong market demand, proven track record, and attractive risk-adjusted returns.</li>
+              <li><strong>Native alternative:</strong> investment highlights, key highlights</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>8 mẫu câu giúp bạn trình bày investment case và xử lý Q&A: opening, market context, financials, sensitivity, risks, recommendation, handling questions, closing.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>Let me walk you through the investment case...</h3>
+              <button class="audio-btn" type="button" data-speak="Let me walk you through the investment case for Riverside Township Phase 2. I'll cover the context, the numbers, the risks, and our recommendation.">Nghe</button>
+            </div>
+            <div class="note">Công thức: Let me walk you through the investment case for + project + structure. Dùng để mở đầu investment pitch, signpost cấu trúc.</div>
+            <div class="example">
+              <span class="label">Opening</span>
+              <p>Let me walk you through the investment case for Riverside Township Phase 2. I'll cover the context, the numbers, the risks, and our recommendation.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay project: the acquisition target / the development project / the JV opportunity. Thay structure: market, financials, risks, recommendation.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The market opportunity is clear...</h3>
+              <button class="audio-btn" type="button" data-speak="The market opportunity is clear — demand exceeds supply by 30 percent in this corridor.">Nghe</button>
+            </div>
+            <div class="note">Công thức: The market opportunity is clear + evidence. Dùng để trình bày market context với bằng chứng cụ thể.</div>
+            <div class="example">
+              <span class="label">Market context</span>
+              <p>The market opportunity is clear — demand exceeds supply by 30 percent in this corridor.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay evidence: population growth at 4% annually / limited supply in the pipeline / strong absorption rates.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>At a high level, the project delivers...</h3>
+              <button class="audio-btn" type="button" data-speak="At a high level, the project delivers an 18 percent IRR with a 4-year payback.">Nghe</button>
+            </div>
+            <div class="note">Công thức: At a high level, the project delivers + key metrics. Dùng để trình bày financial overview ở mức tổng quan.</div>
+            <div class="example">
+              <span class="label">Financial overview</span>
+              <p>At a high level, the project delivers an 18 percent IRR with a 4-year payback.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay metrics: 20% IRR with 3-year payback / 15% IRR with 5-year payback.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The model is most sensitive to...</h3>
+              <button class="audio-btn" type="button" data-speak="The model is most sensitive to selling price. A 10 percent drop reduces IRR to 14 percent, still above our hurdle.">Nghe</button>
+            </div>
+            <div class="note">Công thức: The model is most sensitive to + variable + impact. Dùng để trình bày sensitivity analysis.</div>
+            <div class="example">
+              <span class="label">Sensitivity</span>
+              <p>The model is most sensitive to selling price. A 10 percent drop reduces IRR to 14 percent, still above our hurdle.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay variable: construction cost / absorption rate / land cost. Thay impact: reduces IRR to 12% / reduces NPV to 30M.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>We've mitigated each risk with...</h3>
+              <button class="audio-btn" type="button" data-speak="We've mitigated each risk with specific actions: fixed-price contracts, early milestones, and phased launches.">Nghe</button>
+            </div>
+            <div class="note">Công thức: We've mitigated each risk with + mitigation strategies. Dùng để trình bày risk mitigation.</div>
+            <div class="example">
+              <span class="label">Risk mitigation</span>
+              <p>We've mitigated each risk with specific actions: fixed-price contracts, early milestones, and phased launches.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay strategies: fixed-price contracts / contingency buffer / phased launches / early legal approvals.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>The bottom line is this:...</h3>
+              <button class="audio-btn" type="button" data-speak="The bottom line is this: this project creates strong value with manageable risk.">Nghe</button>
+            </div>
+            <div class="note">Công thức: The bottom line is this: + conclusion. Dùng để kết luận mạnh mẽ trước recommendation.</div>
+            <div class="example">
+              <span class="label">Conclusion</span>
+              <p>The bottom line is this: this project creates strong value with manageable risk.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay conclusion: the timing is right / the risk-reward profile is compelling / the market opportunity is clear.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>My recommendation is clear:...</h3>
+              <button class="audio-btn" type="button" data-speak="My recommendation is clear: approve Phase 2 funding by the end of this month.">Nghe</button>
+            </div>
+            <div class="note">Công thức: My recommendation is clear: + action + deadline. Dùng để kết thúc pitch với recommendation rõ ràng.</div>
+            <div class="example">
+              <span class="label">Recommendation</span>
+              <p>My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: proceed with the acquisition / approve the budget / greenlight Phase 3. Thay deadline: by end of Q1 / by March 31st.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>That's a good question. Let me address it directly...</h3>
+              <button class="audio-btn" type="button" data-speak="That's a good question. Let me address it directly. The IRR is 18%, which exceeds our hurdle rate by 300 basis points.">Nghe</button>
+            </div>
+            <div class="note">Công thức: That's a good question. Let me address it directly + answer. Dùng để xử lý tough questions trong Q&A.</div>
+            <div class="example">
+              <span class="label">Handling questions</span>
+              <p>That's a good question. Let me address it directly. The IRR is 18%, which exceeds our hurdle rate by 300 basis points.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay answer: the NPV is positive / the payback is 4 years / the risk is manageable.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Investment Committee Pitch</h2>
+          <p>Nghe một bài investment pitch mẫu 15 phút với Q&A 10 phút. Đây là mô hình để bạn tái hiện với dự án thật của mình.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+          <ol>
+            <li>Nghe toàn bộ pitch 1 lần để nắm cấu trúc 10 slides.</li>
+            <li>Nghe lần hai để nhận diện các patterns: signpost, transition, key takeaway, bottom line, call to action.</li>
+            <li>Nghe lần ba để phân tích: mỗi slide có 1 key message không? Số liệu có được giải thích không?</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Good morning, everyone. Thank you for being here. Let me walk you through the investment case for Riverside Township Phase 2. I'll cover the context, the numbers, the risks, and our recommendation. Riverside Township is a 50-hectare mixed-use development in the eastern corridor. Phase 1 is 65 percent sold, well above our 50 percent target. The key takeaway here is that demand is real and proven. Now let me transition to the financials. At a high level, the project delivers an 18 percent IRR with a 4-year payback. What this means is that we recover our capital faster than our 5-year benchmark. The model is most sensitive to selling price. A 10 percent drop reduces IRR to 14 percent, still above our 12 percent hurdle. The key takeaway is that the project is resilient even under stress. The three main risks are construction cost escalation, legal delays, and slower absorption. We've mitigated each with fixed-price contracts, early legal milestones, and phased launches. The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month. Thank you. I'm happy to take any questions.">Nghe toàn bộ investment pitch</button>
+          </div>
+
+          <h4>Transcript</h4>
+          <div class="transcript">
+            <p><span class="speaker">[Slide 1: Opening]</span>Good morning, everyone. Thank you for being here. Let me walk you through the investment case for Riverside Township Phase 2. I'll cover the context, the numbers, the risks, and our recommendation.</p>
+            <p><span class="speaker">[Slide 2: Context]</span>Riverside Township is a 50-hectare mixed-use development in the eastern corridor. Phase 1 is 65 percent sold, well above our 50 percent target. The key takeaway here is that demand is real and proven.</p>
+            <p><span class="speaker">[Slide 3: Financials]</span>Now let me transition to the financials. At a high level, the project delivers an 18 percent IRR with a 4-year payback. What this means is that we recover our capital faster than our 5-year benchmark.</p>
+            <p><span class="speaker">[Slide 4: Sensitivity]</span>The model is most sensitive to selling price. A 10 percent drop reduces IRR to 14 percent, still above our 12 percent hurdle. The key takeaway is that the project is resilient even under stress.</p>
+            <p><span class="speaker">[Slide 5: Risks]</span>The three main risks are construction cost escalation, legal delays, and slower absorption. We've mitigated each with fixed-price contracts, early legal milestones, and phased launches.</p>
+            <p><span class="speaker">[Slide 6: Conclusion]</span>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month. Thank you. I'm happy to take any questions.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+          <ul>
+            <li>Q1: What is the project's IRR and payback period?</li>
+            <li>Q2: What is the model most sensitive to?</li>
+            <li>Q3: What are the three main risks and their mitigations?</li>
+            <li>Q4: What is the speaker's recommendation and deadline?</li>
+            <li>Q5: What is the key takeaway from the sensitivity analysis?</li>
+            <li>Q6: What is the key takeaway from the market context?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+          <div class="answer-box">
+            <p>1. IRR is 18% with a 4-year payback, faster than the 5-year benchmark.<br />
+            2. Most sensitive to selling price — a 10% drop reduces IRR to 14%, still above the 12% hurdle.<br />
+            3. Construction cost escalation (fixed-price contracts), legal delays (early milestones), slower absorption (phased launches).<br />
+            4. Approve Phase 2 funding by end of this month.<br />
+            5. The project is resilient even under stress.<br />
+            6. Demand is real and proven — Phase 1 is 65% sold vs 50% target.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+          <div class="example">
+            <span class="label">Shadow 1 · Opening</span>
+            <p>Let me walk you through the investment case. I'll cover the context, the numbers, the risks, and our recommendation.</p>
+            <button class="audio-btn" type="button" data-speak="Let me walk you through the investment case. I'll cover the context, the numbers, the risks, and our recommendation.">Nghe câu 1</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 2 · Transition</span>
+            <p>Now let me transition to the financials. At a high level, the project delivers an 18 percent IRR with a 4-year payback.</p>
+            <button class="audio-btn" type="button" data-speak="Now let me transition to the financials. At a high level, the project delivers an 18 percent IRR with a 4-year payback.">Nghe câu 2</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 3 · Bottom line</span>
+            <p>The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            <button class="audio-btn" type="button" data-speak="The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+          <ul>
+            <li>Nhấn vào signpost: "FIRST... SECOND... FINALLY..."</li>
+            <li>Nhấn vào số liệu: "18 PERCENT", "4-YEAR payback", "12 percent HURDLE".</li>
+            <li>Giọng chắc chắn khi kết luận: "The BOTTOM LINE is THIS..."</li>
+            <li>Giọng ấm, tự tin khi mở đầu; giọng mạnh, rõ khi call to action.</li>
+            <li>Ngắt nghỉ sau mỗi slide để người nghe tiêu hóa thông tin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Investment Pitch 10 Slides</h2>
+          <p>Luyện 3 vòng tăng dần. Mục tiêu cuối cùng: trình bày 10 slides trong 15 phút mà không đọc slide.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Round 1 · 5 Slides (5 phút)</h3>
+            <p>Trình bày Slides 1–5: Title, Context, Overview, Financials, Sensitivity.</p>
+            <div class="answer-box">
+              <p>Slide 1: Good morning. Let me walk you through the investment case for Riverside Phase 2.</p>
+              <p>Slide 2: The market opportunity is clear — demand exceeds supply by 30 percent in this corridor.</p>
+              <p>Slide 3: At a high level, this is a 50-hectare mixed-use development with 1,200 units.</p>
+              <p>Slide 4: The key takeaway here is an 18 percent IRR with a 4-year payback.</p>
+              <p>Slide 5: What this means is that even under stress, the project remains viable.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Good morning. Let me walk you through the investment case for Riverside Phase 2. The market opportunity is clear — demand exceeds supply by 30 percent in this corridor. At a high level, this is a 50-hectare mixed-use development with 1,200 units. The key takeaway here is an 18 percent IRR with a 4-year payback. What this means is that even under stress, the project remains viable.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 7 Slides (7 phút)</h3>
+            <p>Thêm Slides 6–7: Risks và Comparison.</p>
+            <div class="answer-box">
+              <p>Slide 6: Now let me transition to risks. The three main risks are construction cost escalation, legal delays, and slower absorption. We've mitigated each with specific actions.</p>
+              <p>Slide 7: Compared with the alternative, Riverside offers a higher IRR and lower risk. The key takeaway is that this is the better risk-adjusted opportunity.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Now let me transition to risks. The three main risks are construction cost escalation, legal delays, and slower absorption. We've mitigated each with specific actions. Compared with the alternative, Riverside offers a higher IRR and lower risk. The key takeaway is that this is the better risk-adjusted opportunity.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · Full 10 Slides (15 phút)</h3>
+            <p>Hoàn chỉnh 10 slides: thêm Timeline, Recommendation, Q&A.</p>
+            <div class="answer-box">
+              <p>Slide 8: Our timeline is on track. Groundbreaking is complete, and we expect topping out by Q3.</p>
+              <p>Slide 9: The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+              <p>Slide 10: Thank you for your time. I'm happy to take any questions.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Our timeline is on track. Groundbreaking is complete, and we expect topping out by Q3. The bottom line is this: Riverside Phase 2 creates strong value with manageable risk. My recommendation is clear: approve Phase 2 funding by the end of this month. Thank you for your time. I'm happy to take any questions.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+            <p>Ghi âm hoặc ghi hình Round 3 — bài trình bày 10 slides, 15 phút. Tự chấm theo rubric bên dưới.</p>
+            <h4>Self-review</h4>
+            <ul>
+              <li>Mỗi slide có đúng 1 key message không?</li>
+              <li>Bạn có đọc slide không? (Không = tốt)</li>
+              <li>Số liệu có được giải thích không?</li>
+              <li>Có transition giữa các slide không?</li>
+              <li>Có conclusion / recommendation rõ ràng không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Investment Memo & Pitch</h2>
+          <p>Output cuối ngày: hoàn thiện 1-page investment memo, ghi âm/ghi hình 15 phút pitch, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Task 1: 1-Page Investment Memo</h3>
+            <p>Tạo 1-page investment memo cho dự án thật của bạn. Mỗi phần có 1 key message + 1–2 số liệu.</p>
+            <h4>Model Answer · 1-Page Investment Memo</h4>
+            <div class="answer-box">
+              <p><strong>1-Page Investment Memo</strong></p>
+              <p><strong>Riverside Township Phase 2 — Investment Pitch</strong></p>
+              <p><strong>1. Market Context:</strong> Demand exceeds supply by 30% in the eastern corridor. Population growth at 4% annually. Key: Demand is real</p>
+              <p><strong>2. Project Overview:</strong> 50 hectares, 1,200 units, mixed-use. Phase 1 is 65% sold (target: 50%). Key: Proven track record</p>
+              <p><strong>3. Financial Overview:</strong> IRR: 18% (hurdle: 15%). NPV: +42M USD. Payback: 4 years. Key: IRR exceeds hurdle by 300 bps</p>
+              <p><strong>4. Sensitivity Analysis:</strong> Most sensitive to ASP. 10% price drop → IRR 14% (still above hurdle). Key: Resilient under stress</p>
+              <p><strong>5. Key Risks & Mitigation:</strong> Construction cost (fixed-price contracts), legal (early milestones), absorption (phased launches). Key: Risks are managed</p>
+              <p><strong>6. Recommendation:</strong> Approve Phase 2 funding by end of month. Fixed-price contracts expire. Key: Approve now</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="1-Page Investment Memo. Riverside Township Phase 2 — Investment Pitch. 1. Market Context: Demand exceeds supply by 30% in the eastern corridor. Population growth at 4% annually. Key: Demand is real. 2. Project Overview: 50 hectares, 1,200 units, mixed-use. Phase 1 is 65% sold (target: 50%). Key: Proven track record. 3. Financial Overview: IRR: 18% (hurdle: 15%). NPV: +42M USD. Payback: 4 years. Key: IRR exceeds hurdle by 300 bps. 4. Sensitivity Analysis: Most sensitive to ASP. 10% price drop reduces IRR to 14%, still above hurdle. Key: Resilient under stress. 5. Key Risks & Mitigation: Construction cost (fixed-price contracts), legal (early milestones), absorption (phased launches). Key: Risks are managed. 6. Recommendation: Approve Phase 2 funding by end of month. Fixed-price contracts expire. Key: Approve now.">Nghe 1-page investment memo</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm / Ghi hình 15 phút</h3>
+            <p>Ghi âm hoặc ghi hình bài trình bày 10 slides. Mục tiêu: không đọc slide, giải thích số liệu, có transition, có conclusion.</p>
+            <h4>Recording Checklist</h4>
+            <ul>
+              <li>Opening rõ mục tiêu (signpost cấu trúc).</li>
+              <li>Mỗi slide có đúng 1 key message.</li>
+              <li>Số liệu được giải thích, không chỉ đọc số.</li>
+              <li>Có transition giữa mỗi slide.</li>
+              <li>Có conclusion / recommendation rõ ràng.</li>
+              <li>Không đọc slide — nói bằng lời của bạn.</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+            <div class="answer-box">
+              <p><strong>Self-Assessment 8 Criteria for Investment Pitch</strong></p>
+              <p><strong>1. Opening rõ mục tiêu</strong><br />
+              Needs work: Không signpost, người nghe không biết bài nói đi đâu.<br />
+              Good: Có signpost nhưng thiếu hook gây chú ý.<br />
+              Excellent: Hook mạnh + signpost rõ: "I'll cover context, numbers, risks, and recommendation."</p>
+              <p><strong>2. Market context rõ ràng</strong><br />
+              Needs work: Không có market context.<br />
+              Good: Có market context nhưng thiếu số liệu.<br />
+              Excellent: Market context với số liệu cụ thể: "Demand exceeds supply by 30%."</p>
+              <p><strong>3. Financial metrics rõ ràng</strong><br />
+              Needs work: Đọc số mà không giải thích.<br />
+              Good: Giải thích một phần.<br />
+              Excellent: "IRR is 18%, exceeding our 15% hurdle by 300 bps, which means the project creates significant value."</p>
+              <p><strong>4. Sensitivity analysis rõ ràng</strong><br />
+              Needs work: Không có sensitivity analysis.<br />
+              Good: Có sensitivity nhưng thiếu impact.<br />
+              Excellent: "Most sensitive to ASP. 10% drop reduces IRR to 14%, still above hurdle."</p>
+              <p><strong>5. Risk mitigation rõ ràng</strong><br />
+              Needs work: Không có risk mitigation.<br />
+              Good: Có risk mitigation nhưng thiếu cụ thể.<br />
+              Excellent: "We've mitigated each risk with specific actions: fixed-price contracts, early milestones, phased launches."</p>
+              <p><strong>6. Có transition giữa các slide</strong><br />
+              Needs work: Nhảy đột ngột giữa các slide.<br />
+              Good: Có transition nhưng đơn giản.<br />
+              Excellent: "Now let me transition from the market analysis to the financial projections..."</p>
+              <p><strong>7. Conclusion / Recommendation</strong><br />
+              Needs work: Kết thúc đột ngột.<br />
+              Good: Có kết luận nhưng thiếu call to action.<br />
+              Excellent: "The bottom line is this: approve Phase 2 funding by end of month. My recommendation is clear."</p>
+              <p><strong>8. Không đọc slide</strong><br />
+              Needs work: Đọc nguyên văn slide.<br />
+              Good: Có đọc slide nhưng có giải thích thêm.<br />
+              Excellent: Nói bằng lời của bạn, không đọc slide.</p>
+            </div>
+
+            <h3>Reflection 3 dòng</h3>
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã có transition rõ ràng giữa các slide và không đọc slide. Improve: Tôi cần giải thích số liệu sâu hơn thay vì chỉ đọc số. Keep: "The bottom line is this..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>8 lỗi thường gặp khi trình bày investment pitch</h2>
+          <p>Tránh các lỗi này để bài trình bày của bạn chuyên nghiệp, thuyết phục và không đọc slide.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đọc nguyên văn chữ trên slide. Người nghe đọc nhanh hơn bạn nói — họ sẽ chán.</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Slide có 3–5 từ khóa. Bạn nói câu chuyện, slide chỉ hỗ trợ. Nhìn khán giả, không nhìn slide.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Đọc số mà không giải thích: "IRR is 18 percent." (Rồi sao?)</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>IRR is 18 percent, exceeding our 15 percent hurdle by 300 basis points, which means the project creates significant value.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Nhảy đột ngột giữa các slide, không có câu chuyển ý.</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Now let me transition from the market analysis to the financial projections...</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Kết thúc đột ngột: "That's all. Thanks." Không có call to action.</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The bottom line is this: approve Phase 2 funding by end of month. My recommendation is clear. Thank you — I'm happy to take questions.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có market context: "The project is good."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The market opportunity is clear — demand exceeds supply by 30 percent in this corridor.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có sensitivity analysis: "The project is good."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>The model is most sensitive to selling price. A 10 percent drop reduces IRR to 14 percent, still above our hurdle.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có risk mitigation: "The risks are manageable."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>We've mitigated each risk with specific actions: fixed-price contracts, early milestones, and phased launches.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có recommendation rõ ràng: "We could maybe consider moving forward."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>My recommendation is clear: approve Phase 2 funding by the end of this month.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 69 khi có thể</h2>
+          <p>Trước khi sang Level 3, hãy đảm bảo bạn đã hoàn thành bài investment pitch hoàn chỉnh.</p>
+        </div>
+
+        <ul class="mastery-list">
+          <li>Tôi có thể dùng investment committee, investment thesis, IRR, NPV.</li>
+          <li>Tôi có thể dùng payback period, hurdle rate, sensitivity analysis, risk mitigation.</li>
+          <li>Tôi có thể dùng exit strategy, risk-adjusted return, investment memo, investment highlights.</li>
+          <li>Tôi có thể mở đầu với hook + signpost cấu trúc.</li>
+          <li>Tôi có thể trình bày market context với số liệu cụ thể.</li>
+          <li>Tôi có thể giải thích financial metrics: IRR, NPV, payback.</li>
+          <li>Tôi có thể trình bày sensitivity analysis với impact cụ thể.</li>
+          <li>Tôi có thể trình bày risk mitigation với actions cụ thể.</li>
+          <li>Tôi có thể transition mượt mà giữa các slide.</li>
+          <li>Tôi có thể kết luận với bottom line + call to action.</li>
+          <li>Tôi có thể trình bày 10 slides trong 15 phút mà không đọc slide.</li>
+          <li>Tôi đã ghi âm hoặc ghi hình bài trình bày 15 phút.</li>
+          <li>Tôi đã tự chấm theo rubric 8 tiêu chí.</li>
+          <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+          <li>Tôi sẵn sàng cho Level 3: Executive English.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-2-day-68.html">
+            <small>Previous Day</small>
+            <strong>Day 68 · Deal Closing</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 69 Complete</strong>
+          </button>
+
+          <a href="level-3.html">
+            <small>Next Level</small>
+            <strong>Level 3 · Executive English</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 2 · Day 69 · Mock Investment Committee</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 69 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-2";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["69"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 69 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 69/90 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 69 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 69/90";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["69"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "Let me walk you through the investment case. I'll cover the context, the numbers, the risks, and our recommendation. The bottom line is this: this project creates strong value. My recommendation is clear: approve funding now.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 3 Day 73 | Executive Leadership Communication | Executive English 90</title>
+  <meta name="description" content="Level 3 Day 73 - Executive Leadership Communication: Communicating vision, driving organizational alignment, and leading through change at the executive level." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      --navy-deep: #172554;
+      --navy: #1e3a8a;
+      --indigo: #4338ca;
+      --indigo-light: #6366f1;
+      --violet: #6d28d9;
+      --violet-soft: #8b5cf6;
+      --lavender: #a78bfa;
+      --lavender-soft: #c4b5fd;
+      --blue-gray: #64748b;
+      --slate-light: #94a3b8;
+      --page: #f5f7fc;
+      --page-gradient: linear-gradient(135deg, #f5f7fc 0%, #eef1fb 100%);
+      --surface: #ffffff;
+      --surface-soft: #f8f9fe;
+      --text-primary: #172554;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      --border: #e2e5f2;
+      --border-soft: #eef0f7;
+      --shadow-lg: 0 24px 70px rgba(23, 37, 84, 0.08);
+      --shadow-md: 0 14px 36px rgba(23, 37, 84, 0.06);
+      --shadow-sm: 0 8px 20px rgba(23, 37, 84, 0.04);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --accent-line: #c7d2fe;
+      --accent-text: #4338ca;
+      --completed: #ecfdf5;
+      --completed-line: #a7f3d0;
+      --completed-text: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--page-gradient);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { max-width: 80ch; margin: 0 0 14px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 100;
+      background: var(--surface); color: var(--accent-text);
+      padding: 10px 14px; border-radius: var(--radius-sm); font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(1310px, calc(100% - 32px)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 140px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 60;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 24px rgba(23, 37, 84, 0.04);
+    }
+
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; padding: 13px 0;
+    }
+
+    .brand {
+      display: flex; flex-direction: column;
+      text-decoration: none; color: var(--text-primary); min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 18px; line-height: 1.15;
+      letter-spacing: -0.025em; font-weight: 800;
+    }
+
+    .brand span {
+      margin-top: 3px; font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted);
+    }
+
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+
+    .nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 700; font-size: 14px;
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.18s ease;
+    }
+
+    .nav a:hover, .nav a.active {
+      color: var(--accent-text); background: var(--accent-soft); border-color: var(--accent-line);
+    }
+
+    .progress-chip {
+      padding: 9px 12px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); font-weight: 700; font-size: 13px; white-space: nowrap;
+    }
+
+    .plan-bar {
+      position: sticky; top: 68px; z-index: 50;
+      background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(23, 37, 84, 0.03);
+    }
+
+    .plan-bar-inner {
+      display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none;
+    }
+    .plan-bar-inner::-webkit-scrollbar { display: none; }
+
+    .plan-pill {
+      white-space: nowrap; text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid;
+      transition: 0.16s ease;
+    }
+    .plan-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+    .breadcrumb {
+      padding: 22px 0 0; font-size: 14px; font-weight: 600; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    }
+    .breadcrumb a { text-decoration: none; color: var(--accent-text); font-weight: 700; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .hero { padding: 26px 0 30px; }
+
+    .hero-panel {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6366f1 100%);
+      color: #ffffff; border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg); padding: 36px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute; right: -56px; bottom: -56px;
+      width: 210px; height: 210px; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08); pointer-events: none;
+    }
+
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+      position: relative; z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 13px;
+      border-radius: var(--radius-pill); background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.20); color: #ffffff;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin: 0 0 14px; font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.06; letter-spacing: -0.045em; max-width: 980px;
+      font-weight: 800; position: relative; z-index: 2;
+    }
+
+    .hero-subtitle {
+      margin: 0; max-width: 950px; font-size: 18px; line-height: 1.9;
+      color: rgba(255, 255, 255, 0.90); position: relative; z-index: 2;
+    }
+
+    .hero-quote {
+      margin: 22px 0 0; max-width: 900px; padding: 16px 18px;
+      border-radius: 20px; background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600; color: rgba(255, 255, 255, 0.95);
+      position: relative; z-index: 2;
+    }
+
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;
+      position: relative; z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 12px 20px; border-radius: 16px;
+      text-decoration: none; font-weight: 700; border: 1px solid transparent;
+      transition: 0.18s ease; cursor: pointer; font-family: inherit;
+      font-size: 15px; line-height: 1.2;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #ffffff; color: var(--accent-text); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.12); color: #ffffff; border-color: rgba(255, 255, 255, 0.30); }
+    .btn.completed { background: var(--completed); color: var(--completed-text); border-color: var(--completed-line); }
+
+    .section { padding: 54px 0; }
+
+    .section-head { max-width: 920px; margin: 0 auto 28px; text-align: left; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 8px 14px;
+      border-radius: var(--radius-pill); background: var(--surface);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; box-shadow: var(--shadow-sm);
+    }
+
+    .section-head h2 {
+      margin: 13px 0 10px; font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.14; letter-spacing: -0.035em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .section-head p { margin: 0; color: var(--text-muted); font-size: 17px; }
+
+    .panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 26px;
+    }
+
+    .audio-settings { padding: 26px; }
+    .settings-row { display: grid; grid-template-columns: 1.2fr 0.5fr auto; gap: 14px; align-items: end; margin-top: 18px; }
+
+    .field label {
+      display: block; font-size: 13px; font-weight: 800; color: var(--text-primary);
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    .field select {
+      width: 100%; min-height: 50px; border-radius: 16px;
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--text-primary); font: inherit; font-weight: 600;
+      padding: 12px 14px; outline: none;
+    }
+
+    .field select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10); }
+
+    .audio-note {
+      margin-top: 16px; padding: 14px; border-radius: 18px;
+      background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-weight: 500;
+    }
+
+    .timeline-panel { padding: 26px; }
+
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr; gap: 14px;
+      padding: 14px 0; border-bottom: 1px dashed var(--border);
+    }
+    .timeline-item:last-child { border-bottom: 0; }
+
+    .time-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 8px 11px; border-radius: var(--radius-pill);
+      background: var(--accent-soft); border: 1px solid var(--accent-line);
+      color: var(--accent-text); font-size: 13px; font-weight: 800; white-space: nowrap;
+    }
+
+    .timeline-item strong {
+      display: block; margin-bottom: 4px;
+      color: var(--text-primary); font-size: 17px; line-height: 1.45;
+    }
+
+    .timeline-item span { color: var(--text-muted); line-height: 1.75; }
+
+    .vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .vocab-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .vocab-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--indigo) 0%, var(--violet-soft) 100%);
+    }
+
+    .vocab-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .vocab-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .vocab-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .card-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; margin-bottom: 10px;
+    }
+
+    .ipa {
+      display: inline-flex; align-items: center; min-height: 34px; padding: 5px 10px;
+      border-radius: 12px; background: var(--accent-soft);
+      border: 1px solid var(--accent-line); color: var(--accent-text);
+      font-size: 14px; font-weight: 700; margin: 0 0 10px;
+    }
+
+    .vn { font-weight: 700; color: var(--text-primary); margin: 0 0 10px; }
+
+    .note {
+      padding: 12px 14px; border-radius: 16px;
+      background: #fffbeb; border: 1px solid #fde68a;
+      color: #92400e; font-weight: 500; margin: 0 0 12px;
+    }
+
+    .mini-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .mini-list li {
+      padding: 10px 12px; border-radius: 14px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      color: var(--text-secondary); font-size: 14px; font-weight: 500; line-height: 1.7;
+    }
+
+    .audio-btn {
+      border: 1px solid var(--accent-line); background: var(--accent-soft);
+      color: var(--accent-text); font: inherit; font-weight: 700;
+      min-height: 40px; padding: 8px 13px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: 0.18s ease; white-space: nowrap;
+    }
+
+    .audio-btn:hover { background: #e0e7ff; }
+    .audio-btn.playing { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
+    .pattern-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+      padding: 22px; transition: 0.18s ease;
+      position: relative; overflow: hidden;
+    }
+
+    .pattern-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--violet) 0%, var(--lavender) 100%);
+    }
+
+    .pattern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+    .pattern-card h3 {
+      margin: 0 0 10px; font-size: 22px; line-height: 1.32;
+      letter-spacing: -0.02em; color: var(--text-primary); font-weight: 700;
+    }
+
+    .pattern-card p { margin: 0 0 12px; color: var(--text-muted); }
+
+    .label {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 4px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--accent-soft); color: var(--accent-text);
+      border: 1px solid var(--accent-line); margin-bottom: 8px;
+    }
+
+    .example {
+      padding: 14px; border-radius: 16px;
+      background: var(--surface-soft); border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .example p { margin: 0 0 10px; color: var(--text-secondary); font-weight: 600; }
+    .example p:last-child { margin-bottom: 0; }
+
+    .listening-panel { padding: 26px; }
+
+    .listening-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .listening-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .listening-panel ol, .listening-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .listening-panel li { line-height: 1.8; }
+
+    .transcript {
+      padding: 22px; border-radius: 22px;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      border: 1px solid var(--accent-line); margin-top: 16px;
+    }
+
+    .transcript p {
+      margin: 0 0 16px; font-size: 18px; line-height: 2;
+      color: var(--text-secondary); font-weight: 400;
+    }
+
+    .transcript p:last-child { margin-bottom: 0; }
+    .transcript .speaker { font-weight: 800; color: var(--accent-text); }
+
+    .answer-box {
+      padding: 18px; border-radius: 20px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      margin-top: 14px;
+    }
+
+    .answer-box p { margin: 0; color: var(--completed-text); font-weight: 600; line-height: 2; }
+
+    .task-panel { padding: 26px; }
+
+    .task-panel h3 {
+      margin: 0 0 12px; font-size: 25px; letter-spacing: -0.025em;
+      color: var(--text-primary); font-weight: 800;
+    }
+
+    .task-panel h4 {
+      margin: 24px 0 12px; font-size: 19px;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .task-panel ul {
+      margin: 0 0 14px; padding-left: 20px;
+      display: grid; gap: 9px; color: var(--text-secondary);
+    }
+
+    .task-panel li { line-height: 1.8; }
+
+    .output-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .mistake-list { display: grid; gap: 12px; }
+
+    .mistake-item { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .mistake-card {
+      border-radius: 22px; padding: 18px; box-shadow: var(--shadow-md);
+    }
+
+    .mistake-card.avoid {
+      background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+      border: 1px solid #fecdd3;
+    }
+
+    .mistake-card.better {
+      background: linear-gradient(180deg, #ecfdf5, #d1fae5);
+      border: 1px solid #a7f3d0;
+    }
+
+    .mistake-label {
+      display: inline-flex; align-items: center; min-height: 32px; padding: 5px 10px;
+      border-radius: var(--radius-pill); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      background: #ffffff; border: 1px solid; margin-bottom: 12px;
+    }
+
+    .mistake-label.rose { color: #be123c; border-color: #fecdd3; }
+    .mistake-label.emerald { color: #047857; border-color: #a7f3d0; }
+
+    .mistake-card p { margin: 0; color: var(--text-secondary); font-weight: 600; }
+
+    .mastery-list {
+      list-style: none; margin: 24px 0 0; padding: 0;
+      display: grid; gap: 12px;
+    }
+
+    .mastery-list li {
+      padding: 14px 18px; padding-left: 48px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-md); color: var(--text-secondary);
+      font-size: 15px; line-height: 1.7;
+      box-shadow: var(--shadow-sm); position: relative;
+    }
+
+    .mastery-list li::before {
+      content: "✓"; position: absolute; left: 18px; top: 50%;
+      transform: translateY(-50%); width: 22px; height: 22px;
+      background: var(--completed); border: 1px solid var(--completed-line);
+      color: var(--completed-text); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+    }
+
+    .prev-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+    .prev-next a, .prev-next button {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 22px; box-shadow: var(--shadow-md); padding: 18px;
+      transition: 0.18s ease; text-align: left;
+      font-family: inherit; cursor: pointer;
+    }
+
+    .prev-next a:hover, .prev-next button:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow-lg);
+    }
+
+    .prev-next small {
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-muted);
+    }
+
+    .prev-next strong {
+      font-size: 18px; line-height: 1.4; letter-spacing: -0.015em;
+      color: var(--text-primary); font-weight: 700;
+    }
+
+    .footer { padding: 32px 0 58px; color: var(--text-muted); }
+
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; border-top: 1px solid var(--border-soft); padding-top: 24px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-links a {
+      text-decoration: none; font-weight: 600; font-size: 14px; color: var(--text-muted);
+      padding: 8px 11px; border-radius: var(--radius-pill);
+      border: 1px solid transparent; transition: 0.16s ease;
+    }
+
+    .footer-links a:hover {
+      background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent-text);
+    }
+
+    @media (max-width: 1180px) {
+      .vocab-grid, .output-grid, .prev-next { grid-template-columns: 1fr; }
+      .settings-row { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .mistake-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar, .plan-bar { position: static; }
+      section[id] { scroll-margin-top: 24px; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .hero-panel, .listening-panel, .task-panel, .audio-settings, .timeline-panel { padding: 20px; }
+      .card-top { flex-direction: column; }
+      .audio-btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <strong>Executive English 90</strong>
+        <span>Level 3 · Day 73</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a class="active" href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+
+      <span id="dayChip" class="progress-chip">Day 73/90</span>
+    </div>
+  </header>
+
+  <div class="plan-bar" aria-label="Khung 90 phút">
+    <div class="container plan-bar-inner">
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#timeline">Timeline 90 phút</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#vocabulary">15 phút · Vocabulary</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#patterns">20 phút · Patterns</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#listening">20 phút · Listening</a>
+      <a class="plan-pill" style="background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-line);" href="#speaking">20 phút · Speaking</a>
+      <a class="plan-pill" style="background: var(--completed); color: var(--completed-text); border-color: var(--completed-line);" href="#output">15 phút · Output</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <a href="level-3.html">Level 3</a>
+        <span>›</span>
+        <span>Day 73</span>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-tags">
+            <span class="hero-tag">Level 3</span>
+            <span class="hero-tag">Executive Leadership</span>
+            <span class="hero-tag">Day 73 / 90</span>
+            <span class="hero-tag">90 phút</span>
+            <span class="hero-tag">Leadership Communication</span>
+          </div>
+
+          <h1 class="hero-title">Executive Leadership Communication</h1>
+
+          <p class="hero-subtitle">
+            Day 73 tập trung vào kỹ năng truyền đạt tầm nhìn và dẫn dắt tổ chức ở cấp executive.
+            Bạn sẽ học cách communicate vision, drive organizational alignment, engage stakeholders, và lead through change —
+            những kỹ năng cốt lõi của nhà lãnh đạo cấp cao.
+          </p>
+
+          <div class="hero-quote">
+            Leadership communication không phải là ra lệnh. Đó là truyền cảm hứng, tạo sự đồng thuận,
+            và dẫn dắt mọi người qua sự thay đổi. Một nhà lãnh đạo giỏi không chỉ có tầm nhìn —
+            họ có khả năng biến tầm nhìn thành hiện thực thông qua người khác.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#timeline">Xem timeline 90 phút</a>
+            <a class="btn btn-secondary" href="#output">Xem output cuối ngày</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO SETTINGS -->
+    <section class="section" id="audio-settings">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Audio Settings</span>
+          <h2>Chọn giọng đọc tự nhiên hơn</h2>
+          <p>Nếu giọng mặc định nghe giống robot, hãy chọn các giọng có chữ Natural, Online, Neural, Premium hoặc Enhanced.</p>
+        </div>
+
+        <div class="panel audio-settings">
+          <p>Gợi ý tốt nhất: dùng Microsoft Edge hoặc Chrome và chọn Microsoft Aria Online (Natural), Microsoft Jenny Online (Natural), hoặc Google US English.</p>
+
+          <div class="settings-row">
+            <div class="field">
+              <label for="voiceSelect">Giọng đọc</label>
+              <select id="voiceSelect" aria-label="Chọn giọng đọc"></select>
+            </div>
+
+            <div class="field">
+              <label for="rateSelect">Tốc độ</label>
+              <select id="rateSelect" aria-label="Chọn tốc độ đọc">
+                <option value="0.85">Chậm hơn</option>
+                <option value="0.95">Chậm vừa</option>
+                <option value="1" selected>Tự nhiên</option>
+                <option value="1.05">Nhanh hơn một chút</option>
+              </select>
+            </div>
+
+            <button id="testVoice" class="btn btn-primary" type="button">Nghe thử</button>
+          </div>
+
+          <div class="audio-note">
+            Lưu ý: chất lượng giọng phụ thuộc vào trình duyệt và hệ điều hành. Nếu muốn âm thanh tự nhiên hơn, bạn có thể thu file mp3 thật rồi gắn vào data-audio-src.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Detailed 90-Minute Plan</span>
+          <h2>Timeline 90 phút chi tiết</h2>
+          <p>Nếu làm đủ các bước dưới đây, bạn sẽ học trọn 90 phút và tạo được bài leadership communication hoàn chỉnh.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <div class="timeline-item">
+            <span class="time-pill">00:00 – 00:15</span>
+            <div>
+              <strong>Vocabulary & Leadership Terms · 15 phút</strong>
+              <span>Học 8 thuật ngữ leadership: leadership communication, organizational alignment, change management, stakeholder engagement, vision alignment, cross-functional leadership, executive sponsorship, cultural transformation. Nghe từng item, lặp lại và đặt 1 câu.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:15 – 00:35</span>
+            <div>
+              <strong>Phrases & Sentence Patterns · 20 phút</strong>
+              <span>Luyện 4 mẫu câu leadership: communicating vision, driving alignment, leading through change, engaging stakeholders. Làm substitution drill.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:35 – 00:55</span>
+            <div>
+              <strong>Listening · 20 phút</strong>
+              <span>Nghe một bài leadership address mẫu 5 phút. Nghe 3 lần: vision, alignment, change, engagement. Làm comprehension questions và shadowing.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">00:55 – 01:15</span>
+            <div>
+              <strong>Speaking · 20 phút</strong>
+              <span>Luyện 3 vòng: Round 1 (60 giây - vision & alignment), Round 2 (90 giây - change & engagement), Round 3 (3 phút - full leadership address). Ghi âm mỗi vòng.</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="time-pill">01:15 – 01:30</span>
+            <div>
+              <strong>Output · 15 phút</strong>
+              <span>Viết leadership address script 200-250 từ. Ghi âm final 3 phút. Tự chấm theo rubric 5 tiêu chí. Viết reflection 3 dòng.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCABULARY -->
+    <section class="section" id="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 1 · 15 phút</span>
+          <h2>Vocabulary & Leadership Terms</h2>
+          <p>8 thuật ngữ leadership cốt lõi cho executive leadership communication. Mỗi mục có IPA, nghĩa, collocation, ví dụ, ghi chú và native alternative.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>leadership communication</h3>
+              <button class="audio-btn" type="button" data-speak="leadership communication">Nghe</button>
+            </div>
+            <span class="ipa">/ˈliːdərʃɪp kəˌmjuːnɪˈkeɪʃn/</span>
+            <p class="vn">Giao tiếp lãnh đạo</p>
+            <div class="note">Ghi chú: Leadership communication là kỹ năng truyền đạt tầm nhìn, giá trị và định hướng ở cấp lãnh đạo. Khác với operational communication.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> leadership communication, effective leadership communication, leadership communication skills</li>
+              <li><strong>Example:</strong> Effective leadership communication is essential for driving organizational alignment.</li>
+              <li><strong>Native alternative:</strong> leadership communication, executive communication</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>organizational alignment</h3>
+              <button class="audio-btn" type="button" data-speak="organizational alignment">Nghe</button>
+            </div>
+            <span class="ipa">/ˌɔːrɡənəˈzeɪʃənl əˈlaɪnmənt/</span>
+            <p class="vn">Sự đồng thuận tổ chức</p>
+            <div class="note">Ghi chú: Organizational alignment là sự đồng thuận của toàn bộ tổ chức về vision, strategy và priorities. Là nền tảng của execution.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> organizational alignment, achieve organizational alignment, drive organizational alignment</li>
+              <li><strong>Example:</strong> Our priority is to achieve organizational alignment around the new strategic direction.</li>
+              <li><strong>Native alternative:</strong> organizational alignment, strategic alignment</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>change management</h3>
+              <button class="audio-btn" type="button" data-speak="change management">Nghe</button>
+            </div>
+            <span class="ipa">/tʃeɪndʒ ˈmænɪdʒmənt/</span>
+            <p class="vn">Quản lý sự thay đổi</p>
+            <div class="note">Ghi chú: Change management là quá trình dẫn dắt tổ chức qua sự thay đổi. Bao gồm communication, training, và stakeholder engagement.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> change management, change management strategy, lead change management</li>
+              <li><strong>Example:</strong> Leading through change requires strong change management and clear communication.</li>
+              <li><strong>Native alternative:</strong> change management, transformation management</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>stakeholder engagement</h3>
+              <button class="audio-btn" type="button" data-speak="stakeholder engagement">Nghe</button>
+            </div>
+            <span class="ipa">/ˈsteɪkhoʊldər ɪnˈɡeɪdʒmənt/</span>
+            <p class="vn">Thu hút stakeholders</p>
+            <div class="note">Ghi chú: Stakeholder engagement là quá trình thu hút và tương tác với các bên liên quan. Quan trọng để có sự đồng thuận.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> stakeholder engagement, stakeholder engagement strategy, drive stakeholder engagement</li>
+              <li><strong>Example:</strong> Effective stakeholder engagement is critical for successful implementation of strategic initiatives.</li>
+              <li><strong>Native alternative:</strong> stakeholder engagement, stakeholder involvement</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>vision alignment</h3>
+              <button class="audio-btn" type="button" data-speak="vision alignment">Nghe</button>
+            </div>
+            <span class="ipa">/ˈvɪʒn əˈlaɪnmənt/</span>
+            <p class="vn">Sự đồng thuận về tầm nhìn</p>
+            <div class="note">Ghi chú: Vision alignment là sự đồng thuận của mọi người về tầm nhìn chiến lược. Là bước đầu tiên trước khi execute.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> vision alignment, achieve vision alignment, drive vision alignment</li>
+              <li><strong>Example:</strong> We need to achieve vision alignment across all departments before moving to execution.</li>
+              <li><strong>Native alternative:</strong> vision alignment, strategic vision alignment</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>cross-functional leadership</h3>
+              <button class="audio-btn" type="button" data-speak="cross-functional leadership">Nghe</button>
+            </div>
+            <span class="ipa">/krɔːs ˈfʌŋkʃənl ˈliːdərʃɪp/</span>
+            <p class="vn">Lãnh đạo liên phòng ban</p>
+            <div class="note">Ghi chú: Cross-functional leadership là khả năng lãnh đạo qua nhiều phòng ban. Đòi hỏi influence mà không cần authority trực tiếp.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> cross-functional leadership, cross-functional leadership skills, demonstrate cross-functional leadership</li>
+              <li><strong>Example:</strong> Cross-functional leadership requires strong communication and influence skills.</li>
+              <li><strong>Native alternative:</strong> cross-functional leadership, matrix leadership</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>executive sponsorship</h3>
+              <button class="audio-btn" type="button" data-speak="executive sponsorship">Nghe</button>
+            </div>
+            <span class="ipa">/ɪɡˈzekjətɪv ˈspɑːnsərʃɪp/</span>
+            <p class="vn">Sự bảo trợ của lãnh đạo</p>
+            <div class="note">Ghi chú: Executive sponsorship là sự ủng hộ và bảo trợ từ cấp lãnh đạo cao nhất. Quan trọng để có resources và authority.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> executive sponsorship, secure executive sponsorship, executive sponsorship is critical</li>
+              <li><strong>Example:</strong> Executive sponsorship is critical for the success of this strategic initiative.</li>
+              <li><strong>Native alternative:</strong> executive sponsorship, senior leadership support</li>
+            </ul>
+          </article>
+
+          <article class="vocab-card">
+            <div class="card-top">
+              <h3>cultural transformation</h3>
+              <button class="audio-btn" type="button" data-speak="cultural transformation">Nghe</button>
+            </div>
+            <span class="ipa">/ˈkʌltʃərəl ˌtrænsfərˈmeɪʃn/</span>
+            <p class="vn">Chuyển đổi văn hóa</p>
+            <div class="note">Ghi chú: Cultural transformation là quá trình thay đổi văn hóa tổ chức. Là phần khó nhất của change management.</div>
+            <ul class="mini-list">
+              <li><strong>Collocation:</strong> cultural transformation, drive cultural transformation, lead cultural transformation</li>
+              <li><strong>Example:</strong> Leading cultural transformation requires consistent communication and role modeling.</li>
+              <li><strong>Native alternative:</strong> cultural transformation, organizational culture change</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATTERNS -->
+    <section class="section" id="patterns">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 2 · 20 phút</span>
+          <h2>Phrases & Sentence Patterns</h2>
+          <p>4 mẫu câu leadership: communicating vision, driving alignment, leading through change, engaging stakeholders.</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>As a leader, my priority is to...</h3>
+              <button class="audio-btn" type="button" data-speak="As a leader, my priority is to communicate our vision clearly and ensure organizational alignment.">Nghe</button>
+            </div>
+            <div class="note">Công thức: As a leader, my priority is to + leadership action. Dùng để tuyên bố vai trò và ưu tiên lãnh đạo.</div>
+            <div class="example">
+              <span class="label">Communicating vision</span>
+              <p>As a leader, my priority is to communicate our vision clearly and ensure organizational alignment.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: drive cross-functional collaboration / lead cultural transformation / secure executive sponsorship.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>To drive organizational alignment, we need to...</h3>
+              <button class="audio-btn" type="button" data-speak="To drive organizational alignment, we need to ensure every team understands the strategic vision and their role in achieving it.">Nghe</button>
+            </div>
+            <div class="note">Công thức: To drive organizational alignment, we need to + action. Dùng để nêu các bước tạo sự đồng thuận.</div>
+            <div class="example">
+              <span class="label">Driving alignment</span>
+              <p>To drive organizational alignment, we need to ensure every team understands the strategic vision and their role in achieving it.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay action: communicate consistently / engage stakeholders early / align incentives with strategy.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>Leading through change requires...</h3>
+              <button class="audio-btn" type="button" data-speak="Leading through change requires clear communication, stakeholder engagement, and consistent follow-through.">Nghe</button>
+            </div>
+            <div class="note">Công thức: Leading through change requires + leadership qualities. Dùng để nhấn mạnh các yếu tố cần thiết khi dẫn dắt thay đổi.</div>
+            <div class="example">
+              <span class="label">Leading through change</span>
+              <p>Leading through change requires clear communication, stakeholder engagement, and consistent follow-through.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay qualities: empathy and transparency / patience and persistence / vision and execution.</p>
+            </div>
+          </article>
+
+          <article class="pattern-card">
+            <div class="card-top">
+              <h3>Our success depends on...</h3>
+              <button class="audio-btn" type="button" data-speak="Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline.">Nghe</button>
+            </div>
+            <div class="note">Công thức: Our success depends on + key success factors. Dùng để kết thúc với call to action và nhấn mạnh yếu tố thành công.</div>
+            <div class="example">
+              <span class="label">Engaging stakeholders</span>
+              <p>Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline.</p>
+            </div>
+            <div class="example">
+              <span class="label">Substitution drill</span>
+              <p>Thay factors: cross-functional collaboration / executive sponsorship / cultural transformation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTENING -->
+    <section class="section" id="listening">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 3 · 20 phút</span>
+          <h2>Listening · Leadership Address</h2>
+          <p>Nghe một bài leadership address mẫu 5 phút. Đây là mô hình để bạn tái hiện với vai trò lãnh đạo của mình.</p>
+        </div>
+
+        <div class="panel listening-panel">
+          <h3>Nhiệm vụ nghe 20 phút</h3>
+          <ol>
+            <li>Nghe toàn bộ 1 lần để nắm vision và leadership priorities.</li>
+            <li>Nghe lần hai để nhận diện 4 patterns: communicating vision, driving alignment, leading through change, engaging stakeholders.</li>
+            <li>Nghe lần ba để phân tích: giọng điệu leadership, cấu trúc bài nói, tầm nhìn.</li>
+            <li>Làm comprehension questions và đối chiếu đáp án mẫu.</li>
+            <li>Shadowing 3 câu trọng tâm.</li>
+          </ol>
+
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <button class="audio-btn" type="button" data-speak="Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change. Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.">Nghe leadership address</button>
+          </div>
+
+          <h4>Transcript</h4>
+          <div class="transcript">
+            <p><span class="speaker">[Opening]</span>Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment.</p>
+            <p><span class="speaker">[Vision]</span>Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation.</p>
+            <p><span class="speaker">[Alignment]</span>To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it.</p>
+            <p><span class="speaker">[Change]</span>Leading through change requires clear communication, stakeholder engagement, and consistent follow-through.</p>
+            <p><span class="speaker">[Engagement]</span>We are undergoing a cultural transformation, and I need your commitment to embrace this change.</p>
+            <p><span class="speaker">[Closing]</span>Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.</p>
+          </div>
+
+          <h4>Comprehension Questions</h4>
+          <ul>
+            <li>Q1: What is the speaker's priority as a leader?</li>
+            <li>Q2: What is the strategic vision?</li>
+            <li>Q3: What is needed to drive organizational alignment?</li>
+            <li>Q4: What does leading through change require?</li>
+            <li>Q5: What does success depend on?</li>
+          </ul>
+
+          <h4>Sample Answers</h4>
+          <div class="answer-box">
+            <p>1. To communicate the vision clearly and ensure organizational alignment.<br />
+            2. To become the leading mixed-use developer in the region.<br />
+            3. Ensuring every team understands the vision and their role.<br />
+            4. Clear communication, stakeholder engagement, and consistent follow-through.<br />
+            5. Ability to engage stakeholders, align the organization, and execute with discipline.</p>
+          </div>
+
+          <h4>Shadowing Challenge</h4>
+          <div class="example">
+            <span class="label">Shadow 1 · Vision</span>
+            <p>As a leader, my priority is to communicate our vision clearly and ensure organizational alignment.</p>
+            <button class="audio-btn" type="button" data-speak="As a leader, my priority is to communicate our vision clearly and ensure organizational alignment.">Nghe câu 1</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 2 · Change</span>
+            <p>Leading through change requires clear communication, stakeholder engagement, and consistent follow-through.</p>
+            <button class="audio-btn" type="button" data-speak="Leading through change requires clear communication, stakeholder engagement, and consistent follow-through.">Nghe câu 2</button>
+          </div>
+          <div class="example">
+            <span class="label">Shadow 3 · Success</span>
+            <p>Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline.</p>
+            <button class="audio-btn" type="button" data-speak="Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline.">Nghe câu 3</button>
+          </div>
+
+          <h4>Pronunciation Focus</h4>
+          <ul>
+            <li>Nhấn vào các từ khóa: leader, priority, vision, alignment, change, stakeholders, success.</li>
+            <li>Giọng chắc chắn, truyền cảm hứng: "As a LEADER, my PRIORITY is..."</li>
+            <li>Giọng kêu gọi khi nói về commitment: "I need YOUR commitment..."</li>
+            <li>Ngắt nghỉ sau mỗi ý leadership để tạo impact.</li>
+            <li>Kết thúc bằng giọng tự tin và truyền cảm hứng.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 4 · 20 phút</span>
+          <h2>Speaking · Leadership Address</h2>
+          <p>Luyện 3 vòng: từ communicating vision đến full leadership address. Mục tiêu là thể hiện executive leadership presence.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Round 1 · 60 giây (Vision & Alignment)</h3>
+            <p>Chỉ trình bày leadership priority, vision và organizational alignment.</p>
+            <div class="answer-box">
+              <p>Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it.">Nghe Round 1</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 2 · 90 giây (Change & Engagement)</h3>
+            <p>Thêm leading through change và stakeholder engagement.</p>
+            <div class="answer-box">
+              <p>Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region. To drive organizational alignment, we need to ensure every team understands this vision and their role. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region. To drive organizational alignment, we need to ensure every team understands this vision and their role. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change.">Nghe Round 2</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Round 3 · 3 phút (Full Leadership Address)</h3>
+            <p>Trình bày leadership address hoàn chỉnh: vision, alignment, change, engagement, closing.</p>
+            <div class="answer-box">
+              <p>Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change. Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change. Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.">Nghe Round 3</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Recording Task</h3>
+            <p>Ghi âm Round 3 — bài leadership address 3 phút. Tự chấm theo rubric bên dưới.</p>
+            <h4>Self-review</h4>
+            <ul>
+              <li>Bạn có nêu rõ leadership priority không?</li>
+              <li>Bạn có communicate vision rõ ràng và truyền cảm hứng không?</li>
+              <li>Bạn có nêu các bước drive organizational alignment không?</li>
+              <li>Bạn có nhấn mạnh leading through change không?</li>
+              <li>Giọng có executive leadership presence không?</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="section" id="output">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Block 5 · 15 phút</span>
+          <h2>Output · Leadership Address Script</h2>
+          <p>Output cuối ngày: viết leadership address script, ghi âm final, tự chấm theo rubric.</p>
+        </div>
+
+        <div class="output-grid">
+          <article class="panel task-panel">
+            <h3>Task 1: Viết Leadership Address Script 200-250 từ</h3>
+            <p>Viết một leadership address script chuyên nghiệp, dùng trong cuộc họp với đội ngũ hoặc tổ chức.</p>
+            <h4>Yêu cầu</h4>
+            <ul>
+              <li>Dùng ít nhất 4 từ vựng trong mục Vocabulary.</li>
+              <li>Dùng đủ 4 patterns: leadership priority, driving alignment, leading through change, engaging stakeholders.</li>
+              <li>Có cấu trúc: Opening → Vision → Alignment → Change → Engagement → Closing.</li>
+              <li>Giọng văn executive, truyền cảm hứng, có tầm nhìn.</li>
+              <li>Có call to action rõ ràng.</li>
+            </ul>
+            <h4>Model Answer</h4>
+            <div class="answer-box">
+              <p>Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change. Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.</p>
+            </div>
+            <button class="audio-btn" type="button" data-speak="Team, as a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation. To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it. Leading through change requires clear communication, stakeholder engagement, and consistent follow-through. We are undergoing a cultural transformation, and I need your commitment to embrace this change. Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality. Thank you.">Nghe leadership address</button>
+          </article>
+
+          <article class="panel task-panel">
+            <h3>Task 2: Ghi âm Final 3 phút</h3>
+            <p>Ghi âm leadership address 3 phút. Mục tiêu là thể hiện executive leadership presence và truyền cảm hứng.</p>
+            <h4>Recording Checklist</h4>
+            <ul>
+              <li>Mở đầu với leadership priority rõ ràng.</li>
+              <li>Communicate vision rõ ràng và truyền cảm hứng.</li>
+              <li>Nêu các bước drive organizational alignment.</li>
+              <li>Nhấn mạnh leading through change.</li>
+              <li>Có call to action và commitment.</li>
+              <li>Giọng executive, tự tin, truyền cảm hứng.</li>
+            </ul>
+
+            <h3>Task 3: Self-Assessment Rubric</h3>
+            <div class="answer-box">
+              <p><strong>Self-Assessment 5 Criteria</strong></p>
+              <p><strong>1. Leadership Priority:</strong> Needs work / Good / Excellent</p>
+              <p><strong>2. Vision Communication:</strong> Needs work / Good / Excellent</p>
+              <p><strong>3. Alignment Strategy:</strong> Needs work / Good / Excellent</p>
+              <p><strong>4. Change Leadership:</strong> Needs work / Good / Excellent</p>
+              <p><strong>5. Executive Presence:</strong> Needs work / Good / Excellent</p>
+            </div>
+
+            <h3>Reflection 3 dòng</h3>
+            <p>Good: 1 điểm bạn đã làm tốt.</p>
+            <p>Improve: 1 điểm cần cải thiện.</p>
+            <p>Keep: 1 kỹ thuật bạn sẽ tiếp tục dùng.</p>
+            <div class="example">
+              <span class="label">Reflection mẫu</span>
+              <p>Good: Tôi đã communicate vision rõ ràng và truyền cảm hứng. Improve: Tôi cần nhấn mạnh change management hơn. Keep: "Our success depends on..."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON MISTAKES -->
+    <section class="section" id="mistakes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Common Mistakes</span>
+          <h2>3 lỗi thường gặp khi leadership communication</h2>
+          <p>Tránh các lỗi này để bài leadership address của bạn executive và truyền cảm hứng.</p>
+        </div>
+
+        <div class="mistake-list">
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có vision rõ ràng: "We need to do better."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Our strategic vision is to become the leading mixed-use developer in the region, known for quality and innovation.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không nhấn mạnh alignment: "Everyone should know what to do."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>To drive organizational alignment, we need to ensure every team understands this vision and their role in achieving it.</p>
+            </article>
+          </div>
+
+          <div class="mistake-item">
+            <article class="mistake-card avoid">
+              <span class="mistake-label rose">Tránh</span>
+              <p>Không có call to action: "That's all. Thanks."</p>
+            </article>
+            <article class="mistake-card better">
+              <span class="mistake-label emerald">Nên</span>
+              <p>Our success depends on our ability to engage stakeholders, align the organization, and execute with discipline. Together, we will make this vision a reality.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERY -->
+    <section class="section" id="mastery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mastery Checklist</span>
+          <h2>Bạn hoàn thành Day 73 khi có thể</h2>
+          <p>Trước khi sang Day 74, hãy đảm bảo bạn đã hoàn thành bài leadership address hoàn chỉnh.</p>
+        </div>
+
+        <ul class="mastery-list">
+          <li>Tôi có thể dùng leadership communication, organizational alignment, change management.</li>
+          <li>Tôi có thể dùng stakeholder engagement, vision alignment, cross-functional leadership.</li>
+          <li>Tôi có thể dùng executive sponsorship, cultural transformation.</li>
+          <li>Tôi có thể nêu rõ leadership priority.</li>
+          <li>Tôi có thể communicate vision rõ ràng và truyền cảm hứng.</li>
+          <li>Tôi có thể drive organizational alignment.</li>
+          <li>Tôi có thể lead through change.</li>
+          <li>Tôi có thể engage stakeholders hiệu quả.</li>
+          <li>Tôi có thể thể hiện executive leadership presence.</li>
+          <li>Tôi đã ghi âm leadership address 3 phút.</li>
+          <li>Tôi đã tự chấm theo rubric 5 tiêu chí.</li>
+          <li>Tôi đã hoàn thành reflection 3 dòng: Good, Improve, Keep.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section" id="navigation">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Navigation</span>
+          <h2>Điều hướng ngày học</h2>
+        </div>
+
+        <div class="prev-next">
+          <a href="level-3-day-72.html">
+            <small>Previous Day</small>
+            <strong>Day 72 · Strategic Decision-Making</strong>
+          </a>
+
+          <button id="markComplete" type="button">
+            <small>Complete</small>
+            <strong>Mark Day 73 Complete</strong>
+          </button>
+
+          <a href="level-3-day-74.html">
+            <small>Next Day</small>
+            <strong>Day 74 · Next Topic</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Executive English 90 Days</strong>
+        <span> · Level 3 · Day 73 · Executive Leadership Communication</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Điều hướng chân trang">
+        <a href="index.html">Trang chủ</a>
+        <a href="level-1.html">Level 1</a>
+        <a href="level-2.html">Level 2</a>
+        <a href="level-3.html">Level 3</a>
+        <a href="speaking-topics.html">Speaking Topics</a>
+        <a href="reflex-structures.html">Reflex Structures</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function $(selector, context) {
+        return (context || document).querySelector(selector);
+      }
+
+      function $$(selector, context) {
+        return Array.prototype.slice.call((context || document).querySelectorAll(selector));
+      }
+
+      /* Progress Day 73 */
+      function loadProgress(key) {
+        try {
+          var raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveProgress(key, progress) {
+        try {
+          localStorage.setItem(key, JSON.stringify(progress));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var progressKey = "executive-english-progress-level-3";
+      var progress = loadProgress(progressKey);
+
+      var markBtn = $("#markComplete");
+      var dayChip = $("#dayChip");
+
+      function updateCompleteState() {
+        if (!markBtn) return;
+
+        if (progress["73"]) {
+          markBtn.classList.add("completed");
+          markBtn.innerHTML = "<small>Completed</small><strong>Day 73 đã hoàn thành</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 73/90 · Đã hoàn thành";
+          }
+        } else {
+          markBtn.classList.remove("completed");
+          markBtn.innerHTML = "<small>Complete</small><strong>Mark Day 73 Complete</strong>";
+
+          if (dayChip) {
+            dayChip.textContent = "Day 73/90";
+          }
+        }
+      }
+
+      if (markBtn) {
+        markBtn.addEventListener("click", function () {
+          progress["73"] = true;
+          saveProgress(progressKey, progress);
+          updateCompleteState();
+        });
+      }
+
+      updateCompleteState();
+
+      /* Audio settings + better voices */
+      var synth = window.speechSynthesis || null;
+      var voiceSelect = $("#voiceSelect");
+      var rateSelect = $("#rateSelect");
+      var testVoiceBtn = $("#testVoice");
+
+      var settingsKey = "executive-english-audio-settings";
+
+      function loadAudioSettings() {
+        try {
+          var raw = localStorage.getItem(settingsKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAudioSettings(settings) {
+        try {
+          localStorage.setItem(settingsKey, JSON.stringify(settings));
+        } catch (error) {
+          // ignore storage errors
+        }
+      }
+
+      var audioSettings = loadAudioSettings();
+
+      if (rateSelect && audioSettings.rate) {
+        rateSelect.value = audioSettings.rate;
+      }
+
+      function rankVoice(voice) {
+        var name = (voice.name || "").toLowerCase();
+        var score = 0;
+
+        if (name.indexOf("natural") !== -1) score += 50;
+        if (name.indexOf("online") !== -1) score += 30;
+        if (name.indexOf("neural") !== -1) score += 28;
+        if (name.indexOf("premium") !== -1) score += 22;
+        if (name.indexOf("enhanced") !== -1) score += 20;
+
+        if (/aria|jenny|ana|guy|andrew|emma|ava|joanna|matthew|salli|brian|sonia|natasha/.test(name)) {
+          score += 24;
+        }
+
+        if (name.indexOf("google us english") !== -1) score += 18;
+        if (name.indexOf("google uk english female") !== -1) score += 12;
+        if (name.indexOf("samantha") !== -1) score += 15;
+        if (name.indexOf("daniel") !== -1) score += 12;
+        if (name.indexOf("karen") !== -1) score += 12;
+
+        var lang = (voice.lang || "").toLowerCase();
+
+        if (lang.indexOf("en-us") === 0) {
+          score += 12;
+        } else if (lang.indexOf("en") === 0) {
+          score += 6;
+        }
+
+        if (voice.localService === false) {
+          score += 3;
+        }
+
+        return score;
+      }
+
+      function loadVoices() {
+        if (!synth || !voiceSelect) return;
+
+        var voices = synth.getVoices().filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (!voices.length) {
+          voiceSelect.innerHTML = "<option>Chưa có giọng tiếng Anh</option>";
+          voiceSelect.disabled = true;
+          return;
+        }
+
+        voices.sort(function (a, b) {
+          return rankVoice(b) - rankVoice(a);
+        });
+
+        voiceSelect.innerHTML = "";
+
+        voices.forEach(function (voice) {
+          var option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = voice.name + " (" + voice.lang + ")";
+          voiceSelect.appendChild(option);
+        });
+
+        if (audioSettings.voiceURI) {
+          voiceSelect.value = audioSettings.voiceURI;
+        }
+
+        if (!voiceSelect.value && voices.length) {
+          voiceSelect.value = voices[0].voiceURI;
+        }
+
+        voiceSelect.disabled = false;
+      }
+
+      function getSelectedVoice() {
+        if (!synth || !voiceSelect) return null;
+
+        var voices = synth.getVoices();
+
+        for (var i = 0; i < voices.length; i++) {
+          if (voices[i].voiceURI === voiceSelect.value) {
+            return voices[i];
+          }
+        }
+
+        var englishVoices = voices.filter(function (voice) {
+          return voice.lang && voice.lang.toLowerCase().indexOf("en") === 0;
+        });
+
+        if (englishVoices.length) {
+          englishVoices.sort(function (a, b) {
+            return rankVoice(b) - rankVoice(a);
+          });
+
+          return englishVoices[0];
+        }
+
+        return null;
+      }
+
+      if (synth) {
+        loadVoices();
+
+        if (typeof synth.onvoiceschanged !== "undefined") {
+          synth.onvoiceschanged = loadVoices;
+        }
+      }
+
+      if (voiceSelect) {
+        voiceSelect.addEventListener("change", function () {
+          audioSettings.voiceURI = voiceSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      if (rateSelect) {
+        rateSelect.addEventListener("change", function () {
+          audioSettings.rate = rateSelect.value;
+          saveAudioSettings(audioSettings);
+        });
+      }
+
+      /* Audio player */
+      var currentAudioBtn = null;
+      var currentAudioElement = null;
+
+      function stopAudio() {
+        if (synth) {
+          synth.cancel();
+        }
+
+        if (currentAudioElement) {
+          currentAudioElement.pause();
+          currentAudioElement = null;
+        }
+
+        if (currentAudioBtn) {
+          currentAudioBtn.textContent = "Nghe";
+          currentAudioBtn.classList.remove("playing");
+          currentAudioBtn = null;
+        }
+      }
+
+      function playWithAudioElement(btn, src) {
+        var audio = new Audio(src);
+
+        currentAudioElement = audio;
+        currentAudioBtn = btn;
+
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        audio.onended = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+            currentAudioElement = null;
+          }
+        };
+
+        audio.onerror = function () {
+          btn.textContent = "Nghe";
+          btn.classList.remove("playing");
+          currentAudioBtn = null;
+          currentAudioElement = null;
+        };
+
+        audio.play();
+      }
+
+      function playWithSpeech(btn, text) {
+        if (!synth) {
+          btn.disabled = true;
+          btn.textContent = "Không hỗ trợ audio";
+          return;
+        }
+
+        var utterance = new SpeechSynthesisUtterance(text);
+        var voice = getSelectedVoice();
+
+        if (voice) {
+          utterance.voice = voice;
+          utterance.lang = voice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+
+        utterance.rate = rateSelect ? parseFloat(rateSelect.value || "1") : 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        utterance.onend = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        utterance.onerror = function () {
+          if (currentAudioBtn === btn) {
+            btn.textContent = "Nghe";
+            btn.classList.remove("playing");
+            currentAudioBtn = null;
+          }
+        };
+
+        currentAudioBtn = btn;
+        btn.textContent = "Dừng";
+        btn.classList.add("playing");
+
+        setTimeout(function () {
+          synth.speak(utterance);
+        }, 50);
+      }
+
+      $$(".audio-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (currentAudioBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          var src = btn.getAttribute("data-audio-src");
+          var text = btn.getAttribute("data-speak") || "";
+
+          if (src) {
+            playWithAudioElement(btn, src);
+            return;
+          }
+
+          playWithSpeech(btn, text);
+        });
+      });
+
+      if (testVoiceBtn) {
+        testVoiceBtn.addEventListener("click", function () {
+          stopAudio();
+
+          var text = "As a leader, my priority is to communicate our vision clearly and ensure organizational alignment. Leading through change requires clear communication and stakeholder engagement. Our success depends on our ability to execute with discipline.";
+
+          playWithSpeech(testVoiceBtn, text);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
